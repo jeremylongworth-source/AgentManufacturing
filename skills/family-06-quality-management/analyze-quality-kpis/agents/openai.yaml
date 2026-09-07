@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Quality KPIs"
+  short_description: "Compare defined quality metrics with denominator, population, period, target, and supplier exposure checks."
+  default_prompt: "Use $analyze-quality-kpis to compare supplied quality metrics, preserving definitions, denominators, periods, exposure, targets, and evidence gaps without assigning corrective action."

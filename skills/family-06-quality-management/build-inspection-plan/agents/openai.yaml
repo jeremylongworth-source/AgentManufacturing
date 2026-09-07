@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Inspection Plan"
+  short_description: "Draft stage-scoped inspection plans while preserving sampling, supplier, lot, and method gaps."
+  default_prompt: "Use $build-inspection-plan to draft an incoming, in-process, or final inspection plan from supplied evidence without inventing sample sizes, executing inspection, or releasing product."

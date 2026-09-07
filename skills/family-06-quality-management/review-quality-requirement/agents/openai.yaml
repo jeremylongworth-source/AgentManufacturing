@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Quality Requirement"
+  short_description: "Find applicability, revision, clarity, and conflict gaps in supplied quality requirements."
+  default_prompt: "Use $review-quality-requirement to review supplied product or customer requirements, preserve conflicts and source gaps, and return qualified review questions without selecting acceptance criteria."

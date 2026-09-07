@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Quality Record"
+  short_description: "Find missing, overwritten, inconsistent, or untraceable quality-record evidence."
+  default_prompt: "Use $review-quality-record to review the supplied quality record for completeness and integrity, preserving original values and routing unresolved gaps to the record owner."

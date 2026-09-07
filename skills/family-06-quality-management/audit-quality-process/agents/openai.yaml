@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audit Quality Process"
+  short_description: "Assess scoped quality-process evidence with sample coverage and certification boundaries visible."
+  default_prompt: "Use $audit-quality-process to assess supplied quality-process evidence against scoped criteria, limiting findings to sample coverage and preserving qualified review boundaries."

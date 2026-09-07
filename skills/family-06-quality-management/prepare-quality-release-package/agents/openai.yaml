@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prepare Quality Release Package"
+  short_description: "Assemble lot-release evidence while keeping holds, deviations, and authorization gaps visible."
+  default_prompt: "Use $prepare-quality-release-package to assemble a reviewable lot-release evidence package without approving release, closing deviations, or inventing inspection evidence."

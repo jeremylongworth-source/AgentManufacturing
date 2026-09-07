@@ -28,15 +28,15 @@ Development workspace for open-source, portable AI skills supporting commercial 
 - [Validation contract](docs/architecture/validation-framework-contract.json), [routing manifest](tests/expected-routing.yaml), [scenario suite](tests/scenarios/), and [fixture manifest](tests/fixtures/am09-fixture-manifest.json): executable framework evidence.
 - [Reference-skill proof contract](docs/architecture/reference-skill-proof.md): AM-10 package gate and runtime-evaluation boundary.
 - [Reference packages](skills/): five bounded AM-10 examples across quantitative, planning, quality, hazardous-operation, and Canadian-overlay classes.
-- [Latest handoff](docs/development/handoffs/AM-13-final-handoff.md): AM-13 closure and the bounded AM-14 execution brief.
+- [Latest handoff](docs/development/handoffs/AM-14-final-handoff.md): AM-14 closure and the bounded AM-15 execution brief.
 
 ## Codex handoff
 
 Use `D:\AgentMfg` as the working directory. Read the roadmap and latest handoff, then execute the next unfinished wave. The roadmap's **First Codex prompt** is the historical AM-00 bootstrap instruction. Treat the roadmap as planning authority and repository contents as execution truth.
 
-Current state: **AM-00 through AM-13 READY** on 2026-09-07; **AM-14 is next**. The v1 taxonomy freezes 159 accepted records: 153 core methods and six Canadian overlays. All 162 draft candidates and 166 starter names remain traceable. AM-04 formalizes jurisdiction routing, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable skill packages and evidence layers, AM-07 formalizes source precedence, standards metadata, rights handling, and freshness, AM-08 formalizes unit-safe quantitative calculations, AM-09 formalizes executable evidence checks, AM-10 proves five bounded reference package classes, AM-11 adds nine manufacturing-fundamentals and standard-work packages, AM-12 completes Family 02 production planning and scheduling, and AM-13 completes Families 04 and 05 process and industrial engineering. Runtime model behavior remains unobserved until reviewer-owned evaluation runs.
+Current state: **AM-00 through AM-14 READY** on 2026-09-07; **AM-15 is next**. The v1 taxonomy freezes 159 accepted records: 153 core methods and six Canadian overlays. All 162 draft candidates and 166 starter names remain traceable. AM-04 formalizes jurisdiction routing, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable skill packages and evidence layers, AM-07 formalizes source precedence, standards metadata, rights handling, and freshness, AM-08 formalizes unit-safe quantitative calculations, AM-09 formalizes executable evidence checks, AM-10 proves five bounded reference package classes, AM-11 adds nine manufacturing-fundamentals and standard-work packages, AM-12 completes Family 02 production planning and scheduling, AM-13 completes Families 04 and 05 process and industrial engineering, and AM-14 completes Family 06 quality management and inspection. Runtime model behavior remains unobserved until reviewer-owned evaluation runs.
 
-The workspace contains domain contracts, a preserved draft register, the audited v1 catalogue, forty-two bounded packages, focused validators, and wave handoffs. Quality management, runtime behavior evaluation, governance, skillsets, and specializations remain roadmap work. Local Git is initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing). AM-00 verified the remote as private and empty on 2026-09-06. No release or licence selection has been made; roadmap work through AM-13 is committed and pushed as it closes.
+The workspace contains domain contracts, a preserved draft register, the audited v1 catalogue, forty-nine bounded packages, focused validators, and wave handoffs. Metrology/SPC, runtime behavior evaluation, governance, skillsets, and specializations remain roadmap work. Local Git is initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing). AM-00 verified the remote as private and empty on 2026-09-06. No release or licence selection has been made; roadmap work through AM-14 is committed and pushed as it closes.
 
 ## Taxonomy validation
 
@@ -53,12 +53,13 @@ python scripts/validate-reference-skills.py
 python scripts/validate-implemented-skills.py
 python scripts/validate-production-planning.py
 python scripts/validate-process-engineering.py
+python scripts/validate-quality-management.py
 
 # Or run the complete gate:
 python scripts/validate-all.py
 ```
 
-Uses the Python standard library to check preserved draft data, the accepted index, audits, provenance, graph ordering, document consistency, the AM-04 model/source registry, the AM-05 safety model/source registry, the AM-06 package/validation contracts and templates, the AM-07 source/standards contracts plus legacy registry compatibility, the AM-08 calculation contract and numeric fixtures, the AM-09 routing/scenario/evaluation framework, the AM-10 reference packages, the AM-11 Family 01/03 packages, the AM-12 Family 02 packages, and the AM-13 Family 04/05 packages. The YAML index uses JSON syntax for dependency-free parsing. A pass is not evidence of runtime model behavior, site safety, engineering adequacy, source freshness, copyright permission, legal approval, or regulatory applicability. See the latest handoff for results and limits.
+Uses the Python standard library to check preserved draft data, the accepted index, audits, provenance, graph ordering, document consistency, the AM-04 model/source registry, the AM-05 safety model/source registry, the AM-06 package/validation contracts and templates, the AM-07 source/standards contracts plus legacy registry compatibility, the AM-08 calculation contract and numeric fixtures, the AM-09 routing/scenario/evaluation framework, the AM-10 reference packages, the AM-11 Family 01/03 packages, the AM-12 Family 02 packages, the AM-13 Family 04/05 packages, and the AM-14 Family 06 packages. The YAML index uses JSON syntax for dependency-free parsing. A pass is not evidence of runtime model behavior, site safety, engineering adequacy, source freshness, copyright permission, legal approval, or regulatory applicability. See the latest handoff for results and limits.
 
 ## Provenance
 

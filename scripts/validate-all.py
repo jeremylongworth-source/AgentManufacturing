@@ -20,6 +20,7 @@ VALIDATORS = [
     "validate-implemented-skills.py",
     "validate-production-planning.py",
     "validate-process-engineering.py",
+    "validate-quality-management.py",
 ]
 
 

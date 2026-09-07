@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Product Conformity"
+  short_description: "Assess product-conformity evidence while preserving conflicts and withholding release authority."
+  default_prompt: "Use $review-product-conformity to map supplied requirements and inspection evidence by lot and stage, preserving conflicts and unresolved gaps without authorizing release."

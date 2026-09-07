@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Kaizen Plan"
+  short_description: "Define a bounded improvement plan"
+  default_prompt: "Use $build-kaizen-plan to structure a scoped intervention, metric, guardrail, and review gate."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Eight Wastes"
+  short_description: "Classify observed waste opportunities"
+  default_prompt: "Use $identify-eight-wastes to classify supplied observations against a waste taxonomy."

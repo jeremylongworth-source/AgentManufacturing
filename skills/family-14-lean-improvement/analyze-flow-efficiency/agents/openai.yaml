@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Flow Efficiency"
+  short_description: "Compare value-adding and elapsed time"
+  default_prompt: "Use $analyze-flow-efficiency to calculate flow efficiency from a declared time basis."

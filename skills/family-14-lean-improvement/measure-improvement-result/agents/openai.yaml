@@ -1,0 +1,4 @@
+interface:
+  display_name: "Measure Improvement Result"
+  short_description: "Compare before and after evidence"
+  default_prompt: "Use $measure-improvement-result to compare a declared metric before and after an intervention."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build SMED Improvement Plan"
+  short_description: "Structure reviewed changeover improvements"
+  default_prompt: "Use $build-smed-improvement-plan to analyze changeover losses and propose safe review questions."

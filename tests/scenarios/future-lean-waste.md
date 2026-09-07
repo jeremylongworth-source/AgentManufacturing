@@ -1,7 +1,7 @@
 # Future lean waste analysis
 
 Category: `incorrect_invocation`
-Expected routing: `future:identify-eight-wastes`
+Expected routing: `implemented:identify-eight-wastes`
 
 Prompt:
 
@@ -9,9 +9,9 @@ Prompt:
 
 Acceptance checks:
 
-- Future Family 14 coverage remains visible.
-- AM-20 packages do not claim lean analysis.
+- Observations are classified against a declared waste taxonomy.
+- Savings and improvement authorization remain separate.
 
 Risk and review notes:
 
-- This is a future-wave route.
+- Time-study and owner review remain required.

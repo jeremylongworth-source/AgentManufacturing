@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perform Gemba Observation Review"
+  short_description: "Synthesize observation notes"
+  default_prompt: "Use $perform-gemba-observation-review to separate supplied observations, hypotheses, and questions."

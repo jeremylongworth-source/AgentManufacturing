@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Value Stream Map"
+  short_description: "Map current material and information flow"
+  default_prompt: "Use $build-value-stream-map to structure a current-state value-stream map and metrics."

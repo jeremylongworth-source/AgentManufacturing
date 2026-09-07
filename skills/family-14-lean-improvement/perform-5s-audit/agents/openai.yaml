@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perform 5S Audit"
+  short_description: "Review supplied 5S evidence"
+  default_prompt: "Use $perform-5s-audit to review an area against a declared 5S checklist."

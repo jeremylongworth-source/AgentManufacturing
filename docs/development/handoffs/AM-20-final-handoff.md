@@ -15,7 +15,7 @@ Evidence:
 - [AM-20 acceptance record](../../tests/evaluations/AM-20-workforce-acceptance.md)
 - [Family 13 packages](../../skills/family-13-workforce-shift/)
 - [AM-20 validator](../../scripts/validate-workforce-shift.py)
-- [Routing manifest](../../tests/expected-routing.yaml) with 123 scenarios across all required categories and a future Family 14 lean route
+- [Routing manifest](../../tests/expected-routing.yaml) with 130 scenarios across all required categories and a future Family 15 systems route
 
 Validation command:
 

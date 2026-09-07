@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Lockout Program"
+  short_description: "Review program-level energy-control evidence"
+  default_prompt: "Use $review-lockout-program to review lockout-program scope, roles, training, and verification evidence."

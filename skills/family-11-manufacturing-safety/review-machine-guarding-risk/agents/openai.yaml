@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Machine Guarding Risk"
+  short_description: "Screen guarding evidence"
+  default_prompt: "Use $review-machine-guarding-risk to assess machine guarding observations and review gaps."

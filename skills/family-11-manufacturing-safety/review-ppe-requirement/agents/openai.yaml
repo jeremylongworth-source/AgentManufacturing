@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review PPE Requirement"
+  short_description: "Screen PPE requirement evidence"
+  default_prompt: "Use $review-ppe-requirement to review hazard, exposure, PPE basis, and evidence gaps."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Hazardous Energy Source"
+  short_description: "Inventory energy sources and unknowns"
+  default_prompt: "Use $identify-hazardous-energy-source to inventory potential energy sources for qualified review."

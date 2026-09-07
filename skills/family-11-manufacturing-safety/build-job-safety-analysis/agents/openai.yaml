@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Job Safety Analysis"
+  short_description: "Map task hazards and controls"
+  default_prompt: "Use $build-job-safety-analysis to structure task hazards, controls, and review gaps."

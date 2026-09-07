@@ -15,7 +15,7 @@ Evidence:
 - [AM-17 acceptance record](../../tests/evaluations/AM-17-maintenance-reliability-acceptance.md)
 - [Family 10 packages](../../skills/family-10-maintenance-reliability/)
 - [AM-17 validator](../../scripts/validate-maintenance-reliability.py)
-- [Routing manifest](../../tests/expected-routing.yaml) with 95 scenarios across all required categories and a future Family 11 safety route
+- [Routing manifest](../../tests/expected-routing.yaml) with 104 scenarios across all required categories and a future Family 12 materials route
 
 Validation command:
 

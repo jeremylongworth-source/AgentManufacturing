@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Ergonomic Risk"
+  short_description: "Screen ergonomic exposure concerns"
+  default_prompt: "Use $review-ergonomic-risk to structure task exposure evidence and ergonomic review gaps."

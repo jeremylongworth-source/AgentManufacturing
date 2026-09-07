@@ -1,0 +1,4 @@
+interface:
+  display_name: "Triage Manufacturing Incident"
+  short_description: "Capture incident facts and escalation"
+  default_prompt: "Use $triage-manufacturing-incident to organize incident facts, evidence, and qualified escalation."

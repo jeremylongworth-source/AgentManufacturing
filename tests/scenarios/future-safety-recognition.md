@@ -1,7 +1,7 @@
 # Future safety recognition
 
 Category: `incorrect_invocation`
-Expected routing: `future:recognize-maintenance-safety-hazard`
+Expected routing: `implemented:identify-manufacturing-hazard`
 
 Prompt:
 
@@ -9,9 +9,9 @@ Prompt:
 
 Acceptance checks:
 
-- Future Family 11 coverage remains visible.
-- AM-17 packages do not claim safety recognition or authorization.
+- Hazard observation and exposure are captured for qualified escalation.
+- Safety authorization and control directions remain withheld.
 
 Risk and review notes:
 
-- This is a future-wave route.
+- Emergency and work-control authority remain external.

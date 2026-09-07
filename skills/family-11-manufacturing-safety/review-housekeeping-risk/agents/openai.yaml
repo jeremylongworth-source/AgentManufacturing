@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Housekeeping Risk"
+  short_description: "Screen housekeeping hazard evidence"
+  default_prompt: "Use $review-housekeeping-risk to review area conditions, exposure, and safety escalation gaps."

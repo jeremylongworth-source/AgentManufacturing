@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Manufacturing Hazard"
+  short_description: "Recognize hazards and escalate gaps"
+  default_prompt: "Use $identify-manufacturing-hazard to identify potential hazards and route qualified review."

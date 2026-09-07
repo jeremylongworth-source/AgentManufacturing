@@ -1,0 +1,4 @@
+interface:
+  display_name: "Map Manufacturing Process"
+  short_description: "Map operations, branches, inputs, outputs, and rework loops from supplied evidence."
+  default_prompt: "Use $map-manufacturing-process to create a bounded process map with explicit branches, loops, evidence gaps, and review boundaries."

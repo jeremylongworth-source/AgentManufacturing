@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Production Capacity"
+  short_description: "Estimate supplied production capacity with rates, losses, mix, units, and limiting-resource evidence."
+  default_prompt: "Use $calculate-production-capacity to estimate conditional capacity from supplied time, rates, losses, and mix without treating the result as a guarantee or authorization."

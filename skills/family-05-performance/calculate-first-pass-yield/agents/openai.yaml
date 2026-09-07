@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate First-Pass Yield"
+  short_description: "Calculate first-pass yield while excluding later rework passes and preserving the population basis."
+  default_prompt: "Use $calculate-first-pass-yield to calculate first-pass yield from supplied initial and no-rework counts, preserving exclusions, units, intermediates, and quality review boundaries."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Cycle Time"
+  short_description: "Summarize measured cycle observations with definitions, mix, units, and data-quality limits."
+  default_prompt: "Use $analyze-cycle-time to summarize supplied cycle observations, preserving start/end definitions, product mix, downtime treatment, units, and evidence limits."

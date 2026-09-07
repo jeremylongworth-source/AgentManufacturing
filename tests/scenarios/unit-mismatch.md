@@ -1,7 +1,7 @@
 # Takt request with incompatible units
 
 Category: `unit_mismatch`
-Expected routing: `future:calculate-takt-time`
+Expected routing: `implemented:calculate-takt-time`
 
 Prompt:
 
@@ -16,4 +16,4 @@ Acceptance checks:
 Risk and review notes:
 
 - Product-specific fill quantity or packaging data may be required.
-- The scenario tests incompatible-unit refusal, not a production plan.
+- The scenario tests incompatible-unit refusal for an implemented reference calculation, not a production plan.

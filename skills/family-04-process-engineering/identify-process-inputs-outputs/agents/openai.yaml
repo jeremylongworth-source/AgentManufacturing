@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Process Inputs and Outputs"
+  short_description: "Inventory process-boundary streams with units and unverified evidence visible."
+  default_prompt: "Use $identify-process-inputs-outputs to inventory supplied material, energy, and information streams for one process boundary without inventing a balance."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Changeover Loss"
+  short_description: "Break down measured changeover loss with explicit overlap and baseline evidence."
+  default_prompt: "Use $analyze-changeover-loss to analyze supplied changeover timestamps and task observations, preserving overlap, baseline, definitions, and improvement-review boundaries."

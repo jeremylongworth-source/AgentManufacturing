@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Process Control Plan"
+  short_description: "Draft characteristic-to-control mappings with explicit reaction ownership and review gaps."
+  default_prompt: "Use $build-process-control-plan to draft a process control plan from supplied flow, characteristics, controls, and reaction authority without issuing reaction instructions or certification."

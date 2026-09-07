@@ -1,0 +1,4 @@
+interface:
+  display_name: "Balance Production Line"
+  short_description: "Draft task assignments under precedence, resource, and target-rate constraints."
+  default_prompt: "Use $balance-production-line to draft a conditional line balance from supplied task times and constraints, preserving infeasible work and review boundaries."

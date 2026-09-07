@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Takt Time"
+  short_description: "Calculate demand-driven takt time with explicit period, units, exclusions, and zero-demand handling."
+  default_prompt: "Use $calculate-takt-time to calculate takt from supplied net available time and demand, preserving units, exclusions, intermediates, and review boundaries."

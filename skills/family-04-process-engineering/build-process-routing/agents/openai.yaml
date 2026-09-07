@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Process Routing"
+  short_description: "Draft product routing from approved operations without activating a live system record."
+  default_prompt: "Use $build-process-routing to draft a product routing from approved operations, work centers, precedence, and revision evidence while preserving engineering review gaps."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Process Parameter Control"
+  short_description: "Review observed process parameters against supplied approved limits and escalation evidence."
+  default_prompt: "Use $review-process-parameter-control to compare supplied monitoring records with approved limits, exposing source and engineering gaps without designing new limits or changing settings."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Rework Rate"
+  short_description: "Calculate rework rate with explicit unit/event counting, population, period, and denominator."
+  default_prompt: "Use $calculate-rework-rate to calculate supplied rework rate, distinguishing units from repeated events and preserving the population basis and review boundary."

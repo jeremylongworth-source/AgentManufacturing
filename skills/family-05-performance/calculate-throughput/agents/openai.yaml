@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Throughput"
+  short_description: "Calculate completed output per elapsed time with explicit quantity, period, units, and exclusions."
+  default_prompt: "Use $calculate-throughput to calculate supplied completed output per elapsed time, preserving the denominator, unit basis, exclusions, and review boundary."

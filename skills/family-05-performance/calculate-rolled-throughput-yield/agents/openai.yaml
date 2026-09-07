@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Rolled Throughput Yield"
+  short_description: "Combine sequential first-pass yields with routing and dependence assumptions visible."
+  default_prompt: "Use $calculate-rolled-throughput-yield to combine supplied sequential first-pass yields, preserving routing, intermediates, assumptions, and quality review boundaries."

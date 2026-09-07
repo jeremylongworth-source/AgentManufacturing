@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compare Process Alternatives"
+  short_description: "Compare supplied process concepts and evidence for qualified engineering review."
+  default_prompt: "Use $compare-process-alternatives to compare supplied process concepts against requirements, capacity, quality, and resource evidence without selecting or approving a concept."

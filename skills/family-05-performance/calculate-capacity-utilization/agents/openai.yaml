@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Capacity Utilization"
+  short_description: "Compare actual output or occupied time with supplied rated capacity on a common basis."
+  default_prompt: "Use $calculate-capacity-utilization to calculate utilization from supplied actual and rated-capacity evidence, preserving the denominator and comparable basis."

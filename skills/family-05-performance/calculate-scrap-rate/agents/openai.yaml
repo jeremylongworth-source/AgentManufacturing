@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Scrap Rate"
+  short_description: "Calculate scrap rate with explicit denominator, units, period, and exclusion basis."
+  default_prompt: "Use $calculate-scrap-rate to calculate supplied scrap rate, preserving the denominator definition, unit compatibility, intermediates, and quality review boundary."

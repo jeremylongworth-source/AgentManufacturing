@@ -1,0 +1,4 @@
+interface:
+  display_name: "<Skill display name>"
+  short_description: "<bounded one-sentence deliverable>"
+  default_prompt: "Use $<accepted-skill-name> to <bounded request> with explicit assumptions, validation notes, and review boundaries."

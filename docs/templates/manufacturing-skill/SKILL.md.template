@@ -1,0 +1,73 @@
+---
+name: <accepted-skill-name>
+description: <one sentence stating the atomic task and primary trigger>
+license: <project-approved-license>
+---
+
+# <Skill display name>
+
+## Overview
+
+State the one manufacturing responsibility and expected output.
+
+## Triggers
+
+- <in-scope user intent or data pattern>
+
+## Non-Triggers
+
+- <adjacent task that routes elsewhere>
+
+## Required Inputs
+
+- <input required for a final answer>
+
+## Optional Inputs
+
+- <input that improves precision or confidence>
+
+## Assumptions
+
+State allowed defaults and assumptions that must not be made.
+
+## Core Workflow
+
+1. <collect and validate evidence>
+2. <perform the bounded method>
+3. <return result, gaps, and review boundary>
+
+## Calculations
+
+State formulas, variables, units, rounding, and edge cases, or write `No calculation required`.
+
+## Validation
+
+State input, output, source, unit, and reasonableness checks.
+
+## Exception Handling
+
+State behavior for missing, contradictory, unsafe, stale, or out-of-scope input.
+
+## Source Usage
+
+State local references, external-source triggers, freshness, citations, and evidence treatment.
+
+## Output Contract
+
+Return status, scope, inputs/evidence, analysis/result, assumptions, validation notes, missing/conflicting evidence, and review/handoff.
+
+## Safety Requirements
+
+State the AM-05 class, escalation triggers, prohibited output, and qualified-review boundary.
+
+## References
+
+- `references/<checklist-or-formula>.md`
+
+## Examples
+
+Read the linked example reference.
+
+## Testing
+
+List required scenario categories and deterministic fixtures. Expected routing is not observed behavior.

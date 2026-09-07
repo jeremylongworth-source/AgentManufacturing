@@ -1,0 +1,52 @@
+{
+  "schema_version": "AM-07-source-freshness-1",
+  "status": "STANDARD_READY_NOT_IMPLEMENTED",
+  "review_clock": "Use the source's stated currency or effective date when present. Do not invent a numeric expiry interval when the publisher does not state one.",
+  "states": {
+    "CURRENT": "The record's version and effective status were checked against the authoritative publisher for the requested as-of date.",
+    "CURRENT_ON_ACCESS": "The publisher presents the source as current, but the record has not been tied to a separate activity date or version comparison.",
+    "HISTORICAL": "The record intentionally describes a past version or past event and may only support an explicitly historical claim.",
+    "SUPERSEDED": "The publisher identifies a later version or instrument; do not use for a current conclusion.",
+    "STALE": "The available currency evidence is too old, incomplete, or contradicted for the requested use.",
+    "UNKNOWN": "Currency or version cannot be established from the available evidence.",
+    "CONFLICTING": "Two or more authoritative records disagree on version, effective date, or applicability.",
+    "PENDING_REVIEW": "A reviewer must resolve currency, scope, incorporation, or rights before the source can support a dependent conclusion."
+  },
+  "policies": {
+    "VERIFY_AT_USE": {
+      "applies_to": ["official_law_or_regulation", "official_registry_or_gazette", "delegated_regulator", "incorporated_standard"],
+      "minimum_action": "Check the publisher's current or point-in-time record and capture the verification date, version, effective date, and applicability scope."
+    },
+    "VERIFY_BEFORE_RELEASE": {
+      "applies_to": ["official_government_guidance", "voluntary_standard", "manufacturer_specification", "contract_or_site_document"],
+      "minimum_action": "Recheck the source and any controlling document before a package, report, or release is treated as final."
+    },
+    "SCHEDULED_REVIEW": {
+      "applies_to": ["secondary"],
+      "minimum_action": "Use only as discovery or context, and schedule a primary-source check before relying on any claim."
+    },
+    "HISTORICAL_ONLY": {
+      "applies_to": ["official_law_or_regulation", "official_registry_or_gazette", "official_government_guidance", "incorporated_standard", "voluntary_standard"],
+      "minimum_action": "Require an explicit as-of date and prevent the record from satisfying a current-source check."
+    }
+  },
+  "recheck_triggers": [
+    "The user asks for current, in-force, latest, or effective requirements.",
+    "The activity date differs from the source retrieval or verification date.",
+    "The publisher page shows a new amendment, revision, proclamation, edition, or currency date.",
+    "A source is marked historical, superseded, stale, unknown, conflicting, or pending review.",
+    "A legal, safety, engineering, certification, product-release, or permit conclusion depends on the source.",
+    "A known incident, change request, enforcement notice, or standards update may affect applicability.",
+    "The source URL, publisher, title, or identifier changed."
+  ],
+  "transition_rules": [
+    {"from": "CURRENT_ON_ACCESS", "to": "CURRENT", "condition": "A reviewer confirms version and effective date for the requested as-of date."},
+    {"from": "CURRENT_ON_ACCESS", "to": "STALE", "condition": "The publisher identifies a newer applicable version or the currency date cannot support the requested activity date."},
+    {"from": "CURRENT", "to": "SUPERSEDED", "condition": "A later version or instrument replaces the record."},
+    {"from": "CURRENT", "to": "CONFLICTING", "condition": "Another authoritative record disagrees and the conflict is unresolved."},
+    {"from": "UNKNOWN", "to": "PENDING_REVIEW", "condition": "A source is selected for a dependent conclusion but currency, scope, or rights remain unresolved."},
+    {"from": "HISTORICAL", "to": "CURRENT", "condition": "Only after a new current record is verified; the historical record itself remains historical."}
+  ],
+  "blocking_states_for_current_claims": ["HISTORICAL", "SUPERSEDED", "STALE", "UNKNOWN", "CONFLICTING", "PENDING_REVIEW"],
+  "required_output_fields": ["source_key", "source_status", "as_of", "verification_date", "version_or_currency_note", "review_owner_or_handoff"]
+}

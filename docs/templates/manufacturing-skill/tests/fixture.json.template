@@ -1,0 +1,10 @@
+{
+  "case_id": "<case-id>",
+  "category": "<scenario-category>",
+  "target_skill": "<accepted-skill-name>",
+  "inputs": {},
+  "expected_status": "<COMPLETE|PARTIAL|NEEDS_INPUT|OUT_OF_SCOPE|SAFETY_ESCALATION|SOURCE_REVIEW_REQUIRED|ENGINEERING_REVIEW_REQUIRED>",
+  "expected_missing_inputs": [],
+  "expected_error_fields": [],
+  "expected_review_flags": []
+}

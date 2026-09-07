@@ -1,0 +1,89 @@
+{
+  "schema_version": "AM-04-jurisdiction-1",
+  "status": "MODEL_READY_NOT_IMPLEMENTED",
+  "effective_as_of": "2026-09-07",
+  "scope": "Context and source-routing metadata for Canadian manufacturing analysis; not a legal compliance determination.",
+  "flags": {
+    "CANADA_FEDERAL": {
+      "meaning": "A federal source may govern the requested obligation or product activity.",
+      "requires": ["country", "obligation_domain", "requested_activity", "authority_context"],
+      "does_not_mean": "The workplace is federally regulated merely because the product is sold in Canada or a federal product rule exists."
+    },
+    "PROVINCIAL_REQUIRED": {
+      "meaning": "A province or territory must be identified and its current source reviewed for the requested obligation.",
+      "requires": ["country", "province_or_territory", "facility_or_activity_location", "obligation_domain", "requested_activity"],
+      "does_not_mean": "Ontario, the nearest province, or a federal source can stand in for a missing jurisdiction."
+    },
+    "SECTOR_REGULATED": {
+      "meaning": "The sector, employer activity, product class, or regulated undertaking can change the governing authority or requirements.",
+      "requires": ["sector_or_product_class", "employer_activity_context", "requested_activity", "authority_context"],
+      "does_not_mean": "A sector label proves a certification, permit, or regulated status."
+    },
+    "STANDARDS_DEPENDENT": {
+      "meaning": "A conclusion depends on a named or incorporated standard, edition, or supplier/manufacturer specification.",
+      "requires": ["standard_identifier", "edition_or_effective_date", "incorporation_basis", "licensed_text_available"],
+      "does_not_mean": "A standards reference alone proves compliance or authorizes a release."
+    }
+  },
+  "applicability_states": {
+    "GENERIC_METHOD_ONLY": "The requested method can proceed without a jurisdiction-dependent conclusion; do not infer legal applicability.",
+    "PENDING_CONTEXT": "The method may proceed generically, but the requested jurisdiction-dependent conclusion needs context fields before source selection.",
+    "SOURCE_REVIEW_REQUIRED": "Required context is present enough to select an authority family, but current source text, edition, or incorporation must be reviewed.",
+    "COVERAGE_GAP": "The requested jurisdiction or authority is outside the supported source registry; return a research handoff and do not substitute another jurisdiction.",
+    "CONFLICT_REVIEW_REQUIRED": "Sources or supplied facts conflict; preserve each claim, identify the conflict, and escalate to an authorized reviewer."
+  },
+  "context_fields": {
+    "country": {"required_for": ["all jurisdiction-dependent conclusions"], "unknown_behavior": "Keep dependent conclusion unresolved; unrelated generic arithmetic may continue."},
+    "province_or_territory": {"required_for": ["provincial_or_territorial_workplace", "provincial_environmental", "local_authority_routing"], "unknown_behavior": "Set PENDING_CONTEXT; never default to Ontario or federal."},
+    "facility_or_activity_location": {"required_for": ["workplace", "environmental", "permit", "inspection"], "unknown_behavior": "Ask for the location or retain the location-dependent conclusion as unresolved."},
+    "employer_activity_context": {"required_for": ["workplace_authority"], "unknown_behavior": "Do not infer federal workplace status from product, customer, or shipping destination."},
+    "obligation_domain": {"allowed": ["product", "supplier", "workplace", "environmental", "transport", "labelling", "contract_standard", "other"], "unknown_behavior": "Do not collapse product and workplace questions; request classification."},
+    "sector_or_product_class": {"required_for": ["sector_regulated", "product_scope", "specialized_authority"], "unknown_behavior": "Use only generic method analysis and flag sector uncertainty."},
+    "requested_activity": {"required_for": ["all source selection"], "unknown_behavior": "Do not select an authority based on facility name alone."},
+    "activity_date": {"required_for": ["time-sensitive source review"], "unknown_behavior": "Use current-source review only and label historical applicability unresolved."},
+    "authority_context": {"required_for": ["federal_or_provincial_selection", "sector_regulated"], "unknown_behavior": "Set PENDING_CONTEXT or CONFLICT_REVIEW_REQUIRED."},
+    "standard_identifier": {"required_for": ["standards_dependent"], "unknown_behavior": "Set SOURCE_REVIEW_REQUIRED; do not invent an edition."},
+    "edition_or_effective_date": {"required_for": ["standards_dependent", "time_sensitive_source_review"], "unknown_behavior": "Record freshness gap and avoid a compliance conclusion."},
+    "incorporation_basis": {"required_for": ["standards_dependent"], "unknown_behavior": "Do not treat a voluntary standard as a legal requirement."},
+    "licensed_text_available": {"required_for": ["copyrighted_standard_detail"], "unknown_behavior": "Summarize metadata only and route for authorized text access."}
+  },
+  "source_hierarchy": [
+    {"rank": 1, "class": "official_law_or_regulation", "use": "Current statute, regulation, code, official consolidation, or official regulator source; controls when applicable."},
+    {"rank": 2, "class": "official_government_guidance", "use": "Official explanation, scope page, program guidance, or regulator interpretation; supports routing and context."},
+    {"rank": 3, "class": "incorporated_or_licensed_standard", "use": "Named standard or manufacturer specification only when the incorporation or contract basis is evidenced; do not reproduce protected text."},
+    {"rank": 4, "class": "site_employer_or_contract_evidence", "use": "Facility program, permit, contract, SOP, or customer requirement; useful for facts and obligations but not a substitute for law."},
+    {"rank": 5, "class": "secondary_background", "use": "Discovery only; never sufficient alone for a legal or compliance conclusion."}
+  ],
+  "extension_pattern": {
+    "federal": {"source_key": "CA-FED-OHS-SCOPE", "coverage": "Federal workplace scope and Canada Labour Code Part II routing; add product/supplier sources separately."},
+    "ontario": {"source_key": "CA-ON-OHSA", "coverage": "Ontario workplace OH&S act and regulations; select sector/hazard regulations after location and activity are known."},
+    "british_columbia": {"source_key": "CA-BC-OHS-REG", "coverage": "WorkSafeBC inspection jurisdiction and OHS Regulation; mines and federally chartered workplaces require separate routing."},
+    "alberta": {"source_key": "CA-AB-OHS-CODE", "coverage": "Alberta OHS Act, Regulation, and Code; track current in-force code and amendments."},
+    "quebec": {"source_key": "CA-QC-OHS-ACT", "coverage": "Quebec Act respecting occupational health and safety and official regulations; preserve French/English source identity and current consolidation date."}
+  },
+  "decision_procedure": [
+    "Separate the requested obligation into product, supplier, workplace, environmental, transport, labelling, contract-standard, or other domain.",
+    "Normalize the supplied context fields and mark each as known, unknown, not_applicable, or conflicting.",
+    "Select federal, provincial/territorial, sector, local, contract, or manufacturer authority families from the activity and authority context.",
+    "Compose all applicable flags; flags are questions and routing metadata, never a compliance verdict.",
+    "Resolve current source, effective date, edition, incorporation basis, and evidence provenance before stating a source-dependent conclusion.",
+    "When sources conflict, retain both claims, record temporal/scope differences, and route for qualified review; do not choose a winner silently.",
+    "When the jurisdiction is unsupported or missing, return COVERAGE_GAP or PENDING_CONTEXT and continue only unrelated generic analysis."
+  ],
+  "negative_guards": [
+    "A federal product or supplier rule must not establish federal workplace jurisdiction.",
+    "A province, including Ontario, must not be substituted for an unknown or unsupported province, territory, or foreign location.",
+    "A standard name, certification mark, or sector label must not be presented as proof of compliance, certification, or authority.",
+    "Missing jurisdiction must not block unit-safe arithmetic that has no jurisdiction-dependent conclusion.",
+    "Conflicting or stale sources must not be silently merged into a single legal rule."
+  ],
+  "acceptance_scenarios": [
+    {"id": "J-01", "input": "OEE calculation with no province and no legal conclusion", "expected_state": "GENERIC_METHOD_ONLY", "expected_behavior": "Perform supported arithmetic; do not ask for province solely for the calculation."},
+    {"id": "J-02", "input": "Ontario lockout-program review at a named facility", "expected_state": "SOURCE_REVIEW_REQUIRED", "expected_behavior": "Use Ontario workplace source path plus supplied facility evidence; preserve qualified-review boundary."},
+    {"id": "J-03", "input": "Federal product labelling question with workplace regime unknown", "expected_state": "SOURCE_REVIEW_REQUIRED", "expected_behavior": "Review product/federal source separately and leave workplace authority unresolved."},
+    {"id": "J-04", "input": "Quebec facility with a request to apply Ontario rules", "expected_state": "CONFLICT_REVIEW_REQUIRED", "expected_behavior": "Reject substitution, select Quebec source path, and record the requested Ontario source as inapplicable unless separately evidenced."},
+    {"id": "J-05", "input": "Unsupported territory and no source registry entry", "expected_state": "COVERAGE_GAP", "expected_behavior": "Return a source-research handoff; do not fall back to Ontario or federal."},
+    {"id": "J-06", "input": "WHMIS supplier classification for a hazardous product", "expected_state": "SOURCE_REVIEW_REQUIRED", "expected_behavior": "Use federal supplier source and separately identify workplace employer jurisdiction; do not treat supplier guidance as workplace proof."},
+    {"id": "J-07", "input": "Two sources with different effective dates", "expected_state": "CONFLICT_REVIEW_REQUIRED", "expected_behavior": "Record both dates and applicability scope; escalate rather than silently selecting one."}
+  ]
+}

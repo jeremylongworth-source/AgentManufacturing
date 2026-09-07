@@ -1,0 +1,149 @@
+{
+  "schema_version": "AM-07-source-record-1",
+  "status": "STANDARD_READY_NOT_IMPLEMENTED",
+  "purpose": "Metadata contract for authoritative sources, standards, source rights, applicability, and freshness.",
+  "source_precedence": [
+    {"rank": 1, "classes": ["official_law_or_regulation", "official_registry_or_gazette"], "rule": "Current enacted or official instrument with direct applicability."},
+    {"rank": 2, "classes": ["delegated_regulator", "official_government_guidance"], "rule": "Official administration, scope, or guidance."},
+    {"rank": 3, "classes": ["incorporated_standard"], "rule": "Technical requirement only when incorporation is evidenced."},
+    {"rank": 4, "classes": ["manufacturer_specification", "contract_or_site_document"], "rule": "Equipment, contract, or site-specific constraint."},
+    {"rank": 5, "classes": ["secondary"], "rule": "Discovery and context only."}
+  ],
+  "provincial_systems": [
+    {"jurisdiction": "federal", "preferred_publishers": ["Department of Justice Canada", "Canada Gazette"], "required_metadata": ["instrument", "version_or_currency", "effective_date"]},
+    {"jurisdiction": "Ontario", "preferred_publishers": ["Government of Ontario / e-Laws"], "required_metadata": ["instrument", "current_or_historical", "currency_date"]},
+    {"jurisdiction": "British Columbia", "preferred_publishers": ["Government of British Columbia / BC Laws", "BC Gazette"], "required_metadata": ["instrument", "official_publication_status", "currency_or_point_in_time"]},
+    {"jurisdiction": "Alberta", "preferred_publishers": ["Alberta King’s Printer", "Alberta Gazette"], "required_metadata": ["instrument", "in_force_or_proclamation", "amendment_status"]},
+    {"jurisdiction": "Quebec", "preferred_publishers": ["Québec Official Publisher / LégisQuébec"], "required_metadata": ["chapter", "language", "update_date"]}
+  ],
+  "required_fields": [
+    "source_key",
+    "title",
+    "publisher",
+    "url",
+    "source_class",
+    "jurisdiction",
+    "scope",
+    "status",
+    "rights",
+    "freshness_policy",
+    "retrieved_at",
+    "last_verified_at"
+  ],
+  "source_classes": {
+    "official_law_or_regulation": "Enacted law, regulation, code, order, or official consolidation from the responsible publisher.",
+    "official_registry_or_gazette": "Official register, gazette, filing, proclamation, or other instrument publication.",
+    "official_government_guidance": "Government guidance that explains a program or obligation but is not itself the law.",
+    "delegated_regulator": "Source published by a regulator or authority delegated to administer or enforce a requirement.",
+    "incorporated_standard": "A standard made applicable by law, regulation, contract, licence, or another recorded instrument.",
+    "voluntary_standard": "A consensus or industry standard with no recorded incorporation basis.",
+    "manufacturer_specification": "Manufacturer instructions, specification, drawing, certificate, or data sheet.",
+    "contract_or_site_document": "User-provided contract, site procedure, permit, drawing, or controlled local document.",
+    "secondary": "Commentary, summary, search result, or other source that cannot carry a primary conclusion."
+  },
+  "status_values": [
+    "CURRENT",
+    "CURRENT_ON_ACCESS",
+    "HISTORICAL",
+    "SUPERSEDED",
+    "STALE",
+    "UNKNOWN",
+    "CONFLICTING",
+    "PENDING_REVIEW"
+  ],
+  "rights_values": [
+    "OPEN_OFFICIAL",
+    "LICENSE_REQUIRED",
+    "USER_SUPPLIED",
+    "PUBLIC_DOMAIN",
+    "UNKNOWN"
+  ],
+  "content_handling_values": [
+    "METADATA_ONLY",
+    "METADATA_AND_PARAPHRASE",
+    "LICENSED_EXCERPT",
+    "FULL_TEXT_PERMITTED",
+    "NO_REPRODUCTION"
+  ],
+  "freshness_policy_values": [
+    "VERIFY_AT_USE",
+    "VERIFY_BEFORE_RELEASE",
+    "SCHEDULED_REVIEW",
+    "HISTORICAL_ONLY"
+  ],
+  "properties": {
+    "source_key": {"type": "string", "pattern": "^[A-Z0-9][A-Z0-9._-]+$"},
+    "title": {"type": "string", "min_length": 1},
+    "publisher": {"type": "string", "min_length": 1},
+    "url": {"type": "string", "format": "https", "min_length": 12},
+    "source_class": {"type": "string", "enum_from": "source_classes"},
+    "jurisdiction": {
+      "type": "object",
+      "required": ["country", "level", "province_or_territory", "sector", "obligation_domains"],
+      "properties": {
+        "country": {"type": "string"},
+        "level": {"type": "string", "enum": ["federal", "provincial_or_territorial", "municipal", "international", "site", "private"]},
+        "province_or_territory": {"type": ["string", "null"]},
+        "sector": {"type": "string"},
+        "obligation_domains": {"type": "array", "min_items": 1}
+      }
+    },
+    "scope": {"type": "string", "min_length": 1},
+    "status": {"type": "string", "enum_from": "status_values"},
+    "version": {
+      "type": "object",
+      "properties": {
+        "edition": {"type": ["string", "null"]},
+        "revision": {"type": ["string", "null"]},
+        "amendment": {"type": ["string", "null"]},
+        "effective_from": {"type": ["string", "null"], "format": "date"},
+        "effective_to": {"type": ["string", "null"], "format": "date"},
+        "currency_note": {"type": ["string", "null"]}
+      }
+    },
+    "authority": {
+      "type": "object",
+      "required": ["official_status", "incorporation_basis"],
+      "properties": {
+        "official_status": {"type": "string", "enum": ["official", "delegated", "private", "user_supplied", "secondary"]},
+        "incorporation_basis": {"type": "string"},
+        "supersedes": {"type": ["string", "null"]},
+        "superseded_by": {"type": ["string", "null"]}
+      }
+    },
+    "rights": {
+      "type": "object",
+      "required": ["rights_status", "content_handling"],
+      "properties": {
+        "rights_status": {"type": "string", "enum_from": "rights_values"},
+        "content_handling": {"type": "string", "enum_from": "content_handling_values"},
+        "licence_url": {"type": ["string", "null"]},
+        "permission_note": {"type": "string"}
+      }
+    },
+    "freshness_policy": {"type": "string", "enum_from": "freshness_policy_values"},
+    "retrieved_at": {"type": "string", "format": "date"},
+    "last_verified_at": {"type": "string", "format": "date"},
+    "published_at": {"type": ["string", "null"], "format": "date"},
+    "source_date_label": {"type": ["string", "null"]},
+    "applicability_basis": {"type": "string"},
+    "exclusions": {"type": "array"},
+    "notes": {"type": "string"}
+  },
+  "claim_record": {
+    "required_fields": ["claim_id", "source_key", "claim_type", "scope", "as_of", "location", "support_status"],
+    "support_status_values": ["SUPPORTED", "PARTIAL", "CONFLICTING", "UNSUPPORTED", "PENDING_REVIEW"],
+    "location_rule": "Record a stable section, page, clause, table, or URL fragment when available; metadata-only records may use a publisher location label.",
+    "as_of_rule": "Every source-dependent claim has an explicit as-of date or is marked pending review."
+  },
+  "standard_record_requirements": [
+    "identifier_or_catalogue_key",
+    "edition_or_revision",
+    "publisher_or_standards_body",
+    "sector_or_application",
+    "incorporation_or_voluntary_basis",
+    "access_and_rights_state",
+    "supersession_or_currency_state"
+  ],
+  "migration_rule": "AM-04 and AM-05 registries remain valid historical registries; new or refreshed records must conform to this schema before they support an executable conclusion."
+}

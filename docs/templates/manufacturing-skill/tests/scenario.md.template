@@ -1,0 +1,13 @@
+# <Scenario title>
+
+Category: <one category from skill-validation-contract.json>
+
+Expected routing: <skill name, another skill, or []>
+
+Prompt: <realistic prompt without private data>
+
+Acceptance checks:
+
+- <observable pass/fail check>
+
+Risk and review notes: <safety, jurisdiction, engineering, source, or privacy notes>

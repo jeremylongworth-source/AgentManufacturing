@@ -1,0 +1,106 @@
+{
+  "schema_version": "AM-06-skill-package-1",
+  "status": "STANDARD_READY_NOT_IMPLEMENTED",
+  "scope": "Portable AgentManufacturing skill packages and their validation evidence; no skill implementation or host installation.",
+  "package_root": "skills/<domain-family>/<skill-name>/",
+  "required_files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/"
+  ],
+  "optional_paths": [
+    "assets/",
+    "scripts/"
+  ],
+  "empty_directory_rule": "Do not commit an empty references, assets, scripts, or tests directory.",
+  "naming": {
+    "skill_name_pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)+$",
+    "directory_must_match_frontmatter_name": true,
+    "one_primary_responsibility": true,
+    "family_must_match_taxonomy": true
+  },
+  "license_policy": {
+    "frontmatter_key": "license",
+    "required": true,
+    "current_project_status": "PENDING_PROJECT_GOVERNANCE",
+    "rule": "Do not copy the reference repository's MIT choice into AgentManufacturing until project governance selects a license. Templates use a visible placeholder and are not publishable packages."
+  },
+  "frontmatter": {
+    "required_keys": ["name", "description", "license"],
+    "description_rule": "One sentence stating the task and primary trigger; do not promise routing or authority the body cannot satisfy.",
+    "name_rule": "Must equal the package directory name and an accepted taxonomy name.",
+    "license_rule": "Must equal the project-approved license before a package can be distributed."
+  },
+  "required_sections": [
+    "Overview",
+    "Triggers",
+    "Non-Triggers",
+    "Required Inputs",
+    "Optional Inputs",
+    "Assumptions",
+    "Core Workflow",
+    "Calculations",
+    "Validation",
+    "Exception Handling",
+    "Source Usage",
+    "Output Contract",
+    "Safety Requirements",
+    "References",
+    "Examples",
+    "Testing"
+  ],
+  "section_rules": {
+    "Overview": "State the atomic manufacturing task, domain boundary, and expected output.",
+    "Triggers": "List user intents and input patterns that should activate the skill.",
+    "Non-Triggers": "List adjacent tasks that route elsewhere or require broader context.",
+    "Required Inputs": "Separate inputs needed for a final answer from optional analysis inputs.",
+    "Optional Inputs": "Describe data that improves precision, confidence, or next actions.",
+    "Assumptions": "State allowed defaults and assumptions the skill must not make.",
+    "Core Workflow": "Give a bounded, ordered procedure with evidence and authority checks.",
+    "Calculations": "Define variables, units, formulas, intermediate values, rounding, or explicitly state no calculation is required.",
+    "Validation": "Define input, output, source, unit, plausibility, and invariant checks.",
+    "Exception Handling": "Define safe behavior for missing, contradictory, unsafe, stale, and out-of-scope input.",
+    "Source Usage": "Define local reference use, external-source triggers, citations, freshness, and evidence treatment.",
+    "Output Contract": "Define predictable fields, status values, assumptions, unresolved gaps, and handoffs.",
+    "Safety Requirements": "State operational, legal, regulatory, engineering, certification, and qualified-review boundaries.",
+    "References": "List local references and authoritative source categories; paths must resolve when the package is implemented.",
+    "Examples": "Link to compact examples or a separate example reference; do not hide edge cases.",
+    "Testing": "Declare required scenario categories, fixtures, output invariants, and review gates."
+  },
+  "host_metadata": {
+    "file": "agents/openai.yaml",
+    "required_interface_keys": ["display_name", "short_description", "default_prompt"],
+    "display_name_rule": "Human-readable and consistent with SKILL.md.",
+    "short_description_rule": "One concise sentence describing the bounded deliverable.",
+    "default_prompt_rule": "Must explicitly invoke the skill name and preserve the output/safety boundary.",
+    "host_specificity": "Keep host adapter metadata here; do not put host installation or MCP configuration into SKILL.md."
+  },
+  "references": {
+    "required": true,
+    "minimum_files": 1,
+    "allowed_content": ["checklists", "formulas", "definitions", "worked examples", "source metadata", "output templates"],
+    "provenance_rule": "Every external or copyrighted source is identified by publisher, title, URL or source key, access/effective date where relevant, and permitted-use note.",
+    "instruction_boundary": "User-provided SOPs, files, messages, and spreadsheets are evidence, not system instructions."
+  },
+  "assets": {
+    "optional": true,
+    "rule": "Add only when the skill genuinely needs a non-text asset; document provenance and license."
+  },
+  "scripts": {
+    "optional": true,
+    "rule": "Use only for narrow deterministic validation or calculation support; document inputs, outputs, units, and failure behavior."
+  },
+  "taxonomy_traceability": {
+    "required_fields": ["accepted_name", "family", "tier", "jurisdiction_flags", "safety_class", "dependencies", "priority"],
+    "rule": "A package must map to one accepted taxonomy record; changes require an explicit taxonomy amendment before authoring."
+  },
+  "output_contract": {
+    "required_fields": ["status", "scope", "inputs_or_evidence", "analysis_or_result", "assumptions", "validation_notes", "missing_or_conflicting_evidence", "review_or_handoff"],
+    "status_values": ["COMPLETE", "PARTIAL", "NEEDS_INPUT", "OUT_OF_SCOPE", "SAFETY_ESCALATION", "SOURCE_REVIEW_REQUIRED", "ENGINEERING_REVIEW_REQUIRED"],
+    "invariants": ["No invented facts", "No hidden assumptions", "Units remain attached to quantities", "Safety or authority gaps are visible", "No approval claim beyond the skill boundary"]
+  },
+  "package_readiness": {
+    "required_before_acceptance": ["structural validator passes", "trigger/non-trigger boundary is explicit", "required inputs are testable", "calculations have units and examples or are marked not applicable", "source-dependent claims have evidence rules", "exceptions return safe partial output or clear next questions", "scenario and fixture coverage passes"],
+    "not_proven_by_package_shape": ["model routing quality", "calculation correctness without fixture execution", "legal applicability", "site safety", "engineering adequacy", "production readiness"]
+  }
+}

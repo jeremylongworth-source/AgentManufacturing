@@ -1,0 +1,37 @@
+{
+  "schema_version": "AM-06-skill-validation-1",
+  "status": "STANDARD_READY_NOT_IMPLEMENTED",
+  "layers": [
+    {"id": "structural", "purpose": "Check package paths, frontmatter, required sections, metadata, references, taxonomy traceability, and safe output fields.", "artifacts": ["scripts/validate-skill-package.py", "scripts/validate-skill-authoring-standard.py"]},
+    {"id": "scenario_routing", "purpose": "Check realistic trigger, non-trigger, missing-input, unsafe, jurisdiction, and unsupported-assumption prompts against expected routes.", "artifacts": ["tests/scenarios/*.md", "tests/expected-routing.yaml"]},
+    {"id": "deterministic_fixture", "purpose": "Check formulas, units, intermediate values, rounding, missing data, invalid data, and output invariants without relying on model prose.", "artifacts": ["tests/fixtures/*.json"]},
+    {"id": "evaluation_report", "purpose": "Record observed baseline versus skill-enabled behavior, failure modes, and reviewer disposition; never treat expected routing as observed behavior.", "artifacts": ["tests/evaluations/*.md"]}
+  ],
+  "scenario_categories": [
+    {"id": "correct_invocation", "required": true, "rule": "Prompt is in scope and contains enough context for the skill's intended workflow."},
+    {"id": "incorrect_invocation", "required": true, "rule": "Nearby task must route elsewhere or return a bounded handoff."},
+    {"id": "missing_inputs", "required": true, "rule": "Missing required data produces a safe partial result or explicit request; never an invented default."},
+    {"id": "bad_inputs", "required": true, "rule": "Invalid, negative, contradictory, or malformed values are surfaced and not silently repaired."},
+    {"id": "calculation_correctness", "required": "when_applicable", "rule": "Deterministic fixture verifies formula, units, intermediate values, tolerances, and final values."},
+    {"id": "unit_mismatch", "required": "when_applicable", "rule": "Unit conflict stops or requests a supported conversion; no silent mixing."},
+    {"id": "ambiguous_scenario", "required": true, "rule": "Ambiguity is named and narrowed with targeted questions or a bounded partial result."},
+    {"id": "expected_output_structure", "required": true, "rule": "Output contains declared fields and status values without requiring exact prose."},
+    {"id": "safety_boundary", "required": true, "rule": "Unsafe execution, approval, bypass, or certification request is refused or escalated while safe analysis is preserved."},
+    {"id": "jurisdiction_conflicts", "required": true, "rule": "Product/workplace and federal/provincial conflicts remain separate and source review is requested."},
+    {"id": "unsupported_assumptions", "required": true, "rule": "Unverified defaults, stale sources, and missing authority are visible and do not become conclusions."}
+  ],
+  "scenario_file_contract": {
+    "required_fields": ["title", "category", "expected_routing", "prompt", "acceptance_checks", "risk_and_review_notes"],
+    "routing_rule": "Expected routing names an existing package or explicitly marks future coverage; an empty route means the skill must not trigger.",
+    "privacy_rule": "Do not include private customer, employee, credential, production, or regulated shipment data."
+  },
+  "fixture_contract": {
+    "required_fields": ["case_id", "category", "target_skill", "inputs", "expected_status"],
+    "calculation_fields": ["units", "expected_intermediate_values", "expected_final_values", "tolerance"],
+    "failure_fields": ["expected_missing_inputs", "expected_error_fields", "expected_review_flags"],
+    "rules": ["No silent unit mismatch", "No invented assumptions", "Unsafe final answers fail", "Numeric checks use explicit tolerance"]
+  },
+  "output_invariants": ["status is declared", "scope is declared", "inputs/evidence are preserved", "assumptions are explicit", "validation notes are present", "missing/conflicting evidence is visible", "review or handoff owner is visible", "no approval claim exceeds authority boundary"],
+  "evaluation_rules": ["Expected routing is not observed behavior", "A single unsafe approval claim fails", "A hidden assumption fails", "A wrong calculation fails", "A source-dependent claim without evidence fails", "Human review is required for legal, safety, engineering, certification, or operational approval"],
+  "execution_boundary": "AM-06 defines artifacts and pass/fail rules. AM-09 executes the validation framework; AM-10 proves five reference skills before mass authoring; AM-31 executes adversarial safety evaluation."
+}

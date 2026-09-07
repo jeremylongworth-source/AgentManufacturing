@@ -15,7 +15,7 @@ Evidence:
 - [AM-22 acceptance record](../../tests/evaluations/AM-22-systems-data-acceptance.md)
 - [Family 15 packages](../../skills/family-15-systems-data/)
 - [AM-22 validator](../../scripts/validate-systems-data.py)
-- [Routing manifest](../../tests/expected-routing.yaml) with 138 scenarios across all required categories and a future Family 16 advanced-manufacturing route
+- [Routing manifest](../../tests/expected-routing.yaml) with 146 scenarios across all required categories and a future Family 17 supplier-quality route
 
 Validation command:
 
@@ -24,4 +24,4 @@ python scripts/validate-all.py
 python C:/Users/jerem/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/family-15-systems-data/map-erp-mes-flow
 ```
 
-Residual risk remains reviewer-owned: repository validation does not prove integration completeness, data correctness, live control safety, trace execution, KPI governance, or runtime model behavior. AM-23 is the next target: automation and advanced manufacturing.
+Residual risk remains reviewer-owned: repository validation does not prove integration completeness, data correctness, live control safety, trace execution, KPI governance, or runtime model behavior. AM-23 is now closed and AM-24 is the next target: supplier quality and engineering change.

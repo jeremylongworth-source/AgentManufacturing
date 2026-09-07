@@ -29,6 +29,7 @@ VALIDATORS = [
     "validate-workforce-shift.py",
     "validate-lean-improvement.py",
     "validate-systems-data.py",
+    "validate-advanced-manufacturing.py",
 ]
 
 

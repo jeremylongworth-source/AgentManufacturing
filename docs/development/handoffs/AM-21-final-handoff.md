@@ -15,7 +15,7 @@ Evidence:
 - [AM-21 acceptance record](../../tests/evaluations/AM-21-continuous-improvement-acceptance.md)
 - [Family 14 packages](../../skills/family-14-lean-improvement/)
 - [AM-21 validator](../../scripts/validate-lean-improvement.py)
-- [Routing manifest](../../tests/expected-routing.yaml) with 138 scenarios across all required categories and a future Family 16 advanced-manufacturing route
+- [Routing manifest](../../tests/expected-routing.yaml) with 146 scenarios across all required categories and a future Family 17 supplier-quality route
 
 Validation command:
 
@@ -24,4 +24,4 @@ python scripts/validate-all.py
 python C:/Users/jerem/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/family-14-lean-improvement/identify-eight-wastes
 ```
 
-Residual risk remains reviewer-owned: repository validation does not prove savings, causal attribution, safety clearance, process-change approval, or runtime model behavior. AM-22 is now the systems/data wave and AM-23 is the next target: automation and advanced manufacturing.
+Residual risk remains reviewer-owned: repository validation does not prove savings, causal attribution, safety clearance, process-change approval, or runtime model behavior. AM-22 and AM-23 are now closed; AM-24 is the next target: supplier quality and engineering change.

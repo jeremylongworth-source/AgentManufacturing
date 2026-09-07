@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evaluate Machine Vision Application"
+  short_description: "Assess machine vision feasibility"
+  default_prompt: "Use $evaluate-machine-vision-application to assess supplied imaging and defect evidence without deploying a model."

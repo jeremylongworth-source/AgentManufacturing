@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evaluate Robotics Application"
+  short_description: "Assess robotics application evidence"
+  default_prompt: "Use $evaluate-robotics-application to compare supplied robot-task evidence without approving deployment or safety."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Human Machine Interface Risk"
+  short_description: "Review HMI interaction concerns"
+  default_prompt: "Use $review-human-machine-interface-risk to review supplied HMI modes and alarms without modifying live controls."

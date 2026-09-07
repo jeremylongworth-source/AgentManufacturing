@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assess Automation Opportunity"
+  short_description: "Screen automation opportunities"
+  default_prompt: "Use $assess-automation-opportunity to screen supplied process evidence without selecting or deploying automation."

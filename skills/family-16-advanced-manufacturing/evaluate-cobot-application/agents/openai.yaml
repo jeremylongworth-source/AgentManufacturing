@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evaluate Cobot Application"
+  short_description: "Assess collaborative application concerns"
+  default_prompt: "Use $evaluate-cobot-application to review human-robot exposure evidence without assuming cobot safety."

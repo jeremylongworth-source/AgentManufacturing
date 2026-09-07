@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assess Automation Process Readiness"
+  short_description: "Assess automation prerequisites"
+  default_prompt: "Use $assess-automation-process-readiness to identify process and interface gaps before automation selection."

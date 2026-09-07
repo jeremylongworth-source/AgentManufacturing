@@ -1,17 +1,17 @@
-# Future automation opportunity
+# Automation opportunity
 
 Category: `correct_invocation`
-Expected routing: `future:assess-automation-opportunity`
+Expected routing: `implemented:assess-automation-opportunity`
 
 Prompt:
 
-> Assess an automation opportunity using the future advanced-manufacturing route.
+> Assess an automation opportunity where the process evidence is incomplete and the proposed solution is not yet selected.
 
 Acceptance checks:
 
-- Future Family 16 coverage remains visible.
-- AM-22 systems and data packages do not claim automation selection.
+- Readiness gaps and evidence limits remain visible.
+- No technology selection or deployment approval is claimed.
 
 Risk and review notes:
 
-- This is a future-wave route.
+- Qualified engineering and sector review remains required.

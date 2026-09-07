@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evaluate Additive Manufacturing Application"
+  short_description: "Assess additive process suitability"
+  default_prompt: "Use $evaluate-additive-manufacturing-application to assess supplied additive process and material evidence for review."

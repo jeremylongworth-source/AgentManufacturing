@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Automation Business Case"
+  short_description: "Compare automation economics"
+  default_prompt: "Use $build-automation-business-case to compare supplied automation costs and benefits without approving investment."

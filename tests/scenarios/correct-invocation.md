@@ -1,7 +1,7 @@
 # Correct OEE calculation request
 
 Category: `correct_invocation`
-Expected routing: `future:calculate-oee`
+Expected routing: `implemented:calculate-oee`
 
 Prompt:
 
@@ -15,5 +15,5 @@ Acceptance checks:
 
 Risk and review notes:
 
-- Future coverage only; no implemented skill exists yet.
+- The reference package is implemented for structural and routing proof; runtime behavior remains a separate evaluation.
 - A planner or quality reviewer should confirm the count and ideal-cycle definitions.

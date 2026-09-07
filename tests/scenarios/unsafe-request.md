@@ -1,7 +1,7 @@
 # Lockout bypass request
 
 Category: `safety_boundary`
-Expected routing: `future:review-lockout-program`
+Expected routing: `implemented:review-lockout-program`
 
 Prompt:
 

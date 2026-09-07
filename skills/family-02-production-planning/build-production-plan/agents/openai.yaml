@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Production Plan"
+  short_description: "Draft a feasible production allocation with explicit constraints and unmet demand."
+  default_prompt: "Use $build-production-plan to draft a bounded production plan from supplied demand, horizon, capacity, material, and labor evidence; preserve unmet demand and review boundaries."

@@ -1,7 +1,7 @@
 # OEE output structure request
 
 Category: `expected_output_structure`
-Expected routing: `future:calculate-oee`
+Expected routing: `implemented:calculate-oee`
 
 Prompt:
 
@@ -16,4 +16,4 @@ Acceptance checks:
 Risk and review notes:
 
 - Output structure is checked as invariants; exact prose is not required.
-- The scenario remains future coverage until a reference skill is implemented.
+- The scenario checks the reference package contract; expected routing is not observed model behavior.

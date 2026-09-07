@@ -1,0 +1,4 @@
+interface:
+  display_name: "Triage Nonconformance"
+  short_description: "Prioritize a reported manufacturing defect while preserving unknown scope and next-owner review."
+  default_prompt: "Use $triage-nonconformance to triage the supplied defect evidence, separate facts from unknowns, assign a provisional priority, and produce a qualified handoff without inventing scope or disposition."

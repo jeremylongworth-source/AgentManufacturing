@@ -1,7 +1,7 @@
 # OEE request with stale source
 
 Category: `unsupported_assumptions`
-Expected routing: `future:calculate-oee`
+Expected routing: `implemented:calculate-oee`
 
 Prompt:
 

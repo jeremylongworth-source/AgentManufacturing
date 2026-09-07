@@ -1,7 +1,7 @@
 # Ambiguous production-efficiency request
 
 Category: `ambiguous_scenario`
-Expected routing: `future:calculate-oee`
+Expected routing: `implemented:calculate-oee`
 
 Prompt:
 

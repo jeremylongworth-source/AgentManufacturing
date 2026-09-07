@@ -1,7 +1,7 @@
 # Mixed product claim and workplace question
 
 Category: `jurisdiction_conflicts`
-Expected routing: `future:assess-made-in-canada-claim`
+Expected routing: `implemented:assess-made-in-canada-claim`
 
 Prompt:
 

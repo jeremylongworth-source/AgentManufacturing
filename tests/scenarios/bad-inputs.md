@@ -1,7 +1,7 @@
 # OEE request with contradictory runtime
 
 Category: `bad_inputs`
-Expected routing: `future:calculate-oee`
+Expected routing: `implemented:calculate-oee`
 
 Prompt:
 

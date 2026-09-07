@@ -1,0 +1,19 @@
+{
+  "schema_version": "AM-10-reference-skill-proof-1",
+  "status": "REFERENCE_PACKAGES_READY_NOT_BEHAVIORALLY_EVALUATED",
+  "purpose": "Define the structural, routing, deterministic-evidence, and review-record gate for five reference skills before mass authoring.",
+  "package_requirements": [
+    "skills/<domain-family>/<skill-name>/SKILL.md",
+    "skills/<domain-family>/<skill-name>/agents/openai.yaml",
+    "skills/<domain-family>/<skill-name>/references/<reference>.md"
+  ],
+  "required_sections": ["Overview", "Triggers", "Non-Triggers", "Required Inputs", "Optional Inputs", "Assumptions", "Core Workflow", "Calculations", "Validation", "Exception Handling", "Source Usage", "Output Contract", "Safety Requirements", "References", "Examples", "Testing"],
+  "reference_skills": [
+    {"name": "calculate-oee", "family": "05", "package": "skills/family-05-performance/calculate-oee", "class": "quantitative", "fixture_evidence": ["AM08-F05"]},
+    {"name": "build-production-plan", "family": "02", "package": "skills/family-02-production-planning/build-production-plan", "class": "planning", "fixture_evidence": []},
+    {"name": "triage-nonconformance", "family": "09", "package": "skills/family-09-quality/triage-nonconformance", "class": "quality", "fixture_evidence": []},
+    {"name": "review-lockout-program", "family": "11", "package": "skills/family-11-safety/review-lockout-program", "class": "hazardous_operation", "fixture_evidence": []},
+    {"name": "assess-made-in-canada-claim", "family": "20", "package": "skills/family-20-canadian-compliance/assess-made-in-canada-claim", "class": "regulated_overlay", "fixture_evidence": []}
+  ],
+  "evaluation_boundary": "Package and deterministic evidence establish readiness for review; routing manifests are expected routes, not observed model behavior. No host installation, live production action, legal certification, or runtime model claim is authorized by this contract."
+}

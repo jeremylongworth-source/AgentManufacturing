@@ -1,7 +1,7 @@
 # OEE request with missing quality input
 
 Category: `missing_inputs`
-Expected routing: `future:calculate-oee`
+Expected routing: `implemented:calculate-oee`
 
 Prompt:
 

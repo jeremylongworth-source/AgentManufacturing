@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Lockout Program"
+  short_description: "Review lockout-program evidence gaps with hazardous-operation boundaries and qualified handoff."
+  default_prompt: "Use $review-lockout-program to review supplied lockout-program evidence, jurisdiction and source freshness, and qualified review gaps without giving equipment-specific isolation or restart instructions."

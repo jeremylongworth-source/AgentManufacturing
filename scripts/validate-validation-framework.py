@@ -26,6 +26,7 @@ SCENARIO_CATEGORIES = {
 ROUTE_MODES = {"IMPLEMENTED", "FUTURE_COVERAGE", "NO_TRIGGER"}
 OUTCOMES = {"TRIGGER", "NO_TRIGGER", "NEEDS_INPUT", "SAFETY_ESCALATION", "SOURCE_REVIEW_REQUIRED", "JURISDICTION_REVIEW_REQUIRED", "ENGINEERING_REVIEW_REQUIRED", "FUTURE_COVERAGE"}
 PRIVATE_PATTERNS = [r"password", r"secret", r"credential", r"api[_ -]?key", r"token", r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"]
+VALID_ROUTING_STATUSES = {"FRAMEWORK_READY_NOT_IMPLEMENTED", "REFERENCE_SKILLS_STRUCTURALLY_READY"}
 
 
 def need(condition: bool, message: str) -> None:
@@ -87,12 +88,12 @@ def parse_scenario(path: Path) -> dict[str, Any]:
 
 def validate_routes(root: Path, manifest: dict[str, Any], contract: dict[str, Any]) -> tuple[int, set[str]]:
     need(manifest.get("schema_version") == "AM-09-routing-manifest-1", "routing manifest schema version")
-    need(manifest.get("status") == "FRAMEWORK_READY_NOT_IMPLEMENTED", "routing manifest status")
+    need(manifest.get("status") in VALID_ROUTING_STATUSES, "routing manifest status")
     future_names = manifest.get("future_skill_names")
     need(isinstance(future_names, list) and future_names, "future skill names")
     need(len(set(future_names)) == len(future_names), "duplicate future skill name")
     scenarios = manifest.get("scenarios")
-    need(isinstance(scenarios, list) and len(scenarios) == 12, "scenario count")
+    need(isinstance(scenarios, list) and len(scenarios) >= 12, "scenario count")
     seen_ids: set[str] = set()
     seen_files: set[str] = set()
     categories: set[str] = set()
@@ -133,14 +134,16 @@ def validate_routes(root: Path, manifest: dict[str, Any], contract: dict[str, An
         if item["route_mode"] == "IMPLEMENTED":
             need(expected_routes and not future_routes, f"{sid}: implemented route mode requires implemented routes only")
             for route in expected_routes:
-                need((root / "skills" / route).is_dir(), f"{sid}: implemented route folder missing {route}")
+                package_dirs = [path.parent for path in (root / "skills").glob(f"*/{route}") if path.is_dir()]
+                need(package_dirs, f"{sid}: implemented route folder missing {route}")
+                need(f"implemented:{route}" in parsed["expected_routing"], f"{sid}: scenario file missing implemented route")
         if expected_routes:
             for route in expected_routes:
                 need(route in parsed["expected_routing"], f"{sid}: scenario file missing implemented route")
     need(categories == SCENARIO_CATEGORIES, f"scenario category coverage missing {sorted(SCENARIO_CATEGORIES - categories)}")
     all_files = {f"tests/scenarios/{path.name}" for path in scenario_root.glob("*.md")}
     need(all_files == seen_files, "scenario files and manifest are not one-to-one")
-    need(set(manifest["future_skill_names"]) >= {"calculate-oee", "calculate-takt-time", "review-lockout-program", "assess-made-in-canada-claim"}, "reference future skill targets")
+    need(set(manifest["future_skill_names"]) >= {"calculate-takt-time"}, "reference future skill targets")
     return len(scenarios), len(categories)
 
 

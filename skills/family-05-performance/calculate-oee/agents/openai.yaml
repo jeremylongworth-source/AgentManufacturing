@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate OEE"
+  short_description: "Calculate OEE components from supplied production evidence with explicit units and validation."
+  default_prompt: "Use $calculate-oee to calculate OEE for a bounded asset and period, preserving inputs, units, intermediate values, validation notes, and review boundaries."

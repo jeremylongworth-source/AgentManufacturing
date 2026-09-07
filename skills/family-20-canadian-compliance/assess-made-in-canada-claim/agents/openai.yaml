@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assess Made in Canada Claim"
+  short_description: "Assess non-food origin-claim evidence with current-source and qualified-review boundaries."
+  default_prompt: "Use $assess-made-in-canada-claim to assess supplied non-food claim wording, transformation and cost evidence, and current official guidance without endorsing or publishing the claim."

@@ -17,6 +17,7 @@ VALIDATORS = [
     "validate-calculation-standard.py",
     "validate-validation-framework.py",
     "validate-reference-skills.py",
+    "validate-implemented-skills.py",
 ]
 
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Standard Work Deviation"
+  short_description: "Separate instruction gaps from execution variance using bounded standard-work evidence."
+  default_prompt: "Use $analyze-standard-work-deviation to compare supplied execution evidence with the applicable standard version, preserving context, unknowns, and qualified handoff."

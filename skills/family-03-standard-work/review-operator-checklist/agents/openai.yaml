@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Operator Checklist"
+  short_description: "Find checklist coverage, traceability, and exception-handling gaps against approved requirements."
+  default_prompt: "Use $review-operator-checklist to review the supplied checklist revision against approved requirements and completion evidence without signing qualification or release."

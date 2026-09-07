@@ -1,0 +1,4 @@
+interface:
+  display_name: "Draft Work Instruction"
+  short_description: "Draft a controlled work instruction from authorized process evidence with unresolved gaps visible."
+  default_prompt: "Use $draft-work-instruction to structure a reviewable work-instruction draft from authorized process evidence, acceptance criteria, audience, and template without making it effective."

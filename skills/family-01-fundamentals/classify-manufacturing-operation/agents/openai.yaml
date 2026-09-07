@@ -1,0 +1,4 @@
+interface:
+  display_name: "Classify Manufacturing Operation"
+  short_description: "Classify one operation against the manufacturing boundary from supplied evidence."
+  default_prompt: "Use $classify-manufacturing-operation to classify the requested operation, separate logistics or legal questions, preserve unknowns, and return a bounded handoff."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Product Process Profile"
+  short_description: "Profile product variants, demand mix, and process fit with explicit evidence gaps."
+  default_prompt: "Use $analyze-product-process-profile to build a bounded product/process profile from supplied variants, mix, and process descriptions without claiming capability or capacity."

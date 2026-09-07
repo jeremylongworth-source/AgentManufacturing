@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Manufacturing Bottleneck"
+  short_description: "Rank a bottleneck finding from comparable rates, queues, downtime, and demand evidence."
+  default_prompt: "Use $identify-manufacturing-bottleneck to compare supplied operation rates, queue or downtime records, and demand for one period, preserving uncertainty and units."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Production Constraints"
+  short_description: "Rank supplied production constraints while separating evidence from bottleneck hypotheses."
+  default_prompt: "Use $analyze-production-constraints to build an evidence-ranked constraint register for the stated objective and period, preserving hypotheses and unknowns."

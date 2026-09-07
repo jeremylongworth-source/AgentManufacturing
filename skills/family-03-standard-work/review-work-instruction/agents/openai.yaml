@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Work Instruction"
+  short_description: "Find ambiguous, missing, conflicting, or uncontrolled work-instruction steps."
+  default_prompt: "Use $review-work-instruction to review the supplied instruction revision against authorized process and acceptance evidence, preserving defects and release boundaries."

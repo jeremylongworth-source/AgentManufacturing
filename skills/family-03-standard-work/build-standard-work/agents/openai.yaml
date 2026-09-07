@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Standard Work"
+  short_description: "Draft standard work from observed sequence, time, takt context, and WIP limits."
+  default_prompt: "Use $build-standard-work to draft standard work from supplied observations and approved sequence, preserving units, WIP constraints, unresolved gaps, and review boundaries."

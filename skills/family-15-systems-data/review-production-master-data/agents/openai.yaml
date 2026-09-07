@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Production Master Data"
+  short_description: "Find manufacturing master-data defects"
+  default_prompt: "Use $review-production-master-data to review supplied item, BOM, routing, and revision records without editing them."

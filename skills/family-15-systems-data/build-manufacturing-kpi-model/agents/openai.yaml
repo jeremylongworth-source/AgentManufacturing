@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Manufacturing KPI Model"
+  short_description: "Define KPI lineage and denominators"
+  default_prompt: "Use $build-manufacturing-kpi-model to define manufacturing KPI formulas, lineage, and exclusions for review."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze OEE Data"
+  short_description: "Reconcile OEE input definitions"
+  default_prompt: "Use $analyze-oee-data to reconcile supplied OEE inputs before calculation."

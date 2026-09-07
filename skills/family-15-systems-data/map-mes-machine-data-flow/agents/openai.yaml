@@ -1,0 +1,4 @@
+interface:
+  display_name: "Map MES Machine Data Flow"
+  short_description: "Map read-only machine data into MES"
+  default_prompt: "Use $map-mes-machine-data-flow to map supplied machine-event lineage without changing control systems."

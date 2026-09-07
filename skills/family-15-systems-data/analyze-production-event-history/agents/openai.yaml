@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Production Event History"
+  short_description: "Reconcile production event chronology"
+  default_prompt: "Use $analyze-production-event-history to review supplied event exports and preserve chronology gaps."

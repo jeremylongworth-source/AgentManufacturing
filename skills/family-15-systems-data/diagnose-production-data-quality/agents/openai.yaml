@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diagnose Production Data Quality"
+  short_description: "Find production dataset quality defects"
+  default_prompt: "Use $diagnose-production-data-quality to assess supplied production data and return a defect register without mutation."

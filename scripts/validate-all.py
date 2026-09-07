@@ -28,6 +28,7 @@ VALIDATORS = [
     "validate-materials-traceability.py",
     "validate-workforce-shift.py",
     "validate-lean-improvement.py",
+    "validate-systems-data.py",
 ]
 
 

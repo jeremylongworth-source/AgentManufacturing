@@ -1,0 +1,4 @@
+interface:
+  display_name: "Map Manufacturing Traceability Data"
+  short_description: "Map traceability data lineage"
+  default_prompt: "Use $map-manufacturing-traceability-data to map supplied traceability schemas without claiming a completed lot trace."

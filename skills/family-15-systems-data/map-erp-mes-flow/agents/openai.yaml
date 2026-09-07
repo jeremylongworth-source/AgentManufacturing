@@ -1,0 +1,4 @@
+interface:
+  display_name: "Map ERP MES Flow"
+  short_description: "Map ERP and MES information handoffs"
+  default_prompt: "Use $map-erp-mes-flow to map supplied ERP and MES interfaces without changing live records."

@@ -1,17 +1,17 @@
-# Future ERP MES flow
+# ERP MES flow
 
 Category: `incorrect_invocation`
-Expected routing: `future:map-erp-mes-flow`
+Expected routing: `implemented:map-erp-mes-flow`
 
 Prompt:
 
-> Map ERP and MES information flow using the future manufacturing-systems route.
+> Map ERP and MES order and master-data information from the supplied interface evidence.
 
 Acceptance checks:
 
-- Future Family 15 coverage remains visible.
-- AM-21 packages do not claim systems mapping.
+- ERP/MES object identity and ownership gaps remain visible.
+- No live record or interface change is claimed.
 
 Risk and review notes:
 
-- This is a future-wave route.
+- A sample interface does not prove production completeness.

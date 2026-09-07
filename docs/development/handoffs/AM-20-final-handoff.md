@@ -15,7 +15,7 @@ Evidence:
 - [AM-20 acceptance record](../../tests/evaluations/AM-20-workforce-acceptance.md)
 - [Family 13 packages](../../skills/family-13-workforce-shift/)
 - [AM-20 validator](../../scripts/validate-workforce-shift.py)
-- [Routing manifest](../../tests/expected-routing.yaml) with 130 scenarios across all required categories and a future Family 15 systems route
+- [Routing manifest](../../tests/expected-routing.yaml) with 138 scenarios across all required categories and a future Family 16 advanced-manufacturing route
 
 Validation command:
 
@@ -24,4 +24,4 @@ python scripts/validate-all.py
 python C:/Users/jerem/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/family-13-workforce-shift/build-manufacturing-skills-matrix
 ```
 
-Residual risk remains reviewer-owned: repository validation does not prove qualification, staffing sufficiency, employment policy, overtime approval, safety adequacy, or runtime model behavior. AM-21 is the next target: lean and continuous improvement.
+Residual risk remains reviewer-owned: repository validation does not prove qualification, staffing sufficiency, employment policy, overtime approval, safety adequacy, or runtime model behavior. AM-21 and AM-22 are now closed; AM-23 is the next target: automation and advanced manufacturing.

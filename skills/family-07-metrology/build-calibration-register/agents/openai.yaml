@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Calibration Register"
+  short_description: "Organize instrument identities and calibration records with duplicate and missing evidence visible."
+  default_prompt: "Use $build-calibration-register to build a traceable calibration register from supplied instrument and record evidence without certifying status or validity."

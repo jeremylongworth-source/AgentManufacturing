@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assess Measurement Traceability"
+  short_description: "Map measurement reference chains"
+  default_prompt: "Use $assess-measurement-traceability to assess measurement reference-chain evidence."

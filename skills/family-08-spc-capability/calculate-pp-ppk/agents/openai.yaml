@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Pp Ppk"
+  short_description: "Compute long-term performance indices"
+  default_prompt: "Use $calculate-pp-ppk to calculate Pp and Ppk for one coherent population."

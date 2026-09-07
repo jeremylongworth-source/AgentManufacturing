@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Control Chart"
+  short_description: "Prepare ordered control-chart evidence"
+  default_prompt: "Use $build-control-chart to structure ordered process data and control limits."

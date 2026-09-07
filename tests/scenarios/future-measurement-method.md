@@ -1,7 +1,7 @@
 # Future measurement-method route
 
 Category: `incorrect_invocation`
-Expected routing: `future:select-measurement-method`
+Expected routing: `implemented:select-measurement-method`
 
 Prompt:
 
@@ -9,7 +9,7 @@ Prompt:
 
 Acceptance checks:
 
-- Keep the route as future coverage because no measurement-method package exists yet.
+- Compare methods while preserving geometry and tolerance gaps.
 - Do not select an instrument, claim calibration adequacy, or approve production use.
 - Preserve the metrology-owner handoff.
 

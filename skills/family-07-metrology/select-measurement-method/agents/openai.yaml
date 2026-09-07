@@ -1,0 +1,4 @@
+interface:
+  display_name: "Select Measurement Method"
+  short_description: "Compare measurement approaches with geometry, tolerance, environment, and evidence gaps visible."
+  default_prompt: "Use $select-measurement-method to compare supplied measurement methods for a measurand and tolerance without selecting equipment or certifying fitness."

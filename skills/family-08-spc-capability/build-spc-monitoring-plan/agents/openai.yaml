@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build SPC Monitoring Plan"
+  short_description: "Structure SPC monitoring ownership"
+  default_prompt: "Use $build-spc-monitoring-plan to structure characteristics, cadence, charts, and owners."

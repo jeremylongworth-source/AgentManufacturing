@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Calibration Status"
+  short_description: "Review calibration dates and due-date evidence without inventing validity or certifying fitness."
+  default_prompt: "Use $review-calibration-status to review supplied instrument certificates, dates, usage, and due-date rules while preserving unsupported validity claims."

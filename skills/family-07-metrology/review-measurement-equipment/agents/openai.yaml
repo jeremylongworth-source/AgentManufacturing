@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Measurement Equipment"
+  short_description: "Review instrument-task suitability while separating resolution, accuracy, uncertainty, and calibration evidence."
+  default_prompt: "Use $review-measurement-equipment to review supplied instrument suitability for a task without certifying fitness, calibration, or production use."

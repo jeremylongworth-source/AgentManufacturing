@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Capability Readiness"
+  short_description: "Screen capability-analysis prerequisites"
+  default_prompt: "Use $review-capability-readiness to check stability, measurement, and limit readiness."

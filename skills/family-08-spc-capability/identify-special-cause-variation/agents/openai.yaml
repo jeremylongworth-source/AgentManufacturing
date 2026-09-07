@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Special-Cause Variation"
+  short_description: "Screen dated events against signals"
+  default_prompt: "Use $identify-special-cause-variation to compare process events with a chart signal."

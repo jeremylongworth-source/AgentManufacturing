@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Measurement System"
+  short_description: "Structure measurement-system study evidence"
+  default_prompt: "Use $analyze-measurement-system to review a measurement-system study design and its evidence gaps."

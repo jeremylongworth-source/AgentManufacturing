@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Cp Cpk"
+  short_description: "Compute short-term capability indices"
+  default_prompt: "Use $calculate-cp-cpk to calculate Cp and Cpk from an explicit within-process variation basis."

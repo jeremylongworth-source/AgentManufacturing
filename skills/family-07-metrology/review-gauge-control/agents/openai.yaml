@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Gauge Control"
+  short_description: "Screen gauge control evidence"
+  default_prompt: "Use $review-gauge-control to review gauge identity, status, and use controls."

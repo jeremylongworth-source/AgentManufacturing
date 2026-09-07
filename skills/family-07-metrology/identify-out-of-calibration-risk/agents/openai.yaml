@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Out-of-Calibration Risk"
+  short_description: "Screen uncertain measurement exposure"
+  default_prompt: "Use $identify-out-of-calibration-risk to map possible exposure from uncertain calibration status."

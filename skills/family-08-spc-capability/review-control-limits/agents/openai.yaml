@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Control Limits"
+  short_description: "Screen control-limit evidence"
+  default_prompt: "Use $review-control-limits to review baseline, exclusions, and control-limit support."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interpret Control Chart"
+  short_description: "Separate chart signals from causes"
+  default_prompt: "Use $interpret-control-chart to interpret a chart signal and expose causal evidence gaps."

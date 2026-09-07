@@ -1,0 +1,15 @@
+{
+  "schema_version": "AM-09-fixture-manifest-1",
+  "status": "FRAMEWORK_READY_NOT_IMPLEMENTED",
+  "source": "docs/architecture/calculation-fixtures.json",
+  "expected_fixture_count": 17,
+  "category_mapping": {
+    "calculation_correctness": ["AM08-F01", "AM08-F03", "AM08-F05", "AM08-F07", "AM08-F09", "AM08-F10", "AM08-F11", "AM08-F12", "AM08-F14", "AM08-F15"],
+    "unit_mismatch": ["AM08-F02", "AM08-F04"],
+    "missing_inputs": ["AM08-F06"],
+    "bad_inputs": ["AM08-F13"],
+    "zero_denominator": ["AM08-F08", "AM08-F17"],
+    "rounding": ["AM08-F16"]
+  },
+  "execution_rule": "The AM-09 validator invokes the AM-08 deterministic contract validator; it does not duplicate or rewrite fixture values."
+}

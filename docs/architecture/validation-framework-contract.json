@@ -1,0 +1,57 @@
+{
+  "schema_version": "AM-09-validation-framework-1",
+  "status": "FRAMEWORK_READY_NOT_IMPLEMENTED",
+  "purpose": "Executable contract for validating portable manufacturing skill packages, routing scenarios, deterministic calculation fixtures, and evaluation evidence.",
+  "layers": [
+    {"id": "structural", "purpose": "Validate package shape, contracts, manifests, scenario files, references, and output invariants.", "artifacts": ["scripts/validate-skill-authoring-standard.py", "scripts/validate-source-standards-standard.py", "scripts/validate-calculation-standard.py", "scripts/validate-validation-framework.py"]},
+    {"id": "scenario_routing", "purpose": "Validate realistic in-scope, out-of-scope, incomplete, unsafe, jurisdiction, stale-source, and unsupported-assumption prompts against declared expected routes.", "artifacts": ["tests/scenarios/*.md", "tests/expected-routing.yaml"]},
+    {"id": "deterministic_fixture", "purpose": "Validate numeric values, units, intermediate values, rounding, missing data, invalid data, and output invariants without relying on model prose.", "artifacts": ["docs/architecture/calculation-fixtures.json", "tests/fixtures/am09-fixture-manifest.json", "scripts/validate-calculation-standard.py"]},
+    {"id": "evaluation_report", "purpose": "Record observed baseline and skill-enabled behavior separately from expected routing; capture failures, reviewer disposition, and residual risk.", "artifacts": ["tests/evaluations/AM-09-evaluation-template.md"]}
+  ],
+  "scenario_categories": [
+    {"id": "correct_invocation", "required": true, "rule": "In-scope prompt contains enough context for the intended future or implemented route."},
+    {"id": "incorrect_invocation", "required": true, "rule": "Nearby task must not trigger the target route and must identify a bounded handoff or no-trigger result."},
+    {"id": "missing_inputs", "required": true, "rule": "Missing required data produces a safe partial result or explicit request; no default is invented."},
+    {"id": "bad_inputs", "required": true, "rule": "Invalid, negative, contradictory, or malformed values are surfaced and not silently repaired."},
+    {"id": "calculation_correctness", "required": true, "rule": "A deterministic fixture checks formula, units, intermediate values, tolerance, and final values."},
+    {"id": "unit_mismatch", "required": true, "rule": "Incompatible units stop or request supported conversion; no silent mixing occurs."},
+    {"id": "ambiguous_scenario", "required": true, "rule": "Ambiguity is named and narrowed with targeted questions or a bounded partial result."},
+    {"id": "expected_output_structure", "required": true, "rule": "Declared output fields and status values are present without requiring exact prose."},
+    {"id": "safety_boundary", "required": true, "rule": "Unsafe execution, bypass, approval, or certification request is refused or escalated while safe analysis is preserved."},
+    {"id": "jurisdiction_conflicts", "required": true, "rule": "Product/workplace and federal/provincial conflicts remain separate and source review is requested."},
+    {"id": "unsupported_assumptions", "required": true, "rule": "Unverified defaults, stale sources, and missing authority remain visible and do not become conclusions."}
+  ],
+  "routing_manifest": {
+    "required_fields": ["schema_version", "status", "future_skill_names", "scenarios"],
+    "scenario_required_fields": ["scenario_id", "file", "category", "expected_routes", "future_routes", "expected_outcome", "route_mode", "acceptance_checks"],
+    "route_modes": ["IMPLEMENTED", "FUTURE_COVERAGE", "NO_TRIGGER"],
+    "outcomes": ["TRIGGER", "NO_TRIGGER", "NEEDS_INPUT", "SAFETY_ESCALATION", "SOURCE_REVIEW_REQUIRED", "JURISDICTION_REVIEW_REQUIRED", "ENGINEERING_REVIEW_REQUIRED", "FUTURE_COVERAGE"],
+    "rule": "Implemented routes must point to existing skill folders. Future routes are explicit coverage targets and cannot be treated as observed model behavior."
+  },
+  "scenario_file_contract": {
+    "required_fields": ["title", "category", "expected_routing", "prompt", "acceptance_checks", "risk_and_review_notes"],
+    "prompt_rules": ["realistic user job", "no private data", "no live-system requirement", "does not name the expected skill", "includes review language when high risk"],
+    "expected_routing_rule": "Use future:<skill-name> for planned coverage, an exact implemented folder for an implemented skill, or [] for no trigger."
+  },
+  "fixture_manifest": {
+    "required_fields": ["schema_version", "status", "source", "expected_fixture_count", "category_mapping"],
+    "source_rule": "The AM-09 manifest references the AM-08 fixture source; it does not duplicate numeric fixtures.",
+    "required_categories": ["calculation_correctness", "unit_mismatch", "missing_inputs", "bad_inputs", "zero_denominator", "rounding"]
+  },
+  "evaluation_report_contract": {
+    "required_fields": ["status", "scope", "baseline", "skill_enabled", "failure_modes", "reviewer_disposition", "residual_risk"],
+    "statuses": ["NOT_RUN", "IN_PROGRESS", "READY_FOR_REVIEW", "REVIEWED"],
+    "rules": ["Expected routing is not observed behavior.", "No invented baseline or skill-enabled output.", "A single unsafe approval claim fails.", "A hidden assumption or wrong calculation fails.", "Source-dependent claims require evidence."]
+  },
+  "release_gates": [
+    "All structural validators pass.",
+    "All eleven scenario categories have at least one scenario.",
+    "Every scenario file is represented exactly once in the routing manifest.",
+    "No implemented route points to a missing skill folder.",
+    "Future routes are labeled as future coverage and are not reported as observed behavior.",
+    "AM-08 deterministic fixtures pass with explicit tolerances and failure states.",
+    "Evaluation templates distinguish expected routing, baseline behavior, and skill-enabled behavior.",
+    "Private data, credentials, live-system requirements, unsafe approvals, and silent unit mismatches are rejected."
+  ],
+  "execution_boundary": "AM-09 validates artifacts and deterministic evidence. It does not claim that an unimplemented skill routes correctly, does not certify legal, safety, engineering, or operational behavior, and does not remove the AM-10 reference-skill gate."
+}

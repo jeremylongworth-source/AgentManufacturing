@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prioritize Maintenance Work"
+  short_description: "Rank maintenance backlog transparently"
+  default_prompt: "Use $prioritize-maintenance-work to rank supplied maintenance items under risk and restrictions."

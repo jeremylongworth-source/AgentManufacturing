@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Preventive Maintenance Plan"
+  short_description: "Structure qualified maintenance plans"
+  default_prompt: "Use $build-preventive-maintenance-plan to structure maintenance tasks, intervals, evidence, and approvals."

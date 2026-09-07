@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate MTBF"
+  short_description: "Compute repairable-asset MTBF"
+  default_prompt: "Use $calculate-mtbf to calculate MTBF from declared exposure and failure definitions."

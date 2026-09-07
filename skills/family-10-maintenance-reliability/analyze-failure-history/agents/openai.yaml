@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Failure History"
+  short_description: "Analyze failure modes and exposure"
+  default_prompt: "Use $analyze-failure-history to analyze failure history with explicit exposure and mode definitions."

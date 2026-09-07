@@ -23,6 +23,7 @@ VALIDATORS = [
     "validate-quality-management.py",
     "validate-metrology-spc.py",
     "validate-nonconformance-capa.py",
+    "validate-maintenance-reliability.py",
 ]
 
 

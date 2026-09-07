@@ -1,7 +1,7 @@
 # Future maintenance planning
 
 Category: `incorrect_invocation`
-Expected routing: `future:build-preventive-maintenance-plan`
+Expected routing: `implemented:build-preventive-maintenance-plan`
 
 Prompt:
 
@@ -9,9 +9,9 @@ Prompt:
 
 Acceptance checks:
 
-- Future Family 10 coverage remains visible.
-- AM-16 packages do not claim maintenance planning.
+- Approved evidence is structured into tasks, intervals, owners, and gaps.
+- Repair and isolation directions remain withheld.
 
 Risk and review notes:
 
-- This is a future-wave route.
+- Hazardous maintenance execution remains qualified-owner work.

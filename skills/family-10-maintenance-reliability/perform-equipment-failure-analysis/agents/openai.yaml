@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perform Equipment Failure Analysis"
+  short_description: "Structure qualified failure analysis"
+  default_prompt: "Use $perform-equipment-failure-analysis to assess equipment failure hypotheses and review gaps."

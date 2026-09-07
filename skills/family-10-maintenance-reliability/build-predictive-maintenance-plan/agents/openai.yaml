@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Predictive Maintenance Plan"
+  short_description: "Structure condition-monitoring plans"
+  default_prompt: "Use $build-predictive-maintenance-plan to map failure modes to indicators, thresholds, sampling, and owners."

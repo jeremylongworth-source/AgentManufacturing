@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Maintenance Backlog"
+  short_description: "Measure backlog age and effort"
+  default_prompt: "Use $analyze-maintenance-backlog to summarize backlog age, effort, composition, and capacity gaps."

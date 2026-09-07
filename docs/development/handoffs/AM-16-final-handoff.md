@@ -15,7 +15,7 @@ Evidence:
 - [AM-16 acceptance record](../../tests/evaluations/AM-16-nonconformance-capa-acceptance.md)
 - [Family 09 packages](../../skills/family-09-nonconformance-capa/)
 - [AM-16 validator](../../scripts/validate-nonconformance-capa.py)
-- [Routing manifest](../../tests/expected-routing.yaml) with 85 scenarios across all required categories and a future Family 10 route
+- [Routing manifest](../../tests/expected-routing.yaml) with 95 scenarios across all required categories and a future Family 11 safety route
 
 Validation command:
 

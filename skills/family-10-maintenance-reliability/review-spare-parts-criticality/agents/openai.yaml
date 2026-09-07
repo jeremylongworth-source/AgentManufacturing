@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Spare Parts Criticality"
+  short_description: "Assess spare-part consequence and lead time"
+  default_prompt: "Use $review-spare-parts-criticality to assess spare criticality evidence without making stock decisions."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Equipment Downtime"
+  short_description: "Reconcile downtime events and exposure"
+  default_prompt: "Use $analyze-equipment-downtime to classify and total equipment downtime on a declared basis."

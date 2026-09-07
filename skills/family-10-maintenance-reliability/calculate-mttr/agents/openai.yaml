@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate MTTR"
+  short_description: "Compute defined repair duration"
+  default_prompt: "Use $calculate-mttr to calculate MTTR from a declared repair clock and event set."

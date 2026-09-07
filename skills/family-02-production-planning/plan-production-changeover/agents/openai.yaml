@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Production Changeover"
+  short_description: "Allocate a changeover window and readiness checklist without shortening approved steps."
+  default_prompt: "Use $plan-production-changeover to plan a reviewable changeover window from approved steps, durations, sequence, and calendar evidence while preserving safety boundaries."

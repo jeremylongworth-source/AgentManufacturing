@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Capacity Shortfall"
+  short_description: "Compare required load and available capacity by operation with explicit unit checks."
+  default_prompt: "Use $identify-capacity-shortfall to compare supplied load and capacity by operation, normalize only supported units, and expose any shortfall without inventing recovery capacity."

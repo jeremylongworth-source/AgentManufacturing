@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compare Production Scenarios"
+  short_description: "Compare supplied production alternatives under a common demand, cost, and feasibility basis."
+  default_prompt: "Use $compare-production-scenarios to compare supplied production alternatives, expose incomparable assumptions and infeasible options, and return a decision-ready tradeoff table without approving a plan."

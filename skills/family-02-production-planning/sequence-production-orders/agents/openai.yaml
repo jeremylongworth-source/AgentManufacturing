@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sequence Production Orders"
+  short_description: "Propose a conflict-aware order sequence under supplied resources and changeover constraints."
+  default_prompt: "Use $sequence-production-orders to propose a non-overlapping production-order sequence, showing conflicts and infeasibility without dispatching or releasing work."

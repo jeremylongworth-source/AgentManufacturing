@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Production Lead Time"
+  short_description: "Estimate lead time with explicit queue, setup, run, transfer, and overlap evidence."
+  default_prompt: "Use $calculate-production-lead-time to estimate supplied routing lead time, separating measured and assumed components and preventing overlap double counting."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compare Production Lot Sizes"
+  short_description: "Compare candidate lot sizes with explicit setup, inventory, cost, demand, and capacity tradeoffs."
+  default_prompt: "Use $compare-production-lot-sizes to compare supplied lot-size alternatives, retain capacity violations and cost assumptions, and return a reviewable decision handoff without choosing autonomously."

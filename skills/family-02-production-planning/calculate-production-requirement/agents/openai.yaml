@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Production Requirement"
+  short_description: "Calculate traceable net production need by product and period from supplied planning evidence."
+  default_prompt: "Use $calculate-production-requirement to calculate net production need, excluding held quantity unless authorized, preserving units, policy, intermediates, and review boundaries."

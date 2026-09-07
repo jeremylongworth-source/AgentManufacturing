@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Production Order Readiness"
+  short_description: "Find production-order readiness gaps without releasing or changing the order."
+  default_prompt: "Use $review-production-order-readiness to review supplied routing, material, tooling, approval, and capacity evidence and return a readiness gap list without releasing the order."

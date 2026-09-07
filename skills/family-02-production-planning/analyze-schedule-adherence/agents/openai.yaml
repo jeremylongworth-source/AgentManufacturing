@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Schedule Adherence"
+  short_description: "Measure performance against a frozen schedule baseline with explicit lateness and exclusions."
+  default_prompt: "Use $analyze-schedule-adherence to calculate adherence against the supplied frozen schedule, preserving baseline version, event evidence, exclusions, lateness, and gaps."

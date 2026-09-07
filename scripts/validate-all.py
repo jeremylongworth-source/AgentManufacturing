@@ -18,6 +18,7 @@ VALIDATORS = [
     "validate-validation-framework.py",
     "validate-reference-skills.py",
     "validate-implemented-skills.py",
+    "validate-production-planning.py",
 ]
 
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perform Pareto Analysis"
+  short_description: "Rank nonconformance categories"
+  default_prompt: "Use $perform-pareto-analysis to rank categories on one declared metric and population."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assess Product Containment"
+  short_description: "Map affected product scope"
+  default_prompt: "Use $assess-product-containment to assess evidence for affected scope and containment review."

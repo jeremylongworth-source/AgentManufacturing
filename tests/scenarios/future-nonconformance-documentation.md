@@ -1,7 +1,7 @@
 # Future nonconformance documentation
 
 Category: `incorrect_invocation`
-Expected routing: `future:document-nonconformance`
+Expected routing: `implemented:document-nonconformance`
 
 Prompt:
 
@@ -9,9 +9,9 @@ Prompt:
 
 Acceptance checks:
 
-- Future documentation route remains visible.
-- Current metrology and SPC routes do not claim coverage.
+- Observation and requirement are documented separately.
+- Closure and disposition remain outside the route.
 
 Risk and review notes:
 
-- This is a future-wave coverage target.
+- The record requires quality-owner review.

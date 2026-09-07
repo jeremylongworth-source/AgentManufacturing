@@ -16,7 +16,7 @@ Evidence:
 - [Family 07 packages](../../skills/family-07-metrology/)
 - [Family 08 packages](../../skills/family-08-spc-capability/)
 - [AM-15 validator](../../scripts/validate-metrology-spc.py)
-- [Routing manifest](../../tests/expected-routing.yaml) with 74 scenarios across all required categories and a future AM-16 documentation route
+- [Routing manifest](../../tests/expected-routing.yaml) with 85 scenarios across all required categories and a future AM-17 maintenance route
 
 Validation command:
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Triage Nonconformance"
+  short_description: "Prioritize initial nonconformance evidence"
+  default_prompt: "Use $triage-nonconformance to classify an issue and propose the next evidence owner."

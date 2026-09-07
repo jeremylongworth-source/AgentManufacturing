@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document Nonconformance"
+  short_description: "Structure evidence-based nonconformance records"
+  default_prompt: "Use $document-nonconformance to separate observations, requirements, evidence, and scope."

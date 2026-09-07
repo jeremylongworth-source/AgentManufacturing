@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Preventive Action"
+  short_description: "Propose prospective controls"
+  default_prompt: "Use $build-preventive-action to structure a preventive control proposal and verification plan."

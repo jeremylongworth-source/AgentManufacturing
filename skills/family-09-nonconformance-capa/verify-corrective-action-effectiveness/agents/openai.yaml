@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Corrective Action Effectiveness"
+  short_description: "Assess predefined effectiveness evidence"
+  default_prompt: "Use $verify-corrective-action-effectiveness to compare post-action evidence with a declared criterion."

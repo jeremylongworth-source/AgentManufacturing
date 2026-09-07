@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perform Root-Cause Analysis"
+  short_description: "Evaluate causal hypotheses"
+  default_prompt: "Use $perform-root-cause-analysis to test causal hypotheses against evidence and timeline."

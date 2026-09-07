@@ -22,6 +22,7 @@ VALIDATORS = [
     "validate-process-engineering.py",
     "validate-quality-management.py",
     "validate-metrology-spc.py",
+    "validate-nonconformance-capa.py",
 ]
 
 

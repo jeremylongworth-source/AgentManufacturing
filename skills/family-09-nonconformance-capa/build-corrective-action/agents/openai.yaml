@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Corrective Action"
+  short_description: "Design cause-linked action proposals"
+  default_prompt: "Use $build-corrective-action to structure a cause-linked corrective-action proposal."

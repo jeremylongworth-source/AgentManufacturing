@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perform Five Whys"
+  short_description: "Challenge a causal why chain"
+  default_prompt: "Use $perform-five-whys to structure and challenge a bounded five-whys chain."

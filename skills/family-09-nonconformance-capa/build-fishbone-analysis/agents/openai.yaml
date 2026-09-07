@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Fishbone Analysis"
+  short_description: "Organize candidate causes"
+  default_prompt: "Use $build-fishbone-analysis to map candidate causes and evidence questions by category."

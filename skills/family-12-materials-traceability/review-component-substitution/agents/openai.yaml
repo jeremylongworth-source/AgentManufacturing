@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Component Substitution"
+  short_description: "Assess substitution compatibility evidence"
+  default_prompt: "Use $review-component-substitution to compare a proposed substitute with requirements and evidence."

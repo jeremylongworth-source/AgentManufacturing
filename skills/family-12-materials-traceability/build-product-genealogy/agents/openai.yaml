@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Product Genealogy"
+  short_description: "Assemble lot relationship graphs"
+  default_prompt: "Use $build-product-genealogy to build input/output lot relationships and expose trace gaps."

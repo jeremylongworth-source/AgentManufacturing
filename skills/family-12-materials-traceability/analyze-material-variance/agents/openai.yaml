@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Material Variance"
+  short_description: "Explain planned versus actual usage"
+  default_prompt: "Use $analyze-material-variance to reconcile and explain material usage variance."

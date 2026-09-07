@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Line-Side Shortage"
+  short_description: "Screen line-side material shortfalls"
+  default_prompt: "Use $identify-line-side-shortage to compare production need with usable line-side supply."

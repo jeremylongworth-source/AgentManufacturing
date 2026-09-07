@@ -15,7 +15,7 @@ Evidence:
 - [AM-18 acceptance record](../../tests/evaluations/AM-18-manufacturing-safety-acceptance.md)
 - [Family 11 packages](../../skills/family-11-manufacturing-safety/)
 - [AM-18 validator](../../scripts/validate-manufacturing-safety.py)
-- [Routing manifest](../../tests/expected-routing.yaml) with 105 scenarios across all required categories and a future Family 12 materials route
+- [Routing manifest](../../tests/expected-routing.yaml) with 113 scenarios across all required categories and a future Family 13 workforce route
 
 Validation command:
 

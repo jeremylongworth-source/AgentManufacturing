@@ -143,7 +143,7 @@ def validate_routes(root: Path, manifest: dict[str, Any], contract: dict[str, An
     need(categories == SCENARIO_CATEGORIES, f"scenario category coverage missing {sorted(SCENARIO_CATEGORIES - categories)}")
     all_files = {f"tests/scenarios/{path.name}" for path in scenario_root.glob("*.md")}
     need(all_files == seen_files, "scenario files and manifest are not one-to-one")
-    need(set(manifest["future_skill_names"]) >= {"validate-bill-of-materials"}, "reference future skill targets")
+    need(set(manifest["future_skill_names"]) >= {"build-shift-production-plan"}, "reference future skill targets")
     return len(scenarios), len(categories)
 
 

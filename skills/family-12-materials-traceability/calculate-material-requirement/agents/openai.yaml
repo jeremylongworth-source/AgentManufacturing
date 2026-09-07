@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Material Requirement"
+  short_description: "Expand product quantity into gross need"
+  default_prompt: "Use $calculate-material-requirement to calculate gross component need from a declared BOM."

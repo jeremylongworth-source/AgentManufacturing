@@ -1,0 +1,4 @@
+interface:
+  display_name: "Validate Bill of Materials"
+  short_description: "Check BOM identity and revision evidence"
+  default_prompt: "Use $validate-bill-of-materials to reconcile BOM identity, quantities, units, and revisions."

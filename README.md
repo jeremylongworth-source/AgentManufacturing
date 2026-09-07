@@ -28,15 +28,15 @@ Development workspace for open-source, portable AI skills supporting commercial 
 - [Validation contract](docs/architecture/validation-framework-contract.json), [routing manifest](tests/expected-routing.yaml), [scenario suite](tests/scenarios/), and [fixture manifest](tests/fixtures/am09-fixture-manifest.json): executable framework evidence.
 - [Reference-skill proof contract](docs/architecture/reference-skill-proof.md): AM-10 package gate and runtime-evaluation boundary.
 - [Reference packages](skills/): five bounded AM-10 examples across quantitative, planning, quality, hazardous-operation, and Canadian-overlay classes.
-- [Latest handoff](docs/development/handoffs/AM-18-final-handoff.md): AM-18 closure and the bounded AM-19 execution brief.
+- [Latest handoff](docs/development/handoffs/AM-19-final-handoff.md): AM-19 closure and the bounded AM-20 execution brief.
 
 ## Codex handoff
 
 Use `D:\AgentMfg` as the working directory. Read the roadmap and latest handoff, then execute the next unfinished wave. The roadmap's **First Codex prompt** is the historical AM-00 bootstrap instruction. Treat the roadmap as planning authority and repository contents as execution truth.
 
-Current state: **AM-00 through AM-18 READY** on 2026-09-07; **AM-19 is next**. The v1 taxonomy freezes 159 accepted records: 153 core methods and six Canadian overlays. All 162 draft candidates and 166 starter names remain traceable. AM-04 formalizes jurisdiction routing, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable skill packages and evidence layers, AM-07 formalizes source precedence, standards metadata, rights handling, and freshness, AM-08 formalizes unit-safe quantitative calculations, AM-09 formalizes executable evidence checks, AM-10 proves five bounded reference package classes, AM-11 adds nine manufacturing-fundamentals and standard-work packages, AM-12 completes Family 02 production planning and scheduling, AM-13 completes Families 04 and 05 process and industrial engineering, AM-14 completes Family 06 quality management and inspection, AM-15 completes Families 07 and 08 metrology, SPC, and capability, AM-16 completes Family 09 nonconformance, RCA, and CAPA, AM-17 completes Family 10 maintenance and reliability, and AM-18 completes Family 11 manufacturing safety. Runtime model behavior remains unobserved until reviewer-owned evaluation runs.
+Current state: **AM-00 through AM-19 READY** on 2026-09-07; **AM-20 is next**. The v1 taxonomy freezes 159 accepted records: 153 core methods and six Canadian overlays. All 162 draft candidates and 166 starter names remain traceable. AM-04 formalizes jurisdiction routing, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable skill packages and evidence layers, AM-07 formalizes source precedence, standards metadata, rights handling, and freshness, AM-08 formalizes unit-safe quantitative calculations, AM-09 formalizes executable evidence checks, AM-10 proves five bounded reference package classes, AM-11 adds nine manufacturing-fundamentals and standard-work packages, AM-12 completes Family 02 production planning and scheduling, AM-13 completes Families 04 and 05 process and industrial engineering, AM-14 completes Family 06 quality management and inspection, AM-15 completes Families 07 and 08 metrology, SPC, and capability, AM-16 completes Family 09 nonconformance, RCA, and CAPA, AM-17 completes Family 10 maintenance and reliability, AM-18 completes Family 11 manufacturing safety, and AM-19 completes Family 12 materials, BOM, and traceability. Runtime model behavior remains unobserved until reviewer-owned evaluation runs.
 
-The workspace contains domain contracts, a preserved draft register, the audited v1 catalogue, ninety-four bounded packages, focused validators, and wave handoffs. Runtime behavior evaluation, governance, skillsets, and specializations remain roadmap work. Local Git is initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing). AM-00 verified the remote as private and empty on 2026-09-06. No release or licence selection has been made; roadmap work through AM-18 is committed and pushed as it closes.
+The workspace contains domain contracts, a preserved draft register, the audited v1 catalogue, 103 bounded packages, focused validators, and wave handoffs. Runtime behavior evaluation, governance, skillsets, and specializations remain roadmap work. Local Git is initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing). AM-00 verified the remote as private and empty on 2026-09-06. No release or licence selection has been made; roadmap work through AM-19 is committed and pushed as it closes.
 
 ## Taxonomy validation
 
@@ -58,6 +58,7 @@ python scripts/validate-metrology-spc.py
 python scripts/validate-nonconformance-capa.py
 python scripts/validate-maintenance-reliability.py
 python scripts/validate-manufacturing-safety.py
+python scripts/validate-materials-traceability.py
 
 # Or run the complete gate:
 python scripts/validate-all.py

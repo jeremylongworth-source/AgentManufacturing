@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Scrap Material Record"
+  short_description: "Screen scrap record integrity"
+  default_prompt: "Use $review-scrap-material-record to review scrap identity, quantity, reason, and approvals."

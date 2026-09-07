@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reconcile Material Consumption"
+  short_description: "Balance material event states"
+  default_prompt: "Use $reconcile-material-consumption to reconcile issues, returns, scrap, and WIP events."

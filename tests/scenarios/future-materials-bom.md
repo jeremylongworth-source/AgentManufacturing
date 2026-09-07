@@ -1,7 +1,7 @@
 # Future materials and BOM
 
 Category: `incorrect_invocation`
-Expected routing: `future:validate-bill-of-materials`
+Expected routing: `implemented:validate-bill-of-materials`
 
 Prompt:
 
@@ -9,9 +9,9 @@ Prompt:
 
 Acceptance checks:
 
-- Future Family 12 coverage remains visible.
-- AM-18 safety packages do not claim BOM validation.
+- BOM identity, quantity, and revision consistency are checked.
+- Design fitness and release remain outside the route.
 
 Risk and review notes:
 
-- This is a future-wave route.
+- Engineering and product owners retain change authority.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trace Production Lot"
+  short_description: "Query lot genealogy and exposure"
+  default_prompt: "Use $trace-production-lot to trace a target lot through supplied genealogy evidence."

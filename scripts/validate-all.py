@@ -25,6 +25,7 @@ VALIDATORS = [
     "validate-nonconformance-capa.py",
     "validate-maintenance-reliability.py",
     "validate-manufacturing-safety.py",
+    "validate-materials-traceability.py",
 ]
 
 

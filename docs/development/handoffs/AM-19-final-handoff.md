@@ -15,7 +15,7 @@ Evidence:
 - [AM-19 acceptance record](../../tests/evaluations/AM-19-materials-traceability-acceptance.md)
 - [Family 12 packages](../../skills/family-12-materials-traceability/)
 - [AM-19 validator](../../scripts/validate-materials-traceability.py)
-- [Routing manifest](../../tests/expected-routing.yaml) with 114 scenarios across all required categories and a future Family 13 workforce route
+- [Routing manifest](../../tests/expected-routing.yaml) with 122 scenarios across all required categories and a future Family 14 lean route
 
 Validation command:
 

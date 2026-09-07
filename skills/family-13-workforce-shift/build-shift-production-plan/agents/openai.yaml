@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Shift Production Plan"
+  short_description: "Allocate approved work to a shift"
+  default_prompt: "Use $build-shift-production-plan to allocate approved work under shift readiness constraints."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Labor Productivity"
+  short_description: "Relate output to labor exposure"
+  default_prompt: "Use $analyze-labor-productivity to calculate a declared output-per-labor metric."

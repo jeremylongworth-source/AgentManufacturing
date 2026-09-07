@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prepare Shift Handoff"
+  short_description: "Transfer factual shift status"
+  default_prompt: "Use $prepare-shift-handoff to structure current status, exceptions, and next-owner questions."

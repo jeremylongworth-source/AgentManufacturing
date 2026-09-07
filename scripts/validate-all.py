@@ -26,6 +26,7 @@ VALIDATORS = [
     "validate-maintenance-reliability.py",
     "validate-manufacturing-safety.py",
     "validate-materials-traceability.py",
+    "validate-workforce-shift.py",
 ]
 
 

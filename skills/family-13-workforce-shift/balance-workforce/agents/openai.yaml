@@ -1,0 +1,4 @@
+interface:
+  display_name: "Balance Workforce"
+  short_description: "Compare workload to available skills"
+  default_prompt: "Use $balance-workforce to allocate declared workload and available skilled hours for review."

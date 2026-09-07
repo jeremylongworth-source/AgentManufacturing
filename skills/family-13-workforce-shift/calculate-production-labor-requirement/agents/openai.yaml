@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calculate Production Labor Requirement"
+  short_description: "Convert workload into labor-hours"
+  default_prompt: "Use $calculate-production-labor-requirement to calculate labor requirement from a declared standard."

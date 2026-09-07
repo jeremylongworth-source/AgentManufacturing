@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Operator Qualification Record"
+  short_description: "Review qualification evidence"
+  default_prompt: "Use $review-operator-qualification-record to compare operator records with supplied rules and scope."

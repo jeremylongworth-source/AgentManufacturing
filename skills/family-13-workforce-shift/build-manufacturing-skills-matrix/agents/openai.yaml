@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Manufacturing Skills Matrix"
+  short_description: "Map task skills and evidence"
+  default_prompt: "Use $build-manufacturing-skills-matrix to map task requirements, skills, and evidence gaps."

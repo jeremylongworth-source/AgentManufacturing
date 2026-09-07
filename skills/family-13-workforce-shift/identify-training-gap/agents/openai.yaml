@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Training Gap"
+  short_description: "Compare task requirements to training evidence"
+  default_prompt: "Use $identify-training-gap to identify training evidence gaps against a task revision."

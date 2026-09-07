@@ -22,15 +22,17 @@ Development workspace for open-source, portable AI skills supporting commercial 
 - [Skill authoring standard](docs/architecture/skill-authoring-standard.md): AM-06 package layout, output contract, templates, and validation layers.
 - [Source and standards standard](docs/architecture/source-standards-standard.md): AM-07 source precedence, rights, provincial systems, standards metadata, and freshness controls.
 - [Source record schema](docs/architecture/source-record-schema.json), [freshness policy](docs/architecture/source-freshness-policy.json), and [source examples](docs/architecture/source-record-examples.json): machine-readable AM-07 contracts and metadata-only examples.
-- [Latest handoff](docs/development/handoffs/AM-07-final-handoff.md): AM-07 closure and the bounded AM-08 execution brief.
+- [Calculation standard](docs/architecture/calculation-standard.md): AM-08 variables, units, formulas, assumptions, precision, edge cases, output contract, and safety boundary.
+- [Calculation contract](docs/architecture/calculation-contract.json) and [worked fixtures](docs/architecture/calculation-fixtures.json): machine-readable quantitative contract and 17 reference fixtures.
+- [Latest handoff](docs/development/handoffs/AM-08-final-handoff.md): AM-08 closure and the bounded AM-09 execution brief.
 
 ## Codex handoff
 
 Use `D:\AgentMfg` as the working directory. Read the roadmap and latest handoff, then execute the next unfinished wave. The roadmap's **First Codex prompt** is the historical AM-00 bootstrap instruction. Treat the roadmap as planning authority and repository contents as execution truth.
 
-Current state: **AM-00 through AM-07 READY** on 2026-09-07; **AM-08 is next**. The v1 taxonomy freezes 159 accepted records: 153 core methods and six Canadian overlays. All 162 draft candidates and 166 starter names remain traceable. AM-04 formalizes jurisdiction routing, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable skill packages and evidence layers, and AM-07 formalizes source precedence, standards metadata, rights handling, and freshness without implementing skills. Broad authoring remains gated on AM-10.
+Current state: **AM-00 through AM-08 READY** on 2026-09-07; **AM-09 is next**. The v1 taxonomy freezes 159 accepted records: 153 core methods and six Canadian overlays. All 162 draft candidates and 166 starter names remain traceable. AM-04 formalizes jurisdiction routing, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable skill packages and evidence layers, AM-07 formalizes source precedence, standards metadata, rights handling, and freshness, and AM-08 formalizes unit-safe quantitative calculations without implementing skills. Broad authoring remains gated on AM-10.
 
-The workspace contains domain contracts, a preserved draft register, the audited v1 catalogue, focused validators, and wave handoffs. Skill authoring, general behavior validation, governance, skillsets, and specializations remain roadmap work. Local Git is initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing). AM-00 verified the remote as private and empty on 2026-09-06. No commit, push, release, or licence selection has been made during AM-00–AM-07.
+The workspace contains domain contracts, a preserved draft register, the audited v1 catalogue, focused validators, and wave handoffs. Skill authoring, general behavior validation, governance, skillsets, and specializations remain roadmap work. Local Git is initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing). AM-00 verified the remote as private and empty on 2026-09-06. No release or licence selection has been made; roadmap work through AM-08 is committed and pushed as it closes.
 
 ## Taxonomy validation
 
@@ -41,9 +43,10 @@ python scripts/validate-jurisdiction-model.py
 python scripts/validate-safety-boundary-model.py
 python scripts/validate-skill-authoring-standard.py
 python scripts/validate-source-standards-standard.py
+python scripts/validate-calculation-standard.py
 ```
 
-Uses the Python standard library to check preserved draft data, the accepted index, audits, provenance, graph ordering, document consistency, the AM-04 model/source registry, the AM-05 safety model/source registry, the AM-06 package/validation contracts and templates, and the AM-07 source/standards contracts plus legacy registry compatibility. The YAML index uses JSON syntax for dependency-free parsing. A pass is not evidence of implemented skills, model behavior, calculation correctness, site safety, engineering adequacy, source freshness, copyright permission, or regulatory applicability. See the latest handoff for results and limits.
+Uses the Python standard library to check preserved draft data, the accepted index, audits, provenance, graph ordering, document consistency, the AM-04 model/source registry, the AM-05 safety model/source registry, the AM-06 package/validation contracts and templates, the AM-07 source/standards contracts plus legacy registry compatibility, and the AM-08 calculation contract and numeric fixtures. The YAML index uses JSON syntax for dependency-free parsing. A pass is not evidence of implemented skills, model behavior, site safety, engineering adequacy, source freshness, copyright permission, or regulatory applicability. See the latest handoff for results and limits.
 
 ## Provenance
 

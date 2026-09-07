@@ -1,13 +1,13 @@
 # AgentManufacturing development roadmap
 
-Version: 0.9 (AM-07 source and standards standard closed; calculation wave next)
+Version: 1.0 (AM-08 calculation standard closed; validation framework next)
 Working directory: `D:\AgentMfg`
 
 Source: “Branch · Plan AgentLogistics Skills”, conversation `6a9d881b-9330-83ea-b887-26309d52536d`, manufacturing proposal message `e32c7e5b-7294-4699-b383-0de485378ba7`. Saved on 2026-09-06. This is the initial planning proposal, not evidence of completed development. Conversation-only citation markers have been removed because they do not resolve in repository Markdown. Legal details and standards-edition assertions preserved from the source are planning notes and have not been independently reverified in this handoff; verify official sources before implementation or operational use.
 
 ## Current workspace status
 
-**AM-00 through AM-07 are READY as of 2026-09-07. AM-08 is the next execution target.** See the [v1 taxonomy](docs/architecture/master-taxonomy-v1.md), [audit](docs/architecture/taxonomy-audit-v1.md), [index](docs/architecture/taxonomy-index.yaml), [dependency map](docs/architecture/dependency-map.md), [Canadian jurisdiction model](docs/architecture/canadian-jurisdiction-model.md), [safety boundary model](docs/architecture/safety-boundary-model.md), [skill authoring standard](docs/architecture/skill-authoring-standard.md), [source and standards standard](docs/architecture/source-standards-standard.md), [source registries](docs/architecture/canadian-source-registry.json), and [latest handoff](docs/development/handoffs/AM-07-final-handoff.md) for evidence and the next-wave brief. The [domain contract](docs/architecture/domain-contract.md) and [scope boundaries](docs/architecture/scope-boundaries.md) govern this work. Local Git remains initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing), verified private and empty during AM-00. No commit or push was made during AM-00–AM-07.
+**AM-00 through AM-08 are READY as of 2026-09-07. AM-09 is the next execution target.** See the [v1 taxonomy](docs/architecture/master-taxonomy-v1.md), [audit](docs/architecture/taxonomy-audit-v1.md), [index](docs/architecture/taxonomy-index.yaml), [dependency map](docs/architecture/dependency-map.md), [Canadian jurisdiction model](docs/architecture/canadian-jurisdiction-model.md), [safety boundary model](docs/architecture/safety-boundary-model.md), [skill authoring standard](docs/architecture/skill-authoring-standard.md), [source and standards standard](docs/architecture/source-standards-standard.md), [calculation standard](docs/architecture/calculation-standard.md), [source registries](docs/architecture/canadian-source-registry.json), and [latest handoff](docs/development/handoffs/AM-08-final-handoff.md) for evidence and the next-wave brief. The [domain contract](docs/architecture/domain-contract.md) and [scope boundaries](docs/architecture/scope-boundaries.md) govern this work. Local Git remains initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing), verified private and empty during AM-00. No release or licence selection has been made; roadmap work through AM-08 is committed and pushed as it closes.
 
 The v1 catalogue contains 159 accepted records across 20 families: 153 core methods and six Canadian overlays, with audit dispositions for all 162 draft candidates and routes for all 166 representative source names. Names, responsibilities, tiers, provenance, and the evidence-reuse graph are frozen. AM-04 formalizes jurisdiction routing metadata, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable package and validation contracts, and AM-07 formalizes source and standards handling without silently reclassifying the index or implementing skills. The AM-02 draft and original framework remain preserved. Completion tokens in the source wave definitions are acceptance targets; only the execution ledger and supporting handoffs establish earned completion.
 
@@ -21,7 +21,8 @@ The v1 catalogue contains 159 accepted records across 20 families: 153 core meth
 | AM-05 | READY | [Safety boundary model](docs/architecture/safety-boundary-model.md), [source registry](docs/architecture/safety-source-registry.json), [validator](scripts/validate-safety-boundary-model.py), and [handoff](docs/development/handoffs/AM-05-final-handoff.md); `AGENTMANUFACTURING_AM_05_SAFETY_BOUNDARY_READY` |
 | AM-06 | READY | [Skill authoring standard](docs/architecture/skill-authoring-standard.md), [package schema](docs/architecture/skill-package-schema.json), [validation contract](docs/architecture/skill-validation-contract.json), [templates](docs/templates/manufacturing-skill/), [validator](scripts/validate-skill-authoring-standard.py), and [handoff](docs/development/handoffs/AM-06-final-handoff.md); `AGENTMANUFACTURING_AM_06_SKILL_STANDARD_READY` |
 | AM-07 | READY | [Source and standards standard](docs/architecture/source-standards-standard.md), [source schema](docs/architecture/source-record-schema.json), [freshness policy](docs/architecture/source-freshness-policy.json), [examples](docs/architecture/source-record-examples.json), [validator](scripts/validate-source-standards-standard.py), and [handoff](docs/development/handoffs/AM-07-final-handoff.md); `AGENTMANUFACTURING_AM_07_SOURCE_STANDARD_READY` |
-| AM-08–AM-09 | NOT_STARTED | Establish calculation and executable validation standards in order. |
+| AM-08 | READY | [Calculation standard](docs/architecture/calculation-standard.md), [calculation contract](docs/architecture/calculation-contract.json), [worked fixtures](docs/architecture/calculation-fixtures.json), [validator](scripts/validate-calculation-standard.py), and [handoff](docs/development/handoffs/AM-08-final-handoff.md); `AGENTMANUFACTURING_AM_08_CALCULATION_STANDARD_READY` |
+| AM-09 | NOT_STARTED | Establish executable routing and validation framework. |
 | AM-10 | NOT_STARTED — hard gate | Prove all five reference classes before mass authoring. |
 | AM-11–AM-33 | NOT_STARTED | Execute bounded waves after their prerequisites pass. |
 
@@ -246,6 +247,15 @@ MTTR
 Cp
 Cpk
 control limits
+```
+
+Artifacts:
+
+```text
+docs/architecture/calculation-standard.md
+docs/architecture/calculation-contract.json
+docs/architecture/calculation-fixtures.json
+scripts/validate-calculation-standard.py
 ```
 
 Token:
@@ -773,12 +783,12 @@ is genuinely closed.
 
 ```text
 Working project: AgentManufacturing
-Roadmap version: 0.9
+Roadmap version: 1.0
 Initial families: 20
 Estimated eventual core taxonomy: ~220-280 atomic skills
 
-Last closed wave: AM-07 (READY, 2026-09-07)
-Current execution target: AM-08
+Last closed wave: AM-08 (READY, 2026-09-07)
+Current execution target: AM-09
 Accepted v1 catalogue: 159 (153 core; 6 Canadian overlays; not implemented)
 Preserved AM-02 draft: 162 candidates
 Taxonomy freeze: AM-03

@@ -1,0 +1,201 @@
+{
+  "schema_version": "AM-08-calculation-contract-1",
+  "status": "STANDARD_READY_NOT_IMPLEMENTED",
+  "purpose": "Contract for transparent, unit-safe, reviewable manufacturing calculations before calculation skills are authored.",
+  "required_record_fields": [
+    "calculation_id",
+    "formula_key",
+    "purpose",
+    "inputs",
+    "assumptions",
+    "rounding",
+    "validation",
+    "intermediate_values",
+    "result",
+    "status",
+    "source_keys",
+    "review_handoff"
+  ],
+  "status_values": ["CALCULATED", "PARTIAL", "BLOCKED", "INVALID_INPUT", "NOT_APPLICABLE", "REVIEW_REQUIRED"],
+  "input_field_requirements": ["name", "value", "unit", "source_or_origin", "quality_note"],
+  "output_invariants": [
+    "Original input units are preserved.",
+    "Normalized units are shown before arithmetic when conversion occurs.",
+    "Every variable has a name, unit, and stated meaning.",
+    "The formula is named and shown before the result.",
+    "Intermediate values needed to review the result are visible.",
+    "Raw and rounded results are separate when rounding changes the value.",
+    "Missing, invalid, zero-denominator, contradictory, stale, or outlier inputs are visible.",
+    "Assumptions and exclusions are explicit.",
+    "A review owner or handoff is present when status is not CALCULATED.",
+    "The result does not claim legal compliance, engineering adequacy, certification, permit approval, or operational authorization."
+  ],
+  "unit_contract": {
+    "dimensions": {
+      "count": ["each", "unit", "piece", "batch", "failure"],
+      "time": ["s", "min", "h", "day"],
+      "length": ["mm", "cm", "m", "in", "ft"],
+      "area": ["mm2", "cm2", "m2", "in2", "ft2"],
+      "mass": ["g", "kg", "lb"],
+      "volume": ["mL", "L"],
+      "temperature": ["C", "F", "K"],
+      "pressure": ["kPa", "MPa", "psi"],
+      "dimensionless": ["ratio", "percent"]
+    },
+    "canonical_units": {"count": "each", "time": "s", "length": "mm", "area": "mm2", "mass": "kg", "volume": "L", "temperature": "C", "pressure": "kPa", "dimensionless": "ratio"},
+    "conversion_rules": {
+      "time": {"s": "1", "min": "60", "h": "3600", "day": "86400"},
+      "length": {"mm": "1", "cm": "10", "m": "1000", "in": "25.4", "ft": "304.8"},
+      "mass": {"g": "0.001", "kg": "1", "lb": "0.45359237"},
+      "volume": {"mL": "0.001", "L": "1"},
+      "area": {"mm2": "1", "cm2": "100", "m2": "1000000", "in2": "645.16", "ft2": "92903.04"},
+      "pressure": {"kPa": "1", "MPa": "1000", "psi": "6.8947572932"},
+      "temperature": {"rule": "Temperature conversion requires an offset-aware conversion; never multiply C or F by a scale alone."}
+    },
+    "rules": [
+      "Preserve original units and values in the output.",
+      "Normalize only within a declared dimension.",
+      "Reject incompatible dimensions and unknown units.",
+      "Do not silently convert count, mass, volume, length, time, currency, or temperature without the required conversion data.",
+      "Show the conversion factor and normalized value when inputs use different units."
+    ]
+  },
+  "rounding_contract": {
+    "policies": ["NONE", "DECIMAL_PLACES", "SIGNIFICANT_FIGURES", "CEILING", "FLOOR", "NEAREST", "INCREMENT", "ORDER_MULTIPLE"],
+    "rules": [
+      "Use exact arithmetic or sufficient precision for intermediate values.",
+      "Round only the final value unless a formula explicitly requires stepwise rounding.",
+      "Countable outputs use an explicit operational rule such as ceiling, floor, nearest whole, increment, or order multiple.",
+      "Rates, percentages, ratios, costs per unit, and durations retain fractional values unless a local policy says otherwise.",
+      "Report raw and rounded values whenever rounding changes the result."
+    ],
+    "default_display": {"percent_decimal_places": 2, "ratio_decimal_places": 4, "countable_policy": "NONE_UNTIL_DECLARED"}
+  },
+  "validation_contract": {
+    "required_checks": [
+      "missing required input",
+      "unknown or incompatible unit",
+      "negative value where impossible",
+      "zero denominator",
+      "contradictory records",
+      "stale or non-representative period",
+      "outlier or unstable process evidence",
+      "formula assumption not met",
+      "rounding policy missing for countable result",
+      "source or jurisdiction dependency unresolved"
+    ],
+    "failure_behavior": "Do not force a final numeric result. Return valid partial calculations, name the failed check, preserve the supplied evidence, and show the review handoff.",
+    "zero_denominator_behavior": "Use NOT_APPLICABLE or REVIEW_REQUIRED with an explanation; never return infinity, zero, or an invented denominator."
+  },
+  "reference_formulas": [
+    {
+      "key": "takt_time",
+      "purpose": "Time available per unit of required demand.",
+      "formula": "takt_time = available_production_time / required_demand",
+      "variables": [{"name": "available_production_time", "dimension": "time", "meaning": "Net time available for the demand window after declared planned exclusions."}, {"name": "required_demand", "dimension": "count", "meaning": "Required output in the same demand window."}],
+      "output": {"dimension": "time_per_count", "unit_expression": "time/each"},
+      "assumptions": ["The time window for available production time and demand is the same.", "Planned exclusions are declared and not silently removed."],
+      "edge_cases": ["Demand of zero is NOT_APPLICABLE.", "A negative or unavailable time is INVALID_INPUT."],
+      "fixture_ids": ["AM08-F01", "AM08-F02"]
+    },
+    {
+      "key": "gross_capacity",
+      "purpose": "Theoretical output from available time and cycle time before losses or quality effects.",
+      "formula": "gross_capacity = available_production_time / cycle_time",
+      "variables": [{"name": "available_production_time", "dimension": "time", "meaning": "Declared production time."}, {"name": "cycle_time", "dimension": "time_per_count", "meaning": "Time per unit at the stated process condition."}],
+      "output": {"dimension": "count", "unit_expression": "each"},
+      "assumptions": ["Cycle time is representative of the stated process condition.", "The result is theoretical and excludes downtime, speed loss, and scrap unless separately applied."],
+      "edge_cases": ["Cycle time of zero or less is INVALID_INPUT."],
+      "fixture_ids": ["AM08-F03", "AM08-F04", "AM08-F16"]
+    },
+    {
+      "key": "oee",
+      "purpose": "Combined availability, performance, and quality ratio for a declared period and asset/process boundary.",
+      "formula": "oee = (run_time / planned_production_time) * ((ideal_cycle_time * total_count) / run_time) * (good_count / total_count)",
+      "variables": [{"name": "planned_production_time", "dimension": "time", "meaning": "Planned production time in the period."}, {"name": "run_time", "dimension": "time", "meaning": "Operating time in the period."}, {"name": "ideal_cycle_time", "dimension": "time_per_count", "meaning": "Ideal time per unit for the process."}, {"name": "total_count", "dimension": "count", "meaning": "All units produced in the period."}, {"name": "good_count", "dimension": "count", "meaning": "Units meeting the declared quality definition."}],
+      "output": {"dimension": "dimensionless", "unit": "ratio"},
+      "intermediates": ["availability", "performance", "quality"],
+      "assumptions": ["All counts and times describe the same asset, process, and period.", "Ideal cycle time is approved or supplied evidence.", "Good count and total count use the same counting boundary."],
+      "edge_cases": ["Planned time, run time, or total count of zero requires NOT_APPLICABLE or REVIEW_REQUIRED.", "Run time greater than planned time is contradictory unless explicitly explained."],
+      "fixture_ids": ["AM08-F05", "AM08-F06"]
+    },
+    {
+      "key": "first_pass_yield",
+      "purpose": "Share of units that pass the operation without rework on the first pass.",
+      "formula": "fpy = first_pass_good_count / units_entering_operation",
+      "variables": [{"name": "first_pass_good_count", "dimension": "count", "meaning": "Units accepted without rework at the operation."}, {"name": "units_entering_operation", "dimension": "count", "meaning": "Units presented to the operation."}],
+      "output": {"dimension": "dimensionless", "unit": "ratio"},
+      "assumptions": ["Reworked units are excluded from first-pass good count.", "The numerator cannot exceed the denominator."],
+      "edge_cases": ["Units entering of zero is NOT_APPLICABLE.", "Numerator greater than denominator is INVALID_INPUT."],
+      "fixture_ids": ["AM08-F07", "AM08-F08"]
+    },
+    {
+      "key": "scrap_rate",
+      "purpose": "Share of started units recorded as scrap for a declared boundary and period.",
+      "formula": "scrap_rate = scrap_count / units_started",
+      "variables": [{"name": "scrap_count", "dimension": "count", "meaning": "Units classified as scrap under the declared disposition rule."}, {"name": "units_started", "dimension": "count", "meaning": "Units entering the declared production boundary."}],
+      "output": {"dimension": "dimensionless", "unit": "ratio"},
+      "assumptions": ["The production boundary and disposition rule are explicit.", "Rework is not counted as scrap unless the disposition rule says so."],
+      "edge_cases": ["Units started of zero is NOT_APPLICABLE.", "Scrap count greater than units started is INVALID_INPUT."],
+      "fixture_ids": ["AM08-F09"]
+    },
+    {
+      "key": "mtbf",
+      "purpose": "Mean operating time between recorded failures for a declared asset and period.",
+      "formula": "mtbf = operating_time / failure_count",
+      "variables": [{"name": "operating_time", "dimension": "time", "meaning": "Time the asset was available for operation under the declared measurement rule."}, {"name": "failure_count", "dimension": "count", "meaning": "Count of failures included by the declared failure definition."}],
+      "output": {"dimension": "time_per_count", "unit_expression": "time/failure"},
+      "assumptions": ["Failure definition and observation window are explicit.", "Operating time excludes intervals outside the declared measurement boundary."],
+      "edge_cases": ["Failure count of zero is NOT_APPLICABLE for a finite MTBF; report the observation window separately."],
+      "fixture_ids": ["AM08-F10", "AM08-F17"]
+    },
+    {
+      "key": "mttr",
+      "purpose": "Mean corrective repair time per recorded failure for a declared asset and period.",
+      "formula": "mttr = corrective_repair_time / failure_count",
+      "variables": [{"name": "corrective_repair_time", "dimension": "time", "meaning": "Time spent on corrective repair under the declared start and stop rule."}, {"name": "failure_count", "dimension": "count", "meaning": "Failures receiving corrective repair in the observation window."}],
+      "output": {"dimension": "time_per_count", "unit_expression": "time/failure"},
+      "assumptions": ["The repair-time boundary is explicit and consistent across events."],
+      "edge_cases": ["Failure count of zero is NOT_APPLICABLE for a finite MTTR."],
+      "fixture_ids": ["AM08-F11"]
+    },
+    {
+      "key": "cp",
+      "purpose": "Potential process capability relative to specification width using within-process variation.",
+      "formula": "cp = (upper_spec_limit - lower_spec_limit) / (6 * within_sigma)",
+      "variables": [{"name": "upper_spec_limit", "dimension": "same_as_measurement", "meaning": "Upper customer or engineering specification limit."}, {"name": "lower_spec_limit", "dimension": "same_as_measurement", "meaning": "Lower customer or engineering specification limit."}, {"name": "within_sigma", "dimension": "same_as_measurement", "meaning": "Within-subgroup standard deviation from the declared method."}],
+      "output": {"dimension": "dimensionless", "unit": "ratio"},
+      "assumptions": ["The process is stable enough for a capability interpretation.", "Specification limits are requirements, not control limits.", "Within-subgroup sigma method and subgrouping are recorded."],
+      "edge_cases": ["Within sigma of zero or less is INVALID_INPUT or REVIEW_REQUIRED.", "Unstable process evidence requires REVIEW_REQUIRED before capability interpretation."],
+      "fixture_ids": ["AM08-F12", "AM08-F13"]
+    },
+    {
+      "key": "cpk",
+      "purpose": "Centered process capability relative to specification limits using within-process variation.",
+      "formula": "cpk = min((upper_spec_limit - mean) / (3 * within_sigma), (mean - lower_spec_limit) / (3 * within_sigma))",
+      "variables": [{"name": "upper_spec_limit", "dimension": "same_as_measurement", "meaning": "Upper specification limit."}, {"name": "lower_spec_limit", "dimension": "same_as_measurement", "meaning": "Lower specification limit."}, {"name": "mean", "dimension": "same_as_measurement", "meaning": "Process mean for the declared period and population."}, {"name": "within_sigma", "dimension": "same_as_measurement", "meaning": "Within-subgroup standard deviation."}],
+      "output": {"dimension": "dimensionless", "unit": "ratio"},
+      "assumptions": ["The process stability, subgrouping, and sigma method are recorded.", "Specification limits are not inferred from the observed sample."],
+      "edge_cases": ["Within sigma of zero or less, reversed limits, or unstable evidence blocks interpretation."],
+      "fixture_ids": ["AM08-F14"]
+    },
+    {
+      "key": "xbar_control_limits",
+      "purpose": "Three-sigma control limits for an X-bar subgroup chart using a declared center and within-subgroup sigma.",
+      "formula": "ucl = center_line + 3 * within_sigma / sqrt(subgroup_size); lcl = center_line - 3 * within_sigma / sqrt(subgroup_size)",
+      "variables": [{"name": "center_line", "dimension": "same_as_measurement", "meaning": "Declared process center line."}, {"name": "within_sigma", "dimension": "same_as_measurement", "meaning": "Within-subgroup standard deviation."}, {"name": "subgroup_size", "dimension": "count", "meaning": "Number of observations per subgroup."}],
+      "output": {"dimension": "same_as_measurement", "units": "same as center_line"},
+      "assumptions": ["The chart type, subgrouping, sigma method, and center-line period are recorded.", "Control limits are not specification limits and do not by themselves prove process capability."],
+      "edge_cases": ["Subgroup size of zero or less is INVALID_INPUT.", "Missing or unstable baseline requires REVIEW_REQUIRED."],
+      "fixture_ids": ["AM08-F15"]
+    }
+  ],
+  "fixture_contract": {
+    "required_fields": ["fixture_id", "formula_key", "category", "inputs", "expected_status", "expected_units", "expected_intermediate_values", "expected_final_values", "tolerance", "notes"],
+    "categories": ["worked_example", "unit_conversion", "missing_input", "invalid_input", "zero_denominator", "rounding", "edge_case"],
+    "calculated_fields": ["expected_intermediate_values", "expected_final_values", "tolerance"],
+    "failure_fields": ["expected_missing_inputs", "expected_error_fields", "expected_review_flags"],
+    "rules": ["No hidden constants", "No silent unit mismatch", "No invented assumptions", "Raw and rounded values remain distinguishable", "Numeric checks use explicit tolerance"]
+  },
+  "safety_boundary": "Calculations are planning or analysis support. They do not authorize production release, maintenance, restart, engineering signoff, legal compliance, certification, permits, purchasing, staffing, or customer commitments."
+}

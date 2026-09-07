@@ -1,0 +1,284 @@
+{
+  "schema_version": "AM-08-calculation-fixtures-1",
+  "status": "STANDARD_READY_NOT_IMPLEMENTED",
+  "fixtures": [
+    {
+      "fixture_id": "AM08-F17",
+      "formula_key": "mtbf",
+      "category": "edge_case",
+      "inputs": {
+        "operating_time": {"name": "operating time", "value": "720", "unit": "h", "source_or_origin": "fixture", "quality_note": "Declared observation window"},
+        "failure_count": {"name": "failure count", "value": "0", "unit": "failure", "source_or_origin": "fixture", "quality_note": "No failures recorded"}
+      },
+      "expected_status": "NOT_APPLICABLE",
+      "expected_intermediate_values": {},
+      "expected_final_values": {},
+      "expected_units": {"mtbf": "h/failure"},
+      "expected_missing_inputs": [],
+      "expected_error_fields": ["failure_count"],
+      "expected_review_flags": ["zero failure denominator; report observation window instead of infinite MTBF"],
+      "tolerance": "0.0000001",
+      "notes": "A zero failure count does not produce a finite MTBF."
+    },
+    {
+      "fixture_id": "AM08-F01",
+      "formula_key": "takt_time",
+      "category": "worked_example",
+      "inputs": {
+        "available_production_time": {"name": "available production time", "value": "450", "unit": "min", "source_or_origin": "fixture", "quality_note": "Same demand window"},
+        "required_demand": {"name": "required demand", "value": "450", "unit": "each", "source_or_origin": "fixture", "quality_note": "Positive demand"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {"available_production_time_normalized_s": "27000"},
+      "expected_final_values": {"takt_time_seconds_per_each": "60"},
+      "expected_units": {"available_production_time_normalized_s": "s", "takt_time_seconds_per_each": "s/each"},
+      "tolerance": "0.0000001",
+      "notes": "The final value is shown in seconds per each; original minutes are preserved in inputs."
+    },
+    {
+      "fixture_id": "AM08-F02",
+      "formula_key": "takt_time",
+      "category": "unit_conversion",
+      "inputs": {
+        "available_production_time": {"name": "available production time", "value": "8", "unit": "h", "source_or_origin": "fixture", "quality_note": "Same demand window"},
+        "required_demand": {"name": "required demand", "value": "480", "unit": "each", "source_or_origin": "fixture", "quality_note": "Positive demand"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {"available_production_time_normalized_s": "28800"},
+      "expected_final_values": {"takt_time_seconds_per_each": "60"},
+      "expected_units": {"available_production_time_normalized_s": "s", "takt_time_seconds_per_each": "s/each"},
+      "tolerance": "0.0000001",
+      "notes": "Time is normalized from hours to seconds before division."
+    },
+    {
+      "fixture_id": "AM08-F03",
+      "formula_key": "gross_capacity",
+      "category": "worked_example",
+      "inputs": {
+        "available_production_time": {"name": "available production time", "value": "480", "unit": "min", "source_or_origin": "fixture", "quality_note": "Theoretical period"},
+        "cycle_time": {"name": "cycle time", "value": "0.8", "unit": "min/each", "source_or_origin": "fixture", "quality_note": "Representative cycle time"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {"available_production_time_normalized_s": "28800", "cycle_time_normalized_s_per_each": "48"},
+      "expected_final_values": {"gross_capacity_raw_each": "600"},
+      "expected_units": {"gross_capacity_raw_each": "each"},
+      "tolerance": "0.0000001",
+      "notes": "Theoretical capacity excludes downtime, speed loss, and scrap."
+    },
+    {
+      "fixture_id": "AM08-F04",
+      "formula_key": "gross_capacity",
+      "category": "unit_conversion",
+      "inputs": {
+        "available_production_time": {"name": "available production time", "value": "8", "unit": "h", "source_or_origin": "fixture", "quality_note": "Theoretical period"},
+        "cycle_time": {"name": "cycle time", "value": "30", "unit": "s/each", "source_or_origin": "fixture", "quality_note": "Same time dimension"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {"available_production_time_normalized_s": "28800", "cycle_time_normalized_s_per_each": "30"},
+      "expected_final_values": {"gross_capacity_raw_each": "960"},
+      "expected_units": {"gross_capacity_raw_each": "each"},
+      "tolerance": "0.0000001",
+      "notes": "Both time values are normalized to seconds."
+    },
+    {
+      "fixture_id": "AM08-F05",
+      "formula_key": "oee",
+      "category": "worked_example",
+      "inputs": {
+        "planned_production_time": {"name": "planned production time", "value": "480", "unit": "min", "source_or_origin": "fixture", "quality_note": "Same asset and period"},
+        "run_time": {"name": "run time", "value": "420", "unit": "min", "source_or_origin": "fixture", "quality_note": "Less than planned time"},
+        "ideal_cycle_time": {"name": "ideal cycle time", "value": "0.5", "unit": "min/each", "source_or_origin": "fixture", "quality_note": "Supplied process evidence"},
+        "total_count": {"name": "total count", "value": "780", "unit": "each", "source_or_origin": "fixture", "quality_note": "Same period"},
+        "good_count": {"name": "good count", "value": "744", "unit": "each", "source_or_origin": "fixture", "quality_note": "Same counting boundary"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {"availability": "0.875", "performance": "0.9285714285714286", "quality": "0.9538461538461538"},
+      "expected_final_values": {"oee": "0.775"},
+      "expected_units": {"availability": "ratio", "performance": "ratio", "quality": "ratio", "oee": "ratio"},
+      "tolerance": "0.0000001",
+      "notes": "OEE is a ratio; display as 77.50% only after preserving the raw ratio."
+    },
+    {
+      "fixture_id": "AM08-F06",
+      "formula_key": "oee",
+      "category": "missing_input",
+      "inputs": {
+        "planned_production_time": {"name": "planned production time", "value": "480", "unit": "min", "source_or_origin": "fixture", "quality_note": "Same asset and period"},
+        "run_time": {"name": "run time", "value": "420", "unit": "min", "source_or_origin": "fixture", "quality_note": "Less than planned time"},
+        "ideal_cycle_time": {"name": "ideal cycle time", "value": "0.5", "unit": "min/each", "source_or_origin": "fixture", "quality_note": "Supplied process evidence"},
+        "total_count": {"name": "total count", "value": "780", "unit": "each", "source_or_origin": "fixture", "quality_note": "Same period"}
+      },
+      "expected_status": "PARTIAL",
+      "expected_intermediate_values": {"availability": "0.875", "performance": "0.9285714285714286"},
+      "expected_final_values": {},
+      "expected_units": {"availability": "ratio", "performance": "ratio"},
+      "expected_missing_inputs": ["good_count"],
+      "expected_error_fields": [],
+      "expected_review_flags": ["quality cannot be calculated without good_count"],
+      "tolerance": "0.0000001",
+      "notes": "Return valid partial values and request the missing quality input."
+    },
+    {
+      "fixture_id": "AM08-F07",
+      "formula_key": "first_pass_yield",
+      "category": "worked_example",
+      "inputs": {
+        "first_pass_good_count": {"name": "first-pass good count", "value": "920", "unit": "each", "source_or_origin": "fixture", "quality_note": "Excludes rework"},
+        "units_entering_operation": {"name": "units entering operation", "value": "1000", "unit": "each", "source_or_origin": "fixture", "quality_note": "Same operation boundary"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {},
+      "expected_final_values": {"fpy": "0.92"},
+      "expected_units": {"fpy": "ratio"},
+      "tolerance": "0.0000001",
+      "notes": "Reworked units do not count as first-pass good."
+    },
+    {
+      "fixture_id": "AM08-F08",
+      "formula_key": "first_pass_yield",
+      "category": "zero_denominator",
+      "inputs": {
+        "first_pass_good_count": {"name": "first-pass good count", "value": "0", "unit": "each", "source_or_origin": "fixture", "quality_note": "No units processed"},
+        "units_entering_operation": {"name": "units entering operation", "value": "0", "unit": "each", "source_or_origin": "fixture", "quality_note": "No units processed"}
+      },
+      "expected_status": "NOT_APPLICABLE",
+      "expected_intermediate_values": {},
+      "expected_final_values": {},
+      "expected_units": {"fpy": "ratio"},
+      "expected_missing_inputs": [],
+      "expected_error_fields": ["units_entering_operation"],
+      "expected_review_flags": ["zero denominator"],
+      "tolerance": "0.0000001",
+      "notes": "Do not return zero or infinity."
+    },
+    {
+      "fixture_id": "AM08-F09",
+      "formula_key": "scrap_rate",
+      "category": "worked_example",
+      "inputs": {
+        "scrap_count": {"name": "scrap count", "value": "35", "unit": "each", "source_or_origin": "fixture", "quality_note": "Declared scrap disposition"},
+        "units_started": {"name": "units started", "value": "1000", "unit": "each", "source_or_origin": "fixture", "quality_note": "Same production boundary"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {},
+      "expected_final_values": {"scrap_rate": "0.035"},
+      "expected_units": {"scrap_rate": "ratio"},
+      "tolerance": "0.0000001",
+      "notes": "Display as 3.50% only after preserving the raw ratio."
+    },
+    {
+      "fixture_id": "AM08-F10",
+      "formula_key": "mtbf",
+      "category": "worked_example",
+      "inputs": {
+        "operating_time": {"name": "operating time", "value": "1800", "unit": "h", "source_or_origin": "fixture", "quality_note": "Declared observation window"},
+        "failure_count": {"name": "failure count", "value": "6", "unit": "failure", "source_or_origin": "fixture", "quality_note": "Declared failure definition"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {},
+      "expected_final_values": {"mtbf": "300"},
+      "expected_units": {"mtbf": "h/failure"},
+      "tolerance": "0.0000001",
+      "notes": "MTBF is descriptive for the declared observation window, not a reliability guarantee."
+    },
+    {
+      "fixture_id": "AM08-F11",
+      "formula_key": "mttr",
+      "category": "worked_example",
+      "inputs": {
+        "corrective_repair_time": {"name": "corrective repair time", "value": "18", "unit": "h", "source_or_origin": "fixture", "quality_note": "Declared repair boundary"},
+        "failure_count": {"name": "failure count", "value": "6", "unit": "failure", "source_or_origin": "fixture", "quality_note": "Same observation window"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {},
+      "expected_final_values": {"mttr": "3"},
+      "expected_units": {"mttr": "h/failure"},
+      "tolerance": "0.0000001",
+      "notes": "The repair-time start and stop rule must be defined by the implementing skill."
+    },
+    {
+      "fixture_id": "AM08-F12",
+      "formula_key": "cp",
+      "category": "worked_example",
+      "inputs": {
+        "upper_spec_limit": {"name": "upper specification limit", "value": "10.5", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Supplied specification"},
+        "lower_spec_limit": {"name": "lower specification limit", "value": "9.5", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Supplied specification"},
+        "within_sigma": {"name": "within-subgroup sigma", "value": "0.1", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Declared sigma method"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {"specification_width": "1.0", "six_sigma": "0.6"},
+      "expected_final_values": {"cp": "1.6666666666666667"},
+      "expected_units": {"specification_width": "mm", "six_sigma": "mm", "cp": "ratio"},
+      "tolerance": "0.0000001",
+      "notes": "Cp describes potential width capability and does not describe centering."
+    },
+    {
+      "fixture_id": "AM08-F13",
+      "formula_key": "cp",
+      "category": "invalid_input",
+      "inputs": {
+        "upper_spec_limit": {"name": "upper specification limit", "value": "10.5", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Supplied specification"},
+        "lower_spec_limit": {"name": "lower specification limit", "value": "9.5", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Supplied specification"},
+        "within_sigma": {"name": "within-subgroup sigma", "value": "-0.1", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Invalid negative sigma"}
+      },
+      "expected_status": "INVALID_INPUT",
+      "expected_intermediate_values": {},
+      "expected_final_values": {},
+      "expected_units": {"cp": "ratio"},
+      "expected_missing_inputs": [],
+      "expected_error_fields": ["within_sigma"],
+      "expected_review_flags": [],
+      "tolerance": "0.0000001",
+      "notes": "Reject the invalid sigma; do not calculate a negative-width interpretation."
+    },
+    {
+      "fixture_id": "AM08-F14",
+      "formula_key": "cpk",
+      "category": "worked_example",
+      "inputs": {
+        "upper_spec_limit": {"name": "upper specification limit", "value": "10.5", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Supplied specification"},
+        "lower_spec_limit": {"name": "lower specification limit", "value": "9.5", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Supplied specification"},
+        "mean": {"name": "process mean", "value": "10.15", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Declared observation window"},
+        "within_sigma": {"name": "within-subgroup sigma", "value": "0.1", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Declared sigma method"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {"upper_capability": "1.1666666666666667", "lower_capability": "2.1666666666666665"},
+      "expected_final_values": {"cpk": "1.1666666666666667"},
+      "expected_units": {"upper_capability": "ratio", "lower_capability": "ratio", "cpk": "ratio"},
+      "tolerance": "0.0000001",
+      "notes": "Cpk reflects centering relative to the nearer specification limit."
+    },
+    {
+      "fixture_id": "AM08-F15",
+      "formula_key": "xbar_control_limits",
+      "category": "worked_example",
+      "inputs": {
+        "center_line": {"name": "center line", "value": "10", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Declared baseline"},
+        "within_sigma": {"name": "within-subgroup sigma", "value": "0.12", "unit": "mm", "source_or_origin": "fixture", "quality_note": "Declared sigma method"},
+        "subgroup_size": {"name": "subgroup size", "value": "4", "unit": "each", "source_or_origin": "fixture", "quality_note": "X-bar subgroup"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {"three_sigma_over_sqrt_n": "0.18"},
+      "expected_final_values": {"ucl": "10.18", "lcl": "9.82"},
+      "expected_units": {"three_sigma_over_sqrt_n": "mm", "ucl": "mm", "lcl": "mm"},
+      "tolerance": "0.0000001",
+      "notes": "Control limits are not specification limits."
+    },
+    {
+      "fixture_id": "AM08-F16",
+      "formula_key": "gross_capacity",
+      "category": "rounding",
+      "inputs": {
+        "available_production_time": {"name": "available production time", "value": "453", "unit": "min", "source_or_origin": "fixture", "quality_note": "Theoretical period"},
+        "cycle_time": {"name": "cycle time", "value": "0.7", "unit": "min/each", "source_or_origin": "fixture", "quality_note": "Representative cycle time"}
+      },
+      "expected_status": "CALCULATED",
+      "expected_intermediate_values": {"available_production_time_normalized_s": "27180", "cycle_time_normalized_s_per_each": "42"},
+      "expected_final_values": {"gross_capacity_raw_each": "647.1428571428571", "gross_capacity_rounded_each": "648"},
+      "expected_units": {"gross_capacity_raw_each": "each", "gross_capacity_rounded_each": "each"},
+      "rounding": {"policy": "CEILING", "reason": "Countable theoretical units cannot be returned as a fractional operating threshold."},
+      "tolerance": "0.0000001",
+      "notes": "The raw result remains visible beside the ceiling-rounded value."
+    }
+  ]
+}

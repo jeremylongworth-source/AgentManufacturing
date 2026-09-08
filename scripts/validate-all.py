@@ -31,6 +31,7 @@ VALIDATORS = [
     "validate-systems-data.py",
     "validate-advanced-manufacturing.py",
     "validate-supplier-change.py",
+    "validate-environment-energy-waste.py",
 ]
 
 

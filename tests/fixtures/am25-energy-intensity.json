@@ -1,0 +1,609 @@
+{
+  "schema_version": "AM-25-energy-fixtures-1",
+  "cases": [
+    {
+      "id": "matched",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "READY_FOR_REVIEW",
+      "intensities": [
+        "3.0000"
+      ],
+      "comparable": false
+    },
+    {
+      "id": "mwh",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "MWh",
+            "energy": 1.2,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "READY_FOR_REVIEW",
+      "intensities": [
+        "3.0000"
+      ],
+      "comparable": false
+    },
+    {
+      "id": "mj",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "MJ",
+            "energy": 4320,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "READY_FOR_REVIEW",
+      "intensities": [
+        "3.0000"
+      ],
+      "comparable": false
+    },
+    {
+      "id": "gj",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "GJ",
+            "energy": 4.32,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "READY_FOR_REVIEW",
+      "intensities": [
+        "3.0000"
+      ],
+      "comparable": false
+    },
+    {
+      "id": "rounding",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1,
+            "activity": 6
+          }
+        ]
+      },
+      "status": "READY_FOR_REVIEW",
+      "intensities": [
+        "0.1667"
+      ],
+      "comparable": false
+    },
+    {
+      "id": "zero_energy",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 0,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "READY_FOR_REVIEW",
+      "intensities": [
+        "0.0000"
+      ],
+      "comparable": false
+    },
+    {
+      "id": "zero_activity",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 0
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "power_unit",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kW",
+            "energy": 1200,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "period_mismatch",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-07",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "missing_boundary",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "negative",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": -10,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "nonfinite",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": "NaN",
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "boolean",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": true
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "cumulative",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "cumulative",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "missing_energy",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": null,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "range_limit",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": "1e19",
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        null
+      ],
+      "comparable": false
+    },
+    {
+      "id": "comparable",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 400
+          },
+          {
+            "id": "M1-Sep",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-09",
+            "energy_period": "2026-09",
+            "activity_period": "2026-09",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 800,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "READY_FOR_REVIEW",
+      "intensities": [
+        "3.0000",
+        "2.0000"
+      ],
+      "comparable": true
+    },
+    {
+      "id": "office_boundary",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 400
+          },
+          {
+            "id": "M1-Sep",
+            "facility": "Plant A",
+            "boundary": "Line 1 plus office",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-09",
+            "energy_period": "2026-09",
+            "activity_period": "2026-09",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 800,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        "3.0000",
+        "2.0000"
+      ],
+      "comparable": false
+    },
+    {
+      "id": "output_basis",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 400
+          },
+          {
+            "id": "M1-Sep",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "kg",
+            "period": "2026-09",
+            "energy_period": "2026-09",
+            "activity_period": "2026-09",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 800,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        "3.0000",
+        "2.0000"
+      ],
+      "comparable": false
+    },
+    {
+      "id": "duplicate_id",
+      "input": {
+        "records": [
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 400
+          },
+          {
+            "id": "M1-Aug",
+            "facility": "Plant A",
+            "boundary": "Line 1 only",
+            "allocation_basis": "metered dedicated line",
+            "product_basis": "Product A good output",
+            "activity_unit": "parts",
+            "period": "2026-08",
+            "energy_period": "2026-08",
+            "activity_period": "2026-08",
+            "reading_type": "interval_consumption",
+            "energy_unit": "kWh",
+            "energy": 1200,
+            "activity": 400
+          }
+        ]
+      },
+      "status": "NEEDS_INPUT",
+      "intensities": [
+        "3.0000",
+        null
+      ],
+      "comparable": false
+    }
+  ]
+}

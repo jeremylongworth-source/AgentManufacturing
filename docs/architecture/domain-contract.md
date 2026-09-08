@@ -172,6 +172,8 @@ This is an authoring contract for later implementation. Completion of documentat
 
 ## Sources and change control
 
+AM-25 completes Family 19 with aspect inventories, environmental risk registers, energy intensity, waste-stream evidence, waste-reduction proposals, and environmental-objective measurability review. Environmental classification, disposal permission, chemical-handling changes, certification, and compliance remain outside package authority. The energy helper checks declared interval summaries and compatible comparison boundaries; it cannot verify meter coverage or establish causal savings.
+
 AM-24 completes Families 17 and 18 with supplier qualification, defect analysis, corrective-action drafts, certificate and supplier-change reviews, and engineering-change/document-control evidence reviews. Supplier approval, transmission, change activation, product release, document withdrawal, and retrospective authorization remain outside these packages. The supplier-defect helper calculates a bounded rate from supplied linked counts; it cannot establish provenance or causation.
 
 External pages were opened on 2026-09-06. Only their limited claims above inform this contract:

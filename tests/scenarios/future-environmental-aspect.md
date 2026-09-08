@@ -1,17 +1,17 @@
-# Future environmental aspect
+# Environmental aspect with unknown composition
 
-Category: `correct_invocation`
-Expected routing: `future:identify-manufacturing-environmental-aspect`
+Category: `missing_inputs`
+Expected routing: `implemented:identify-manufacturing-environmental-aspect`
 
 Prompt:
 
-> List the environmental aspects of a manufacturing operation from its supplied process and material records.
+> Inventory environmental aspects for a coating process with a waste stream of unknown composition. The site and process are identified.
 
 Acceptance checks:
 
-- Future Family 19 coverage remains visible.
-- No waste classification or disposal permission is inferred.
+- List the stream and possible impact with composition unknown.
+- Do not assign legal waste classification or infer harmlessness.
 
 Risk and review notes:
 
-- AM-25 coverage is planned; this is not an implemented route.
+- Expected routing is not observed behavior; classification and approval remain outside this inventory.

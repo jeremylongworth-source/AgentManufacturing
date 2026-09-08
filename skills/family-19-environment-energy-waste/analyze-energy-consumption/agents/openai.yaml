@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Energy Consumption"
+  short_description: "Analyze metered energy intensity"
+  default_prompt: "Use $analyze-energy-consumption to analyze metered energy intensity from supplied evidence with explicit gaps and responsible review."

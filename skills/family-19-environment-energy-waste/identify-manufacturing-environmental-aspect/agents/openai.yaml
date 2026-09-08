@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Manufacturing Environmental Aspect"
+  short_description: "Inventory environmental aspects"
+  default_prompt: "Use $identify-manufacturing-environmental-aspect to inventory environmental aspects from supplied evidence with explicit gaps and responsible review."

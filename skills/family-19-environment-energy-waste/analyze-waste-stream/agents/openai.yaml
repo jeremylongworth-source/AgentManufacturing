@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Waste Stream"
+  short_description: "Review waste-stream evidence"
+  default_prompt: "Use $analyze-waste-stream to review waste-stream evidence from supplied evidence with explicit gaps and responsible review."

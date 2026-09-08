@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Environmental Objective"
+  short_description: "Review objective measurability"
+  default_prompt: "Use $review-environmental-objective to review objective measurability from supplied evidence with explicit gaps and responsible review."

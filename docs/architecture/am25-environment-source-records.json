@@ -1,0 +1,114 @@
+{
+  "schema_version": "AM-25-source-register-1",
+  "records": [
+    {
+      "source_key": "AM25-ISO-14001",
+      "title": "ISO 14001:2026",
+      "publisher": "International Organization for Standardization",
+      "url": "https://www.iso.org/standard/14001",
+      "source_class": "voluntary_standard",
+      "jurisdiction": {
+        "country": "international",
+        "level": "international",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "environment"
+        ]
+      },
+      "scope": "Catalogue identity and edition only; no normative clauses reviewed.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": "2026, edition 4",
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Catalogue presents published edition 4, publication month 2026-04."
+      },
+      "authority": {
+        "official_status": "publisher catalogue",
+        "incorporation_basis": "No site, legal, or contractual incorporation established."
+      },
+      "rights": {
+        "rights_status": "LICENSE_REQUIRED",
+        "content_handling": "METADATA_ONLY",
+        "licence_url": "https://www.iso.org/standard/14001",
+        "permission_note": "Record bibliographic metadata only; no protected clauses or standard text reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Framework candidate in roadmap only; applicable edition, authorized text access, and use basis require separate review.",
+      "exclusions": [
+        "No certification, transition deadline, or site applicability conclusion."
+      ]
+    },
+    {
+      "source_key": "AM25-ECCC-WASTE-CONTACT",
+      "title": "Reducing and managing waste: contact information",
+      "publisher": "Environment and Climate Change Canada",
+      "url": "https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/contact-information.html",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "environment",
+          "waste"
+        ]
+      },
+      "scope": "Guidance directs waste-management licensing and permitting questions to provinces and territories.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Guidance page accessed; no enacted legal instrument or effective date verified."
+      },
+      "authority": {
+        "official_status": "official guidance",
+        "incorporation_basis": "Routing context only; not law or a permit."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Only a brief attributed paraphrase and source link are stored; no page reproduction."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports requesting province/territory and competent owner; specific obligations remain unassessed.",
+      "exclusions": [
+        "No classification, disposal permission, or site compliance conclusion."
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "source_key": "AM25-ISO-14001",
+      "claim_type": "catalogue_metadata",
+      "scope": "edition only",
+      "as_of": "2026-09-08",
+      "location": "General information / edition and publication date",
+      "support_status": "VERIFIED_METADATA",
+      "claim": "Catalogue lists ISO 14001:2026, edition 4, publication month 2026-04."
+    },
+    {
+      "source_key": "AM25-ECCC-WASTE-CONTACT",
+      "claim_type": "guidance_routing",
+      "scope": "waste management authority discovery",
+      "as_of": "2026-09-08",
+      "location": "Page body / provinces and territories licensing and permitting statement",
+      "support_status": "VERIFIED_GUIDANCE",
+      "claim": "Provincial and territorial authorities handle licensing and permitting for waste-management operations; site-specific applicability is not determined."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Environmental Risk Register"
+  short_description: "Draft environmental risk registers"
+  default_prompt: "Use $build-environmental-risk-register to draft environmental risk registers from supplied evidence with explicit gaps and responsible review."

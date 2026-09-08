@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Change Package"
+  short_description: "Review change-package completeness"
+  default_prompt: "Use $review-change-package to review supplied change evidence without approving or activating it."

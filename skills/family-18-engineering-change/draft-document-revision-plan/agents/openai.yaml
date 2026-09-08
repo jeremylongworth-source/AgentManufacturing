@@ -1,0 +1,4 @@
+interface:
+  display_name: "Draft Document Revision Plan"
+  short_description: "Plan controlled document revision"
+  default_prompt: "Use $draft-document-revision-plan to draft revision and withdrawal steps for review without publishing."

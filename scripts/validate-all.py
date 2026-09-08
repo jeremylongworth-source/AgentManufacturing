@@ -30,6 +30,7 @@ VALIDATORS = [
     "validate-lean-improvement.py",
     "validate-systems-data.py",
     "validate-advanced-manufacturing.py",
+    "validate-supplier-change.py",
 ]
 
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Certificate Of Conformance"
+  short_description: "Review certificate evidence"
+  default_prompt: "Use $review-certificate-of-conformance to compare supplied certificate evidence without certifying or releasing product."

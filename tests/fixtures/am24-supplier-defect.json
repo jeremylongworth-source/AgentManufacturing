@@ -1,0 +1,266 @@
+{
+  "schema_version": "AM-24-defect-fixtures-1",
+  "cases": [
+    {
+      "id": "matched_counts",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": 5,
+        "exposed_units": 200
+      },
+      "status": "READY_FOR_REVIEW",
+      "rate": "2.50"
+    },
+    {
+      "id": "rounding",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": 1,
+        "exposed_units": 6
+      },
+      "status": "READY_FOR_REVIEW",
+      "rate": "16.67"
+    },
+    {
+      "id": "zero_defects",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": 0,
+        "exposed_units": 200
+      },
+      "status": "READY_FOR_REVIEW",
+      "rate": "0.00"
+    },
+    {
+      "id": "zero_exposure",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": 5,
+        "exposed_units": 0
+      },
+      "status": "NEEDS_INPUT",
+      "rate": null
+    },
+    {
+      "id": "missing_lot",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": 5,
+        "exposed_units": 200
+      },
+      "status": "NEEDS_INPUT",
+      "rate": null
+    },
+    {
+      "id": "mixed_units",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "kg"
+        },
+        "defective_units": 5,
+        "exposed_units": 200
+      },
+      "status": "NEEDS_INPUT",
+      "rate": null
+    },
+    {
+      "id": "excess_count",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": 201,
+        "exposed_units": 200
+      },
+      "status": "NEEDS_INPUT",
+      "rate": null
+    },
+    {
+      "id": "occurrences_separate",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": 5,
+        "exposed_units": 200,
+        "defect_occurrences": 7
+      },
+      "status": "READY_FOR_REVIEW",
+      "rate": "2.50"
+    },
+    {
+      "id": "missing_count",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": null,
+        "exposed_units": 200
+      },
+      "status": "NEEDS_INPUT",
+      "rate": null
+    },
+    {
+      "id": "negative_count",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": -1,
+        "exposed_units": 200
+      },
+      "status": "NEEDS_INPUT",
+      "rate": null
+    },
+    {
+      "id": "fractional_count",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": 1.5,
+        "exposed_units": 200
+      },
+      "status": "NEEDS_INPUT",
+      "rate": null
+    },
+    {
+      "id": "nonfinite_count",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": "NaN",
+        "exposed_units": 200
+      },
+      "status": "NEEDS_INPUT",
+      "rate": null
+    },
+    {
+      "id": "boolean_count",
+      "input": {
+        "scope": {
+          "supplier": "A",
+          "lot": "L1",
+          "part": "P1",
+          "period": "2026-08",
+          "population_basis": "inspected"
+        },
+        "units": {
+          "defective": "parts",
+          "exposure": "parts"
+        },
+        "defective_units": true,
+        "exposed_units": 200
+      },
+      "status": "NEEDS_INPUT",
+      "rate": null
+    }
+  ]
+}

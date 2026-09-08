@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Supplier Qualification"
+  short_description: "Review supplier capability evidence"
+  default_prompt: "Use $review-supplier-qualification to compare supplied supplier capability evidence without approving status."

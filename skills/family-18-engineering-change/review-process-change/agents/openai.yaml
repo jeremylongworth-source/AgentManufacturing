@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Process Change"
+  short_description: "Review process-change impact"
+  default_prompt: "Use $review-process-change to assess supplied process-change evidence without changing parameters or approving release."

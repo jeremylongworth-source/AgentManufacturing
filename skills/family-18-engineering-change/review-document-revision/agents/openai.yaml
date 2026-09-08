@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Document Revision"
+  short_description: "Compare document revisions"
+  default_prompt: "Use $review-document-revision to compare supplied document copies and authoritative revisions without replacing them."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Obsolete Document"
+  short_description: "Find possible obsolete documents"
+  default_prompt: "Use $identify-obsolete-document to compare supplied document inventory and revisions without invalidating copies."

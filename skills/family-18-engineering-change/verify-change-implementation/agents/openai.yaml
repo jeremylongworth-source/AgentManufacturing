@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Change Implementation"
+  short_description: "Assess change implementation evidence"
+  default_prompt: "Use $verify-change-implementation to compare supplied implementation evidence without retroactive approval."

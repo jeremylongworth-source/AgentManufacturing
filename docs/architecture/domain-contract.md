@@ -172,6 +172,8 @@ This is an authoring contract for later implementation. Completion of documentat
 
 ## Sources and change control
 
+AM-24 completes Families 17 and 18 with supplier qualification, defect analysis, corrective-action drafts, certificate and supplier-change reviews, and engineering-change/document-control evidence reviews. Supplier approval, transmission, change activation, product release, document withdrawal, and retrospective authorization remain outside these packages. The supplier-defect helper calculates a bounded rate from supplied linked counts; it cannot establish provenance or causation.
+
 External pages were opened on 2026-09-06. Only their limited claims above inform this contract:
 
 | Source | Observed edition / page date | Supported use |

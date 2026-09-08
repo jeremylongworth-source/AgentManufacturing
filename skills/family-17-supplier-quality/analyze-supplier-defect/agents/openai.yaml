@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Supplier Defect"
+  short_description: "Analyze supplier defect patterns"
+  default_prompt: "Use $analyze-supplier-defect to analyze supplied defect records while preserving attribution uncertainty."

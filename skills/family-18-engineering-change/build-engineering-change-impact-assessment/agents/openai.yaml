@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Engineering Change Impact Assessment"
+  short_description: "Map cross-functional change impact"
+  default_prompt: "Use $build-engineering-change-impact-assessment to map supplied change impacts without approving implementation."

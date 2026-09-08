@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Routing Change"
+  short_description: "Review routing revision impact"
+  default_prompt: "Use $review-routing-change to compare supplied routing revisions without activating them."

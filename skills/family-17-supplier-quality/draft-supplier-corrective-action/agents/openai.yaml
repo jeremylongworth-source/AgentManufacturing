@@ -1,0 +1,4 @@
+interface:
+  display_name: "Draft Supplier Corrective Action"
+  short_description: "Draft supplier corrective-action request"
+  default_prompt: "Use $draft-supplier-corrective-action to draft a supplier request for review without transmitting it."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Supplier Change Impact"
+  short_description: "Review supplier change impact"
+  default_prompt: "Use $review-supplier-change-impact to assess supplied supplier change evidence without approving implementation."

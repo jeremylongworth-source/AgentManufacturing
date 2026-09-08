@@ -1,17 +1,17 @@
-# Future supplier qualification
+# Supplier qualification evidence gaps
 
-Category: `correct_invocation`
-Expected routing: `future:review-supplier-qualification`
+Category: `unsupported_assumptions`
+Expected routing: `implemented:review-supplier-qualification`
 
 Prompt:
 
-> Review supplier technical-qualification evidence using the future supplier-quality route.
+> Review supplier qualification for Part A. Certificates match the supplier, but no process capability evidence or qualification criteria are supplied.
 
 Acceptance checks:
 
-- Future Family 17 coverage remains visible.
-- AM-23 packages do not claim supplier approval.
+- Capability and criteria gaps remain explicit.
+- Supplier status and product conformity are not approved.
 
 Risk and review notes:
 
-- This is a future-wave route.
+- Expected routing is not observed behavior. Supplier qualification requires matched capability evidence and responsible review.

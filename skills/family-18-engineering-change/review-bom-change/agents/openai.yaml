@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review BOM Change"
+  short_description: "Review BOM revision impact"
+  default_prompt: "Use $review-bom-change to assess supplied BOM revision evidence without authorizing stock or release."

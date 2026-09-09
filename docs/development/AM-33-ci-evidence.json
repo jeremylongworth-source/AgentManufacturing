@@ -20,6 +20,16 @@
         "windows-latest": "success",
         "ubuntu-latest": "success"
       }
+    },
+    {
+      "id": 34354858630,
+      "head_sha": "436f280e48f7ebe448343eb29cc775852a223488",
+      "url": "https://github.com/jeremylongworth-source/AgentManufacturing/actions/runs/34354858630",
+      "conclusion": "success",
+      "jobs": {
+        "windows-latest": "success",
+        "ubuntu-latest": "success"
+      }
     }
   ],
   "branch_protection": {
@@ -28,5 +38,5 @@
     "message": "GitHub reported that the private repository requires a plan upgrade or public visibility for this feature; neither was changed."
   },
   "failure_and_fix": "Initial Linux run failed at the AM-03 frozen draft hash; Windows passed. Normalize only newline bytes to the original CRLF fingerprint. Three regression cases preserve LF/CRLF equivalence and reject altered content. Subsequent hosted Linux and Windows jobs passed.",
-  "scope": "Hosted evidence applies to the recorded commit SHAs, not any later untested change. No branch enforcement or model behavior is implied."
+  "scope": "Hosted evidence includes audit commit 436f280 with all 32 validators on both platforms. This subsequent evidence-record update changes no executable code. No branch enforcement or model behavior is implied."
 }

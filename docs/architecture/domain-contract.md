@@ -172,6 +172,8 @@ This is an authoring contract for later implementation. Completion of documentat
 
 ## Sources and change control
 
+AM-31 evaluates eight adversarial requests and eight paired safe review requests as assisted, nonblind simulations. The 30-validator gate checks evidence integrity and 243 expected routing cases; it does not establish model robustness. Source and response hashes invalidate stale self-reviews. Atomic contracts remain unchanged, independent runtime remains NOT_RUN, and AM-32 owns public readiness.
+
 AM-30 records four synthetic assisted integration walkthroughs with explicit source keys, calculations, uncertainty and qualified handoffs. The 29-validator gate checks artifacts and real resolver/coverage boundaries. These are nonblind self-reviewed simulations; independent model behavior and baseline comparison remain NOT_RUN. AM-31 owns adversarial safety evaluation.
 
 AM-29 formalizes specialization architecture with priorities for 12 roadmap groups and preserved dispositions for all 18 D-05 labels. The registry contains planned candidates, no sector requirement packages. Its inspector reports context needs or coverage gaps while preserving generic work. Future packages require source-backed requirement differences, rights, effectivity, qualified review and observed evaluation; no requirement is inherited from a broad sector or technology label.

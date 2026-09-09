@@ -37,6 +37,7 @@ VALIDATORS = [
     "validate-professional-skillsets.py",
     "validate-sector-framework.py",
     "validate-integration-evaluation.py",
+    "validate-adversarial-safety.py",
 ]
 
 

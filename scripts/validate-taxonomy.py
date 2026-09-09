@@ -40,6 +40,16 @@ def objects(value: Any, label: str) -> None:
     need(isinstance(value, list) and all(isinstance(x, dict) for x in value), f"{label}: expected object list")
 
 
+def draft_fingerprint(raw: bytes) -> str:
+    """Preserve AM-03's Windows CRLF fingerprint across Git checkout formats.
+
+    Only newline bytes are normalized; content, encoding and the frozen hash
+    remain unchanged. Git's LF checkout must verify against the same record.
+    """
+    canonical = raw.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n")
+    return hashlib.sha256(canonical).hexdigest()
+
+
 def validate(data: Any, draft: dict[str, Any], draft_hash: str) -> None:
     need(isinstance(data, dict), "index: expected object")
     need(data.get("schema_version") == "AM-03-taxonomy-1", "index: schema version")
@@ -199,7 +209,7 @@ def main() -> int:
         draft_bytes = (root / "docs/architecture/candidate-register-v0.1.json").read_bytes()
         draft = json.loads(draft_bytes, object_pairs_hook=no_duplicate_keys)
         data = json.loads((root / "docs/architecture/taxonomy-index.yaml").read_text(encoding="utf-8-sig"), object_pairs_hook=no_duplicate_keys)
-        validate(data, draft, hashlib.sha256(draft_bytes).hexdigest())
+        validate(data, draft, draft_fingerprint(draft_bytes))
         for filename, marker, rows in projections(data):
             validate_projection((root / "docs/architecture" / filename).read_text(encoding="utf-8"), marker, rows)
     except (OSError, UnicodeError, ValueError, KeyError, TypeError, AttributeError) as exc:

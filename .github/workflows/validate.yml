@@ -57,6 +57,10 @@
           "run": "python scripts/validate-public-readiness.py --require-ready"
         },
         {
+          "name": "Check checkout fingerprint regression",
+          "run": "python tests/test_taxonomy_fingerprint.py"
+        },
+        {
           "name": "Check whitespace",
           "run": "git diff --check"
         }

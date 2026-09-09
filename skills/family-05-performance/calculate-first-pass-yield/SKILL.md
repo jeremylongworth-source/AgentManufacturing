@@ -1,7 +1,7 @@
 ---
 name: calculate-first-pass-yield
 description: Calculate first-pass yield from initial units and units accepted without rework using an explicit period and exclusion basis.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate First-Pass Yield

@@ -1,7 +1,7 @@
 ---
 name: review-nonfood-labelling-readiness
 description: Review general prepackaged non-food consumer label evidence with product exclusions and sector-specific coverage kept explicit.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Nonfood Labelling Readiness

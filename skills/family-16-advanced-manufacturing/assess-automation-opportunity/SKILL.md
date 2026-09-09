@@ -1,7 +1,7 @@
 ---
 name: assess-automation-opportunity
 description: Screen an automation opportunity from supplied process evidence while preserving engineering, sector, and review boundaries.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Assess Automation Opportunity

@@ -3,7 +3,7 @@
   "name": "maintenance-planner",
   "description": "Prepare maintenance priorities and plans from backlog and failure evidence.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "analyze-maintenance-backlog",

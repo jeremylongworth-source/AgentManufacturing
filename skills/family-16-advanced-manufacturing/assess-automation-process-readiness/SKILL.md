@@ -1,7 +1,7 @@
 ---
 name: assess-automation-process-readiness
 description: Assess process stability and automation prerequisites from supplied evidence before concept selection or engineering execution.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Assess Automation Process Readiness

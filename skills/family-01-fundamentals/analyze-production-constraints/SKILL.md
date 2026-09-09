@@ -1,7 +1,7 @@
 ---
 name: analyze-production-constraints
 description: Build an evidence-ranked register of production constraints while separating measured bottlenecks from hypotheses.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Production Constraints

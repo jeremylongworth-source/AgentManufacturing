@@ -1,7 +1,7 @@
 ---
 name: build-process-routing
 description: Draft product routing from approved operations, work centers, precedence constraints, and revision evidence without activating a system record.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Process Routing

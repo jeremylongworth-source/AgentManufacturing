@@ -1,7 +1,7 @@
 ---
 name: review-change-package
 description: Review engineering change-package completeness and effectivity evidence without approving or activating the change.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Change Package

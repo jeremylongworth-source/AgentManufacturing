@@ -1,7 +1,7 @@
 ---
 name: trace-production-lot
 description: Query supplied genealogy evidence for a target production lot and exposure question without releasing or recalling product.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Trace Production Lot

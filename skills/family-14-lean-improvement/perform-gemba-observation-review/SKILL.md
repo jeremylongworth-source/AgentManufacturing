@@ -1,7 +1,7 @@
 ---
 name: perform-gemba-observation-review
 description: Synthesize supplied on-site observations into facts, questions, and evidence gaps without claiming a virtual inspection.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Perform Gemba Observation Review

@@ -1,7 +1,7 @@
 ---
 name: review-process-parameter-control
 description: Review evidence against supplied approved process parameter limits and escalation procedures without designing new operating limits.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Process Parameter Control

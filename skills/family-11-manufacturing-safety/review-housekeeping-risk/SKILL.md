@@ -1,7 +1,7 @@
 ---
 name: review-housekeeping-risk
 description: Review workplace obstruction, access, spill, and housekeeping hazard evidence without treating organization scores as safety assurance.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Housekeeping Risk

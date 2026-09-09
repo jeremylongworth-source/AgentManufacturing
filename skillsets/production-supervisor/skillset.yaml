@@ -3,7 +3,7 @@
   "name": "production-supervisor",
   "description": "Translate approved plans into shift-level review and handoff.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "review-production-order-readiness",

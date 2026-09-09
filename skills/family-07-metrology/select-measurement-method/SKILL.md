@@ -1,7 +1,7 @@
 ---
 name: select-measurement-method
 description: Compare supplied measurement approaches for a stated measurand, tolerance, geometry, material, environment, and available method evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Select Measurement Method

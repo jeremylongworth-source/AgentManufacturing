@@ -1,7 +1,7 @@
 ---
 name: review-scrap-material-record
 description: Review scrap material event integrity, quantities, reasons, and approvals without calculating disposal or authorizing disposition.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Scrap Material Record

@@ -1,7 +1,7 @@
 ---
 name: build-fishbone-analysis
 description: Organize candidate causes by category while preserving evidence gaps and avoiding causal proof claims.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Fishbone Analysis

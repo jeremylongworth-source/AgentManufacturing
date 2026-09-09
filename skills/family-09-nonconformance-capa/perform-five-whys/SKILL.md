@@ -1,7 +1,7 @@
 ---
 name: perform-five-whys
 description: Construct and challenge a five-whys causal chain for a bounded problem without treating the chain as proof.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Perform Five Whys

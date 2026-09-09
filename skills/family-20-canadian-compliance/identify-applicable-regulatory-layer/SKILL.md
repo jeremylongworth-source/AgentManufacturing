@@ -1,7 +1,7 @@
 ---
 name: identify-applicable-regulatory-layer
 description: Map authority and source research for a manufacturing obligation from supplied jurisdiction context while preserving unresolved applicability.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Applicable Regulatory Layer

@@ -1,7 +1,7 @@
 ---
 name: review-operator-qualification-record
 description: Review operator qualification evidence against supplied rules without issuing certification or work authorization.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Operator Qualification Record

@@ -40,7 +40,7 @@ def validate_schema(schema: dict[str, Any], contract: dict[str, Any]) -> None:
     need(schema.get("frontmatter", {}).get("required_keys") == ["name", "description", "license"], "frontmatter keys")
     need(schema.get("required_sections") == SKILL_SECTIONS, "required section order")
     need(schema.get("host_metadata", {}).get("required_interface_keys") == ["display_name", "short_description", "default_prompt"], "host interface keys")
-    need(schema.get("license_policy", {}).get("current_project_status") == "PENDING_PROJECT_GOVERNANCE", "license governance status")
+    need(schema.get("license_policy", {}).get("current_project_status") == "MIT", "license governance status")
     need(schema.get("license_policy", {}).get("frontmatter_key") == "license", "license key")
     need(schema.get("output_contract", {}).get("status_values") and set(schema["output_contract"]["status_values"]) == STATUSES, "output status values")
     string_list(schema.get("output_contract", {}).get("required_fields"), "output fields", 8)

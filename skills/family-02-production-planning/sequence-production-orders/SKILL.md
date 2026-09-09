@@ -1,7 +1,7 @@
 ---
 name: sequence-production-orders
 description: Propose a non-overlapping production-order sequence from due dates, priorities, routing durations, resource availability, and changeover evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Sequence Production Orders

@@ -1,7 +1,7 @@
 ---
 name: draft-supplier-corrective-action
 description: Draft a supplier corrective-action request from supplied evidence for human review without transmitting it.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Draft Supplier Corrective Action

@@ -1,7 +1,7 @@
 ---
 name: review-calibration-status
 description: Review calibration certificates, dates, usage, and supplied due-date rules while flagging unsupported validity claims.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Calibration Status

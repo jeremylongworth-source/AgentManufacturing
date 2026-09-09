@@ -1,7 +1,7 @@
 ---
 name: verify-corrective-action-effectiveness
 description: Assess predefined evidence that a corrective action addressed a cause without closing the record or approving release.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Verify Corrective-Action Effectiveness

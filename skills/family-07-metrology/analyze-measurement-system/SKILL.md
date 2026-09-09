@@ -1,7 +1,7 @@
 ---
 name: analyze-measurement-system
 description: Structure a measurement-system study request and expose missing repeatability, reproducibility, and operator evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Measurement System

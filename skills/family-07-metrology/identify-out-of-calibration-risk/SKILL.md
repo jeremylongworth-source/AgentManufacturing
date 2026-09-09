@@ -1,7 +1,7 @@
 ---
 name: identify-out-of-calibration-risk
 description: Screen measurement history for possible exposure to out-of-calibration equipment without deciding product disposition.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Out-of-Calibration Risk

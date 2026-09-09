@@ -1,7 +1,7 @@
 ---
 name: review-environmental-objective
 description: Review whether a proposed environmental objective has a measurable baseline, indicator, scope, and supporting obligation evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Environmental Objective

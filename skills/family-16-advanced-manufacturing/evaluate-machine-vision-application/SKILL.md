@@ -1,7 +1,7 @@
 ---
 name: evaluate-machine-vision-application
 description: Prepare a machine-vision feasibility brief from supplied inspection and imaging evidence without deploying a production model or releasing product.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Evaluate Machine Vision Application

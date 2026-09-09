@@ -1,7 +1,7 @@
 ---
 name: build-value-stream-map
 description: Map current material and information flow with supplied time and inventory measures without designing a future state.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Value Stream Map

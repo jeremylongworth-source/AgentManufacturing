@@ -1,7 +1,7 @@
 ---
 name: review-ergonomic-risk
 description: Assess task-level ergonomic exposure concerns and evidence gaps without diagnosing health conditions or prescribing work changes.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Ergonomic Risk

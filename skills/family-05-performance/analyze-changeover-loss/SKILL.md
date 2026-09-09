@@ -1,7 +1,7 @@
 ---
 name: analyze-changeover-loss
 description: Break down measured changeover losses from timestamps and task observations while separating overlap, baseline, and improvement proposals.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Changeover Loss

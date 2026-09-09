@@ -1,7 +1,7 @@
 ---
 name: build-waste-reduction-plan
 description: Draft waste-reduction alternatives with measurement, material-control, and review responsibilities.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Waste Reduction Plan

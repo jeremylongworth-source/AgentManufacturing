@@ -1,7 +1,7 @@
 ---
 name: calculate-oee
 description: Calculate availability, performance, quality, and OEE from supplied production evidence while preserving units and data gaps.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate OEE

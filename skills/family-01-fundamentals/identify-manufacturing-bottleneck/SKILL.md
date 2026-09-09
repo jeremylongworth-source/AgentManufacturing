@@ -1,7 +1,7 @@
 ---
 name: identify-manufacturing-bottleneck
 description: Identify an evidence-ranked manufacturing bottleneck from comparable operation rates, queues, downtime, demand, and period data.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Manufacturing Bottleneck

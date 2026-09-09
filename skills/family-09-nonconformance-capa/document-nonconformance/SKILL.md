@@ -1,7 +1,7 @@
 ---
 name: document-nonconformance
 description: Structure a nonconformance record that separates observed evidence, requirement, scope, and review status.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Document Nonconformance

@@ -1,7 +1,7 @@
 ---
 name: compare-process-alternatives
 description: Compare supplied process concepts against product requirements, capacity, quality, and resource evidence for engineering review.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Compare Process Alternatives

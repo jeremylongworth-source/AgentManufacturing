@@ -1,7 +1,7 @@
 ---
 name: review-operator-checklist
 description: Review an operator checklist against approved task requirements and completion records for coverage and exception-handling gaps.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Operator Checklist

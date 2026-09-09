@@ -1,7 +1,7 @@
 ---
 name: reconcile-material-consumption
 description: Reconcile material issue, return, scrap, and work-in-process events into a coherent consumption balance without changing records.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Reconcile Material Consumption

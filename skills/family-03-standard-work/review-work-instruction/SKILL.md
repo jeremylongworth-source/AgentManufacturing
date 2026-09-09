@@ -1,7 +1,7 @@
 ---
 name: review-work-instruction
 description: Review an existing work instruction for ambiguous, missing, conflicting, or uncontrolled steps against authorized process and acceptance evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Work Instruction

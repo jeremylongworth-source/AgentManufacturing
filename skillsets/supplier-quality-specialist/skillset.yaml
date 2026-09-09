@@ -3,7 +3,7 @@
   "name": "supplier-quality-specialist",
   "description": "Review supplier evidence and draft corrective-action requests.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "review-supplier-qualification",

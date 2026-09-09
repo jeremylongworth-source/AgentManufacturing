@@ -1,7 +1,7 @@
 ---
 name: review-ppe-requirement
 description: Review the evidence and context behind PPE requirements without selecting equipment or declaring protection adequacy.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review PPE Requirement

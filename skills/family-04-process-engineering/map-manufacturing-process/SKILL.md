@@ -1,7 +1,7 @@
 ---
 name: map-manufacturing-process
 description: Map supplied manufacturing operations, branches, inputs, outputs, and rework loops into a bounded process flow.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Map Manufacturing Process

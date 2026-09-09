@@ -1,7 +1,7 @@
 ---
 name: review-product-conformity
 description: Assess product conformity evidence against applicable specifications, inspection results, lot identity, and authorized acceptance rules without authorizing release.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Product Conformity

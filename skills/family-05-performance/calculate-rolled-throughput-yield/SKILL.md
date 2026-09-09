@@ -1,7 +1,7 @@
 ---
 name: calculate-rolled-throughput-yield
 description: Calculate rolled throughput yield from sequential first-pass yields while preserving routing applicability and dependence assumptions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Rolled Throughput Yield

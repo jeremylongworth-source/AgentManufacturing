@@ -1,7 +1,7 @@
 ---
 name: identify-hazardous-energy-source
 description: Inventory potential hazardous energy sources and unknowns without issuing lockout steps or isolation instructions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Hazardous Energy Source

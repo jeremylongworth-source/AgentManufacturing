@@ -1,7 +1,7 @@
 ---
 name: analyze-failure-history
 description: Analyze failure modes and exposure trends while keeping supplied metrics, event definitions, and causal investigation distinct.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Failure History

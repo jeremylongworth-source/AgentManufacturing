@@ -1,7 +1,7 @@
 ---
 name: calculate-production-labor-requirement
 description: Convert declared production workload into labor-hours or equivalents using supplied standards without approving staffing or overtime.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Production Labor Requirement

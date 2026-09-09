@@ -1,7 +1,7 @@
 ---
 name: build-spc-monitoring-plan
 description: Structure an SPC monitoring plan with characteristics, cadence, chart basis, alarm ownership, and evidence gaps.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build SPC Monitoring Plan

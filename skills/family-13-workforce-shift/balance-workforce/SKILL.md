@@ -1,7 +1,7 @@
 ---
 name: balance-workforce
 description: Allocate available skills and hours to declared tasks under restrictions without authorizing overtime or personnel assignment.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Balance Workforce

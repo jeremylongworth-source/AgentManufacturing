@@ -1,7 +1,7 @@
 ---
 name: build-preventive-action
 description: Propose controls for a prospective failure exposure while separating prevention from reactive corrective action.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Preventive Action

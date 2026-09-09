@@ -1,7 +1,7 @@
 ---
 name: assess-product-containment
 description: Assess proposed affected scope and containment evidence while reserving custody, release, and disposition decisions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Assess Product Containment

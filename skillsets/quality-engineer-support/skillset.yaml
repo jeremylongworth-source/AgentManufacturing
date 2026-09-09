@@ -3,7 +3,7 @@
   "name": "quality-engineer-support",
   "description": "Support quality investigation, capability and release evidence.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "triage-nonconformance",

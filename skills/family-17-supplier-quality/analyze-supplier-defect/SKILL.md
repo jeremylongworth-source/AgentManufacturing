@@ -1,7 +1,7 @@
 ---
 name: analyze-supplier-defect
 description: Analyze supplied supplier-defect records for patterns while separating evidence from unproven supplier attribution.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Supplier Defect

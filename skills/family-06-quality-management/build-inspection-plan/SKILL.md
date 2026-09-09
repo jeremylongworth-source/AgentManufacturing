@@ -1,7 +1,7 @@
 ---
 name: build-inspection-plan
 description: Draft an incoming, in-process, or final inspection plan from supplied characteristics, limits, sampling basis, measurement methods, and lot context.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Inspection Plan

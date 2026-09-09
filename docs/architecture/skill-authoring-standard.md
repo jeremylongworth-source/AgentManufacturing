@@ -43,7 +43,7 @@ tests/
 
 ## `SKILL.md` contract
 
-The file starts with YAML frontmatter containing `name`, `description`, and `license`. The name is lowercase kebab-case, matches the package directory, and maps to one accepted taxonomy record. The description is one sentence describing the atomic task and its primary trigger. The licence is required, but the project has not selected one yet; the placeholder in the template is not publishable.
+The file starts with YAML frontmatter containing `name`, `description`, and `license`. The name is lowercase kebab-case, matches the package directory, and maps to one accepted taxonomy record. The description is one sentence describing the atomic task and its primary trigger. The project owner selected MIT during AM-32 on 2026-09-09; current package and template metadata must use MIT. Historical pending-licence evidence remains preserved.
 
 The body uses these sections in order:
 
@@ -127,7 +127,7 @@ Scenario files contain title, category, expected routing, prompt, acceptance che
 - **Atomic package plus repository-level evidence:** keeps procedures portable while allowing cross-skill routing and fixture review in one place.
 - **Required references:** prevents formulas, source rules, and output conventions from being hidden in a large prompt; it adds a small authoring cost in exchange for reviewability.
 - **Host adapter separation:** keeps `SKILL.md` portable across hosts; exact host setup remains outside the package and must follow current host documentation.
-- **Visible licence placeholder:** avoids silently inheriting the reference repository's MIT choice while preserving the required metadata shape.
+- **Explicit licence governance:** AM-06 used a visible placeholder; AM-32 replaces current metadata with the owner's selected MIT licence without rewriting historical evidence.
 - **Expected routing separated from observed evaluation:** avoids treating a manifest as proof of model behavior; AM-09 and AM-10 must provide execution evidence.
 
 ## Validation and limits
@@ -146,7 +146,7 @@ The AM-06 validator checks this standard, the validation contract, and templates
 
 ## Open questions
 
-- Project governance must select and document the distribution licence before any package is publishable.
+- MIT was selected during AM-32; public reporting readiness and the AM-33 release audit remain separate gates before project publication.
 - AM-07 must define the canonical source registry and freshness metadata consumed by package references.
 - AM-08 must define shared calculation references and fixture tolerances.
 - AM-09 must select the actual scenario-routing and fixture execution tooling.

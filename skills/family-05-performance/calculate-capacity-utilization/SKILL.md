@@ -1,7 +1,7 @@
 ---
 name: calculate-capacity-utilization
 description: Calculate utilization by comparing actual output or occupied time with a supplied rated-capacity basis.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Capacity Utilization

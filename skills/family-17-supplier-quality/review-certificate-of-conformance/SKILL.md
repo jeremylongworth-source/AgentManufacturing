@@ -1,7 +1,7 @@
 ---
 name: review-certificate-of-conformance
 description: Review a certificate of conformance against supplied lot, product, requirement, and standard evidence without certifying product.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Certificate Of Conformance

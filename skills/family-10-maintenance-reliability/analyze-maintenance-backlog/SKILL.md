@@ -1,7 +1,7 @@
 ---
 name: analyze-maintenance-backlog
 description: Measure maintenance backlog age, effort, capacity, and composition without deciding priority or dispatch.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Maintenance Backlog

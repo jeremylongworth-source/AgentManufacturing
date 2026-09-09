@@ -1,7 +1,7 @@
 ---
 name: prioritize-maintenance-work
 description: Rank maintenance backlog items using supplied risk and operating restrictions without authorizing hazardous work.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Prioritize Maintenance Work

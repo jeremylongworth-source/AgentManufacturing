@@ -29,7 +29,7 @@ def main():
         need(len(entries) == 18 and {r["name"] for r in entries} == expected, "Preserved role coverage")
         need({p.name for p in (ROOT / "skillsets").iterdir() if p.is_dir()} == expected, "Role directory inventory")
         contract = read("skillsets/composition-contract.json")
-        need(contract["schema_version"] == "AM-28-composition-1" and contract["license"] == "PENDING_PROJECT_GOVERNANCE", "Composition schema/licence")
+        need(contract["schema_version"] == "AM-28-composition-1" and contract["license"] == "MIT", "Composition schema/licence")
         need(all(contract.get(k) for k in ("selection_rule", "evidence_reuse_rule", "gate_rule", "sector_rule", "output_fields")), "Shared boundaries")
         taxonomy = {s["name"]: s for s in read("docs/architecture/taxonomy-index.yaml")["skills"]}
         need(set(contract["package_paths"]) == set(taxonomy), "Canonical package coverage")
@@ -45,7 +45,7 @@ def main():
             need(entry["manifest"] == f"skillsets/{name}/skillset.yaml" and entry["guide"] == f"skillsets/{name}/SKILLSET.md", "Role paths")
             m = read(entry["manifest"])
             need(m["schema_version"] == "AM-28-skillset-1" and m["name"] == name, "Role identity")
-            need(m["status"] == "STRUCTURALLY_READY" and m["license"] == "PENDING_PROJECT_GOVERNANCE", "Role boundary")
+            need(m["status"] == "STRUCTURALLY_READY" and m["license"] == "MIT", "Role boundary")
             need(m["composition_contract"] == "../composition-contract.json", "Shared contract path")
             need(len(m["skills"]) == len(set(m["skills"])) and set(m["skills"]) <= set(taxonomy), "Atomic membership")
             need(len({w["id"] for w in m["workflows"]}) == len(m["workflows"]), "Duplicate workflow")

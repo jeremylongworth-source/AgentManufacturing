@@ -1,7 +1,7 @@
 ---
 name: review-quality-requirement
 description: Review supplied product or customer quality requirements for applicability, revision, clarity, and unresolved acceptance questions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Quality Requirement

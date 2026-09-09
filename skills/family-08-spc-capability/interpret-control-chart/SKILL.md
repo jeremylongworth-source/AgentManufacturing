@@ -1,7 +1,7 @@
 ---
 name: interpret-control-chart
 description: Interpret control-chart signals while separating statistical signal from assignable cause and operational action.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Interpret Control Chart

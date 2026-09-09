@@ -1,7 +1,7 @@
 ---
 name: compare-production-scenarios
 description: Compare supplied production-plan alternatives under common demand, feasibility, cost, and resource assumptions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Compare Production Scenarios

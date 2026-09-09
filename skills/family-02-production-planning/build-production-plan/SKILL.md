@@ -1,7 +1,7 @@
 ---
 name: build-production-plan
 description: Build a bounded production-plan draft from demand, dates, available quantities, and explicit capacity, material, and labor constraints.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Production Plan

@@ -1,7 +1,7 @@
 ---
 name: review-lockout-program
 description: Review lockout-program evidence, roles, training, and verification records without generating equipment-specific isolation procedures.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Lockout Program

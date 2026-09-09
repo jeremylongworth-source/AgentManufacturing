@@ -1,7 +1,7 @@
 ---
 name: assess-made-in-canada-claim
 description: Assess evidence for a proposed non-food Made in Canada claim while preserving source freshness and withholding publication or legal endorsement.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Assess Made in Canada Claim

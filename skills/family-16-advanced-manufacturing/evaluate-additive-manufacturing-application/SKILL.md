@@ -1,7 +1,7 @@
 ---
 name: evaluate-additive-manufacturing-application
 description: Prepare an additive-manufacturing process suitability brief from supplied material, machine, and post-processing evidence for engineering and sector review.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Evaluate Additive Manufacturing Application

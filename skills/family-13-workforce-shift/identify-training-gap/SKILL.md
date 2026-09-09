@@ -1,7 +1,7 @@
 ---
 name: identify-training-gap
 description: Compare task and revision requirements with supplied learning evidence without certifying qualification.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Training Gap

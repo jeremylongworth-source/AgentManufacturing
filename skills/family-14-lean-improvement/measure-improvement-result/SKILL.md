@@ -1,7 +1,7 @@
 ---
 name: measure-improvement-result
 description: Assess before-and-after improvement evidence across a declared population and metric without claiming causation or closure.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Measure Improvement Result

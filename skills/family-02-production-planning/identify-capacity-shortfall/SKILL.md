@@ -1,7 +1,7 @@
 ---
 name: identify-capacity-shortfall
 description: Compare required production load with available capacity by operation using a common time and quantity basis.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Capacity Shortfall

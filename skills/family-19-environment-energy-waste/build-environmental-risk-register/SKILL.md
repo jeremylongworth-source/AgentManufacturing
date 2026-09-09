@@ -1,7 +1,7 @@
 ---
 name: build-environmental-risk-register
 description: Organize identified aspects and apply supplied risk criteria for responsible environmental review.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Environmental Risk Register

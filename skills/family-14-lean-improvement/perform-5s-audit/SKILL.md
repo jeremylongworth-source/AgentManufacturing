@@ -1,7 +1,7 @@
 ---
 name: perform-5s-audit
 description: Evaluate supplied 5S organization criteria and observations without treating a score as safety clearance or process proof.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Perform 5S Audit

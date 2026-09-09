@@ -1,0 +1,37 @@
+{
+  "schema_version": "AM-32-public-readiness-1",
+  "status": "IN_PROGRESS",
+  "date": "2026-09-09",
+  "required_documents": [
+    "README.md",
+    "ROADMAP.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CODE_OF_CONDUCT.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "license": {
+    "status": "SELECTED",
+    "identifier": "MIT",
+    "decision_record": "Owner selected MIT in the AM-32 conversation on 2026-09-09.",
+    "notice_only": false
+  },
+  "private_reporting": {
+    "status": "NOT_CONFIGURED",
+    "contact": null,
+    "recipient": null,
+    "verification": null
+  },
+  "repository_observation": {
+    "date": "2026-09-09",
+    "visibility": "PRIVATE",
+    "command": "gh repo view --json nameWithOwner,visibility,url",
+    "private_reporting_probe": "gh api repos/jeremylongworth-source/AgentManufacturing/private-vulnerability-reporting",
+    "probe_result": "HTTP_404_AVAILABILITY_UNVERIFIED"
+  },
+  "public_release": "NOT_AUTHORIZED",
+  "release_candidate_audit": "AM33_NOT_RUN",
+  "independent_model_evaluation": "NOT_RUN"
+}

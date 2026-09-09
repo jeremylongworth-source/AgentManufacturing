@@ -1,7 +1,7 @@
 ---
 name: analyze-schedule-adherence
 description: Measure schedule adherence against a frozen schedule version and actual completion events using explicit lateness and exclusion rules.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Schedule Adherence

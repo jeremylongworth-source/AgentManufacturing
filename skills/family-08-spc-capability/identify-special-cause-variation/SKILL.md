@@ -1,7 +1,7 @@
 ---
 name: identify-special-cause-variation
 description: Compare chart signals with dated process events to identify candidate special causes without asserting causation.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Special-Cause Variation

@@ -1,7 +1,7 @@
 ---
 name: analyze-flow-efficiency
 description: Compare declared value-adding and elapsed times while keeping flow analysis distinct from cycle-time and takt calculations.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Flow Efficiency

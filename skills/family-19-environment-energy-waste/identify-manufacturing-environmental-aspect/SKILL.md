@@ -1,7 +1,7 @@
 ---
 name: identify-manufacturing-environmental-aspect
 description: Inventory interactions between manufacturing activities and the environment, separating observed flows from possible impacts.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Manufacturing Environmental Aspect

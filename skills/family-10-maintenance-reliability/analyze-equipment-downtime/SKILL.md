@@ -1,7 +1,7 @@
 ---
 name: analyze-equipment-downtime
 description: Classify and total equipment downtime on a declared event and exposure basis without inferring failure cause.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Equipment Downtime

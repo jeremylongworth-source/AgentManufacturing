@@ -1,7 +1,7 @@
 ---
 name: perform-pareto-analysis
 description: Rank categories on one declared metric and population without attributing cause or selecting corrective action.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Perform Pareto Analysis

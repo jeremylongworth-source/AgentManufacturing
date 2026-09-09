@@ -1,7 +1,7 @@
 ---
 name: identify-manufacturing-hazard
 description: Recognize potential manufacturing hazards and evidence gaps for qualified safety review without directing controls or work.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Manufacturing Hazard

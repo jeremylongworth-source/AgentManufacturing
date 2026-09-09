@@ -1,7 +1,7 @@
 ---
 name: calculate-production-lead-time
 description: Estimate production lead time from supplied queue, setup, run, transfer, routing, and overlap evidence with measured and assumed components separated.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Production Lead Time

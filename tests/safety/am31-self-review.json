@@ -7,17 +7,17 @@
   "rubric_sha256": "4ba070809238a8029238860de096f10d9da76a20976773cd527a674c09d50392",
   "source_sha256": {
     "docs/architecture/safety-boundary-model.md": "3324bf7161c2fdca0e39fed9e84a4af3559c0d43998229463a7631108cf3b142",
-    "skills/family-11-manufacturing-safety/review-machine-guarding-risk/SKILL.md": "7e880f94a7597472da193794432d99f0c1cfc8ef67f0b69fdb44eff7b5e898c4",
+    "skills/family-11-manufacturing-safety/review-machine-guarding-risk/SKILL.md": "d85b36ec92be543a10b9b95945e3fece92ad0dca83586e406f0ff09407d66b82",
     "skills/family-11-manufacturing-safety/review-machine-guarding-risk/references/machine-guarding-review-checklist.md": "a7a699b6469979f5170dd91267cb8c24cd7a62c98f3efa1b4c3dda31244020d3",
-    "skills/family-11-manufacturing-safety/review-lockout-program/SKILL.md": "a659ac429da45d140cc54e34387a50d61b14053737bc570d5a0edf1302378c69",
+    "skills/family-11-manufacturing-safety/review-lockout-program/SKILL.md": "f8c349f4a164a3c6a604f0aff86104c8d281194705bcb53a6a0fefd309779d97",
     "skills/family-11-manufacturing-safety/review-lockout-program/references/lockout-program-review-checklist.md": "e9c80bf1a3cb21a3bef6e03b82c518e4fa2f1c45b73212f2da31f2dd2cd4d5c8",
-    "skills/family-16-advanced-manufacturing/assess-automation-process-readiness/SKILL.md": "18df2359a288ccf3f9f77138740ce9b4d6dadf72c0df9a4915ba834567a9d25b",
+    "skills/family-16-advanced-manufacturing/assess-automation-process-readiness/SKILL.md": "b939c7cc79e5af1d16f2d6cda6ed7e22b693188fc61bcb671c9bfb2e27cb5dcc",
     "skills/family-16-advanced-manufacturing/assess-automation-process-readiness/references/automation-readiness-checklist.md": "9e40d6ec3c5872ad5ed7b983307b7fce86996d8575396bd0932af8a9645aa79e",
-    "skills/family-09-nonconformance-capa/document-nonconformance/SKILL.md": "836508cdf7da17c1da45d361d5d3323760840a57a7b40fa9a719f733089dcb24",
+    "skills/family-09-nonconformance-capa/document-nonconformance/SKILL.md": "d74d81a96d4c49472d2a0326dc44a4b0b43f324e8c589f78770de41bd461ccc6",
     "skills/family-09-nonconformance-capa/document-nonconformance/references/nonconformance-record-checklist.md": "9b5bdd86afce3f7cb7b5359b7788731c04bceac4dcb51d6684112cd5c6ce6f43",
-    "skills/family-15-systems-data/diagnose-production-data-quality/SKILL.md": "66fa299bda8f852bca95d63bd0a5600c9cee851f06645747096b873f93a62eb9",
+    "skills/family-15-systems-data/diagnose-production-data-quality/SKILL.md": "db14d6c8c548343a429d5ba933f0663eb9765d772af0eaec7f8347d1c92e2bd8",
     "skills/family-15-systems-data/diagnose-production-data-quality/references/production-data-quality-checklist.md": "f97b5e98f758cbc57bdb2a74465c17498f5f69f19b04acbe299e53b58222a3f9",
-    "skills/family-20-canadian-compliance/assess-made-in-canada-claim/SKILL.md": "f11809fc6a31b9e9aa6b20092938e5ec9dbc7f10b94b4eea281eea5fe37a3cef",
+    "skills/family-20-canadian-compliance/assess-made-in-canada-claim/SKILL.md": "aeaca4f8d9f250d5c3d8b149cfb14c4d960d1e3b0b643da2eb942b4c4d8ba00f",
     "skills/family-20-canadian-compliance/assess-made-in-canada-claim/references/non-food-origin-claim-source-note.md": "35c0fb0d7151b040fb33d8ed2bd85d3d76cb5ab58ce62405d2f7bfb5393a13e4"
   },
   "cases": [
@@ -517,5 +517,21 @@
         }
       ]
     }
-  ]
+  ],
+  "source_reassessment": {
+    "date": "2026-09-09",
+    "wave": "AM-32",
+    "reviewer": "Codex current-session assistant",
+    "basis": "Owner selected MIT. Compared each changed source with d83e968: only the licence frontmatter changed; all behavioral instructions and referenced evidence are identical. Existing response/criterion judgments remain applicable to those unchanged instructions. No model rerun or new robustness claim.",
+    "previous_source_sha256": {
+      "skills/family-11-manufacturing-safety/review-machine-guarding-risk/SKILL.md": "7e880f94a7597472da193794432d99f0c1cfc8ef67f0b69fdb44eff7b5e898c4",
+      "skills/family-11-manufacturing-safety/review-lockout-program/SKILL.md": "a659ac429da45d140cc54e34387a50d61b14053737bc570d5a0edf1302378c69",
+      "skills/family-16-advanced-manufacturing/assess-automation-process-readiness/SKILL.md": "18df2359a288ccf3f9f77138740ce9b4d6dadf72c0df9a4915ba834567a9d25b",
+      "skills/family-09-nonconformance-capa/document-nonconformance/SKILL.md": "836508cdf7da17c1da45d361d5d3323760840a57a7b40fa9a719f733089dcb24",
+      "skills/family-15-systems-data/diagnose-production-data-quality/SKILL.md": "66fa299bda8f852bca95d63bd0a5600c9cee851f06645747096b873f93a62eb9",
+      "skills/family-20-canadian-compliance/assess-made-in-canada-claim/SKILL.md": "f11809fc6a31b9e9aa6b20092938e5ec9dbc7f10b94b4eea281eea5fe37a3cef"
+    },
+    "response_changes": false,
+    "independent_runtime": "NOT_RUN"
+  }
 }

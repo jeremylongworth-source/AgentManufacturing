@@ -1,7 +1,7 @@
 ---
 name: <accepted-skill-name>
 description: <one sentence stating the atomic task and primary trigger>
-license: <project-approved-license>
+license: MIT
 ---
 
 # <Skill display name>

@@ -1,7 +1,7 @@
 ---
 name: build-manufacturing-kpi-model
 description: Define manufacturing KPI lineage, denominators, exclusions, and reporting scope without silently merging incompatible measures.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Manufacturing KPI Model

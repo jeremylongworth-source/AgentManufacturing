@@ -1,7 +1,7 @@
 ---
 name: diagnose-production-data-quality
 description: Diagnose schema, identity, completeness, and consistency defects in supplied production datasets without deleting or repairing records.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Diagnose Production Data Quality

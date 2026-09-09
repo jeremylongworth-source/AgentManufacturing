@@ -1,7 +1,7 @@
 ---
 name: calculate-mtbf
 description: Calculate mean time between failures for repairable assets using one declared exposure and failure definition.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate MTBF

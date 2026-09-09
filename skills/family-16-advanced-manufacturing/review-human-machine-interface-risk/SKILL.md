@@ -1,7 +1,7 @@
 ---
 name: review-human-machine-interface-risk
 description: Review supplied human-machine interface modes, alarms, and error evidence for concerns without modifying a live interface.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Human Machine Interface Risk

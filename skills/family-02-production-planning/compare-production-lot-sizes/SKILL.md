@@ -1,7 +1,7 @@
 ---
 name: compare-production-lot-sizes
 description: Compare candidate production lot sizes using supplied demand, setup constraints, holding and processing cost bases, and capacity evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Compare Production Lot Sizes

@@ -1,7 +1,7 @@
 ---
 name: triage-nonconformance
 description: Prioritize an initial nonconformance report and identify the next evidence owner without deciding disposition.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Triage Nonconformance

@@ -1,7 +1,7 @@
 ---
 name: analyze-cycle-time
 description: Summarize measured cycle-time observations with explicit start/end definitions, product mix, sampling period, and observation-quality limits.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Cycle Time

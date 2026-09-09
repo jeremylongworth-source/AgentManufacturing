@@ -1,7 +1,7 @@
 ---
 name: identify-provincial-safety-overlay
 description: Select Ontario, British Columbia, Alberta or Quebec authority research for manufacturing safety questions while exposing unsupported jurisdiction coverage.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Provincial Safety Overlay

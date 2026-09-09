@@ -1,7 +1,7 @@
 ---
 name: review-whmis-readiness
 description: Review supplied WHMIS applicability, SDS, label, and workplace program evidence for gaps without certifying compliance or safe use.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Whmis Readiness

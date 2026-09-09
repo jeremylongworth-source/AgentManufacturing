@@ -1,7 +1,7 @@
 ---
 name: map-mes-machine-data-flow
 description: Map supplied machine-event signals into MES information flows while keeping PLC and SCADA control channels out of scope.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Map MES Machine Data Flow

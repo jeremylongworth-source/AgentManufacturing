@@ -1,7 +1,7 @@
 ---
 name: plan-production-changeover
 description: Allocate a reviewable changeover window and readiness checklist from approved steps, durations, product sequence, and resource calendar evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Plan Production Changeover

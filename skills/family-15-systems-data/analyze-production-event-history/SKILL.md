@@ -1,7 +1,7 @@
 ---
 name: analyze-production-event-history
 description: Reconstruct a production-event chronology from supplied exports while preserving timestamp, identity, and missing-event uncertainty.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Production Event History

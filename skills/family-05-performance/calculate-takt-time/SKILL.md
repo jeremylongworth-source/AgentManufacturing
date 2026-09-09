@@ -1,7 +1,7 @@
 ---
 name: calculate-takt-time
 description: Calculate demand-driven takt time from net available production time and customer demand on a common period and unit basis.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Takt Time

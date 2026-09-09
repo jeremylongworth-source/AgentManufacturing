@@ -1,7 +1,7 @@
 ---
 name: assess-product-of-canada-claim
 description: Assess substantiation for a proposed non-food Product of Canada claim using its distinct guidance and evidence basis.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Assess Product Of Canada Claim

@@ -1,7 +1,7 @@
 ---
 name: build-corrective-action
 description: Design a cause-linked corrective-action proposal with owner, verification, and residual-risk fields without approving implementation.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Corrective Action

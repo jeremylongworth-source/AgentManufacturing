@@ -3,7 +3,7 @@
   "name": "manufacturing-engineer-support",
   "description": "Prepare process and change evidence for engineering review.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "map-manufacturing-process",

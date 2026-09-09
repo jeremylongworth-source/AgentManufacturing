@@ -1,7 +1,7 @@
 ---
 name: calculate-rework-rate
 description: Calculate rework rate from supplied units requiring rework using an explicit population, period, and repeated-event counting rule.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Rework Rate

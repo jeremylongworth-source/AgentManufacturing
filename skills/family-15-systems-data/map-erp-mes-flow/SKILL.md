@@ -1,7 +1,7 @@
 ---
 name: map-erp-mes-flow
 description: Map ERP and MES order and master-data handoffs from supplied evidence without changing live records or interfaces.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Map ERP MES Flow

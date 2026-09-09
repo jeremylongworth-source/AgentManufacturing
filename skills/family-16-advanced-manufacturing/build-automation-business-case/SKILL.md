@@ -1,7 +1,7 @@
 ---
 name: build-automation-business-case
 description: Compare supplied automation costs and benefits with explicit uncertainty without making an investment approval.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Automation Business Case

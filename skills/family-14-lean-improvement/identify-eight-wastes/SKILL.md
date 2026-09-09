@@ -1,7 +1,7 @@
 ---
 name: identify-eight-wastes
 description: Classify observed lean waste opportunities from supplied evidence without quantifying savings or authorizing change.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Eight Wastes

@@ -1,7 +1,7 @@
 ---
 name: review-supplier-qualification
 description: Review supplier technical capability evidence against supplied requirements without approving supplier status or award.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Supplier Qualification

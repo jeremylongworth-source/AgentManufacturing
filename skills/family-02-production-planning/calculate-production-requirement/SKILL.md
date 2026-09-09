@@ -1,7 +1,7 @@
 ---
 name: calculate-production-requirement
 description: Calculate net production need by product and period from demand, usable finished quantity, committed receipts, yield, and inventory-policy evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Production Requirement

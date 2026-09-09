@@ -1,7 +1,7 @@
 ---
 name: calculate-mttr
 description: Calculate mean time to repair from a defined repair clock and qualifying repair events without treating it as all downtime.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate MTTR

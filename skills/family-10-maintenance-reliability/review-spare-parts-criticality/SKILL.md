@@ -1,7 +1,7 @@
 ---
 name: review-spare-parts-criticality
 description: Assess spare-part criticality from failure consequence and supply evidence without making purchasing or stock decisions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Spare Parts Criticality

@@ -1,7 +1,7 @@
 ---
 name: review-component-substitution
 description: Assess component substitution compatibility and evidence gaps without approving a design or production change.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Component Substitution

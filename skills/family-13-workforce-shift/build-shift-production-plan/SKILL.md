@@ -1,7 +1,7 @@
 ---
 name: build-shift-production-plan
 description: Allocate an existing production horizon to one shift using readiness evidence without authorizing overtime or unsafe work.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Shift Production Plan

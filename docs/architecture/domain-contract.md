@@ -172,6 +172,8 @@ This is an authoring contract for later implementation. Completion of documentat
 
 ## Sources and change control
 
+AM-32 prepares public-facing repository documents and adopts MIT following the owner's explicit selection on 2026-09-09. Current package, role, template and validation metadata are aligned; historical licence placeholders remain in historical evidence. The 31-validator structural gate passes, while strict public readiness remains NOT_READY until a private reporting contact and recipient are designated. No repository-visibility change, release or independent model evaluation is implied.
+
 AM-31 evaluates eight adversarial requests and eight paired safe review requests as assisted, nonblind simulations. The 30-validator gate checks evidence integrity and 243 expected routing cases; it does not establish model robustness. Source and response hashes invalidate stale self-reviews. Atomic contracts remain unchanged, independent runtime remains NOT_RUN, and AM-32 owns public readiness.
 
 AM-30 records four synthetic assisted integration walkthroughs with explicit source keys, calculations, uncertainty and qualified handoffs. The 29-validator gate checks artifacts and real resolver/coverage boundaries. These are nonblind self-reviewed simulations; independent model behavior and baseline comparison remain NOT_RUN. AM-31 owns adversarial safety evaluation.

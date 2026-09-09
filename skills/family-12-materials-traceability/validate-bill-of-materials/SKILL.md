@@ -1,7 +1,7 @@
 ---
 name: validate-bill-of-materials
 description: Check bill-of-materials identity, quantities, units, and revisions without assessing design fitness or changing the BOM.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Validate Bill of Materials

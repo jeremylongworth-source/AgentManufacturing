@@ -1,7 +1,7 @@
 ---
 name: audit-quality-process
 description: Assess a scoped quality process against supplied criteria and sample records while limiting findings to the evidence coverage.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Audit Quality Process

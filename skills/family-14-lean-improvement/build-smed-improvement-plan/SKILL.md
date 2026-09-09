@@ -1,7 +1,7 @@
 ---
 name: build-smed-improvement-plan
 description: Propose reviewed changeover improvements from loss evidence without scheduling, operating, or bypassing safety controls.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build SMED Improvement Plan

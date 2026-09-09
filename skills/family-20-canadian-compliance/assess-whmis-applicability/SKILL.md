@@ -1,7 +1,7 @@
 ---
 name: assess-whmis-applicability
 description: Assess WHMIS product, activity, and supplier versus employer scope evidence before a workplace readiness review.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Assess Whmis Applicability

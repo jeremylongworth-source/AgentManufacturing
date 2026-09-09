@@ -1,7 +1,7 @@
 ---
 name: calculate-material-requirement
 description: Expand product quantities into gross component requirements from a declared BOM and lot basis without planning replenishment.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Material Requirement

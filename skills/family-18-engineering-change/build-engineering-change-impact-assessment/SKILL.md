@@ -1,7 +1,7 @@
 ---
 name: build-engineering-change-impact-assessment
 description: Build a cross-functional engineering-change impact matrix from supplied evidence without approving implementation.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Engineering Change Impact Assessment

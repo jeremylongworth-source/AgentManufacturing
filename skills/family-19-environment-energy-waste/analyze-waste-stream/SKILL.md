@@ -1,7 +1,7 @@
 ---
 name: analyze-waste-stream
 description: Organize supplied waste quantity, composition, origin, and existing handling evidence into a characterization inventory.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Waste Stream

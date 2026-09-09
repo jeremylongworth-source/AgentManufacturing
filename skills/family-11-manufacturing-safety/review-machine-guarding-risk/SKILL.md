@@ -1,7 +1,7 @@
 ---
 name: review-machine-guarding-risk
 description: Assess machine-guarding concern evidence and qualified review needs without validating a guard or directing operation.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Machine Guarding Risk

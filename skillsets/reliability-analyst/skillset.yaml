@@ -3,7 +3,7 @@
   "name": "reliability-analyst",
   "description": "Analyze failure and downtime evidence without promising reliability outcomes.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "analyze-failure-history",

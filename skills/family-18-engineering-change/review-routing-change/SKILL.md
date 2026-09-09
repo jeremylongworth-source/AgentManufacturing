@@ -1,7 +1,7 @@
 ---
 name: review-routing-change
 description: Review before-and-after routing changes for operation, resource, capacity, and control impacts without activating a revision.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Routing Change

@@ -1,7 +1,7 @@
 ---
 name: build-preventive-maintenance-plan
 description: Structure a preventive-maintenance plan from approved evidence without providing equipment-specific repair or isolation directions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Preventive Maintenance Plan

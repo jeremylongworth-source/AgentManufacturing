@@ -1,7 +1,7 @@
 ---
 name: identify-line-side-shortage
 description: Compare production need and timing with usable line-side supply while stopping before warehouse movement or replenishment decisions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Line-Side Shortage

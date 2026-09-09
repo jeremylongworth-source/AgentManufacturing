@@ -1,7 +1,7 @@
 ---
 name: balance-production-line
 description: Draft a line-balance proposal from task times, precedence, resource constraints, and a supplied target rate while preserving infeasible tasks.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Balance Production Line

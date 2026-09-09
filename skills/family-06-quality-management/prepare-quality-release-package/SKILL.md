@@ -1,7 +1,7 @@
 ---
 name: prepare-quality-release-package
 description: Assemble a reviewable lot-release evidence package with completion, inspection, deviation, hold, and authorization gaps visible.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Prepare Quality Release Package

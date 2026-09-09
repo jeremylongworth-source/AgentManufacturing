@@ -1,7 +1,7 @@
 ---
 name: verify-change-implementation
 description: Assess supplied change-implementation evidence against authorized scope without retrospectively approving deviations.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Verify Change Implementation

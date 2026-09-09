@@ -1,7 +1,7 @@
 ---
 name: analyze-labor-productivity
 description: Relate output to declared labor exposure and units without ranking workers or predicting staffing needs.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Labor Productivity

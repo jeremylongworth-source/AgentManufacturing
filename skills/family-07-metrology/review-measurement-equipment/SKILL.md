@@ -1,7 +1,7 @@
 ---
 name: review-measurement-equipment
 description: Review instrument suitability for a stated measurement task and environment while separating resolution from accuracy and withholding certification.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Measurement Equipment

@@ -3,7 +3,7 @@
   "name": "production-planner",
   "description": "Build and compare evidence-based production planning proposals.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "build-production-plan",

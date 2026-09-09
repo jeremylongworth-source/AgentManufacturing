@@ -1,7 +1,7 @@
 ---
 name: review-capability-readiness
 description: Review whether process data are ready for capability analysis while separating specification limits from control limits.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Capability Readiness

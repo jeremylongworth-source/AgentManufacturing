@@ -1,7 +1,7 @@
 ---
 name: draft-work-instruction
 description: Draft a controlled work-instruction structure from an authorized process description, task sequence, acceptance criteria, audience, and template.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Draft Work Instruction

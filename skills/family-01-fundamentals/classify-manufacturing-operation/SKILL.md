@@ -1,7 +1,7 @@
 ---
 name: classify-manufacturing-operation
 description: Classify a requested operation against the manufacturing boundary using supplied transformation, assembly, batch, or continuous-process evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Classify Manufacturing Operation

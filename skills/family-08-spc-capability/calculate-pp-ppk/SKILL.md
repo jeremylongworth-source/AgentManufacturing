@@ -1,7 +1,7 @@
 ---
 name: calculate-pp-ppk
 description: Calculate Pp and Ppk from overall variation for one coherent population without implying process stability.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Pp and Ppk

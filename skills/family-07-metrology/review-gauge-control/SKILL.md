@@ -1,7 +1,7 @@
 ---
 name: review-gauge-control
 description: Review whether gauge identification, status, storage, and use controls are evidenced without approving the gauge.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Gauge Control

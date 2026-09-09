@@ -22,8 +22,8 @@
   "license_policy": {
     "frontmatter_key": "license",
     "required": true,
-    "current_project_status": "PENDING_PROJECT_GOVERNANCE",
-    "rule": "Do not copy the reference repository's MIT choice into AgentManufacturing until project governance selects a license. Templates use a visible placeholder and are not publishable packages."
+    "current_project_status": "MIT",
+    "rule": "The project owner selected MIT on 2026-09-09 during AM-32. Current packages and templates use MIT; historical pending-governance records remain preserved. See LICENSE and docs/development/AM-32-public-readiness.md."
   },
   "frontmatter": {
     "required_keys": ["name", "description", "license"],

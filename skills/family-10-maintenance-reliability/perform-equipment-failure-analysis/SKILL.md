@@ -1,7 +1,7 @@
 ---
 name: perform-equipment-failure-analysis
 description: Assess physical and equipment failure hypotheses with qualified-review limits and no repair or certification authority.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Perform Equipment Failure Analysis

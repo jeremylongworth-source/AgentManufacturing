@@ -1,7 +1,7 @@
 ---
 name: build-process-control-plan
 description: Draft a process control plan linking supplied characteristics to approved controls and reaction owners without issuing reaction instructions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Process Control Plan

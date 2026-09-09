@@ -1,7 +1,7 @@
 ---
 name: verify-regulatory-source-freshness
 description: Verify a regulatory source's authority, version, effectivity, and claim-specific currency while separating reachability from applicability.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Verify Regulatory Source Freshness

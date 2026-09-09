@@ -1,7 +1,7 @@
 ---
 name: analyze-material-variance
 description: Explain planned-versus-actual material usage from reconciled events without assigning blame or changing standards.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Material Variance

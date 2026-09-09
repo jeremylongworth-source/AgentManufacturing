@@ -1,7 +1,7 @@
 ---
 name: identify-obsolete-document
 description: Identify potential obsolete-document exposure from supplied inventory and revision records without declaring every copy invalid.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Obsolete Document

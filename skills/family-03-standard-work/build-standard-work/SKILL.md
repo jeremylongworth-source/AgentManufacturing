@@ -1,7 +1,7 @@
 ---
 name: build-standard-work
 description: Draft standard work from observed task elements, approved sequence, time evidence, takt context, and allowed work-in-process limits.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Standard Work

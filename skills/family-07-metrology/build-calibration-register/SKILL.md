@@ -1,7 +1,7 @@
 ---
 name: build-calibration-register
 description: Organize instrument identities, calibration records, supplied intervals, and responsible owners into a traceable calibration register.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Calibration Register

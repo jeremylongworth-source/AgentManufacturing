@@ -1,7 +1,7 @@
 ---
 name: calculate-production-capacity
 description: Estimate production capacity from supplied available time, rates, loss assumptions, and product mix with limiting-resource evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Production Capacity

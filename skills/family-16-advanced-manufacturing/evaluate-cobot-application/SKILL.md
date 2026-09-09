@@ -1,7 +1,7 @@
 ---
 name: evaluate-cobot-application
 description: Assess collaborative robot application concerns from supplied human-robot exposure evidence without assuming inherent safety.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Evaluate Cobot Application

@@ -1,7 +1,7 @@
 {
   "schema_version": "AM-28-composition-1",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "role_source": "docs/architecture/domain-framework.md#professional-skillsets",
   "selection_rule": "Choose the requested workflow, not every skill in the role. Overlay names are explicit research selections, never legal applicability determinations.",
   "evidence_reuse_rule": "An evidence dependency may be satisfied by a compatible supplied artifact. Otherwise read the provider skill and obtain the needed evidence; do not automatically rerun a valid prior analysis or execute every resolved skill.",

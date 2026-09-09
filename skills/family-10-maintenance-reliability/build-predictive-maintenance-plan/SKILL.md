@@ -1,7 +1,7 @@
 ---
 name: build-predictive-maintenance-plan
 description: Define condition-monitoring signals, thresholds, and review ownership from failure modes without autonomous intervention.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Predictive Maintenance Plan

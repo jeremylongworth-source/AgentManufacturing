@@ -1,7 +1,7 @@
 ---
 name: build-product-genealogy
 description: Build input/output lot relationships from supplied records while stopping before warehouse movement and product disposition.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Product Genealogy

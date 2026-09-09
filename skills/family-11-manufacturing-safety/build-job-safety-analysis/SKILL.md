@@ -1,7 +1,7 @@
 ---
 name: build-job-safety-analysis
 description: Organize task hazards, existing controls, and review questions without generating equipment-specific operating procedures.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Job Safety Analysis

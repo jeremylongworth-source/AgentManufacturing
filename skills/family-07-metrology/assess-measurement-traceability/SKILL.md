@@ -1,7 +1,7 @@
 ---
 name: assess-measurement-traceability
 description: Assess whether measurement evidence identifies a defensible reference chain without certifying traceability.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Assess Measurement Traceability

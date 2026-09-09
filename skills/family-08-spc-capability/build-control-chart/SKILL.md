@@ -1,7 +1,7 @@
 ---
 name: build-control-chart
 description: Structure a control chart from ordered process data while preserving subgroup, baseline, and limit assumptions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Control Chart

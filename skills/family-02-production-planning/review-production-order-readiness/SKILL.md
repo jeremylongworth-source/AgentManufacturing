@@ -1,7 +1,7 @@
 ---
 name: review-production-order-readiness
 description: Review whether an existing production order has routing, material, tooling, approval, and capacity evidence without releasing it.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Production Order Readiness

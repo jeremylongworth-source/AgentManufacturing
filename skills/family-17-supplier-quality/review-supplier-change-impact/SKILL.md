@@ -1,7 +1,7 @@
 ---
 name: review-supplier-change-impact
 description: Review a supplier change notice for affected products, processes, validation, and approval gaps without implementing the change.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Supplier Change Impact

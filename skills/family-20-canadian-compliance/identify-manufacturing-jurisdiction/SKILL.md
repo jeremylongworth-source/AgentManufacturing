@@ -1,7 +1,7 @@
 ---
 name: identify-manufacturing-jurisdiction
 description: Collect manufacturing jurisdiction context for mixed product and workplace questions without deciding legal applicability.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Manufacturing Jurisdiction

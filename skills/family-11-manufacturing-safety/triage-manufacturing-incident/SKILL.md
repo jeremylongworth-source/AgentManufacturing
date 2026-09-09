@@ -1,7 +1,7 @@
 ---
 name: triage-manufacturing-incident
 description: Organize immediate manufacturing-incident facts and escalation while avoiding rescue, legal-reporting, or investigation determinations.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Triage Manufacturing Incident

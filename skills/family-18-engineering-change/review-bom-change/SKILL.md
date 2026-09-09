@@ -1,7 +1,7 @@
 ---
 name: review-bom-change
 description: Review before-and-after BOM changes for component, usage, and effectivity impacts without authorizing stock consumption or release.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review BOM Change

@@ -3,7 +3,7 @@
   "name": "production-operator-support",
   "description": "Support an operator's documented work and shift handoff.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "review-document-revision",

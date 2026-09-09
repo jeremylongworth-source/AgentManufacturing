@@ -1,7 +1,7 @@
 ---
 name: analyze-energy-consumption
 description: Analyze supplied metered consumption and production intensity within explicit time, product, and allocation boundaries.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Energy Consumption

@@ -1,7 +1,7 @@
 ---
 name: analyze-standard-work-deviation
 description: Analyze observed execution records against an applicable standard version to separate instruction gaps from execution variance.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Standard Work Deviation

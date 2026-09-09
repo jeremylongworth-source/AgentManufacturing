@@ -1,7 +1,7 @@
 ---
 name: review-document-revision
 description: Compare a document in use with an authoritative revision and effectivity basis while preserving unresolved conflicts.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Document Revision

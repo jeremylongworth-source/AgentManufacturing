@@ -1,7 +1,7 @@
 ---
 name: build-manufacturing-skills-matrix
 description: Organize task, revision, skill, and evidence relationships without deciding qualification or assignment.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Manufacturing Skills Matrix

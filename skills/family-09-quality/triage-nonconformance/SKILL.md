@@ -1,7 +1,7 @@
 ---
 name: triage-nonconformance
 description: Prioritize a reported manufacturing nonconformance from supplied defect evidence while preserving unknown scope and routing the next review owner.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Triage Nonconformance

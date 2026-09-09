@@ -1,7 +1,7 @@
 ---
 name: calculate-throughput
 description: Calculate completed output per elapsed time from a common product, unit, period, and counting-exclusion basis.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Throughput

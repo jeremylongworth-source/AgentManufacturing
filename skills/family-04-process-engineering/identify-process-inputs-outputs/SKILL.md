@@ -1,7 +1,7 @@
 ---
 name: identify-process-inputs-outputs
 description: Inventory process-boundary material, energy, and information streams with units and unverified streams made explicit.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Identify Process Inputs and Outputs

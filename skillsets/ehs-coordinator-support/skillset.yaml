@@ -3,7 +3,7 @@
   "name": "ehs-coordinator-support",
   "description": "Coordinate scoped hazard, jurisdiction and environmental evidence reviews.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "identify-manufacturing-hazard",

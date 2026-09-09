@@ -1,7 +1,7 @@
 ---
 name: calculate-scrap-rate
 description: Calculate scrap rate from supplied scrap quantity and a defined comparable input or output denominator.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Scrap Rate

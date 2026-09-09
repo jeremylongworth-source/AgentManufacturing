@@ -1,7 +1,7 @@
 ---
 name: review-lockout-program
 description: Review lockout program evidence for documented gaps and qualified handoff without providing equipment-specific isolation or restart instructions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Lockout Program

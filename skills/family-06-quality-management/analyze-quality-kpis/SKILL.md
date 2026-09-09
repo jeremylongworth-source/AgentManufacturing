@@ -1,7 +1,7 @@
 ---
 name: analyze-quality-kpis
 description: Compare defined quality metrics using supplied counts, denominators, periods, targets, and population or supplier groupings.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Quality KPIs

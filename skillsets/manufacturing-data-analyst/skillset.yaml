@@ -3,7 +3,7 @@
   "name": "manufacturing-data-analyst",
   "description": "Assess manufacturing data lineage and metric definitions.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "map-erp-mes-flow",

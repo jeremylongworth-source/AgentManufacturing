@@ -1,7 +1,7 @@
 ---
 name: analyze-oee-data
 description: Reconcile supplied OEE counts, states, planned time, and ideal-rate definitions before any OEE calculation.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze OEE Data

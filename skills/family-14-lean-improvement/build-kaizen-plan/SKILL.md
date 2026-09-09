@@ -1,7 +1,7 @@
 ---
 name: build-kaizen-plan
 description: Define one bounded improvement intervention with measures, owner, and review gates without implementing the change.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Build Kaizen Plan

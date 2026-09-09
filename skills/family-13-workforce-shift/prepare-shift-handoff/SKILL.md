@@ -1,7 +1,7 @@
 ---
 name: prepare-shift-handoff
 description: Transfer current shift status, exceptions, and unresolved issues without implicitly generating a new production schedule.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Prepare Shift Handoff

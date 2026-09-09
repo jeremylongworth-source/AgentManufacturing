@@ -1,7 +1,7 @@
 ---
 name: review-production-master-data
 description: Review supplied manufacturing master data for identity, revision, routing, and reference defects without making live corrections.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Production Master Data

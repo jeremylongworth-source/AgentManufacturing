@@ -3,7 +3,7 @@
   "name": "manufacturing-technician",
   "description": "Support technical troubleshooting and controlled documentation.",
   "status": "STRUCTURALLY_READY",
-  "license": "PENDING_PROJECT_GOVERNANCE",
+  "license": "MIT",
   "composition_contract": "../composition-contract.json",
   "skills": [
     "analyze-production-event-history",

@@ -1,7 +1,7 @@
 ---
 name: calculate-cp-cpk
 description: Calculate Cp and Cpk from declared within-process variation while preserving specification, population, and stability assumptions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Calculate Cp and Cpk

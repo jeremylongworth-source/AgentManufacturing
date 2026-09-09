@@ -1,7 +1,7 @@
 ---
 name: review-quality-record
 description: Review a quality record for completeness, revision, source integrity, and overwritten or missing values while preserving the original evidence.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Quality Record

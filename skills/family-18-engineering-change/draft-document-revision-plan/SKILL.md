@@ -1,7 +1,7 @@
 ---
 name: draft-document-revision-plan
 description: Draft a controlled-document revision and withdrawal plan without publishing approved versions.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Draft Document Revision Plan

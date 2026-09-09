@@ -59,7 +59,7 @@ def validate_package(root: Path, name: str, spec: tuple, records: dict[str, dict
             fields[key.strip()] = value.strip()
     need(fields.get("name") == name, f"{name}: frontmatter name")
     need(fields.get("description", "").endswith("."), f"{name}: description")
-    need(fields.get("license") == "PENDING_PROJECT_GOVERNANCE", f"{name}: licence")
+    need(fields.get("license") == "MIT", f"{name}: licence")
     need(re.findall(r"^## ([^\n]+)$", content, re.MULTILINE) == SECTIONS, f"{name}: sections")
     metadata = next((line for line in content.splitlines() if line.startswith("**Taxonomy metadata:**")), "")
     need(metadata, f"{name}: metadata block")

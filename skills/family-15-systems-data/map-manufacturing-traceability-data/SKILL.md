@@ -1,7 +1,7 @@
 ---
 name: map-manufacturing-traceability-data
 description: Map manufacturing traceability schemas and lineage from supplied identifiers without claiming an executed product genealogy.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Map Manufacturing Traceability Data

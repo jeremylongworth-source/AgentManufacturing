@@ -1,7 +1,7 @@
 ---
 name: review-process-change
 description: Review process-change impact and validation needs from supplied product, hazard, control, and effectivity evidence for qualified disposition.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Process Change

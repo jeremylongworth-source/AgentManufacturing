@@ -1,7 +1,7 @@
 ---
 name: review-control-limits
 description: Review the evidence and exclusions behind control limits while keeping specification limits separate.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Review Control Limits

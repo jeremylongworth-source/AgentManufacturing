@@ -1,7 +1,7 @@
 ---
 name: analyze-product-process-profile
 description: Analyze how supplied product variants, demand mix, and process descriptions fit a manufacturing process profile while exposing evidence gaps.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Analyze Product Process Profile

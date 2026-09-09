@@ -1,7 +1,7 @@
 ---
 name: perform-root-cause-analysis
 description: Evaluate evidence-backed causal hypotheses for one problem while separating correlation, cause, and corrective action.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Perform Root-Cause Analysis

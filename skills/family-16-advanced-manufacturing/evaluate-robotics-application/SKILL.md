@@ -1,7 +1,7 @@
 ---
 name: evaluate-robotics-application
 description: Prepare a robotics concept suitability brief from supplied task, payload, environment, and integration evidence without approving deployment.
-license: PENDING_PROJECT_GOVERNANCE
+license: MIT
 ---
 
 # Evaluate Robotics Application

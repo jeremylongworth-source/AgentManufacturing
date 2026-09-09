@@ -36,6 +36,6 @@
     "probe_result": "HTTP_404_AVAILABILITY_UNVERIFIED"
   },
   "public_release": "NOT_AUTHORIZED",
-  "release_candidate_audit": "AM33_NOT_RUN",
+  "release_candidate_audit": "AM33_COMPLETE_PARTIAL",
   "independent_model_evaluation": "NOT_RUN"
 }

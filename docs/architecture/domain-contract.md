@@ -172,6 +172,8 @@ This is an authoring contract for later implementation. Completion of documentat
 
 ## Sources and change control
 
+AM-33 completes the 13-area release-candidate audit with V1_PARTIALLY_READY and defers public v1 release. The 32-validator gate passes; pinned Linux/Windows CI caught and verified a fix for checkout-newline fingerprint portability. Independent behavior, release-dependent source/standards review and merge-enforcement/ownership gaps remain in F01–F04. Audit completion does not authorize publication or manufacturing operations.
+
 AM-32 prepares public-facing repository documents and adopts MIT following the owner's explicit selection on 2026-09-09. Current package, role, template and validation metadata are aligned; historical licence placeholders remain in historical evidence. The 31-validator structural gate and strict AM-32 readiness pass after the owner designated Jeremy Longworth at [private contact removed] for security and conduct reporting. No mailbox-delivery test was performed; AM-33 is next. No repository-visibility change, release or independent model evaluation is implied.
 
 AM-31 evaluates eight adversarial requests and eight paired safe review requests as assisted, nonblind simulations. The 30-validator gate checks evidence integrity and 243 expected routing cases; it does not establish model robustness. Source and response hashes invalidate stale self-reviews. Atomic contracts remain unchanged, independent runtime remains NOT_RUN, and AM-32 owns public readiness.

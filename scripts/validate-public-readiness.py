@@ -35,7 +35,7 @@ def assess(record, documents, licenses):
     need(actual == MIT_DIGEST, "MIT licence text differs from the adopted text")
     need(bool(licenses) and all(value == "MIT" for value in licenses.values()), "licence metadata drift")
     need(record["public_release"] == "NOT_AUTHORIZED", "publication boundary")
-    need(record["release_candidate_audit"] == "AM33_NOT_RUN", "unsupported release audit claim")
+    need(record["release_candidate_audit"] in {"AM33_NOT_RUN", "AM33_COMPLETE_PARTIAL", "AM33_COMPLETE_BLOCKED", "AM33_COMPLETE_READY"}, "unsupported release audit claim")
     need(record["independent_model_evaluation"] == "NOT_RUN", "unsupported model evaluation claim")
     reporting = record["private_reporting"]
     blockers = []
@@ -55,7 +55,7 @@ def assess(record, documents, licenses):
         raise ValueError("unsupported reporting state; do not infer availability from a URL")
     expected = "IN_PROGRESS" if blockers else "READY"
     need(record["status"] == expected, "readiness status contradicts evidence")
-    return {"status": "NOT_READY" if blockers else "AM32_READY", "blockers": blockers, "publication": "NOT_AUTHORIZED", "AM33": "NOT_RUN"}
+    return {"status": "NOT_READY" if blockers else "AM32_READY", "blockers": blockers, "publication": "NOT_AUTHORIZED", "AM33": record["release_candidate_audit"].removeprefix("AM33_")}
 
 
 def load_evidence():

@@ -1,13 +1,13 @@
 # AgentManufacturing development roadmap
 
-Version: 3.5 (AM-32 public readiness closed; release-candidate audit next)
+Version: 3.6 (AM-33 audit complete; V1_PARTIALLY_READY)
 Working directory: `D:\AgentMfg`
 
 Source: “Branch · Plan AgentLogistics Skills”, conversation `6a9d881b-9330-83ea-b887-26309d52536d`, manufacturing proposal message `e32c7e5b-7294-4699-b383-0de485378ba7`. Saved on 2026-09-06. This is the initial planning proposal, not evidence of completed development. Conversation-only citation markers have been removed because they do not resolve in repository Markdown. Legal details and standards-edition assertions preserved from the source are planning notes and have not been independently reverified in this handoff; verify official sources before implementation or operational use.
 
 ## Current workspace status
 
-**AM-00 through AM-32 are READY as of 2026-09-09. AM-33 is the next execution target.** See the [v1 taxonomy](docs/architecture/master-taxonomy-v1.md), [audit](docs/architecture/taxonomy-audit-v1.md), [index](docs/architecture/taxonomy-index.yaml), [dependency map](docs/architecture/dependency-map.md), [Canadian jurisdiction model](docs/architecture/canadian-jurisdiction-model.md), [safety boundary model](docs/architecture/safety-boundary-model.md), [skill authoring standard](docs/architecture/skill-authoring-standard.md), [source and standards standard](docs/architecture/source-standards-standard.md), [calculation standard](docs/architecture/calculation-standard.md), [validation framework](docs/architecture/validation-framework.md), [reference-skill proof contract](docs/architecture/reference-skill-proof.md), [source registries](docs/architecture/canadian-source-registry.json), and [latest handoff](docs/development/handoffs/AM-32-final-handoff.md) for evidence and the next-wave brief. The [domain contract](docs/architecture/domain-contract.md) and [scope boundaries](docs/architecture/scope-boundaries.md) govern this work. Local Git remains initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing), verified private and empty during AM-00. The owner selected MIT during AM-32; no public release has been made. Roadmap work through AM-32 is committed and pushed as it closes.
+**AM-00 through AM-33 are complete for their documented scopes as of 2026-09-09. The v1 audit verdict is V1_PARTIALLY_READY; public v1 release is deferred.** See the [v1 taxonomy](docs/architecture/master-taxonomy-v1.md), [audit](docs/architecture/taxonomy-audit-v1.md), [index](docs/architecture/taxonomy-index.yaml), [dependency map](docs/architecture/dependency-map.md), [Canadian jurisdiction model](docs/architecture/canadian-jurisdiction-model.md), [safety boundary model](docs/architecture/safety-boundary-model.md), [skill authoring standard](docs/architecture/skill-authoring-standard.md), [source and standards standard](docs/architecture/source-standards-standard.md), [calculation standard](docs/architecture/calculation-standard.md), [validation framework](docs/architecture/validation-framework.md), [reference-skill proof contract](docs/architecture/reference-skill-proof.md), [source registries](docs/architecture/canadian-source-registry.json), and [latest handoff](docs/development/handoffs/AM-33-final-handoff.md) for evidence and the next-wave brief. The [domain contract](docs/architecture/domain-contract.md) and [scope boundaries](docs/architecture/scope-boundaries.md) govern this work. Local Git remains initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing), verified private and empty during AM-00. The owner selected MIT during AM-32; no public release has been made. Roadmap work through AM-33 is committed and pushed as it closes; post-audit remediation is recorded in F01–F04.
 
 The v1 catalogue contains 159 accepted records across 20 families: 153 core methods and six Canadian overlays, with audit dispositions for all 162 draft candidates and routes for all 166 representative source names. Names, responsibilities, tiers, provenance, and the evidence-reuse graph are frozen. AM-04 formalizes jurisdiction routing metadata, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable package and validation contracts, and AM-07 formalizes source and standards handling without silently reclassifying the index or implementing skills. The AM-02 draft and original framework remain preserved. Completion tokens in the source wave definitions are acceptance targets; only the execution ledger and supporting handoffs establish earned completion.
 
@@ -46,7 +46,7 @@ The v1 catalogue contains 159 accepted records across 20 families: 153 core meth
 | AM-30 | READY | [Assisted integration evaluation](tests/evaluations/AM-30-integration-acceptance.md), [checker](scripts/validate-integration-evaluation.py), and [handoff](docs/development/handoffs/AM-30-final-handoff.md); independent runtime NOT_RUN; `AGENTMANUFACTURING_AM_30_INTEGRATION_VALIDATED` |
 | AM-31 | READY | [Assisted safety evaluation](tests/evaluations/AM-31-safety-acceptance.md), [checker](scripts/validate-adversarial-safety.py), and [handoff](docs/development/handoffs/AM-31-final-handoff.md); independent runtime NOT_RUN; `AGENTMANUFACTURING_AM_31_SAFETY_VALIDATED` |
 | AM-32 | READY | [Public-readiness record](docs/development/AM-32-public-readiness.md), [acceptance](tests/evaluations/AM-32-public-readiness-acceptance.md), and [handoff](docs/development/handoffs/AM-32-final-handoff.md). MIT and owner-designated private reporting implemented; `AGENTMANUFACTURING_AM_32_PUBLIC_READINESS_READY` |
-| AM-33 | NOT_STARTED | Audit after public-readiness prerequisites pass. |
+| AM-33 | READY | [Release-candidate audit](docs/development/AM-33-release-candidate-audit.md), [acceptance](tests/evaluations/AM-33-audit-acceptance.md), and [handoff](docs/development/handoffs/AM-33-final-handoff.md). Audit complete; `V1_PARTIALLY_READY`; `AGENTMANUFACTURING_AM_33_V1_RC_AUDIT_COMPLETE` |
 
 Read the v1 index, audit, and dependency map alongside the AM-01 contract and scope boundaries. The [AM-02 register](docs/architecture/candidate-register-v0.1.json), [initial taxonomy](docs/architecture/master-taxonomy-v0.1.md), and [domain framework](docs/architecture/domain-framework.md) preserve prior planning. AM-10 permits bounded family waves, but each package still requires the same structural, scenario, deterministic, source, and safety evidence.
 
@@ -822,8 +822,8 @@ Roadmap version: 1.1
 Initial families: 20
 Estimated eventual core taxonomy: ~220-280 atomic skills
 
-Last closed wave: AM-32 (READY, 2026-09-09)
-Current execution target: AM-33
+Last closed wave: AM-33 (audit complete, V1_PARTIALLY_READY, 2026-09-09)
+Current execution target: post-audit remediation F01–F04; no new numbered wave assigned
 Accepted v1 catalogue: 159 (153 core; 6 Canadian overlays; not implemented)
 Preserved AM-02 draft: 162 candidates
 Taxonomy freeze: AM-03

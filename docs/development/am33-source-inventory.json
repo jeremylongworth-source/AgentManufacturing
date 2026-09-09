@@ -1,0 +1,82 @@
+{
+  "date": "2026-09-09",
+  "registers": [
+    {
+      "path": "docs/architecture/canadian-source-registry.json",
+      "kind": "OPERATIONAL_REGISTER",
+      "sha256": "3ab0c4f6a0a9fe32aa2a5650799203bc48cdbb10a3406436b0d91aa551421274",
+      "count": 8,
+      "recorded_states": {
+        "current_on_access": 4,
+        "verify_before_use": 3,
+        "classification_reference": 1
+      },
+      "pending_keys": []
+    },
+    {
+      "path": "docs/architecture/safety-source-registry.json",
+      "kind": "OPERATIONAL_REGISTER",
+      "sha256": "92e415eaf6da5ead8265525dae851bccb2335c05a8b970347e8c581ea6e01379",
+      "count": 14,
+      "recorded_states": {
+        "current_on_access": 13,
+        "verify_before_use": 1
+      },
+      "pending_keys": []
+    },
+    {
+      "path": "docs/architecture/am25-environment-source-records.json",
+      "kind": "OPERATIONAL_REGISTER",
+      "sha256": "80047d0cf579a17b0f6979170cf616547db8465bc231d403a37a9433788ef36a",
+      "count": 2,
+      "recorded_states": {
+        "CURRENT_ON_ACCESS": 2
+      },
+      "pending_keys": []
+    },
+    {
+      "path": "docs/architecture/am26-federal-source-records.json",
+      "kind": "OPERATIONAL_REGISTER",
+      "sha256": "aa051faef6ee63c95679247fed6971325fd48756d34ed863eefcd5ec7e818ecb",
+      "count": 9,
+      "recorded_states": {
+        "CURRENT_ON_ACCESS": 5,
+        "PENDING_REVIEW": 4
+      },
+      "pending_keys": [
+        "AM26-HPA",
+        "AM26-HPR",
+        "AM26-CPLA",
+        "AM26-CPLR"
+      ]
+    },
+    {
+      "path": "docs/architecture/am27-provincial-source-records.json",
+      "kind": "OPERATIONAL_REGISTER",
+      "sha256": "9df9849193e9a4025449ca9e0faaf80524495ce674e2a96132af30bd0055972d",
+      "count": 16,
+      "recorded_states": {
+        "CURRENT_ON_ACCESS": 14,
+        "PENDING_REVIEW": 2
+      },
+      "pending_keys": [
+        "AM27-ON-REG",
+        "AM27-QC-OHS"
+      ]
+    },
+    {
+      "path": "docs/architecture/source-record-examples.json",
+      "kind": "SCHEMA_EXAMPLES",
+      "sha256": "d7416a49eb9f03ff2ab641dcc9d189af7222c39f2973c427bf6d596a75ea5ea1",
+      "count": 6,
+      "recorded_states": {
+        "CURRENT_ON_ACCESS": 4,
+        "PENDING_REVIEW": 2
+      },
+      "pending_keys": [
+        "CA-BC-LAWS",
+        "STD-CSA-METADATA-EXAMPLE"
+      ]
+    }
+  ]
+}

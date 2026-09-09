@@ -1,0 +1,122 @@
+{
+  "schema_version": "AM-33-audit-1",
+  "date": "2026-09-09",
+  "baseline_revision": "8b1b189",
+  "audit_status": "COMPLETE",
+  "verdict": "V1_PARTIALLY_READY",
+  "release_recommendation": "DEFER_PUBLIC_V1",
+  "scope": "Portable reference skill library and repository validation; no production controller, package publication or visibility change.",
+  "evaluator": "Codex current-session assistant",
+  "independent_model_evaluation": "NOT_RUN",
+  "publication": "NOT_AUTHORIZED",
+  "gates": [
+    {
+      "id": "taxonomy_coverage",
+      "status": "PASS",
+      "finding": "159 accepted names resolve to 161 preserved packages; historical duplicates use canonical paths.",
+      "evidence": "scripts/validate-taxonomy.py"
+    },
+    {
+      "id": "routing",
+      "status": "PARTIAL",
+      "finding": "243 expected scenarios are structurally consistent; blind observed routing remains unperformed.",
+      "evidence": "tests/expected-routing.yaml"
+    },
+    {
+      "id": "calculations",
+      "status": "PASS",
+      "finding": "Deterministic formula, unit, denominator and fixture checks pass within their supplied synthetic scope.",
+      "evidence": "scripts/validate-calculation-standard.py"
+    },
+    {
+      "id": "canadian_sources",
+      "status": "PARTIAL",
+      "finding": "49 operational register records retain six pending reviews; spot checks do not establish all current applicability.",
+      "evidence": "docs/development/AM-33-source-review.md"
+    },
+    {
+      "id": "standards_freshness",
+      "status": "PARTIAL",
+      "finding": "ISO 14001 catalogue identity rechecked; normative access, incorporation and complete standards review remain unresolved.",
+      "evidence": "docs/development/AM-33-source-review.md"
+    },
+    {
+      "id": "quality",
+      "status": "PARTIAL",
+      "finding": "Repository and metadata checks pass; independent task-output quality and host compatibility are not fully established.",
+      "evidence": "tests/evaluations/AM-31-safety-acceptance.md"
+    },
+    {
+      "id": "safety",
+      "status": "PARTIAL",
+      "finding": "Eight attack/control pairs are assisted nonblind self-reviews; no independent adversarial robustness result.",
+      "evidence": "tests/safety/am31-self-review.json"
+    },
+    {
+      "id": "provincial_isolation",
+      "status": "PASS",
+      "finding": "Four provincial research modules and selector preserve applicability gaps and explicit overlay selection.",
+      "evidence": "scripts/validate-provincial-overlays.py"
+    },
+    {
+      "id": "professional_skillsets",
+      "status": "PASS",
+      "finding": "18 role manifests and 38 workflows resolve canonical references; resolver is not an executor.",
+      "evidence": "scripts/validate-professional-skillsets.py"
+    },
+    {
+      "id": "specialization_boundaries",
+      "status": "PASS",
+      "finding": "18 planned labels and 12 priorities preserve missing sector requirements and generic-only analysis.",
+      "evidence": "scripts/validate-sector-framework.py"
+    },
+    {
+      "id": "integration",
+      "status": "PARTIAL",
+      "finding": "Four assisted journeys preserve calculations and handoffs; independent integration runs remain unperformed.",
+      "evidence": "tests/integration/am30-walkthroughs.json"
+    },
+    {
+      "id": "documentation",
+      "status": "PASS",
+      "finding": "MIT and the owner's private reporting designation are consistent; strict AM-32 readiness passes.",
+      "evidence": "docs/development/public-readiness.json"
+    },
+    {
+      "id": "ci",
+      "status": "PARTIAL",
+      "finding": "Pinned read-only workflow added; hosted result is recorded separately. Branch protection enforcement unavailable under the observed private-plan configuration.",
+      "evidence": "docs/development/AM-33-ci-evidence.json"
+    }
+  ],
+  "followups": [
+    {
+      "id": "F01",
+      "priority": "HIGH",
+      "owner_role": "Project owner and independent evaluator",
+      "action": "Run bounded independent routing, task-quality, integration and adversarial evaluations from raw inputs. Preserve model/version, outputs and repeated/multi-turn results.",
+      "closure": "Reviewed independent evidence addresses the claimed v1 behavior; failures resolved or explicitly narrow release scope."
+    },
+    {
+      "id": "F02",
+      "priority": "HIGH",
+      "owner_role": "Qualified source/standards reviewer",
+      "action": "Review active federal/provincial pending records and release-dependent standards for source access, currency, effectivity, incorporation and rights.",
+      "closure": "Source-by-source disposition supports each published claim; unresolved dependent conclusions remain withheld."
+    },
+    {
+      "id": "F03",
+      "priority": "MEDIUM",
+      "owner_role": "Repository owner",
+      "action": "Decide a merge-gate enforcement approach compatible with repository access; do not change plan or visibility implicitly.",
+      "closure": "Required check policy is enforceable or the owner documents a manual review policy and its limits."
+    },
+    {
+      "id": "F04",
+      "priority": "MEDIUM",
+      "owner_role": "Project owner",
+      "action": "Decide intended host/distribution scope, support expectations and a conduct conflict-review alternative before public launch.",
+      "closure": "Documented scope and responsible ownership; no inferred contacts or commitments."
+    }
+  ]
+}

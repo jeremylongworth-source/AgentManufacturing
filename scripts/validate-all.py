@@ -39,6 +39,7 @@ VALIDATORS = [
     "validate-integration-evaluation.py",
     "validate-adversarial-safety.py",
     "validate-public-readiness.py",
+    "validate-release-candidate.py",
 ]
 
 

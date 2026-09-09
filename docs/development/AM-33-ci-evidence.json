@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-09",
+  "runs": [
+    {
+      "id": 34353927930,
+      "head_sha": "8927481ea7c0cf34961eadd263c00067e95980fd",
+      "url": "https://github.com/jeremylongworth-source/AgentManufacturing/actions/runs/34353927930",
+      "conclusion": "failure",
+      "jobs": {
+        "ubuntu-latest": "failure",
+        "windows-latest": "success"
+      }
+    },
+    {
+      "id": 34354251983,
+      "head_sha": "66644a0891a20357c466a12cb98afc6e77dcfc1d",
+      "url": "https://github.com/jeremylongworth-source/AgentManufacturing/actions/runs/34354251983",
+      "conclusion": "success",
+      "jobs": {
+        "windows-latest": "success",
+        "ubuntu-latest": "success"
+      }
+    }
+  ],
+  "branch_protection": {
+    "status": "UNAVAILABLE_OBSERVED_403",
+    "command": "gh api repos/jeremylongworth-source/AgentManufacturing/branches/main/protection",
+    "message": "GitHub reported that the private repository requires a plan upgrade or public visibility for this feature; neither was changed."
+  },
+  "failure_and_fix": "Initial Linux run failed at the AM-03 frozen draft hash; Windows passed. Normalize only newline bytes to the original CRLF fingerprint. Three regression cases preserve LF/CRLF equivalence and reject altered content. Subsequent hosted Linux and Windows jobs passed.",
+  "scope": "Hosted evidence applies to the recorded commit SHAs, not any later untested change. No branch enforcement or model behavior is implied."
+}

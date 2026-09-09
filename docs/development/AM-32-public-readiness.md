@@ -19,7 +19,7 @@ The [AM-06 licence rule](../architecture/skill-package-schema.json) now records 
 
 The [machine-readable status](public-readiness.json) and `python scripts/validate-public-readiness.py` verify document and licence consistency. `python scripts/validate-public-readiness.py --require-ready` now returns AM32_READY with exit 0. The owner-designated email resolves the remaining AM-32 decision; the checker does not test delivery or authorize publication.
 
-AM-32 is closed following strict and full validation. AM-33 audits the release candidate next, including source freshness and evaluation limitations. Independent model runs, baseline comparisons, repeatability and multi-turn robustness remain unperformed. No public support window, launch date or professional signoff is promised.
+AM-32 is closed following strict and full validation. AM-33 subsequently completed its audit with V1_PARTIALLY_READY; see [the audit](AM-33-release-candidate-audit.md) for remaining source and evaluation gaps. Independent model runs, baseline comparisons, repeatability and multi-turn robustness remain unperformed. No public support window, launch date or professional signoff is promised.
 
 ## Proposed publication and response plan
 

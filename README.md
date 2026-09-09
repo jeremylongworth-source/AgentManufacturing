@@ -2,7 +2,7 @@
 
 Portable AI skill packages for manufacturing analysis and qualified review, with a sector-neutral core, Canadian jurisdiction overlays and professional role compositions.
 
-**Development status:** AM-00 through AM-32 are READY for their documented scopes. MIT is selected and Jeremy Longworth is the owner-designated recipient for private security and conduct reports. AM-33, the release-candidate audit, is next. No public release is established. See the [readiness record](docs/development/AM-32-public-readiness.md).
+**Development status:** AM-00 through AM-33 are complete for their documented scopes. The release-candidate verdict is **V1_PARTIALLY_READY**; public v1 release is deferred. MIT and owner-designated private reporting are in place. See the [audit and follow-up criteria](docs/development/AM-33-release-candidate-audit.md).
 
 ## What is available
 
@@ -28,7 +28,7 @@ The full gate validates repository artifacts; it does not run a model. The resol
 
 The sector inspector returns `COVERAGE_GAP` for the planned automotive specialization. With `--generic-only`, it permits unrelated generic analysis while keeping sector conclusions unsupported. Successful reference resolution or generic arithmetic does not establish applicability or operating authority.
 
-Commands were checked with Python 3.14.3 on Windows PowerShell. The validators use the Python standard library; no package installation is required. Other interpreter versions and AI-host compatibility have not been established by this check.
+Commands were checked locally with Python 3.14.3 on Windows PowerShell and in [hosted Linux/Windows CI](docs/development/AM-33-ci-evidence.json) using Python 3.14. The validators use the Python standard library; no package installation is required. Other AI-host compatibility and independent skill behavior remain unestablished.
 
 ## Public-readiness check
 
@@ -37,7 +37,7 @@ python scripts/validate-public-readiness.py
 python scripts/validate-public-readiness.py --require-ready
 ```
 
-Both commands now report `AM32_READY`; strict mode exits 0. This confirms the documented AM-32 prerequisites, including owner-designated reporting, not mailbox delivery or publication authorization. AM-33's release-candidate audit remains subsequent work.
+Both commands now report `AM32_READY`; strict mode exits 0. This confirms the documented AM-32 prerequisites, including owner-designated reporting, not mailbox delivery or publication authorization. AM-33 is complete with a V1_PARTIALLY_READY verdict; strict AM-32 readiness does not override that release decision.
 
 ## Boundaries
 
@@ -68,6 +68,6 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md) for change sc
 
 ## Roadmap and continuation
 
-Use the execution ledger in [ROADMAP.md](ROADMAP.md) and the [AM-32 final handoff](docs/development/handoffs/AM-32-final-handoff.md). AM-32 is the last closed wave; perform AM-33 next.
+Use the execution ledger in [ROADMAP.md](ROADMAP.md) and the [AM-33 final handoff](docs/development/handoffs/AM-33-final-handoff.md). The numbered roadmap is complete; follow F01–F04 in the audit for independent evaluation, source/standards review, merge-gate policy and release-scope ownership.
 
 The original workspace is `D:\AgentMfg`; commands work from a checkout root without that path. The historical AM-00 bootstrap prompt is not the current task. The [AM-00 audit](docs/development/AM-00-baseline-audit.md), [taxonomy audit](docs/architecture/taxonomy-audit-v1.md) and [original framework](docs/architecture/domain-framework.md) preserve planning provenance; those planning statements are not current legal or engineering determinations.

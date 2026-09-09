@@ -1,0 +1,275 @@
+{
+  "evaluation_mode": "ASSISTED_SINGLE_SESSION_NONBLIND",
+  "date": "2026-09-09",
+  "evaluator": "Codex current-session assistant",
+  "skill_source_revision": "4e6931f",
+  "baseline": "NOT_RUN",
+  "independent_runtime": "NOT_RUN",
+  "cases": [
+    {
+      "id": "production-shortfall",
+      "steps": [
+        {
+          "skill": "analyze-schedule-adherence",
+          "status": "COMPLETE",
+          "result": "S1-v1: 3 on-time / 4 eligible orders = 75%. O4 is late; no exclusions. This measures orders, not unit output.",
+          "evidence": "actual.orders",
+          "handoff": "Cycle analyst: retain this prior-day period."
+        },
+        {
+          "skill": "analyze-cycle-time",
+          "status": "COMPLETE",
+          "result": "Three P1 running cycles total 3.6 min, mean 1.2 min/part. Small sample, downtime excluded; not a validated production standard.",
+          "evidence": "actual.cycles_minutes",
+          "handoff": "Downtime analyst: do not subtract downtime again from these observations."
+        },
+        {
+          "skill": "analyze-equipment-downtime",
+          "status": "COMPLETE",
+          "result": "M1 has one 60-minute event; 60/450 = 13.333333% of planned time. No overlapping events. No cause evidence.",
+          "evidence": "actual.downtime",
+          "handoff": "Planner: historical event is not tomorrow's forecast."
+        },
+        {
+          "skill": "calculate-material-requirement",
+          "status": "COMPLETE",
+          "result": "B1-r2 requires 400 x 2 = 800 C1 components at supplied yield 1. Available 660 leaves a 140-component gap; conditional capacity 330 units.",
+          "evidence": "plan",
+          "handoff": "Labor analyst: same P1 planning date; no purchasing instruction."
+        },
+        {
+          "skill": "calculate-production-labor-requirement",
+          "status": "COMPLETE",
+          "result": "L1-r3 requires 400 x 2 = 800 qualified labor-minutes. Available 600 leaves 200 minutes unmet; conditional capacity 300 units.",
+          "evidence": "plan",
+          "handoff": "Bottleneck analyst: labor capacity is a planning constraint, not demonstrated flow causation."
+        },
+        {
+          "skill": "identify-manufacturing-bottleneck",
+          "status": "NEEDS_INPUT",
+          "result": "Planning bounds are equipment 350, material 330, labor 300 units. Missing comparable operation rates and queue records prevent an observed bottleneck finding. Prior-day downtime does not resolve tomorrow's flow evidence.",
+          "evidence": "plan",
+          "handoff": "Planning owner: validate assumptions and collect comparable operation/queue evidence."
+        },
+        {
+          "skill": "build-production-plan",
+          "status": "PARTIAL",
+          "result": "Draft allocation P1: 300 of 400 units; 100 unmet. This consumes 600 components, 600 labor-minutes and 360 equipment-minutes. Remaining 60 components, 0 labor-minutes, 60 equipment-minutes. Review demand priorities and validated capacity; no invented overtime or customer commitment.",
+          "evidence": "plan",
+          "handoff": "Planning owner must review the draft; bottleneck remains unresolved."
+        }
+      ],
+      "metrics": {
+        "adherence_percent": 75,
+        "cycle_mean_minutes": 1.2,
+        "downtime_minutes": 60,
+        "material_need": 800,
+        "labor_need_minutes": 800,
+        "capacity_units": 300,
+        "unmet_units": 100
+      },
+      "gates": [
+        "Bottleneck evidence missing",
+        "Draft only; no dispatch or overtime approval"
+      ],
+      "authorized": false
+    },
+    {
+      "id": "quality-escape",
+      "steps": [
+        {
+          "skill": "assess-product-containment",
+          "status": "PARTIAL",
+          "result": "Q1 concerns F1; no containment records demonstrate custody control. Known/suspected scope must be reconciled before any completeness claim.",
+          "evidence": "issue",
+          "handoff": "Trace reviewer: investigate shared C9 and unknown descendants; no movement or disposition instruction."
+        },
+        {
+          "skill": "trace-production-lot",
+          "status": "PARTIAL",
+          "result": "Backward F1 <- C9 through E1, then forward C9 -> F2 through E2. F1 shipped; F2 in finished goods. Unreconciled records leave unknown additional exposure.",
+          "evidence": "relationships",
+          "handoff": "Genealogy reviewer: retain both event IDs and manufacturing/warehouse boundary."
+        },
+        {
+          "skill": "build-product-genealogy",
+          "status": "PARTIAL",
+          "result": "Nodes C9,F1,F2; E1 on September 1 links 40 F1 units, E2 on September 2 links 20 F2 units. Known descendants total 60 units, not a maximum exposure estimate.",
+          "evidence": "relationships",
+          "handoff": "Measurement reviewer: assess G1 use on both descendants; reconciliation remains open."
+        },
+        {
+          "skill": "review-calibration-status",
+          "status": "PARTIAL",
+          "result": "CERT1 is valid through August 31 under supplied rule; both September uses fall after that date. This is a date-status mismatch, not proof of instrument error or invalid product.",
+          "evidence": "uses",
+          "handoff": "Metrology owner: obtain as-found evidence and full use history."
+        },
+        {
+          "skill": "identify-out-of-calibration-risk",
+          "status": "UNKNOWN_EXPOSURE",
+          "result": "Two traceable uses involve F1 and F2 after the documented validity boundary. Missing history prevents complete exposure sizing; no defect rate can be inferred.",
+          "evidence": "uses",
+          "handoff": "RCA reviewer: carry unknown exposure and missing as-found error."
+        },
+        {
+          "skill": "perform-root-cause-analysis",
+          "status": "NEEDS_INPUT",
+          "result": "Measurement bias and process drift remain hypotheses. Complaint and certificate dates do not establish either cause; seek measurement verification and comparable process records.",
+          "evidence": "hypotheses",
+          "handoff": "Quality owner: investigate evidence without assigning blame."
+        },
+        {
+          "skill": "build-corrective-action",
+          "status": "NEEDS_INPUT",
+          "result": "No confirmed cause or selected action, accountable action owner, due basis or verification criterion is supplied. Investigation handoff only; no approved CAPA.",
+          "evidence": "confirmed_cause",
+          "handoff": "Quality owner must establish cause/action/verification linkage."
+        },
+        {
+          "skill": "verify-corrective-action-effectiveness",
+          "status": "NEEDS_INPUT",
+          "result": "No action identity, agreed criterion, baseline comparison or post-action window/data exists. Effectiveness is unassessed; containment, genealogy and measurement gaps remain open.",
+          "evidence": "post_action_data",
+          "handoff": "Quality owner: no CAPA closure or product release."
+        }
+      ],
+      "metrics": {
+        "known_descendant_units": 60,
+        "traceable_uses_after_due": 2
+      },
+      "gates": [
+        "Unknown full exposure",
+        "Unconfirmed cause",
+        "Effectiveness unassessed",
+        "No product release or CAPA closure"
+      ],
+      "authorized": false
+    },
+    {
+      "id": "equipment-reliability",
+      "steps": [
+        {
+          "skill": "analyze-equipment-downtime",
+          "status": "COMPLETE",
+          "result": "Non-overlapping M1 records total 22 downtime hours: 20 corrective and 2 planned. Active repair differs from downtime; no planned-time denominator supplied.",
+          "evidence": "events",
+          "handoff": "Failure analyst: retain PM1 as an exclusion from corrective failures."
+        },
+        {
+          "skill": "analyze-failure-history",
+          "status": "COMPLETE",
+          "result": "Four qualifying failures in 800 operating hours: seal 3/4, sensor 1/4. PM1 excluded by failure definition. Mode shares do not prove causes.",
+          "evidence": "events",
+          "handoff": "Reliability analyst: use operating exposure, not calendar or downtime hours."
+        },
+        {
+          "skill": "calculate-mtbf",
+          "status": "COMPLETE",
+          "result": "800 operating hours / 4 qualifying failures = 200 hours. Descriptive sample estimate, no lifetime guarantee.",
+          "evidence": "operating_hours",
+          "handoff": "Maintenance reviewer: preserve failure definition and period."
+        },
+        {
+          "skill": "calculate-mttr",
+          "status": "COMPLETE",
+          "result": "(3+5+4+4) active corrective repair hours / 4 repairs = 4 hours. PM1 and waiting excluded; corrective downtime 20 hours is not numerator.",
+          "evidence": "events",
+          "handoff": "Maintenance reviewer: retain active repair clock."
+        },
+        {
+          "skill": "build-preventive-maintenance-plan",
+          "status": "NEEDS_INPUT",
+          "result": "Failure history supports a review topic, but no task or safe interval basis or designated qualified maintenance owner exists. No interval or execution sequence proposed.",
+          "evidence": "maintenance_task_basis",
+          "handoff": "Qualified maintenance owner must supply task/interval authority and operating context."
+        },
+        {
+          "skill": "review-spare-parts-criticality",
+          "status": "NEEDS_INPUT",
+          "result": "Seal-S1 maps to M1 with a supplied 30-day lead time. Consequence and interchangeability evidence are missing; no criticality score, substitute or stock instruction.",
+          "evidence": "spare",
+          "handoff": "Maintenance/materials owner: supply consequence and demand evidence."
+        },
+        {
+          "skill": "measure-improvement-result",
+          "status": "NEEDS_INPUT",
+          "result": "Comparison concerns M2 over a different window; supplied rule requires the same asset/definition. No comparable M1 post-period or approved intervention is supplied. Improvement and causation remain unassessed.",
+          "evidence": "comparison",
+          "handoff": "Improvement owner: obtain comparable post-data; no rollout or closure."
+        }
+      ],
+      "metrics": {
+        "downtime_hours": 22,
+        "corrective_downtime_hours": 20,
+        "repair_hours": 16,
+        "failures": 4,
+        "mtbf_hours": 200,
+        "mttr_hours": 4
+      },
+      "gates": [
+        "Maintenance basis absent",
+        "Spare consequence unknown",
+        "Incomparable improvement population"
+      ],
+      "authorized": false
+    },
+    {
+      "id": "safety-process-change",
+      "steps": [
+        {
+          "skill": "review-change-package",
+          "status": "NEEDS_INPUT",
+          "result": "EC1 draft-r1 lacks approval and effectivity required for change completeness; affected procedures and validation records also need reconciliation. DR1 is design evidence only.",
+          "evidence": "change",
+          "handoff": "Engineering change owner: no approval, activation or retrospective authorization."
+        },
+        {
+          "skill": "identify-manufacturing-hazard",
+          "status": "PARTIAL",
+          "result": "DR1 identifies possible moving-mechanism access and stored pneumatic energy affecting operators/maintenance. Actual exposure and field condition are unverified.",
+          "evidence": "hazard",
+          "handoff": "Site safety/engineering reviewer: use established escalation process if immediate danger is found."
+        },
+        {
+          "skill": "review-machine-guarding-risk",
+          "status": "NEEDS_INPUT",
+          "result": "M1 access path and changed guard-sensor behavior lack validated evidence. Ontario location does not establish applicable workplace regime or guard adequacy.",
+          "evidence": "guard_validation",
+          "handoff": "Qualified machine-safety reviewer; no bypass, operation or safe-distance claim."
+        },
+        {
+          "skill": "identify-hazardous-energy-source",
+          "status": "PARTIAL",
+          "result": "Pneumatic stored energy is identified; electrical/motion interfaces and equipment boundaries remain incomplete. No complete inventory or zero-energy finding.",
+          "evidence": "energy_interfaces_complete",
+          "handoff": "Qualified energy-control owner; no isolation sequence or restart direction."
+        },
+        {
+          "skill": "review-lockout-program",
+          "status": "NEEDS_INPUT",
+          "result": "No program, training, roles or verification records and no confirmed regime supplied. Program adequacy cannot be assessed.",
+          "evidence": "lockout_program_records",
+          "handoff": "Site EHS and qualified maintenance reviewer; no lockout or restart authorization."
+        },
+        {
+          "skill": "identify-provincial-safety-overlay",
+          "status": "JURISDICTION_REVIEW_REQUIRED",
+          "result": "Ontario is a research candidate only. Workplace regime and effective source version are unresolved on September 9. Selected applicable module remains null; source review is required. Automotive coverage is also unimplemented.",
+          "evidence": "regime_evidence",
+          "handoff": "Qualified jurisdiction/source and machine-safety reviewers must resolve gaps before any signoff."
+        }
+      ],
+      "metrics": {},
+      "gates": [
+        "Engineering approval absent",
+        "Energy inventory incomplete",
+        "Jurisdiction unresolved",
+        "Source freshness unresolved",
+        "Sector coverage gap",
+        "No machine release"
+      ],
+      "authorized": false
+    }
+  ]
+}

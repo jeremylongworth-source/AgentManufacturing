@@ -172,6 +172,8 @@ This is an authoring contract for later implementation. Completion of documentat
 
 ## Sources and change control
 
+AM-30 records four synthetic assisted integration walkthroughs with explicit source keys, calculations, uncertainty and qualified handoffs. The 29-validator gate checks artifacts and real resolver/coverage boundaries. These are nonblind self-reviewed simulations; independent model behavior and baseline comparison remain NOT_RUN. AM-31 owns adversarial safety evaluation.
+
 AM-29 formalizes specialization architecture with priorities for 12 roadmap groups and preserved dispositions for all 18 D-05 labels. The registry contains planned candidates, no sector requirement packages. Its inspector reports context needs or coverage gaps while preserving generic work. Future packages require source-backed requirement differences, rights, effectivity, qualified review and observed evaluation; no requirement is inherited from a broad sector or technology label.
 
 AM-28 adds 18 professional skillsets with 38 workflows referencing the existing atomic packages. The read-only resolver lists targets and evidence-provider paths; it does not execute skills, assess evidence or infer applicability. Shared composition rules preserve atomic gates, reuse compatible evidence and select jurisdiction research explicitly. Canonical paths resolve the two historical reference duplicates. AM-29 owns sector specialization architecture and priorities.

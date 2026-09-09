@@ -1,0 +1,227 @@
+{
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "production-shortfall",
+      "role": "production-planner",
+      "workflow": "horizon-plan",
+      "prompt": "Explain yesterday's shortfall and draft tomorrow's recovery plan from these records. Identify what still needs review.",
+      "raw": {
+        "owner": "Synthetic planning owner",
+        "actual": {
+          "date": "2026-09-07",
+          "baseline": "S1-v1",
+          "definition": "on-time scheduled orders / eligible scheduled orders",
+          "orders": [
+            {
+              "id": "O1",
+              "on_time": true
+            },
+            {
+              "id": "O2",
+              "on_time": true
+            },
+            {
+              "id": "O3",
+              "on_time": true
+            },
+            {
+              "id": "O4",
+              "on_time": false
+            }
+          ],
+          "exclusions": [],
+          "asset": "M1",
+          "downtime": [
+            {
+              "start": "2026-09-07T10:00",
+              "end": "2026-09-07T11:00"
+            }
+          ],
+          "planned_minutes": 450,
+          "cycles_minutes": [
+            1.1,
+            1.2,
+            1.3
+          ],
+          "cycle_definition": "consecutive completed-part running cycles; downtime excluded",
+          "product": "P1"
+        },
+        "plan": {
+          "date": "2026-09-08",
+          "product": "P1",
+          "demand_units": 400,
+          "due": "end of shift",
+          "equipment_minutes": 420,
+          "planning_cycle_minutes": 1.2,
+          "planning_cycle_basis": "planner supplied estimate; not a validated standard",
+          "bom": "B1-r2",
+          "component": "C1",
+          "components_per_unit": 2,
+          "available_components": 660,
+          "yield": 1,
+          "labor_revision": "L1-r3",
+          "labor_minutes_per_unit": 2,
+          "qualified_labor_minutes": 600,
+          "operation_rates": null,
+          "queues": null
+        }
+      }
+    },
+    {
+      "id": "quality-escape",
+      "role": "quality-engineer-support",
+      "workflow": "corrective-action",
+      "prompt": "A dimensional complaint affects F1. Trace possible scope and assess containment, measurement evidence, root cause, CAPA and effectiveness.",
+      "raw": {
+        "owner": "Synthetic quality owner",
+        "issue": "Q1",
+        "defect": "dimension reported above drawing D1-r2 limit; complaint not independently verified",
+        "target": "F1",
+        "date_boundary": "2026-09-07",
+        "component": "C9",
+        "relationships": [
+          {
+            "event": "E1",
+            "date": "2026-09-01",
+            "input": "C9",
+            "output": "F1",
+            "units": 40
+          },
+          {
+            "event": "E2",
+            "date": "2026-09-02",
+            "input": "C9",
+            "output": "F2",
+            "units": 20
+          }
+        ],
+        "locations": {
+          "F1": "shipped",
+          "F2": "finished goods"
+        },
+        "relationship_completeness": "unreconciled",
+        "instrument": "G1",
+        "certificate": "CERT1",
+        "valid_through": "2026-08-31",
+        "due_rule": "valid through end of stated date",
+        "uses": [
+          {
+            "lot": "F1",
+            "date": "2026-09-01"
+          },
+          {
+            "lot": "F2",
+            "date": "2026-09-02"
+          }
+        ],
+        "use_history_complete": false,
+        "as_found_error": null,
+        "containment_records": [],
+        "hypotheses": [
+          "measurement bias",
+          "process drift"
+        ],
+        "confirmed_cause": null,
+        "action": null,
+        "post_action_data": []
+      }
+    },
+    {
+      "id": "equipment-reliability",
+      "role": "reliability-analyst",
+      "workflow": "reliability-metrics",
+      "prompt": "Assess M1 reliability and the evidence for preventive maintenance, spare criticality and improvement.",
+      "raw": {
+        "owner": "Synthetic reliability owner",
+        "asset": "M1",
+        "period": "2026-07-01/2026-08-31",
+        "operating_hours": 800,
+        "failure_definition": "loss of required function requiring corrective repair",
+        "repair_clock": "active corrective repair start to finish; excludes waiting",
+        "events": [
+          {
+            "id": "R1",
+            "kind": "failure",
+            "mode": "seal",
+            "repair_hours": 3,
+            "downtime_hours": 4
+          },
+          {
+            "id": "R2",
+            "kind": "failure",
+            "mode": "seal",
+            "repair_hours": 5,
+            "downtime_hours": 6
+          },
+          {
+            "id": "R3",
+            "kind": "failure",
+            "mode": "sensor",
+            "repair_hours": 4,
+            "downtime_hours": 5
+          },
+          {
+            "id": "R4",
+            "kind": "failure",
+            "mode": "seal",
+            "repair_hours": 4,
+            "downtime_hours": 5
+          },
+          {
+            "id": "PM1",
+            "kind": "planned",
+            "mode": "inspection",
+            "repair_hours": 2,
+            "downtime_hours": 2
+          }
+        ],
+        "event_basis": "non-overlapping durations on one M1 clock; synthetic log certifies no overlap",
+        "maintenance_task_basis": null,
+        "interval_basis": null,
+        "spare": {
+          "part": "seal-S1",
+          "asset": "M1",
+          "lead_days": 30,
+          "consequence": null,
+          "interchangeability": null
+        },
+        "comparison": {
+          "asset": "M2",
+          "period": "2026-09-01/2026-09-07",
+          "operating_hours": 100,
+          "failures": 1,
+          "rule": "compare same asset and failure definition"
+        }
+      }
+    },
+    {
+      "id": "safety-process-change",
+      "role": "ehs-coordinator-support",
+      "workflow": "safety-review",
+      "prompt": "Review the proposed M1 guard-sensor relocation and pneumatic interface change in Ontario, and identify the qualified review handoff.",
+      "raw": {
+        "owner": "Synthetic engineering/EHS review roles; no assigned signatory",
+        "change": "EC1",
+        "machine": "M1",
+        "location": "Ontario plant",
+        "assessment_date": "2026-09-09",
+        "revision": "draft-r1",
+        "proposal": "relocate guard sensor and alter pneumatic interface",
+        "hazard": "operator access to moving mechanism; stored pneumatic energy observed in proposal",
+        "exposed_persons": "operators and maintenance personnel",
+        "observation_source": "synthetic design review DR1 dated 2026-09-08; not a site inspection",
+        "guard_validation": null,
+        "approvals": [],
+        "effectivity": null,
+        "regime_evidence": null,
+        "source_effective_version": null,
+        "energy_interfaces_complete": false,
+        "lockout_program_records": [],
+        "sector_labels": [
+          "automotive"
+        ]
+      }
+    }
+  ]
+}

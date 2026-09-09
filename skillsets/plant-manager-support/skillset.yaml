@@ -1,0 +1,42 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "plant-manager-support",
+  "description": "Assemble cross-functional review evidence and decisions for responsible owners.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "build-manufacturing-kpi-model",
+    "review-production-order-readiness",
+    "review-operator-qualification-record",
+    "build-automation-business-case",
+    "review-change-package",
+    "build-engineering-change-impact-assessment"
+  ],
+  "workflows": [
+    {
+      "id": "plant-review",
+      "trigger": "Review plant KPI, readiness and qualification evidence.",
+      "required_inputs": "KPI model, production readiness, qualification records and unresolved issues.",
+      "skills": [
+        "build-manufacturing-kpi-model",
+        "review-production-order-readiness",
+        "review-operator-qualification-record"
+      ],
+      "output": "Plant review brief with unresolved decisions and owners.",
+      "review_boundary": "Do not certify workers or release operations from a summary."
+    },
+    {
+      "id": "investment-change-review",
+      "trigger": "Review an automation case and proposed change evidence.",
+      "required_inputs": "Readiness, option costs, technical basis and change package.",
+      "skills": [
+        "build-automation-business-case",
+        "review-change-package",
+        "build-engineering-change-impact-assessment"
+      ],
+      "output": "Investment/change evidence and qualified handoff.",
+      "review_boundary": "No budget commitment, purchase, engineering signoff or automation deployment."
+    }
+  ]
+}

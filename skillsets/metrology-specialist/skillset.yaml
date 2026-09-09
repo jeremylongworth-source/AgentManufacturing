@@ -1,0 +1,44 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "metrology-specialist",
+  "description": "Review measurement suitability, calibration and traceability evidence.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "select-measurement-method",
+    "review-measurement-equipment",
+    "analyze-measurement-system",
+    "build-calibration-register",
+    "review-calibration-status",
+    "identify-out-of-calibration-risk",
+    "assess-measurement-traceability"
+  ],
+  "workflows": [
+    {
+      "id": "measurement-system",
+      "trigger": "Assess a measurement method and study evidence.",
+      "required_inputs": "Measurand, method, equipment and measurement-study design.",
+      "skills": [
+        "select-measurement-method",
+        "review-measurement-equipment",
+        "analyze-measurement-system"
+      ],
+      "output": "Measurement suitability and study evidence review.",
+      "review_boundary": "No invented study results or calibration certification."
+    },
+    {
+      "id": "calibration-risk",
+      "trigger": "Review calibration status and affected measurement evidence.",
+      "required_inputs": "Register, calibration documents, use history and traceability.",
+      "skills": [
+        "build-calibration-register",
+        "review-calibration-status",
+        "identify-out-of-calibration-risk",
+        "assess-measurement-traceability"
+      ],
+      "output": "Calibration evidence and affected-use handoff.",
+      "review_boundary": "Do not declare affected product acceptable."
+    }
+  ]
+}

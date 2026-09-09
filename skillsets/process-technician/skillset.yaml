@@ -1,0 +1,38 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "process-technician",
+  "description": "Review process records and deviations against controlled evidence.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "identify-process-inputs-outputs",
+    "review-process-parameter-control",
+    "analyze-standard-work-deviation",
+    "document-nonconformance"
+  ],
+  "workflows": [
+    {
+      "id": "parameter-review",
+      "trigger": "Map process inputs and review parameter controls.",
+      "required_inputs": "Process boundary, input/output records and approved parameter criteria.",
+      "skills": [
+        "identify-process-inputs-outputs",
+        "review-process-parameter-control"
+      ],
+      "output": "Parameter-control evidence gaps.",
+      "review_boundary": "No process setpoint change."
+    },
+    {
+      "id": "deviation-review",
+      "trigger": "Review standard-work deviation and document a nonconformance.",
+      "required_inputs": "Current revision, observation and affected process/product.",
+      "skills": [
+        "analyze-standard-work-deviation",
+        "document-nonconformance"
+      ],
+      "output": "Deviation and nonconformance draft.",
+      "review_boundary": "Do not infer root cause or disposition."
+    }
+  ]
+}

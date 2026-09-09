@@ -1,0 +1,42 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "manufacturing-engineer-support",
+  "description": "Prepare process and change evidence for engineering review.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "map-manufacturing-process",
+    "compare-process-alternatives",
+    "build-process-control-plan",
+    "review-change-package",
+    "build-engineering-change-impact-assessment",
+    "review-process-change"
+  ],
+  "workflows": [
+    {
+      "id": "process-design-review",
+      "trigger": "Compare process alternatives and draft controls.",
+      "required_inputs": "Product requirements, process maps, alternatives and constraints.",
+      "skills": [
+        "map-manufacturing-process",
+        "compare-process-alternatives",
+        "build-process-control-plan"
+      ],
+      "output": "Process options and draft control plan.",
+      "review_boundary": "No design validation or engineering signoff."
+    },
+    {
+      "id": "change-review",
+      "trigger": "Assess a proposed manufacturing process change.",
+      "required_inputs": "Change package, technical basis and affected process records.",
+      "skills": [
+        "review-change-package",
+        "build-engineering-change-impact-assessment",
+        "review-process-change"
+      ],
+      "output": "Change impacts and review handoff.",
+      "review_boundary": "No change activation, machine release or certification."
+    }
+  ]
+}

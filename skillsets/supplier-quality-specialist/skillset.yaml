@@ -1,0 +1,40 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "supplier-quality-specialist",
+  "description": "Review supplier evidence and draft corrective-action requests.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "review-supplier-qualification",
+    "review-certificate-of-conformance",
+    "analyze-supplier-defect",
+    "draft-supplier-corrective-action",
+    "review-supplier-change-impact"
+  ],
+  "workflows": [
+    {
+      "id": "supplier-review",
+      "trigger": "Review qualification and conformity documentation.",
+      "required_inputs": "Supplier scope, qualification records, certificate and product requirements.",
+      "skills": [
+        "review-supplier-qualification",
+        "review-certificate-of-conformance"
+      ],
+      "output": "Supplier evidence gaps.",
+      "review_boundary": "No supplier approval or certificate validation by assertion."
+    },
+    {
+      "id": "supplier-action",
+      "trigger": "Analyze defects and draft a supplier corrective action.",
+      "required_inputs": "Linked defect counts, nonconformance and supplier context.",
+      "skills": [
+        "analyze-supplier-defect",
+        "draft-supplier-corrective-action",
+        "review-supplier-change-impact"
+      ],
+      "output": "Defect review and supplier-action draft.",
+      "review_boundary": "Do not send the request or approve supplier changes."
+    }
+  ]
+}

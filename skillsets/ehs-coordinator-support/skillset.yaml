@@ -1,0 +1,57 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "ehs-coordinator-support",
+  "description": "Coordinate scoped hazard, jurisdiction and environmental evidence reviews.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "identify-manufacturing-hazard",
+    "build-job-safety-analysis",
+    "review-lockout-program",
+    "review-machine-guarding-risk",
+    "identify-manufacturing-environmental-aspect",
+    "build-environmental-risk-register",
+    "analyze-waste-stream",
+    "assess-whmis-applicability",
+    "review-whmis-readiness"
+  ],
+  "workflows": [
+    {
+      "id": "safety-review",
+      "trigger": "Prepare hazard and safety-program review evidence.",
+      "required_inputs": "Task, facility jurisdiction, equipment hazards and existing programs.",
+      "skills": [
+        "identify-manufacturing-hazard",
+        "build-job-safety-analysis",
+        "review-lockout-program",
+        "review-machine-guarding-risk"
+      ],
+      "output": "Hazard/program gaps and qualified safety handoff.",
+      "review_boundary": "No operational JSA authorization, isolation steps or guarding approval."
+    },
+    {
+      "id": "environment-review",
+      "trigger": "Inventory environmental aspects and review risk evidence.",
+      "required_inputs": "Facility activities, stream evidence, criteria and jurisdiction.",
+      "skills": [
+        "identify-manufacturing-environmental-aspect",
+        "build-environmental-risk-register",
+        "analyze-waste-stream"
+      ],
+      "output": "Environmental evidence register.",
+      "review_boundary": "No waste classification, disposal or permit approval."
+    },
+    {
+      "id": "whmis-review",
+      "trigger": "Review WHMIS scope and program evidence.",
+      "required_inputs": "Product roles, jurisdiction, current sources, SDS/labels and training.",
+      "skills": [
+        "assess-whmis-applicability",
+        "review-whmis-readiness"
+      ],
+      "output": "Role-separated WHMIS evidence gaps.",
+      "review_boundary": "No classification, chemical-use or compliance certification."
+    }
+  ]
+}

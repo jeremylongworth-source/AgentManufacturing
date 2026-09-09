@@ -1,0 +1,40 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "production-planner",
+  "description": "Build and compare evidence-based production planning proposals.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "build-production-plan",
+    "review-production-order-readiness",
+    "sequence-production-orders",
+    "identify-capacity-shortfall",
+    "compare-production-scenarios"
+  ],
+  "workflows": [
+    {
+      "id": "horizon-plan",
+      "trigger": "Build a production plan from compatible demand and capacity evidence.",
+      "required_inputs": "Demand horizon, capacity, BOM, materials and labor basis.",
+      "skills": [
+        "build-production-plan",
+        "review-production-order-readiness"
+      ],
+      "output": "Production plan proposal and readiness gaps.",
+      "review_boundary": "No order release, purchasing or business commitment."
+    },
+    {
+      "id": "scenario-review",
+      "trigger": "Compare production sequences and alternatives.",
+      "required_inputs": "Order constraints, comparable scenarios and capacity evidence.",
+      "skills": [
+        "sequence-production-orders",
+        "identify-capacity-shortfall",
+        "compare-production-scenarios"
+      ],
+      "output": "Scenario comparison with capacity constraints.",
+      "review_boundary": "Do not turn a recommendation into dispatch authority."
+    }
+  ]
+}

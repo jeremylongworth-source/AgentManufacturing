@@ -1,0 +1,42 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "reliability-analyst",
+  "description": "Analyze failure and downtime evidence without promising reliability outcomes.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "analyze-failure-history",
+    "calculate-mtbf",
+    "calculate-mttr",
+    "analyze-equipment-downtime",
+    "perform-equipment-failure-analysis",
+    "build-predictive-maintenance-plan"
+  ],
+  "workflows": [
+    {
+      "id": "reliability-metrics",
+      "trigger": "Review failures and calculate supported reliability metrics.",
+      "required_inputs": "Failure counts, exposure intervals, repair durations and consistent boundaries.",
+      "skills": [
+        "analyze-failure-history",
+        "calculate-mtbf",
+        "calculate-mttr",
+        "analyze-equipment-downtime"
+      ],
+      "output": "Reliability metrics with population and time basis.",
+      "review_boundary": "Do not infer future reliability or causal improvement."
+    },
+    {
+      "id": "failure-review",
+      "trigger": "Investigate equipment failures and draft predictive monitoring options.",
+      "required_inputs": "Failure evidence, condition data and available monitoring methods.",
+      "skills": [
+        "perform-equipment-failure-analysis",
+        "build-predictive-maintenance-plan"
+      ],
+      "output": "Failure review and monitoring proposal.",
+      "review_boundary": "No machine fitness-for-service or safe-operation approval."
+    }
+  ]
+}

@@ -172,6 +172,8 @@ This is an authoring contract for later implementation. Completion of documentat
 
 ## Sources and change control
 
+AM-28 adds 18 professional skillsets with 38 workflows referencing the existing atomic packages. The read-only resolver lists targets and evidence-provider paths; it does not execute skills, assess evidence or infer applicability. Shared composition rules preserve atomic gates, reuse compatible evidence and select jurisdiction research explicitly. Canonical paths resolve the two historical reference duplicates. AM-29 owns sector specialization architecture and priorities.
+
 AM-27 completes the frozen atomic catalogue with a provincial selector and four research modules for Ontario, British Columbia, Alberta and Quebec. Seven topic paths per province separate workplace, technical equipment, environmental and training research. Source coverage is not applicability: unknown employer regime, unsupported provinces/territories, local authority exceptions and source-currency gaps remain explicit. AM-28 owns professional skillset composition.
 
 AM-26 implements eight Family 20 federal capabilities for jurisdiction context, regulatory-layer research, WHMIS scope and readiness, distinct non-food origin claims, general consumer labelling, and source freshness. Outputs remain evidence reviews. Supplier/product authority does not establish workplace jurisdiction, guidance does not approve a claim, and source access does not establish effective-version currency. AM-27 retains provincial overlays and unsupported-jurisdiction handoffs.

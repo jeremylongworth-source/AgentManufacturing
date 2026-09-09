@@ -1,0 +1,42 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "industrial-engineering-specialist",
+  "description": "Analyze production capacity and work balance from declared measurements.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "analyze-cycle-time",
+    "calculate-takt-time",
+    "balance-production-line",
+    "calculate-production-capacity",
+    "identify-manufacturing-bottleneck",
+    "calculate-capacity-utilization"
+  ],
+  "workflows": [
+    {
+      "id": "line-balance",
+      "trigger": "Review cycle evidence and propose a line balance.",
+      "required_inputs": "Cycle observations, demand, time units and task constraints.",
+      "skills": [
+        "analyze-cycle-time",
+        "calculate-takt-time",
+        "balance-production-line"
+      ],
+      "output": "Balance proposal with measured constraints.",
+      "review_boundary": "No unsafe pace or workplace redesign approval."
+    },
+    {
+      "id": "capacity-review",
+      "trigger": "Identify capacity and bottleneck evidence.",
+      "required_inputs": "Capacity basis, equipment downtime and production context.",
+      "skills": [
+        "calculate-production-capacity",
+        "identify-manufacturing-bottleneck",
+        "calculate-capacity-utilization"
+      ],
+      "output": "Capacity and bottleneck evidence brief.",
+      "review_boundary": "Do not infer causation from a utilization percentage."
+    }
+  ]
+}

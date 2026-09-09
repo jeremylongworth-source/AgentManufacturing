@@ -34,6 +34,7 @@ VALIDATORS = [
     "validate-environment-energy-waste.py",
     "validate-canadian-federal.py",
     "validate-provincial-overlays.py",
+    "validate-professional-skillsets.py",
 ]
 
 

@@ -1,0 +1,40 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "production-supervisor",
+  "description": "Translate approved plans into shift-level review and handoff.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "review-production-order-readiness",
+    "build-shift-production-plan",
+    "balance-workforce",
+    "analyze-schedule-adherence",
+    "prepare-shift-handoff"
+  ],
+  "workflows": [
+    {
+      "id": "shift-plan",
+      "trigger": "Allocate a supplied approved horizon to a shift.",
+      "required_inputs": "Approved plan, readiness, staffing qualifications and shift window.",
+      "skills": [
+        "review-production-order-readiness",
+        "build-shift-production-plan",
+        "balance-workforce"
+      ],
+      "output": "Shift allocation proposal with unmet constraints.",
+      "review_boundary": "Do not approve overtime or unqualified assignments."
+    },
+    {
+      "id": "shift-review",
+      "trigger": "Review schedule performance and hand over unresolved events.",
+      "required_inputs": "Planned/actual order history and shift records.",
+      "skills": [
+        "analyze-schedule-adherence",
+        "prepare-shift-handoff"
+      ],
+      "output": "Schedule exceptions and next-shift handoff.",
+      "review_boundary": "No live rescheduling or unsafe-work direction."
+    }
+  ]
+}

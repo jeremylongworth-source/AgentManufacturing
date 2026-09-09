@@ -1,0 +1,53 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "quality-engineer-support",
+  "description": "Support quality investigation, capability and release evidence.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "triage-nonconformance",
+    "perform-root-cause-analysis",
+    "build-corrective-action",
+    "verify-corrective-action-effectiveness",
+    "review-capability-readiness",
+    "calculate-cp-cpk",
+    "prepare-quality-release-package"
+  ],
+  "workflows": [
+    {
+      "id": "corrective-action",
+      "trigger": "Build a corrective-action draft from investigation evidence.",
+      "required_inputs": "Nonconformance, containment, causal evidence and verification plan.",
+      "skills": [
+        "triage-nonconformance",
+        "perform-root-cause-analysis",
+        "build-corrective-action",
+        "verify-corrective-action-effectiveness"
+      ],
+      "output": "Causal evidence and action/effectiveness review.",
+      "review_boundary": "Do not convert a proposed cause into a verified one."
+    },
+    {
+      "id": "capability",
+      "trigger": "Review capability readiness before calculating indices.",
+      "required_inputs": "Measurement-system evidence, process stability, specs and within sigma.",
+      "skills": [
+        "review-capability-readiness",
+        "calculate-cp-cpk"
+      ],
+      "output": "Readiness gaps or supported capability calculation.",
+      "review_boundary": "No product acceptance; do not substitute overall sigma."
+    },
+    {
+      "id": "release-evidence",
+      "trigger": "Assemble a quality release review package.",
+      "required_inputs": "Applicable requirements, product evidence and quality records.",
+      "skills": [
+        "prepare-quality-release-package"
+      ],
+      "output": "Review package with unresolved evidence.",
+      "review_boundary": "Only an authorized owner can release product."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "maintenance-planner",
+  "description": "Prepare maintenance priorities and plans from backlog and failure evidence.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "analyze-maintenance-backlog",
+    "prioritize-maintenance-work",
+    "review-spare-parts-criticality",
+    "analyze-failure-history",
+    "build-preventive-maintenance-plan"
+  ],
+  "workflows": [
+    {
+      "id": "maintenance-priority",
+      "trigger": "Review backlog and propose maintenance priorities.",
+      "required_inputs": "Backlog, risk criteria, resource constraints and equipment context.",
+      "skills": [
+        "analyze-maintenance-backlog",
+        "prioritize-maintenance-work",
+        "review-spare-parts-criticality"
+      ],
+      "output": "Prioritized review list and parts evidence gaps.",
+      "review_boundary": "No equipment shutdown/startup or procurement authority."
+    },
+    {
+      "id": "preventive-plan",
+      "trigger": "Draft a preventive plan against failure evidence.",
+      "required_inputs": "Failure history, manufacturer information and review criteria.",
+      "skills": [
+        "analyze-failure-history",
+        "build-preventive-maintenance-plan"
+      ],
+      "output": "Preventive maintenance proposal.",
+      "review_boundary": "No safe-to-work declaration or isolation instructions."
+    }
+  ]
+}

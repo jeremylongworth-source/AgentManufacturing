@@ -1,0 +1,42 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "quality-technician",
+  "description": "Prepare inspection and conformity evidence for authorized quality review.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "review-quality-requirement",
+    "select-measurement-method",
+    "build-inspection-plan",
+    "review-quality-record",
+    "review-product-conformity",
+    "document-nonconformance"
+  ],
+  "workflows": [
+    {
+      "id": "inspection",
+      "trigger": "Prepare an inspection plan with suitable measurement evidence.",
+      "required_inputs": "Product requirements, measurement method and inspection scope.",
+      "skills": [
+        "review-quality-requirement",
+        "select-measurement-method",
+        "build-inspection-plan"
+      ],
+      "output": "Draft inspection plan and method gaps.",
+      "review_boundary": "No acceptance criteria invented."
+    },
+    {
+      "id": "conformity",
+      "trigger": "Review quality records and record nonconformance.",
+      "required_inputs": "Applicable requirements, actual records and affected product.",
+      "skills": [
+        "review-quality-record",
+        "review-product-conformity",
+        "document-nonconformance"
+      ],
+      "output": "Conformity evidence and nonconformance draft.",
+      "review_boundary": "No product release or disposition."
+    }
+  ]
+}

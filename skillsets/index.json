@@ -1,0 +1,95 @@
+{
+  "schema_version": "AM-28-skillset-index-1",
+  "skillsets": [
+    {
+      "name": "production-operator-support",
+      "manifest": "skillsets/production-operator-support/skillset.yaml",
+      "guide": "skillsets/production-operator-support/SKILLSET.md"
+    },
+    {
+      "name": "manufacturing-technician",
+      "manifest": "skillsets/manufacturing-technician/skillset.yaml",
+      "guide": "skillsets/manufacturing-technician/SKILLSET.md"
+    },
+    {
+      "name": "production-supervisor",
+      "manifest": "skillsets/production-supervisor/skillset.yaml",
+      "guide": "skillsets/production-supervisor/SKILLSET.md"
+    },
+    {
+      "name": "production-planner",
+      "manifest": "skillsets/production-planner/skillset.yaml",
+      "guide": "skillsets/production-planner/SKILLSET.md"
+    },
+    {
+      "name": "process-technician",
+      "manifest": "skillsets/process-technician/skillset.yaml",
+      "guide": "skillsets/process-technician/SKILLSET.md"
+    },
+    {
+      "name": "manufacturing-engineer-support",
+      "manifest": "skillsets/manufacturing-engineer-support/skillset.yaml",
+      "guide": "skillsets/manufacturing-engineer-support/SKILLSET.md"
+    },
+    {
+      "name": "industrial-engineering-specialist",
+      "manifest": "skillsets/industrial-engineering-specialist/skillset.yaml",
+      "guide": "skillsets/industrial-engineering-specialist/SKILLSET.md"
+    },
+    {
+      "name": "quality-technician",
+      "manifest": "skillsets/quality-technician/skillset.yaml",
+      "guide": "skillsets/quality-technician/SKILLSET.md"
+    },
+    {
+      "name": "quality-engineer-support",
+      "manifest": "skillsets/quality-engineer-support/skillset.yaml",
+      "guide": "skillsets/quality-engineer-support/SKILLSET.md"
+    },
+    {
+      "name": "metrology-specialist",
+      "manifest": "skillsets/metrology-specialist/skillset.yaml",
+      "guide": "skillsets/metrology-specialist/SKILLSET.md"
+    },
+    {
+      "name": "supplier-quality-specialist",
+      "manifest": "skillsets/supplier-quality-specialist/skillset.yaml",
+      "guide": "skillsets/supplier-quality-specialist/SKILLSET.md"
+    },
+    {
+      "name": "maintenance-planner",
+      "manifest": "skillsets/maintenance-planner/skillset.yaml",
+      "guide": "skillsets/maintenance-planner/SKILLSET.md"
+    },
+    {
+      "name": "reliability-analyst",
+      "manifest": "skillsets/reliability-analyst/skillset.yaml",
+      "guide": "skillsets/reliability-analyst/SKILLSET.md"
+    },
+    {
+      "name": "continuous-improvement-specialist",
+      "manifest": "skillsets/continuous-improvement-specialist/skillset.yaml",
+      "guide": "skillsets/continuous-improvement-specialist/SKILLSET.md"
+    },
+    {
+      "name": "manufacturing-data-analyst",
+      "manifest": "skillsets/manufacturing-data-analyst/skillset.yaml",
+      "guide": "skillsets/manufacturing-data-analyst/SKILLSET.md"
+    },
+    {
+      "name": "ehs-coordinator-support",
+      "manifest": "skillsets/ehs-coordinator-support/skillset.yaml",
+      "guide": "skillsets/ehs-coordinator-support/SKILLSET.md"
+    },
+    {
+      "name": "operations-manager",
+      "manifest": "skillsets/operations-manager/skillset.yaml",
+      "guide": "skillsets/operations-manager/SKILLSET.md"
+    },
+    {
+      "name": "plant-manager-support",
+      "manifest": "skillsets/plant-manager-support/skillset.yaml",
+      "guide": "skillsets/plant-manager-support/SKILLSET.md"
+    }
+  ]
+}

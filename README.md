@@ -28,15 +28,23 @@ Development workspace for open-source, portable AI skills supporting commercial 
 - [Validation contract](docs/architecture/validation-framework-contract.json), [routing manifest](tests/expected-routing.yaml), [scenario suite](tests/scenarios/), and [fixture manifest](tests/fixtures/am09-fixture-manifest.json): executable framework evidence.
 - [Reference-skill proof contract](docs/architecture/reference-skill-proof.md): AM-10 package gate and runtime-evaluation boundary.
 - [Reference packages](skills/): five bounded AM-10 examples across quantitative, planning, quality, hazardous-operation, and Canadian-overlay classes.
-- [Latest handoff](docs/development/handoffs/AM-27-final-handoff.md): AM-27 closure and the bounded AM-28 execution brief.
+- [Latest handoff](docs/development/handoffs/AM-28-final-handoff.md): AM-28 closure and the bounded AM-29 execution brief.
 
 ## Codex handoff
 
 Use `D:\AgentMfg` as the working directory. Read the roadmap and latest handoff, then execute the next unfinished wave. The roadmap's **First Codex prompt** is the historical AM-00 bootstrap instruction. Treat the roadmap as planning authority and repository contents as execution truth.
 
-Current state: **AM-00 through AM-27 READY** on 2026-09-08; **AM-28 is next**. The v1 taxonomy freezes 159 accepted records: 153 core methods and six Canadian overlays. All 162 draft candidates and 166 starter names remain traceable. AM-04 formalizes jurisdiction routing, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable skill packages and evidence layers, AM-07 formalizes source precedence, standards metadata, rights handling, and freshness, AM-08 formalizes unit-safe quantitative calculations, AM-09 formalizes executable evidence checks, AM-10 proves five bounded reference package classes, AM-11 adds nine manufacturing-fundamentals and standard-work packages, AM-12 completes Family 02 production planning and scheduling, AM-13 completes Families 04 and 05 process and industrial engineering, AM-14 completes Family 06 quality management and inspection, AM-15 completes Families 07 and 08 metrology, SPC, and capability, AM-16 completes Family 09 nonconformance, RCA, and CAPA, AM-17 completes Family 10 maintenance and reliability, AM-18 completes Family 11 manufacturing safety, AM-19 completes Family 12 materials, BOM, and traceability, AM-20 completes Family 13 workforce and shift operations, AM-21 completes Family 14 lean and continuous improvement, AM-22 completes Family 15 manufacturing systems and data, AM-23 completes Family 16 automation and advanced manufacturing, AM-24 completes Families 17 and 18 supplier quality and engineering change, AM-25 completes Family 19 environment, energy, and waste, AM-26 adds Family 20 federal capabilities, and AM-27 completes Family 20 with four provincial research modules. Runtime model behavior remains unobserved until reviewer-owned evaluation runs.
+Current state: **AM-00 through AM-28 READY** on 2026-09-08; **AM-29 is next**. The v1 taxonomy freezes 159 accepted records: 153 core methods and six Canadian overlays. All 162 draft candidates and 166 starter names remain traceable. AM-04 formalizes jurisdiction routing, AM-05 formalizes safety/engineering boundaries, AM-06 formalizes portable skill packages and evidence layers, AM-07 formalizes source precedence, standards metadata, rights handling, and freshness, AM-08 formalizes unit-safe quantitative calculations, AM-09 formalizes executable evidence checks, AM-10 proves five bounded reference package classes, AM-11 adds nine manufacturing-fundamentals and standard-work packages, AM-12 completes Family 02 production planning and scheduling, AM-13 completes Families 04 and 05 process and industrial engineering, AM-14 completes Family 06 quality management and inspection, AM-15 completes Families 07 and 08 metrology, SPC, and capability, AM-16 completes Family 09 nonconformance, RCA, and CAPA, AM-17 completes Family 10 maintenance and reliability, AM-18 completes Family 11 manufacturing safety, AM-19 completes Family 12 materials, BOM, and traceability, AM-20 completes Family 13 workforce and shift operations, AM-21 completes Family 14 lean and continuous improvement, AM-22 completes Family 15 manufacturing systems and data, AM-23 completes Family 16 automation and advanced manufacturing, AM-24 completes Families 17 and 18 supplier quality and engineering change, AM-25 completes Family 19 environment, energy, and waste, AM-26 adds Family 20 federal capabilities, AM-27 completes Family 20 with four provincial research modules, and AM-28 composes 18 professional skillsets with 38 workflows. Runtime model behavior remains unobserved until reviewer-owned evaluation runs.
 
-The workspace contains domain contracts, a preserved draft register, the audited v1 catalogue, 161 bounded package directories representing all 159 accepted names, focused validators, and wave handoffs. Runtime behavior evaluation, governance, skillsets, and specializations remain roadmap work. Local Git is initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing). AM-00 verified the remote as private and empty on 2026-09-06. No release or licence selection has been made; roadmap work through AM-27 is committed and pushed as it closes.
+The workspace contains domain contracts, a preserved draft register, the audited v1 catalogue, 161 bounded package directories representing all 159 accepted names, focused validators, and wave handoffs. Runtime behavior evaluation, governance, and specializations remain roadmap work. The 18 professional skillsets reference existing atomic packages. Local Git is initialized on `main` with `origin` pointing to [AgentManufacturing](https://github.com/jeremylongworth-source/AgentManufacturing). AM-00 verified the remote as private and empty on 2026-09-06. No release or licence selection has been made; roadmap work through AM-28 is committed and pushed as it closes.
+
+## Professional skillsets
+
+Browse the [18 role skillsets](skillsets/index.json) and [composition contract](docs/architecture/professional-skillset-contract.md). Resolve a workflow without executing skills:
+
+```powershell
+python scripts/resolve-skillset.py production-planner horizon-plan
+```
 
 ## Taxonomy validation
 
@@ -67,6 +75,7 @@ python scripts/validate-supplier-change.py
 python scripts/validate-environment-energy-waste.py
 python scripts/validate-canadian-federal.py
 python scripts/validate-provincial-overlays.py
+python scripts/validate-professional-skillsets.py
 
 # Or run the complete gate:
 python scripts/validate-all.py

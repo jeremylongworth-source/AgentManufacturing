@@ -1,0 +1,40 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "manufacturing-technician",
+  "description": "Support technical troubleshooting and controlled documentation.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "analyze-production-event-history",
+    "review-process-parameter-control",
+    "review-document-revision",
+    "draft-work-instruction",
+    "review-work-instruction"
+  ],
+  "workflows": [
+    {
+      "id": "troubleshooting",
+      "trigger": "Review a production issue using event and parameter evidence.",
+      "required_inputs": "Equipment/process identity, event history and supplied parameter limits.",
+      "skills": [
+        "analyze-production-event-history",
+        "review-process-parameter-control"
+      ],
+      "output": "Troubleshooting evidence brief.",
+      "review_boundary": "Do not change live setpoints or bypass controls."
+    },
+    {
+      "id": "instruction-change",
+      "trigger": "Draft a controlled work-instruction update for review.",
+      "required_inputs": "Approved method, source revision and proposed change.",
+      "skills": [
+        "review-document-revision",
+        "draft-work-instruction",
+        "review-work-instruction"
+      ],
+      "output": "Draft instruction and validation gaps.",
+      "review_boundary": "No document release or engineering approval."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "manufacturing-data-analyst",
+  "description": "Assess manufacturing data lineage and metric definitions.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "map-erp-mes-flow",
+    "analyze-production-event-history",
+    "diagnose-production-data-quality",
+    "analyze-oee-data",
+    "build-manufacturing-kpi-model"
+  ],
+  "workflows": [
+    {
+      "id": "data-quality",
+      "trigger": "Review event history, lineage and source data quality.",
+      "required_inputs": "Source extracts, identifiers, timestamps and declared schema.",
+      "skills": [
+        "map-erp-mes-flow",
+        "analyze-production-event-history",
+        "diagnose-production-data-quality"
+      ],
+      "output": "Data-quality and lineage gaps.",
+      "review_boundary": "No live ERP/MES changes or inferred missing events."
+    },
+    {
+      "id": "kpi-review",
+      "trigger": "Review OEE data and draft a KPI model.",
+      "required_inputs": "Event data, KPI definitions, units and aggregation basis.",
+      "skills": [
+        "analyze-oee-data",
+        "build-manufacturing-kpi-model"
+      ],
+      "output": "Metric definitions and OEE evidence review.",
+      "review_boundary": "Do not publish unvalidated metrics or combine incompatible denominators."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "continuous-improvement-specialist",
+  "description": "Shape improvement experiments from observed flow and loss evidence.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "build-value-stream-map",
+    "identify-eight-wastes",
+    "analyze-flow-efficiency",
+    "analyze-changeover-loss",
+    "build-smed-improvement-plan",
+    "build-kaizen-plan",
+    "measure-improvement-result"
+  ],
+  "workflows": [
+    {
+      "id": "flow-review",
+      "trigger": "Map flow and identify improvement opportunities.",
+      "required_inputs": "Process boundary, observations, timings and waste evidence.",
+      "skills": [
+        "build-value-stream-map",
+        "identify-eight-wastes",
+        "analyze-flow-efficiency"
+      ],
+      "output": "Flow evidence and candidate opportunities.",
+      "review_boundary": "Do not assume every observed delay is removable."
+    },
+    {
+      "id": "changeover-improvement",
+      "trigger": "Draft and evaluate a bounded changeover improvement.",
+      "required_inputs": "Changeover records, baseline, proposed actions and comparable follow-up.",
+      "skills": [
+        "analyze-changeover-loss",
+        "build-smed-improvement-plan",
+        "build-kaizen-plan",
+        "measure-improvement-result"
+      ],
+      "output": "Improvement proposal and measurement comparison.",
+      "review_boundary": "No trial activation or causal savings without evidence."
+    }
+  ]
+}

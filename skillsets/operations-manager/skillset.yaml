@@ -1,0 +1,42 @@
+{
+  "schema_version": "AM-28-skillset-1",
+  "name": "operations-manager",
+  "description": "Compare production and improvement evidence for management review.",
+  "status": "STRUCTURALLY_READY",
+  "license": "PENDING_PROJECT_GOVERNANCE",
+  "composition_contract": "../composition-contract.json",
+  "skills": [
+    "analyze-schedule-adherence",
+    "analyze-quality-kpis",
+    "analyze-labor-productivity",
+    "compare-production-scenarios",
+    "measure-improvement-result",
+    "review-environmental-objective"
+  ],
+  "workflows": [
+    {
+      "id": "operations-review",
+      "trigger": "Review plan adherence, quality and labor evidence.",
+      "required_inputs": "Comparable production plan, actuals, quality records and labor basis.",
+      "skills": [
+        "analyze-schedule-adherence",
+        "analyze-quality-kpis",
+        "analyze-labor-productivity"
+      ],
+      "output": "Operational exceptions and evidence gaps.",
+      "review_boundary": "No workforce commitment or performance judgment from unverified data."
+    },
+    {
+      "id": "improvement-review",
+      "trigger": "Compare production options and measured results.",
+      "required_inputs": "Scenario assumptions, constraints, baseline and follow-up evidence.",
+      "skills": [
+        "compare-production-scenarios",
+        "measure-improvement-result",
+        "review-environmental-objective"
+      ],
+      "output": "Management review of options and measured outcomes.",
+      "review_boundary": "No automatic prioritization across safety/quality constraints."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Provincial Safety Overlay"
+  short_description: "Select provincial authority research and coverage gaps."
+  default_prompt: "Use $identify-provincial-safety-overlay to map provincial manufacturing authority research, evidence gaps, and review owners."

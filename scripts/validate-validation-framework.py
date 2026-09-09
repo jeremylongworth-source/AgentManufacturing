@@ -90,7 +90,7 @@ def validate_routes(root: Path, manifest: dict[str, Any], contract: dict[str, An
     need(manifest.get("schema_version") == "AM-09-routing-manifest-1", "routing manifest schema version")
     need(manifest.get("status") in VALID_ROUTING_STATUSES, "routing manifest status")
     future_names = manifest.get("future_skill_names")
-    need(isinstance(future_names, list) and future_names, "future skill names")
+    need(isinstance(future_names, list), "future skill names")
     need(len(set(future_names)) == len(future_names), "duplicate future skill name")
     scenarios = manifest.get("scenarios")
     need(isinstance(scenarios, list) and len(scenarios) >= 12, "scenario count")
@@ -143,7 +143,8 @@ def validate_routes(root: Path, manifest: dict[str, Any], contract: dict[str, An
     need(categories == SCENARIO_CATEGORIES, f"scenario category coverage missing {sorted(SCENARIO_CATEGORIES - categories)}")
     all_files = {f"tests/scenarios/{path.name}" for path in scenario_root.glob("*.md")}
     need(all_files == seen_files, "scenario files and manifest are not one-to-one")
-    need(set(manifest["future_skill_names"]) >= {"identify-provincial-safety-overlay"}, "reference future skill targets")
+    implemented = {path.parent.name for path in (root / "skills").glob("*/*/SKILL.md")}
+    need(not (set(future_names) & implemented), "implemented skill incorrectly marked future")
     return len(scenarios), len(categories)
 
 

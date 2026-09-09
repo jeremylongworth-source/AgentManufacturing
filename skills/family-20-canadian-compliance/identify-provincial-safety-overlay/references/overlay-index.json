@@ -1,0 +1,319 @@
+{
+  "schema_version": "AM-27-overlay-index-1",
+  "scope": "Authority research only; no legal applicability or operating approval.",
+  "modules": [
+    {
+      "id": "ontario",
+      "province": "Ontario",
+      "status": "RESEARCH_BASELINE",
+      "distinction": "Ontario machinery research starts with the industrial workplace context. ESA and TSSA questions remain distinct from workplace safety and environmental permission research.",
+      "topics": [
+        {
+          "topic": "ohs",
+          "source_keys": [
+            "AM27-ON-OHS"
+          ],
+          "research_question": "Confirm OHSA and industrial-sector scope; use current e-Laws instruments before stating duties.",
+          "required_evidence": "Workplace regime, undertaking, facility activity, applicable sector and assessment date",
+          "review_owner": "Workplace regulatory/safety reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "machinery",
+          "source_keys": [
+            "AM27-ON-REG"
+          ],
+          "research_question": "Research Regulation 851 machinery provisions and whether a pre-start review question arises for the proposed change; do not assume every modification qualifies.",
+          "required_evidence": "Machine identity, task, guarding evidence, modification history and engineering documents",
+          "review_owner": "Qualified machinery safety/engineering reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "hazardous_energy",
+          "source_keys": [
+            "AM27-ON-REG"
+          ],
+          "research_question": "Research task-specific energy-isolation provisions in the current industrial regulation; do not copy another province's procedure.",
+          "required_evidence": "Task and equipment scope, all energy types, existing site procedure and authorized review owner",
+          "review_owner": "Qualified site hazardous-energy reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "electrical",
+          "source_keys": [
+            "AM27-ON-ELECTRICAL"
+          ],
+          "research_question": "Separate workplace electrical safety research from ESA installation/code and notification questions.",
+          "required_evidence": "Work versus installation scope, location, equipment, proposed change and existing permit evidence",
+          "review_owner": "Qualified electrical reviewer and authority having jurisdiction",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "pressure_equipment",
+          "source_keys": [
+            "AM27-ON-PRESSURE"
+          ],
+          "research_question": "Research Regulation 220/01 and the applicable adoption document with equipment facts; do not infer exemption from size alone.",
+          "required_evidence": "Equipment type, service, nameplate/design records, location and proposed lifecycle activity",
+          "review_owner": "Qualified pressure-equipment reviewer and competent authority",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "environment",
+          "source_keys": [
+            "AM27-ON-ENV"
+          ],
+          "research_question": "Research ECA versus EASR and other permission routes for the actual activity; existing registration is not proof for a changed process.",
+          "required_evidence": "Activity, emissions/discharges/waste, location, receiving environment and existing permissions",
+          "review_owner": "Environmental permissions reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "worker_training",
+          "source_keys": [
+            "AM27-ON-OHS"
+          ],
+          "research_question": "Research applicable awareness and task-specific training requirements separately; attendance is not demonstrated competence.",
+          "required_evidence": "Worker role, task and equipment, training content, demonstrated competency and supervision evidence",
+          "review_owner": "Workplace training/safety reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "british-columbia",
+      "province": "British Columbia",
+      "status": "RESEARCH_BASELINE",
+      "distinction": "Technical Safety BC identifies local electrical/gas jurisdiction exceptions. Select the authority by location and technology; do not generalize an electrical exception to pressure equipment.",
+      "topics": [
+        {
+          "topic": "ohs",
+          "source_keys": [
+            "AM27-BC-OHS"
+          ],
+          "research_question": "Check WorkSafeBC inspectional jurisdiction and relevant Workers Compensation Act/OHS Regulation scope before selecting duties.",
+          "required_evidence": "Workplace regime, undertaking, facility activity, applicable sector and assessment date",
+          "review_owner": "Workplace regulatory/safety reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "machinery",
+          "source_keys": [
+            "AM27-BC-OHS"
+          ],
+          "research_question": "Use the Part 12 research path and equipment-specific provisions; keep regulations distinct from interpretive guidelines.",
+          "required_evidence": "Machine identity, task, guarding evidence, modification history and engineering documents",
+          "review_owner": "Qualified machinery safety/engineering reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "hazardous_energy",
+          "source_keys": [
+            "AM27-BC-OHS"
+          ],
+          "research_question": "Use the Part 10 research path with task and energy evidence; no equivalence with an Ontario program is assumed.",
+          "required_evidence": "Task and equipment scope, all energy types, existing site procedure and authorized review owner",
+          "review_owner": "Qualified site hazardous-energy reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "electrical",
+          "source_keys": [
+            "AM27-BC-TECH",
+            "AM27-BC-OHS"
+          ],
+          "research_question": "Check local electrical jurisdiction with Technical Safety BC; separately research workplace electrical safety through WorkSafeBC Part 19.",
+          "required_evidence": "Work versus installation scope, location, equipment, proposed change and existing permit evidence",
+          "review_owner": "Qualified electrical reviewer and authority having jurisdiction",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "pressure_equipment",
+          "source_keys": [
+            "AM27-BC-TECH"
+          ],
+          "research_question": "Research the pressure technology, applicable safety regulation and lifecycle permissions independently of electrical municipal exceptions.",
+          "required_evidence": "Equipment type, service, nameplate/design records, location and proposed lifecycle activity",
+          "review_owner": "Qualified pressure-equipment reviewer and competent authority",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "environment",
+          "source_keys": [
+            "AM27-BC-ENV"
+          ],
+          "research_question": "Research each waste/discharge activity and receiving medium; one authorization need not cover all activities.",
+          "required_evidence": "Activity, emissions/discharges/waste, location, receiving environment and existing permissions",
+          "review_owner": "Environmental permissions reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "worker_training",
+          "source_keys": [
+            "AM27-BC-OHS"
+          ],
+          "research_question": "Research orientation and task/equipment training provisions for the actual worker role; do not equate a general course with all required evidence.",
+          "required_evidence": "Worker role, task and equipment, training content, demonstrated competency and supervision evidence",
+          "review_owner": "Workplace training/safety reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "alberta",
+      "province": "Alberta",
+      "status": "RESEARCH_BASELINE",
+      "distinction": "Alberta separates OHS research, local safety-code services, ABSA pressure-equipment oversight and environmental approval research. A Code update date does not prove current text for every subject.",
+      "topics": [
+        {
+          "topic": "ohs",
+          "source_keys": [
+            "AM27-AB-OHS"
+          ],
+          "research_question": "Start with the OHS Act, Regulation and Code; check effective amendments for the requested date, not only a 2025 summary.",
+          "required_evidence": "Workplace regime, undertaking, facility activity, applicable sector and assessment date",
+          "review_owner": "Workplace regulatory/safety reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "machinery",
+          "source_keys": [
+            "AM27-AB-OHS"
+          ],
+          "research_question": "Find the current Code equipment/safeguard requirements for the actual machine and task; preserve manufacturer and engineering evidence separately.",
+          "required_evidence": "Machine identity, task, guarding evidence, modification history and engineering documents",
+          "review_owner": "Qualified machinery safety/engineering reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "hazardous_energy",
+          "source_keys": [
+            "AM27-AB-OHS"
+          ],
+          "research_question": "Research the current Code hazardous-energy provisions and task conditions; do not substitute a 2009 download or cross-province procedure.",
+          "required_evidence": "Task and equipment scope, all energy types, existing site procedure and authorized review owner",
+          "review_owner": "Qualified site hazardous-energy reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "electrical",
+          "source_keys": [
+            "AM27-AB-ELECTRICAL"
+          ],
+          "research_question": "Identify the local accredited municipality or agency and applicable discipline/code; keep workplace safety and installation permission separate.",
+          "required_evidence": "Work versus installation scope, location, equipment, proposed change and existing permit evidence",
+          "review_owner": "Qualified electrical reviewer and authority having jurisdiction",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "pressure_equipment",
+          "source_keys": [
+            "AM27-AB-PRESSURE"
+          ],
+          "research_question": "Use ABSA to research pressure-equipment scope and the applicable Safety Codes Act instruments; a registration record alone is not operating permission.",
+          "required_evidence": "Equipment type, service, nameplate/design records, location and proposed lifecycle activity",
+          "review_owner": "Qualified pressure-equipment reviewer and competent authority",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "environment",
+          "source_keys": [
+            "AM27-AB-ENV"
+          ],
+          "research_question": "Research EPEA approval, registration and associated conditions for each activity; do not assign a route without classification evidence.",
+          "required_evidence": "Activity, emissions/discharges/waste, location, receiving environment and existing permissions",
+          "review_owner": "Environmental permissions reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "worker_training",
+          "source_keys": [
+            "AM27-AB-OHS"
+          ],
+          "research_question": "Research training, competency and supervision requirements by task and role; a course date does not prove continuing competence.",
+          "required_evidence": "Worker role, task and equipment, training content, demonstrated competency and supervision evidence",
+          "review_owner": "Workplace training/safety reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "quebec",
+      "province": "Quebec",
+      "status": "RESEARCH_BASELINE",
+      "distinction": "Quebec sources retain their French identity and instrument version. The observed OHS consolidation ends on 2026-04-01; currency through a later activity remains unresolved.",
+      "topics": [
+        {
+          "topic": "ohs",
+          "source_keys": [
+            "AM27-QC-OHS"
+          ],
+          "research_question": "Preserve the official French title, instrument identifier and consolidation date; research Act/regulation scope with the workplace owner.",
+          "required_evidence": "Workplace regime, undertaking, facility activity, applicable sector and assessment date",
+          "review_owner": "Workplace regulatory/safety reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "machinery",
+          "source_keys": [
+            "AM27-QC-OHS"
+          ],
+          "research_question": "Research the current machinery provisions and change history in the official regulation; translated extracts must retain the original source.",
+          "required_evidence": "Machine identity, task, guarding evidence, modification history and engineering documents",
+          "review_owner": "Qualified machinery safety/engineering reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "hazardous_energy",
+          "source_keys": [
+            "AM27-QC-OHS"
+          ],
+          "research_question": "Use cadenassage/control-of-energy research for the actual task; do not treat a translated Ontario procedure as Quebec conformity.",
+          "required_evidence": "Task and equipment scope, all energy types, existing site procedure and authorized review owner",
+          "review_owner": "Qualified site hazardous-energy reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "electrical",
+          "source_keys": [
+            "AM27-QC-ELECTRICAL"
+          ],
+          "research_question": "Use RBQ electrical research for applicable chapters and installation context; maintain workplace safety and professional qualification questions separately.",
+          "required_evidence": "Work versus installation scope, location, equipment, proposed change and existing permit evidence",
+          "review_owner": "Qualified electrical reviewer and authority having jurisdiction",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "pressure_equipment",
+          "source_keys": [
+            "AM27-QC-PRESSURE"
+          ],
+          "research_question": "Use RBQ pressure-installation research with type, service and activity evidence; do not infer applicability from a provincial registration elsewhere.",
+          "required_evidence": "Equipment type, service, nameplate/design records, location and proposed lifecycle activity",
+          "review_owner": "Qualified pressure-equipment reviewer and competent authority",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "environment",
+          "source_keys": [
+            "AM27-QC-ENV"
+          ],
+          "research_question": "Research LQE/REAFIE activity conditions and applicable authorization route without assigning a risk level from the plant's industry label.",
+          "required_evidence": "Activity, emissions/discharges/waste, location, receiving environment and existing permissions",
+          "review_owner": "Environmental permissions reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        },
+        {
+          "topic": "worker_training",
+          "source_keys": [
+            "AM27-QC-OHS"
+          ],
+          "research_question": "Research role/task training requirements and comprehension evidence; translated attendance records do not establish practical competency.",
+          "required_evidence": "Worker role, task and equipment, training content, demonstrated competency and supervision evidence",
+          "review_owner": "Workplace training/safety reviewer",
+          "applicability_state": "SOURCE_REVIEW_REQUIRED"
+        }
+      ]
+    }
+  ]
+}

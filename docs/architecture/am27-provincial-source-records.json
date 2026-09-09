@@ -1,0 +1,807 @@
+{
+  "schema_version": "AM-27-source-register-1",
+  "records": [
+    {
+      "source_key": "AM27-ON-OHS",
+      "title": "Industrial Health and Safety Program",
+      "publisher": "Government of Ontario",
+      "url": "https://www.ontario.ca/page/industrial-health-and-safety-program",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Ontario",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "Program overview identifies industrial workplace scope and points to Regulation 851 and training regulations.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Program scope only; current applicable provisions require e-Laws review."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-ON-REG",
+      "title": "Industrial Establishments, R.R.O. 1990, Reg. 851",
+      "publisher": "Government of Ontario",
+      "url": "https://www.ontario.ca/laws/regulation/900851",
+      "source_class": "official_law_or_regulation",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Ontario",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "Official source entry for industrial-establishment requirements; the retrieved page did not establish the current consolidation interval.",
+      "status": "PENDING_REVIEW",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "PENDING_REVIEW: HTTP success and search identity only; effective text not verified."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-ON-ELECTRICAL",
+      "title": "Ontario Electrical Safety Code",
+      "publisher": "Electrical Safety Authority",
+      "url": "https://esasafe.com/role/oesc/",
+      "source_class": "delegated_regulator",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Ontario",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "ESA identifies the 2024 Ontario code and provincial amendments; code adoption and activity date require explicit review.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Overview accessed; no protected code clauses reproduced or installation applicability determined."
+      },
+      "authority": {
+        "official_status": "Competent authority research page",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-ON-PRESSURE",
+      "title": "Am I Regulated? Boilers and Pressure Vessels",
+      "publisher": "Technical Standards and Safety Authority",
+      "url": "https://www.tssa.org/am-i-regulated-1",
+      "source_class": "delegated_regulator",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Ontario",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "TSSA points to Ontario Regulation 220/01 and the Code Adoption Document for pressure equipment scope and exclusions.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Scope guidance only; equipment-specific exclusions and permissions remain unassessed."
+      },
+      "authority": {
+        "official_status": "Competent authority research page",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-ON-ENV",
+      "title": "Environmental Compliance Approval",
+      "publisher": "Government of Ontario",
+      "url": "https://www.ontario.ca/page/environmental-compliance-approval",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Ontario",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "environment"
+        ]
+      },
+      "scope": "The page directs users to confirm the relevant permission type, including ECA or EASR research.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Routing guidance retrieved directly; no activity permission eligibility established."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-BC-OHS",
+      "title": "Searchable OHS Regulation and related materials",
+      "publisher": "WorkSafeBC",
+      "url": "https://www.worksafebc.com/en/law-policy/occupational-health-safety/searchable-ohs-regulation",
+      "source_class": "delegated_regulator",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "British Columbia",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "The index separates regulation, policies and guidelines; Part 10 concerns hazardous energy, Part 12 machinery and Part 19 electrical safety.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Index and scope read; no full in-force amendment audit or inspectional jurisdiction determination."
+      },
+      "authority": {
+        "official_status": "Competent authority research page",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-BC-TECH",
+      "title": "Jurisdiction",
+      "publisher": "Technical Safety BC",
+      "url": "https://www.technicalsafetybc.ca/learn-about/technical-safety-bc/jurisdiction",
+      "source_class": "delegated_regulator",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "British Columbia",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "Technical Safety BC describes regulated technologies and local-government exceptions for electrical or gas oversight.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Location and technology must be researched together; no blanket permitting authority assignment."
+      },
+      "authority": {
+        "official_status": "Competent authority research page",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-BC-ENV",
+      "title": "Do you need a waste discharge authorization",
+      "publisher": "Government of British Columbia",
+      "url": "https://www2.gov.bc.ca//gov/content/environment/waste-management/waste-discharge-authorization/need",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "British Columbia",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "environment"
+        ]
+      },
+      "scope": "Guidance organizes waste-discharge authorization research by activity under the Environmental Management Act and Waste Discharge Regulation.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Displayed update 2026-03-10; no site discharge authorization determined."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-AB-OHS",
+      "title": "OHS Act, regulation and code",
+      "publisher": "Government of Alberta",
+      "url": "https://www.alberta.ca/ohs-act-regulation-code",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Alberta",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "The framework page links the OHS instruments and records Code changes effective 2025-03-31.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "This observation is not verification of all subsequent amendments or any task-specific duty."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-AB-ELECTRICAL",
+      "title": "Permits and Alberta's Safety Code System",
+      "publisher": "Government of Alberta",
+      "url": "https://www.alberta.ca/permits-and-albertas-safety-code-system",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Alberta",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "The provincial safety-code system uses accredited municipalities and agencies for local permit services.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Check location, discipline and accreditation; no permit issuance or electrical authorization."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-AB-PRESSURE",
+      "title": "ABSA the pressure equipment safety authority",
+      "publisher": "ABSA",
+      "url": "https://www.absa.ca/home/",
+      "source_class": "delegated_regulator",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Alberta",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "ABSA describes its role administering Alberta pressure-equipment safety under the Safety Codes Act.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Retrieved directly after web fetch failed; instrument and equipment-specific scope remain for review."
+      },
+      "authority": {
+        "official_status": "Competent authority research page",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-AB-ENV",
+      "title": "Environmental Protection and Enhancement Act approvals",
+      "publisher": "Government of Alberta",
+      "url": "https://www.alberta.ca/apply-for-environmental-protection-and-enhancement-act-approvals",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Alberta",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "environment"
+        ]
+      },
+      "scope": "The guidance distinguishes EPEA approvals and registrations, including their associated conditions.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "No registration eligibility, exemption or site authorization verified."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-QC-OHS",
+      "title": "Règlement sur la santé et la sécurité du travail, S-2.1, r. 13",
+      "publisher": "Éditeur officiel du Québec",
+      "url": "https://www.legisquebec.gouv.qc.ca/fr/document/rc/S-2.1,%20%20r.%2013?langcont=fr",
+      "source_class": "official_law_or_regulation",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Quebec",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "The French official regulation includes machinery, hazardous-energy control and training subjects; displayed consolidation is 2026-04-01.",
+      "status": "PENDING_REVIEW",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "PENDING_REVIEW: displayed currency does not cover retrieval date 2026-09-08; retain French source identity."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-QC-ELECTRICAL",
+      "title": "Électricité",
+      "publisher": "Régie du bâtiment du Québec",
+      "url": "https://www.rbq.gouv.qc.ca/domaines-dintervention/electricite/",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Quebec",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "RBQ provides a dedicated electrical domain and regulatory research entry point.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Domain identity only; applicable code chapter, edition, exclusions and permissions require review."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-QC-PRESSURE",
+      "title": "Installations sous pression",
+      "publisher": "Régie du bâtiment du Québec",
+      "url": "https://www.rbq.gouv.qc.ca/domaines-dintervention/installations-sous-pression/",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Quebec",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "RBQ provides a dedicated pressure-installations domain and regulatory research entry point.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Domain identity only; equipment classifications and authorizations remain unassessed."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    },
+    {
+      "source_key": "AM27-QC-ENV",
+      "title": "Règlement sur l’encadrement d’activités en fonction de leur impact sur l’environnement (REAFIE)",
+      "publisher": "Government of Quebec",
+      "url": "https://www.environnement.gouv.qc.ca/lqe/autorisations/reafie/index.htm",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "provincial",
+        "province_or_territory": "Quebec",
+        "sector": "manufacturing context unconfirmed",
+        "obligation_domains": [
+          "environment"
+        ]
+      },
+      "scope": "The REAFIE overview differentiates activity-risk routes and conditions for authorization, declarations and exemptions.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Guidance only; no risk category or exemption is assigned to a site."
+      },
+      "authority": {
+        "official_status": "Official provincial source",
+        "incorporation_basis": "Research entry point only; activity-specific applicability and standards incorporation are unverified."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Brief source metadata and paraphrase only; no protected code or standard clauses reproduced."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Supports selecting an authority research path, not requirements, compliance or permission for any site."
+    }
+  ],
+  "claims": [
+    {
+      "source_key": "AM27-ON-OHS",
+      "claim_type": "authority_research_path",
+      "scope": "Ontario",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "Program overview identifies industrial workplace scope and points to Regulation 851 and training regulations."
+    },
+    {
+      "source_key": "AM27-ON-REG",
+      "claim_type": "authority_research_path",
+      "scope": "Ontario",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "IDENTITY_ONLY",
+      "claim": "Official source entry for industrial-establishment requirements; the retrieved page did not establish the current consolidation interval."
+    },
+    {
+      "source_key": "AM27-ON-ELECTRICAL",
+      "claim_type": "authority_research_path",
+      "scope": "Ontario",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "ESA identifies the 2024 Ontario code and provincial amendments; code adoption and activity date require explicit review."
+    },
+    {
+      "source_key": "AM27-ON-PRESSURE",
+      "claim_type": "authority_research_path",
+      "scope": "Ontario",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "TSSA points to Ontario Regulation 220/01 and the Code Adoption Document for pressure equipment scope and exclusions."
+    },
+    {
+      "source_key": "AM27-ON-ENV",
+      "claim_type": "authority_research_path",
+      "scope": "Ontario",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "The page directs users to confirm the relevant permission type, including ECA or EASR research."
+    },
+    {
+      "source_key": "AM27-BC-OHS",
+      "claim_type": "authority_research_path",
+      "scope": "British Columbia",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "The index separates regulation, policies and guidelines; Part 10 concerns hazardous energy, Part 12 machinery and Part 19 electrical safety."
+    },
+    {
+      "source_key": "AM27-BC-TECH",
+      "claim_type": "authority_research_path",
+      "scope": "British Columbia",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "Technical Safety BC describes regulated technologies and local-government exceptions for electrical or gas oversight."
+    },
+    {
+      "source_key": "AM27-BC-ENV",
+      "claim_type": "authority_research_path",
+      "scope": "British Columbia",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "Guidance organizes waste-discharge authorization research by activity under the Environmental Management Act and Waste Discharge Regulation."
+    },
+    {
+      "source_key": "AM27-AB-OHS",
+      "claim_type": "authority_research_path",
+      "scope": "Alberta",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "The framework page links the OHS instruments and records Code changes effective 2025-03-31."
+    },
+    {
+      "source_key": "AM27-AB-ELECTRICAL",
+      "claim_type": "authority_research_path",
+      "scope": "Alberta",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "The provincial safety-code system uses accredited municipalities and agencies for local permit services."
+    },
+    {
+      "source_key": "AM27-AB-PRESSURE",
+      "claim_type": "authority_research_path",
+      "scope": "Alberta",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "ABSA describes its role administering Alberta pressure-equipment safety under the Safety Codes Act."
+    },
+    {
+      "source_key": "AM27-AB-ENV",
+      "claim_type": "authority_research_path",
+      "scope": "Alberta",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "The guidance distinguishes EPEA approvals and registrations, including their associated conditions."
+    },
+    {
+      "source_key": "AM27-QC-OHS",
+      "claim_type": "authority_research_path",
+      "scope": "Quebec",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "The French official regulation includes machinery, hazardous-energy control and training subjects; displayed consolidation is 2026-04-01."
+    },
+    {
+      "source_key": "AM27-QC-ELECTRICAL",
+      "claim_type": "authority_research_path",
+      "scope": "Quebec",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "RBQ provides a dedicated electrical domain and regulatory research entry point."
+    },
+    {
+      "source_key": "AM27-QC-PRESSURE",
+      "claim_type": "authority_research_path",
+      "scope": "Quebec",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "RBQ provides a dedicated pressure-installations domain and regulatory research entry point."
+    },
+    {
+      "source_key": "AM27-QC-ENV",
+      "claim_type": "authority_research_path",
+      "scope": "Quebec",
+      "as_of": "2026-09-08",
+      "location": "Page title, scope introduction or topic index",
+      "support_status": "VERIFIED_SCOPED_OBSERVATION",
+      "claim": "The REAFIE overview differentiates activity-risk routes and conditions for authorization, declarations and exemptions."
+    }
+  ]
+}

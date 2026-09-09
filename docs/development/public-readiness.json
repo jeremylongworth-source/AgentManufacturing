@@ -1,6 +1,6 @@
 {
   "schema_version": "AM-32-public-readiness-1",
-  "status": "IN_PROGRESS",
+  "status": "READY",
   "date": "2026-09-09",
   "required_documents": [
     "README.md",
@@ -19,10 +19,14 @@
     "notice_only": false
   },
   "private_reporting": {
-    "status": "NOT_CONFIGURED",
-    "contact": null,
-    "recipient": null,
-    "verification": null
+    "status": "OWNER_DESIGNATED",
+    "contact": "[private contact removed]",
+    "recipient": "Jeremy Longworth",
+    "verification": {
+      "basis": "OWNER_CONFIRMATION",
+      "date": "2026-09-09",
+      "delivery_test": "NOT_RUN"
+    }
   },
   "repository_observation": {
     "date": "2026-09-09",

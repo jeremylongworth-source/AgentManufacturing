@@ -172,7 +172,7 @@ This is an authoring contract for later implementation. Completion of documentat
 
 ## Sources and change control
 
-AM-32 prepares public-facing repository documents and adopts MIT following the owner's explicit selection on 2026-09-09. Current package, role, template and validation metadata are aligned; historical licence placeholders remain in historical evidence. The 31-validator structural gate passes, while strict public readiness remains NOT_READY until a private reporting contact and recipient are designated. No repository-visibility change, release or independent model evaluation is implied.
+AM-32 prepares public-facing repository documents and adopts MIT following the owner's explicit selection on 2026-09-09. Current package, role, template and validation metadata are aligned; historical licence placeholders remain in historical evidence. The 31-validator structural gate and strict AM-32 readiness pass after the owner designated Jeremy Longworth at [private contact removed] for security and conduct reporting. No mailbox-delivery test was performed; AM-33 is next. No repository-visibility change, release or independent model evaluation is implied.
 
 AM-31 evaluates eight adversarial requests and eight paired safe review requests as assisted, nonblind simulations. The 30-validator gate checks evidence integrity and 243 expected routing cases; it does not establish model robustness. Source and response hashes invalidate stale self-reviews. Atomic contracts remain unchanged, independent runtime remains NOT_RUN, and AM-32 owns public readiness.
 

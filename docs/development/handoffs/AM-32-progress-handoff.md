@@ -1,5 +1,7 @@
 # AM-32 progress handoff: public readiness
 
+Historical progress record, superseded by the [AM-32 final handoff](AM-32-final-handoff.md). The owner subsequently supplied the reporting address and AM-32 closed on 2026-09-09; the pending status below describes the earlier checkpoint.
+
 Status: `IN_PROGRESS`
 
 Date: 2026-09-09

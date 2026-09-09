@@ -6,7 +6,7 @@ This is development history, not a published release. Dates identify repository 
 
 ### 2026-09-09
 
-- AM-32 preparation: added contributor, agent, security and conduct documents and a public-readiness gate. The owner selected MIT; current atomic/role/template metadata and licence checks were aligned. Private reporting remains unresolved. Reassessed AM-31 source snapshots for licence-header-only changes without claiming new model execution.
+- AM-32: added contributor, agent, security and conduct documents and a public-readiness gate. The owner selected MIT; current atomic/role/template metadata and licence checks were aligned. Named Jeremy Longworth at [private contact removed] as the owner-designated security/conduct recipient; strict readiness passes. No delivery-test message or public release was sent. Reassessed AM-31 source snapshots for licence-header-only changes without claiming new model execution.
 - AM-31 (`d83e968`): recorded eight adversarial requests and eight paired safe-review controls, 64 self-review judgments and source/response integrity checks. These are assisted nonblind simulations; independent model evaluation remains unrun.
 - AM-30 (`96dc56d`): recorded four assisted multi-domain integration walkthroughs with arithmetic, genealogy and handoff checks.
 

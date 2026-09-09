@@ -22,4 +22,4 @@ Keep sector-neutral methods separate from Canadian jurisdiction and sector requi
 
 ## Handoff
 
-Update the roadmap, acceptance record and handoff with outcomes, evidence, unresolved work and the next bounded step. Mark a wave READY only when its acceptance criteria are satisfied. MIT was selected by the owner during AM-32; keep current package, role and template licence metadata aligned. AM-32 remains IN_PROGRESS until private reporting is configured and confirmed. Keep publication separate from documentation preparation.
+Update the roadmap, acceptance record and handoff with outcomes, evidence, unresolved work and the next bounded step. Mark a wave READY only when its acceptance criteria are satisfied. MIT was selected by the owner during AM-32; keep current package, role and template licence metadata aligned. AM-32 is READY with owner-designated private reporting; AM-33 is the next audit. Owner designation is not mailbox-delivery testing. Keep publication separate from documentation preparation.

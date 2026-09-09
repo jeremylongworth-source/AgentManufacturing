@@ -2,7 +2,7 @@
 
 Portable AI skill packages for manufacturing analysis and qualified review, with a sector-neutral core, Canadian jurisdiction overlays and professional role compositions.
 
-**Development status:** AM-00 through AM-31 are READY for their documented scopes. **AM-32 is IN_PROGRESS**: MIT is selected and public-readiness documents are prepared, but private reporting remains unresolved. No public release is established. See the [readiness record](docs/development/AM-32-public-readiness.md).
+**Development status:** AM-00 through AM-32 are READY for their documented scopes. MIT is selected and Jeremy Longworth is the owner-designated recipient for private security and conduct reports. AM-33, the release-candidate audit, is next. No public release is established. See the [readiness record](docs/development/AM-32-public-readiness.md).
 
 ## What is available
 
@@ -37,7 +37,7 @@ python scripts/validate-public-readiness.py
 python scripts/validate-public-readiness.py --require-ready
 ```
 
-The first command checks consistency of prepared documents and governance evidence. The second currently exits with code 2 (`NOT_READY`) because the private reporting route is unresolved. A passing repository gate must not be presented as publication readiness. AM-33's release-candidate audit remains subsequent work.
+Both commands now report `AM32_READY`; strict mode exits 0. This confirms the documented AM-32 prerequisites, including owner-designated reporting, not mailbox delivery or publication authorization. AM-33's release-candidate audit remains subsequent work.
 
 ## Boundaries
 
@@ -62,12 +62,12 @@ Some `.yaml` files deliberately use JSON syntax for dependency-free parsing. Fro
 
 ## Contributing and reporting
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md) for change scope, validation and evidence requirements. [SECURITY.md](SECURITY.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) contain draft reporting/handling policies; the private recipient is not yet configured. Do not publish sensitive reports in issues or pull requests.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md) for change scope, validation and evidence requirements. [SECURITY.md](SECURITY.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) name Jeremy Longworth at [private contact removed] as the private reporting recipient. Do not publish sensitive reports in issues or pull requests.
 
-[LICENSE](LICENSE) contains the owner's selected MIT licence. Third-party references retain their own rights; citation does not relicense their content. The project has not launched publicly and private reporting is still being configured; these operational gates do not restrict MIT's grant. [CHANGELOG.md](CHANGELOG.md) records unreleased development history.
+[LICENSE](LICENSE) contains the owner's selected MIT licence. Third-party references retain their own rights; citation does not relicense their content. The project has not launched publicly; release-review gates do not restrict MIT's grant. [CHANGELOG.md](CHANGELOG.md) records unreleased development history.
 
 ## Roadmap and continuation
 
-Use the execution ledger in [ROADMAP.md](ROADMAP.md) and the [AM-32 progress handoff](docs/development/handoffs/AM-32-progress-handoff.md). AM-31's [final handoff](docs/development/handoffs/AM-31-final-handoff.md) remains the last closed-wave record. Complete AM-32 decisions before claiming its completion marker, then perform AM-33.
+Use the execution ledger in [ROADMAP.md](ROADMAP.md) and the [AM-32 final handoff](docs/development/handoffs/AM-32-final-handoff.md). AM-32 is the last closed wave; perform AM-33 next.
 
 The original workspace is `D:\AgentMfg`; commands work from a checkout root without that path. The historical AM-00 bootstrap prompt is not the current task. The [AM-00 audit](docs/development/AM-00-baseline-audit.md), [taxonomy audit](docs/architecture/taxonomy-audit-v1.md) and [original framework](docs/architecture/domain-framework.md) preserve planning provenance; those planning statements are not current legal or engineering determinations.

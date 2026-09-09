@@ -172,6 +172,8 @@ This is an authoring contract for later implementation. Completion of documentat
 
 ## Sources and change control
 
+AM-29 formalizes specialization architecture with priorities for 12 roadmap groups and preserved dispositions for all 18 D-05 labels. The registry contains planned candidates, no sector requirement packages. Its inspector reports context needs or coverage gaps while preserving generic work. Future packages require source-backed requirement differences, rights, effectivity, qualified review and observed evaluation; no requirement is inherited from a broad sector or technology label.
+
 AM-28 adds 18 professional skillsets with 38 workflows referencing the existing atomic packages. The read-only resolver lists targets and evidence-provider paths; it does not execute skills, assess evidence or infer applicability. Shared composition rules preserve atomic gates, reuse compatible evidence and select jurisdiction research explicitly. Canonical paths resolve the two historical reference duplicates. AM-29 owns sector specialization architecture and priorities.
 
 AM-27 completes the frozen atomic catalogue with a provincial selector and four research modules for Ontario, British Columbia, Alberta and Quebec. Seven topic paths per province separate workplace, technical equipment, environmental and training research. Source coverage is not applicability: unknown employer regime, unsupported provinces/territories, local authority exceptions and source-currency gaps remain explicit. AM-28 owns professional skillset composition.

@@ -35,6 +35,7 @@ VALIDATORS = [
     "validate-canadian-federal.py",
     "validate-provincial-overlays.py",
     "validate-professional-skillsets.py",
+    "validate-sector-framework.py",
 ]
 
 

@@ -1,0 +1,234 @@
+{
+  "schema_version": "AM-29-coverage-fixtures-1",
+  "cases": [
+    {
+      "id": "automotive",
+      "input": {
+        "labels": [
+          "automotive"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "COVERAGE_GAP",
+        "unknown_labels": [],
+        "requested_labels": [
+          "automotive"
+        ]
+      }
+    },
+    {
+      "id": "missing",
+      "input": {
+        "labels": [],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "NEEDS_INPUT",
+        "unknown_labels": [],
+        "requested_labels": []
+      }
+    },
+    {
+      "id": "umbrella",
+      "input": {
+        "labels": [
+          "wood-paper"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "NEEDS_INPUT",
+        "unknown_labels": [],
+        "requested_labels": [
+          "wood-paper"
+        ]
+      }
+    },
+    {
+      "id": "wood-subtype",
+      "input": {
+        "labels": [
+          "wood-products"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "COVERAGE_GAP",
+        "unknown_labels": [],
+        "requested_labels": [
+          "wood-products"
+        ]
+      }
+    },
+    {
+      "id": "both-wood-subtypes",
+      "input": {
+        "labels": [
+          "wood-products",
+          "pulp-paper"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "COVERAGE_GAP",
+        "unknown_labels": [],
+        "requested_labels": [
+          "wood-products",
+          "pulp-paper"
+        ]
+      }
+    },
+    {
+      "id": "mode",
+      "input": {
+        "labels": [
+          "process-manufacturing"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "NEEDS_INPUT",
+        "unknown_labels": [],
+        "requested_labels": [
+          "process-manufacturing"
+        ]
+      }
+    },
+    {
+      "id": "unknown",
+      "input": {
+        "labels": [
+          "unlisted-sector"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "COVERAGE_GAP",
+        "unknown_labels": [
+          "unlisted-sector"
+        ],
+        "requested_labels": [
+          "unlisted-sector"
+        ]
+      }
+    },
+    {
+      "id": "generic",
+      "input": {
+        "labels": [
+          "medical-devices"
+        ],
+        "sector_dependent": false
+      },
+      "expected": {
+        "status": "GENERIC_METHOD_ONLY",
+        "unknown_labels": [],
+        "requested_labels": [
+          "medical-devices"
+        ]
+      }
+    },
+    {
+      "id": "generic-no-label",
+      "input": {
+        "labels": [],
+        "sector_dependent": false
+      },
+      "expected": {
+        "status": "GENERIC_METHOD_ONLY",
+        "unknown_labels": [],
+        "requested_labels": []
+      }
+    },
+    {
+      "id": "welding-composition",
+      "input": {
+        "labels": [
+          "fabricated-metals",
+          "welding"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "COVERAGE_GAP",
+        "unknown_labels": [],
+        "requested_labels": [
+          "fabricated-metals",
+          "welding"
+        ]
+      }
+    },
+    {
+      "id": "pharmaceutical-separation",
+      "input": {
+        "labels": [
+          "pharmaceuticals",
+          "chemicals"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "COVERAGE_GAP",
+        "unknown_labels": [],
+        "requested_labels": [
+          "pharmaceuticals",
+          "chemicals"
+        ]
+      }
+    },
+    {
+      "id": "electrical-separation",
+      "input": {
+        "labels": [
+          "electrical-equipment",
+          "electronics"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "COVERAGE_GAP",
+        "unknown_labels": [],
+        "requested_labels": [
+          "electrical-equipment",
+          "electronics"
+        ]
+      }
+    },
+    {
+      "id": "duplicates",
+      "input": {
+        "labels": [
+          "aerospace",
+          "aerospace"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "COVERAGE_GAP",
+        "unknown_labels": [],
+        "requested_labels": [
+          "aerospace"
+        ]
+      }
+    },
+    {
+      "id": "additive",
+      "input": {
+        "labels": [
+          "additive-manufacturing",
+          "medical-devices"
+        ],
+        "sector_dependent": true
+      },
+      "expected": {
+        "status": "COVERAGE_GAP",
+        "unknown_labels": [],
+        "requested_labels": [
+          "additive-manufacturing",
+          "medical-devices"
+        ]
+      }
+    }
+  ]
+}

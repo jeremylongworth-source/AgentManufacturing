@@ -1,0 +1,761 @@
+{
+  "schema_version": "AM-29-specialization-contract-1",
+  "status": "FRAMEWORK_READY",
+  "date": "2026-09-08",
+  "scope": "Architecture and priorities only; no sector requirement packages implemented.",
+  "source_contract": "docs/architecture/source-record-schema.json",
+  "freshness_contract": "docs/architecture/source-freshness-policy.json",
+  "taxonomy": "docs/architecture/taxonomy-index.yaml",
+  "composition": "skillsets/composition-contract.json",
+  "required_future_package_fields": [
+    "id",
+    "kind",
+    "product_process_scope",
+    "jurisdiction_market",
+    "applicability_basis",
+    "core_skill_refs",
+    "role_refs",
+    "requirement_deltas",
+    "source_records",
+    "rights_and_access",
+    "exclusions",
+    "review_owner",
+    "acceptance_cases",
+    "observed_evaluation",
+    "version_history"
+  ],
+  "requirement_delta_fields": [
+    "requirement_id",
+    "scope",
+    "source_key",
+    "source_locator",
+    "effective_version",
+    "applicability_basis",
+    "evidence_needed",
+    "core_handoff",
+    "review_owner",
+    "unresolved_questions"
+  ],
+  "promotion_gates": [
+    "Explicit product/process and market scope",
+    "Applicable official evidence and AM-07 source records at activity date",
+    "Standards incorporation or contractual basis and authorized text access",
+    "Delta requirements only; no duplicated core formula or procedure",
+    "Qualified source/applicability review with conflicts preserved",
+    "Positive, missing-evidence, conflicting-source and unsupported-scope scenarios",
+    "Observed behavior recorded separately from structural checks",
+    "Governance/licence and release checks appropriate to intended distribution"
+  ],
+  "priority_basis": "Project sequencing judgment based on existing core handoffs and scope prerequisites; not market demand, legal urgency, budget, staffing or delivery commitment.",
+  "conflict_rule": "Preserve conflicting requirements with scope, source, effective date and reviewer; never select the easiest rule or assume a broad parent overrides a specific evidenced requirement.",
+  "generic_rule": "Missing sector coverage limits only sector-dependent conclusions; compatible generic analysis may proceed.",
+  "priorities": [
+    {
+      "id": "fabricated-metals",
+      "rank": 1,
+      "phase": "STARTER_RESEARCH",
+      "rationale": "Existing process-routing and quality packages offer a bounded first composition; welding remains a separate conditional question."
+    },
+    {
+      "id": "machinery",
+      "rank": 2,
+      "phase": "STARTER_RESEARCH",
+      "rationale": "Existing change and machinery-review packages provide concrete evidence handoffs without design approval."
+    },
+    {
+      "id": "plastics-rubber",
+      "rank": 3,
+      "phase": "STARTER_RESEARCH",
+      "rationale": "Parameter-control and substitution evidence provide a bounded core-to-sector test."
+    },
+    {
+      "id": "electronics",
+      "rank": 4,
+      "phase": "NEXT_RESEARCH",
+      "rationale": "Existing BOM and process-change methods support focused assembly evidence; electrical-equipment scope needs separation."
+    },
+    {
+      "id": "welding",
+      "rank": 5,
+      "phase": "NEXT_RESEARCH",
+      "rationale": "Cross-sector composition should be proven after one product-sector context; qualification evidence is an explicit gate."
+    },
+    {
+      "id": "transportation-equipment",
+      "rank": 6,
+      "phase": "NEXT_RESEARCH",
+      "rationale": "Define broad scope before composing specific automotive or aerospace requirements."
+    },
+    {
+      "id": "automotive",
+      "rank": 7,
+      "phase": "SPECIALIST_RESEARCH",
+      "rationale": "Customer/product scope and requirement provenance need a dedicated brief before authoring."
+    },
+    {
+      "id": "aerospace",
+      "rank": 8,
+      "phase": "SPECIALIST_RESEARCH",
+      "rationale": "Product/program and review-authority evidence need a dedicated brief before authoring."
+    },
+    {
+      "id": "food-beverage",
+      "rank": 9,
+      "phase": "SPECIALIST_RESEARCH",
+      "rationale": "Product/process scope and qualified source review must precede requirement authoring."
+    },
+    {
+      "id": "medical-devices",
+      "rank": 10,
+      "phase": "SPECIALIST_RESEARCH",
+      "rationale": "Intended use, market and qualified scope research must precede requirement authoring."
+    },
+    {
+      "id": "chemicals",
+      "rank": 11,
+      "phase": "SPECIALIST_RESEARCH",
+      "rationale": "Supplier/workplace/product roles and process limits require a separately scoped source review."
+    },
+    {
+      "id": "wood-paper",
+      "rank": 12,
+      "phase": "SCOPE_FIRST",
+      "rationale": "Resolve the umbrella into wood-products and/or pulp-paper before selecting a requirements package."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "automotive",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Automotive product and supply-chain requirement research.",
+      "exclusions": [
+        "No automatic coverage from transportation-equipment or customer naming."
+      ],
+      "core_skill_refs": [
+        "review-quality-requirement",
+        "trace-production-lot",
+        "review-supplier-change-impact"
+      ],
+      "role_refs": [
+        "quality-engineer-support",
+        "supplier-quality-specialist"
+      ],
+      "related_candidates": [
+        "transportation-equipment"
+      ],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Product/component role and intended market",
+        "Customer-specific requirements and contractual basis"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label automotive and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "aerospace",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Aerospace product, process and supplier evidence research.",
+      "exclusions": [
+        "No airworthiness, special-process or certification conclusion."
+      ],
+      "core_skill_refs": [
+        "review-quality-record",
+        "trace-production-lot",
+        "review-change-package"
+      ],
+      "role_refs": [
+        "quality-engineer-support",
+        "manufacturing-engineer-support"
+      ],
+      "related_candidates": [
+        "transportation-equipment"
+      ],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Product/program and intended market",
+        "Customer and authority basis for the requested requirement"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label aerospace and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "food-beverage",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Food/beverage process and product-specific requirement research.",
+      "exclusions": [
+        "No food-safety validation, label approval or product release."
+      ],
+      "core_skill_refs": [
+        "map-manufacturing-process",
+        "build-product-genealogy",
+        "build-process-control-plan"
+      ],
+      "role_refs": [
+        "quality-engineer-support",
+        "ehs-coordinator-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Product category, intended use and process",
+        "Market, establishment activity and competent authority"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label food-beverage and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "medical-devices",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Device-specific quality and manufacturing evidence research.",
+      "exclusions": [
+        "No device classification, licensing, certification or release authority."
+      ],
+      "core_skill_refs": [
+        "review-quality-requirement",
+        "build-product-genealogy",
+        "verify-change-implementation"
+      ],
+      "role_refs": [
+        "quality-engineer-support",
+        "manufacturing-engineer-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Intended use, device/product description and market",
+        "Applicable quality, regulatory and customer evidence"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label medical-devices and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "fabricated-metals",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Fabricated-metal product and process requirement research.",
+      "exclusions": [
+        "Does not imply welding qualifications or structural approval."
+      ],
+      "core_skill_refs": [
+        "build-process-routing",
+        "review-quality-requirement",
+        "review-process-change"
+      ],
+      "role_refs": [
+        "manufacturing-engineer-support",
+        "quality-technician"
+      ],
+      "related_candidates": [
+        "welding"
+      ],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Product use, materials and fabrication steps",
+        "Whether joining or a structural/pressure application is involved"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label fabricated-metals and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "welding",
+      "kind": "process_overlay",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Joining-process evidence across product sectors.",
+      "exclusions": [
+        "Not synonymous with fabricated metals; no welder or procedure certification."
+      ],
+      "core_skill_refs": [
+        "review-quality-requirement",
+        "review-operator-qualification-record",
+        "review-quality-record"
+      ],
+      "role_refs": [
+        "manufacturing-engineer-support",
+        "quality-engineer-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Joining process, materials, application and product sector",
+        "Procedure, personnel and inspection evidence requested"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label welding and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "machinery",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Manufactured machinery product and change evidence research.",
+      "exclusions": [
+        "No machine safety validation or operating permission."
+      ],
+      "core_skill_refs": [
+        "review-change-package",
+        "review-machine-guarding-risk",
+        "review-human-machine-interface-risk"
+      ],
+      "role_refs": [
+        "manufacturing-engineer-support",
+        "plant-manager-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Machine function, intended use and destination",
+        "Safety, change and supplier-document evidence"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label machinery and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "electronics",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Electronics assembly and product evidence research.",
+      "exclusions": [
+        "Does not automatically cover electrical equipment or product certification."
+      ],
+      "core_skill_refs": [
+        "validate-bill-of-materials",
+        "review-quality-record",
+        "review-process-change"
+      ],
+      "role_refs": [
+        "quality-technician",
+        "manufacturing-technician"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Assembly/product type and intended use",
+        "Process and customer requirements with source basis"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label electronics and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "plastics-rubber",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Polymer/elastomer material and processing evidence research.",
+      "exclusions": [
+        "Material and process subtypes remain distinct; no tooling or material-performance approval."
+      ],
+      "core_skill_refs": [
+        "identify-process-inputs-outputs",
+        "review-process-parameter-control",
+        "review-component-substitution"
+      ],
+      "role_refs": [
+        "process-technician",
+        "manufacturing-engineer-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Material family, process and product application",
+        "Approved parameters and change/substitution context"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label plastics-rubber and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "chemicals",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Chemical-product and process requirement research.",
+      "exclusions": [
+        "No pharmaceutical equivalence, hazard classification or chemical-use approval."
+      ],
+      "core_skill_refs": [
+        "review-process-parameter-control",
+        "assess-whmis-applicability",
+        "analyze-waste-stream"
+      ],
+      "role_refs": [
+        "process-technician",
+        "ehs-coordinator-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Product composition evidence, activity and intended use",
+        "Workplace/supplier role and applicable product market"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label chemicals and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "wood-paper",
+      "kind": "umbrella_alias",
+      "status": "CONTEXT_REQUIRED",
+      "scope": "Clarify wood-products and/or pulp-paper operation.",
+      "exclusions": [
+        "Not an implemented common requirement set."
+      ],
+      "core_skill_refs": [
+        "classify-manufacturing-operation",
+        "map-manufacturing-process"
+      ],
+      "role_refs": [
+        "production-planner"
+      ],
+      "related_candidates": [
+        "wood-products",
+        "pulp-paper"
+      ],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Which operation: wood-products, pulp-paper or both",
+        "Product and process boundary"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label wood-paper and asks for sector compliance.",
+        "required_result": "Request subtype context; do not select both children automatically."
+      }
+    },
+    {
+      "id": "transportation-equipment",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Broad transportation-equipment product requirement research.",
+      "exclusions": [
+        "No automatic automotive or aerospace coverage; specific scope must be established."
+      ],
+      "core_skill_refs": [
+        "review-quality-requirement",
+        "review-supplier-change-impact",
+        "build-engineering-change-impact-assessment"
+      ],
+      "role_refs": [
+        "supplier-quality-specialist",
+        "manufacturing-engineer-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Equipment/product category and market",
+        "Whether automotive or aerospace-specific requirements are requested"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label transportation-equipment and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "pharmaceuticals",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Retained pharmaceutical manufacturing requirement candidate.",
+      "exclusions": [
+        "Not covered by medical-devices or chemicals; no pharmaceutical release."
+      ],
+      "core_skill_refs": [
+        "review-quality-record",
+        "build-product-genealogy",
+        "review-process-change"
+      ],
+      "role_refs": [
+        "quality-engineer-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Product/process and market",
+        "Requested regulatory or quality requirement"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label pharmaceuticals and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "electrical-equipment",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Retained electrical-equipment product requirement candidate.",
+      "exclusions": [
+        "Not equivalent to electronics; no product approval."
+      ],
+      "core_skill_refs": [
+        "review-quality-requirement",
+        "review-change-package",
+        "review-certificate-of-conformance"
+      ],
+      "role_refs": [
+        "manufacturing-engineer-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Equipment function and destination",
+        "Product, installation and workplace scope separated"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label electrical-equipment and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "wood-products",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Wood-product fabrication requirement candidate.",
+      "exclusions": [
+        "Does not imply pulp-paper process requirements."
+      ],
+      "core_skill_refs": [
+        "build-process-routing",
+        "review-machine-guarding-risk",
+        "analyze-waste-stream"
+      ],
+      "role_refs": [
+        "manufacturing-engineer-support",
+        "ehs-coordinator-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Wood-product/process type and facility activity",
+        "Product and workplace requirement scope"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label wood-products and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "pulp-paper",
+      "kind": "sector",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Pulp/paper process requirement candidate.",
+      "exclusions": [
+        "Does not imply wood-product fabrication coverage."
+      ],
+      "core_skill_refs": [
+        "review-process-parameter-control",
+        "identify-manufacturing-environmental-aspect",
+        "analyze-energy-consumption"
+      ],
+      "role_refs": [
+        "process-technician",
+        "ehs-coordinator-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Pulp/paper process boundary and product",
+        "Environmental and process requirement scope"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label pulp-paper and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    },
+    {
+      "id": "process-manufacturing",
+      "kind": "operating_mode",
+      "status": "GENERIC_MODE_ONLY",
+      "scope": "Operating-mode classification across sectors.",
+      "exclusions": [
+        "Not an industry-specific legal or regulatory overlay."
+      ],
+      "core_skill_refs": [
+        "classify-manufacturing-operation",
+        "analyze-product-process-profile"
+      ],
+      "role_refs": [
+        "production-planner",
+        "process-technician"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Actual product sector and process boundary",
+        "Whether a sector-dependent conclusion is requested"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label process-manufacturing and asks for sector compliance.",
+        "required_result": "Request actual sector context; generic methods remain available."
+      }
+    },
+    {
+      "id": "additive-manufacturing",
+      "kind": "process_overlay",
+      "status": "PLANNED_NOT_IMPLEMENTED",
+      "scope": "Cross-sector additive technology/process evidence research.",
+      "exclusions": [
+        "Technology choice does not establish product conformity or sector coverage."
+      ],
+      "core_skill_refs": [
+        "evaluate-additive-manufacturing-application",
+        "review-quality-requirement",
+        "review-process-change"
+      ],
+      "role_refs": [
+        "manufacturing-engineer-support"
+      ],
+      "related_candidates": [],
+      "related_semantics": "Research relationship only; neither inherited requirements nor implemented coverage.",
+      "scope_questions": [
+        "Technology, material, product sector and intended use",
+        "Validation and conformity evidence requested"
+      ],
+      "requirement_sources": [],
+      "implementation_path": null,
+      "readiness_gaps": [
+        "Sector-specific scope and applicability evidence",
+        "Current authoritative source records and rights",
+        "Qualified review and observed evaluation"
+      ],
+      "acceptance_case": {
+        "input": "A requester supplies only the label additive-manufacturing and asks for sector compliance.",
+        "required_result": "Return a sector coverage gap and research handoff; no compliance approval."
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Regulatory Source Freshness"
+  short_description: "Review scoped evidence and preserve unresolved requirements."
+  default_prompt: "Use $verify-regulatory-source-freshness to prepare a scoped evidence review with sources, gaps, and review owners."

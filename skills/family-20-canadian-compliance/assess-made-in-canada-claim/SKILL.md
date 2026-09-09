@@ -47,7 +47,7 @@ This reference skill prepares an evidence assessment for a proposed non-food Can
 
 ## Calculations
 
-If the source definitions support it, `Canadian direct-cost percentage = qualifying direct costs incurred in Canada / total direct costs × 100`. Preserve numerator, denominator, inclusions, exclusions, period, and source. Do not infer a threshold, treat it as a legal safe harbour, or calculate with incomplete definitions.
+If the source definitions support it, `Canadian direct-cost percentage = qualifying direct costs incurred in Canada / total direct costs × 100`. Preserve numerator, denominator, inclusions, exclusions, period, currency, product and source. Require finite values, a positive denominator, and a nonnegative numerator no greater than total. Reject mixed currencies, overlapping costs and incomplete ledgers; do not round a ratio up to a threshold. Do not infer a threshold, treat it as a legal safe harbour, or calculate with incomplete definitions.
 
 ## Validation
 

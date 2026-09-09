@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Applicable Regulatory Layer"
+  short_description: "Review scoped evidence and preserve unresolved requirements."
+  default_prompt: "Use $identify-applicable-regulatory-layer to prepare a scoped evidence review with sources, gaps, and review owners."

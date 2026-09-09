@@ -1,0 +1,484 @@
+{
+  "schema_version": "AM-26-source-register-1",
+  "records": [
+    {
+      "source_key": "AM26-WORKPLACE",
+      "title": "List of federally regulated industries and workplaces",
+      "publisher": "Employment and Social Development Canada",
+      "url": "https://www.canada.ca/en/services/jobs/workplace/federally-regulated-industries.html",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "workplace"
+        ]
+      },
+      "scope": "The list identifies workplaces and differentiates Code-part coverage; undertaking context is needed for authority research.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Guidance page date 2026-01-30; no site applicability established."
+      },
+      "authority": {
+        "official_status": "Official government guidance",
+        "incorporation_basis": "Guidance supports research only; not an enacted requirement or permission."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Store brief attributed metadata and paraphrase only; no full-text reproduction."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Source supports the scoped research boundary only; recheck before a dependent claim review.",
+      "exclusions": [
+        "No compliance, product classification, workplace regime, legal opinion or publication approval."
+      ]
+    },
+    {
+      "source_key": "AM26-WHMIS",
+      "title": "Guidance on the WHMIS supplier requirements",
+      "publisher": "Health Canada",
+      "url": "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety/workplace-hazardous-materials-information-system/supplier-hazard-communication-requirements-whmis/guidance.html",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "supplier"
+        ]
+      },
+      "scope": "Supplier HPA/HPR guidance separates its scope from employer requirements administered under the applicable workplace jurisdiction.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Supplier guidance accessed; no individual product classification or workplace authority verified."
+      },
+      "authority": {
+        "official_status": "Official government guidance",
+        "incorporation_basis": "Guidance supports research only; not an enacted requirement or permission."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Store brief attributed metadata and paraphrase only; no full-text reproduction."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Source supports the scoped research boundary only; recheck before a dependent claim review.",
+      "exclusions": [
+        "No compliance, product classification, workplace regime, legal opinion or publication approval."
+      ]
+    },
+    {
+      "source_key": "AM26-WHMIS-TRANSITION",
+      "title": "December 2025 issue: Workplace Hazardous Products Program newsletter",
+      "publisher": "Health Canada",
+      "url": "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety/workplace-hazardous-materials-information-system/program-newsletter/december-2025.html",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "supplier"
+        ]
+      },
+      "scope": "The newsletter records the amended-HPR transition ending on 2025-12-14; it is not permission to continue using pre-amendment documents.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Historical transition event; guidance observation only, no later enforcement or applicability determination."
+      },
+      "authority": {
+        "official_status": "Official government guidance",
+        "incorporation_basis": "Guidance supports research only; not an enacted requirement or permission."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Store brief attributed metadata and paraphrase only; no full-text reproduction."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Source supports the scoped research boundary only; recheck before a dependent claim review.",
+      "exclusions": [
+        "No compliance, product classification, workplace regime, legal opinion or publication approval."
+      ]
+    },
+    {
+      "source_key": "AM26-ORIGIN",
+      "title": "Made in Canada claims",
+      "publisher": "Competition Bureau Canada",
+      "url": "https://competition-bureau.canada.ca/en/deceptive-marketing-practices/made-canada-claims",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "labelling"
+        ]
+      },
+      "scope": "The guidance distinguishes Made in Canada (51% Canadian direct costs, last substantial transformation in Canada and qualifying wording) from Product of Canada (98% and last substantial transformation in Canada). It does not approve or certify claims.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Page modified 2026-06-14; retrieved directly after browser-tool timeouts. Non-food guidance; not a binding legal determination."
+      },
+      "authority": {
+        "official_status": "Official government guidance",
+        "incorporation_basis": "Guidance supports research only; not an enacted requirement or permission."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Store brief attributed metadata and paraphrase only; no full-text reproduction."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Source supports the scoped research boundary only; recheck before a dependent claim review.",
+      "exclusions": [
+        "No compliance, product classification, workplace regime, legal opinion or publication approval."
+      ]
+    },
+    {
+      "source_key": "AM26-LABELLING",
+      "title": "Packaging and labelling requirements",
+      "publisher": "Competition Bureau Canada",
+      "url": "https://competition-bureau.canada.ca/en/labelling/prepackaged-non-food-consumer-products/packaging-and-labelling-requirements",
+      "source_class": "official_government_guidance",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "labelling"
+        ]
+      },
+      "scope": "The overview addresses prepackaged non-food consumer products, identifies product/channel exclusions, and names identity, quantity and dealer information as basic label evidence areas.",
+      "status": "CURRENT_ON_ACCESS",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": null,
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Page modified 2022-06-23; retrieved directly after browser-tool timeouts. Detailed exemptions and language/layout provisions require current instrument review."
+      },
+      "authority": {
+        "official_status": "Official government guidance",
+        "incorporation_basis": "Guidance supports research only; not an enacted requirement or permission."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Store brief attributed metadata and paraphrase only; no full-text reproduction."
+      },
+      "freshness_policy": "VERIFY_BEFORE_RELEASE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Source supports the scoped research boundary only; recheck before a dependent claim review.",
+      "exclusions": [
+        "No compliance, product classification, workplace regime, legal opinion or publication approval."
+      ]
+    },
+    {
+      "source_key": "AM26-HPA",
+      "title": "Hazardous Products Act",
+      "publisher": "Justice Canada",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/H-3/",
+      "source_class": "official_law_or_regulation",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "supplier"
+        ]
+      },
+      "scope": "Landing-page identity and displayed currency only; no clause-level legal conclusion.",
+      "status": "PENDING_REVIEW",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": "2023-01-14",
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Displayed consolidation currency: 2026-06-21. The interval through retrieval on 2026-09-08 is unverified; last amendment is not a commencement date."
+      },
+      "authority": {
+        "official_status": "Official federal legislation publisher",
+        "incorporation_basis": "Legislative identity only; requested activity and site applicability remain unassessed."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Store brief attributed metadata and paraphrase only; no full-text reproduction."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Candidate authoritative source; currency gap and applicability must be resolved before a current legal claim.",
+      "exclusions": [
+        "No compliance, product classification, workplace regime, legal opinion or publication approval."
+      ]
+    },
+    {
+      "source_key": "AM26-HPR",
+      "title": "Hazardous Products Regulations",
+      "publisher": "Justice Canada",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2015-17/",
+      "source_class": "official_law_or_regulation",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "supplier"
+        ]
+      },
+      "scope": "Landing-page identity and displayed currency only; no clause-level legal conclusion.",
+      "status": "PENDING_REVIEW",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": "2022-12-15",
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Displayed consolidation currency: 2026-06-21. The interval through retrieval on 2026-09-08 is unverified; last amendment is not a commencement date."
+      },
+      "authority": {
+        "official_status": "Official federal legislation publisher",
+        "incorporation_basis": "Legislative identity only; requested activity and site applicability remain unassessed."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Store brief attributed metadata and paraphrase only; no full-text reproduction."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Candidate authoritative source; currency gap and applicability must be resolved before a current legal claim.",
+      "exclusions": [
+        "No compliance, product classification, workplace regime, legal opinion or publication approval."
+      ]
+    },
+    {
+      "source_key": "AM26-CPLA",
+      "title": "Consumer Packaging and Labelling Act",
+      "publisher": "Justice Canada",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/C-38/",
+      "source_class": "official_law_or_regulation",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "labelling"
+        ]
+      },
+      "scope": "Landing-page identity and displayed currency only; no clause-level legal conclusion.",
+      "status": "PENDING_REVIEW",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": "2019-01-15",
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Displayed consolidation currency: 2026-06-21. The interval through retrieval on 2026-09-08 is unverified; last amendment is not a commencement date."
+      },
+      "authority": {
+        "official_status": "Official federal legislation publisher",
+        "incorporation_basis": "Legislative identity only; requested activity and site applicability remain unassessed."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Store brief attributed metadata and paraphrase only; no full-text reproduction."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Candidate authoritative source; currency gap and applicability must be resolved before a current legal claim.",
+      "exclusions": [
+        "No compliance, product classification, workplace regime, legal opinion or publication approval."
+      ]
+    },
+    {
+      "source_key": "AM26-CPLR",
+      "title": "Consumer Packaging and Labelling Regulations",
+      "publisher": "Justice Canada",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._417/",
+      "source_class": "official_law_or_regulation",
+      "jurisdiction": {
+        "country": "Canada",
+        "level": "federal",
+        "province_or_territory": null,
+        "sector": "generic",
+        "obligation_domains": [
+          "labelling"
+        ]
+      },
+      "scope": "Landing-page identity and displayed currency only; no clause-level legal conclusion.",
+      "status": "PENDING_REVIEW",
+      "version": {
+        "edition": null,
+        "revision": null,
+        "amendment": "2019-06-17",
+        "effective_from": null,
+        "effective_to": null,
+        "currency_note": "Displayed consolidation currency: 2026-06-21. The interval through retrieval on 2026-09-08 is unverified; last amendment is not a commencement date."
+      },
+      "authority": {
+        "official_status": "Official federal legislation publisher",
+        "incorporation_basis": "Legislative identity only; requested activity and site applicability remain unassessed."
+      },
+      "rights": {
+        "rights_status": "OPEN_OFFICIAL",
+        "content_handling": "METADATA_AND_PARAPHRASE",
+        "licence_url": null,
+        "permission_note": "Store brief attributed metadata and paraphrase only; no full-text reproduction."
+      },
+      "freshness_policy": "VERIFY_AT_USE",
+      "retrieved_at": "2026-09-08",
+      "last_verified_at": "2026-09-08",
+      "published_at": null,
+      "applicability_basis": "Candidate authoritative source; currency gap and applicability must be resolved before a current legal claim.",
+      "exclusions": [
+        "No compliance, product classification, workplace regime, legal opinion or publication approval."
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "source_key": "AM26-WORKPLACE",
+      "claim_type": "guidance_scope",
+      "scope": "workplace",
+      "as_of": "2026-09-08",
+      "location": "Scope introduction and authority descriptions",
+      "support_status": "VERIFIED_GUIDANCE",
+      "claim": "The list identifies workplaces and differentiates Code-part coverage; undertaking context is needed for authority research."
+    },
+    {
+      "source_key": "AM26-WHMIS",
+      "claim_type": "guidance_scope",
+      "scope": "supplier",
+      "as_of": "2026-09-08",
+      "location": "Scope introduction and authority descriptions",
+      "support_status": "VERIFIED_GUIDANCE",
+      "claim": "Supplier HPA/HPR guidance separates its scope from employer requirements administered under the applicable workplace jurisdiction."
+    },
+    {
+      "source_key": "AM26-WHMIS-TRANSITION",
+      "claim_type": "guidance_scope",
+      "scope": "supplier",
+      "as_of": "2026-09-08",
+      "location": "End of transition period section",
+      "support_status": "VERIFIED_GUIDANCE",
+      "claim": "The newsletter records the amended-HPR transition ending on 2025-12-14; it is not permission to continue using pre-amendment documents."
+    },
+    {
+      "source_key": "AM26-ORIGIN",
+      "claim_type": "guidance_scope",
+      "scope": "labelling",
+      "as_of": "2026-09-08",
+      "location": "Made in Canada and Product of Canada sections",
+      "support_status": "VERIFIED_GUIDANCE",
+      "claim": "The guidance distinguishes Made in Canada (51% Canadian direct costs, last substantial transformation in Canada and qualifying wording) from Product of Canada (98% and last substantial transformation in Canada). It does not approve or certify claims."
+    },
+    {
+      "source_key": "AM26-LABELLING",
+      "claim_type": "guidance_scope",
+      "scope": "labelling",
+      "as_of": "2026-09-08",
+      "location": "Scope, exempt products and basic requirements sections",
+      "support_status": "VERIFIED_GUIDANCE",
+      "claim": "The overview addresses prepackaged non-food consumer products, identifies product/channel exclusions, and names identity, quantity and dealer information as basic label evidence areas."
+    },
+    {
+      "source_key": "AM26-HPA",
+      "claim_type": "legislative_metadata",
+      "scope": "Displayed identity and currency, not verified in-force text through retrieval date",
+      "as_of": "2026-09-08",
+      "location": "Landing-page title and currency line",
+      "support_status": "VERIFIED_METADATA",
+      "claim": "Landing page identifies R.S.C., 1985, c. H-3, currency to 2026-06-21 and last amendment 2023-01-14."
+    },
+    {
+      "source_key": "AM26-HPR",
+      "claim_type": "legislative_metadata",
+      "scope": "Displayed identity and currency, not verified in-force text through retrieval date",
+      "as_of": "2026-09-08",
+      "location": "Landing-page title and currency line",
+      "support_status": "VERIFIED_METADATA",
+      "claim": "Landing page identifies SOR/2015-17, currency to 2026-06-21 and last amendment 2022-12-15."
+    },
+    {
+      "source_key": "AM26-CPLA",
+      "claim_type": "legislative_metadata",
+      "scope": "Displayed identity and currency, not verified in-force text through retrieval date",
+      "as_of": "2026-09-08",
+      "location": "Landing-page title and currency line",
+      "support_status": "VERIFIED_METADATA",
+      "claim": "Landing page identifies R.S.C., 1985, c. C-38, currency to 2026-06-21 and last amendment 2019-01-15."
+    },
+    {
+      "source_key": "AM26-CPLR",
+      "claim_type": "legislative_metadata",
+      "scope": "Displayed identity and currency, not verified in-force text through retrieval date",
+      "as_of": "2026-09-08",
+      "location": "Landing-page title and currency line",
+      "support_status": "VERIFIED_METADATA",
+      "claim": "Landing page identifies C.R.C., c. 417, currency to 2026-06-21 and last amendment 2019-06-17."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assess Whmis Applicability"
+  short_description: "Review scoped evidence and preserve unresolved requirements."
+  default_prompt: "Use $assess-whmis-applicability to prepare a scoped evidence review with sources, gaps, and review owners."

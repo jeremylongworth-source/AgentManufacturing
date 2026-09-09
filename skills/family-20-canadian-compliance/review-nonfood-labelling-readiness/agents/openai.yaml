@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Nonfood Labelling Readiness"
+  short_description: "Review scoped evidence and preserve unresolved requirements."
+  default_prompt: "Use $review-nonfood-labelling-readiness to prepare a scoped evidence review with sources, gaps, and review owners."

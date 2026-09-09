@@ -32,6 +32,7 @@ VALIDATORS = [
     "validate-advanced-manufacturing.py",
     "validate-supplier-change.py",
     "validate-environment-energy-waste.py",
+    "validate-canadian-federal.py",
 ]
 
 

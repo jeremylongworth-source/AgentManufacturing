@@ -9,7 +9,7 @@ The owner explicitly requested matching FUNDING.yml, a complete GitHub Wiki, pub
 
 - FUNDING.yml contains exactly `github: jeremylongworth-source`, matching AgentSkills (rechecked today) and the previously inspected AgentLogistics, AgentCannabis and ChefSkills.
 - README now includes clone instructions, Wiki navigation, sponsorship and development scope; private-checkout wording was removed. CONTRIBUTING describes public pull requests without support or merge promises.
-- Sixteen Wiki pages plus sidebar and footer are complete in docs/wiki. The public information architecture now separates start-here guidance, system understanding, reference, and maintenance. The catalogue lists all 159 canonical skills; the role reference lists 18 roles and 38 workflows.
+- Fourteen Wiki content pages plus sidebar and footer are complete in docs/wiki (16 Markdown files total). The public information architecture now separates start-here guidance, system understanding, reference, and maintenance. The catalogue lists all 159 canonical skills; the role reference lists 18 roles and 38 workflows.
 - The public documentation overhaul is in main commit `1c6ce5c13a828e162476281cd7b967e6a27bd522` and Wiki commit `4887f8e`.
 - GitHub CLI changed visibility to PUBLIC and enabled the Wiki. The signed-out browser displayed the public README and Sponsor button.
 - The first Wiki clone was unavailable before initialization. The owner then created Home; the clone succeeded and all prepared pages were published in Wiki commit `bc378eed27e8600dd32507a87fb09ce9824a53fb`.
@@ -21,8 +21,8 @@ The owner explicitly requested matching FUNDING.yml, a complete GitHub Wiki, pub
 | Funding matches existing projects | PASS |
 | README reviewed, public content rendered | PASS |
 | Repository public | PASS — gh repo view and signed-out browser |
-| Wiki source complete | PASS — 16 pages plus sidebar and footer |
-| Actual GitHub Wiki published | PASS — 16 public pages, sidebar and footer pushed |
+| Wiki source complete | PASS — 14 content pages plus sidebar and footer |
+| Actual GitHub Wiki published | PASS — 14 public pages, sidebar and footer pushed |
 
 All 32 validators passed with `python scripts/validate-all.py`. Strict AM-32 readiness passed. The documented production-planner resolver and both automotive coverage commands produced the described states. A local link check verified 268 targets across Wiki, README and CONTRIBUTING with no missing paths. `git diff --check` and the staged whitespace check passed.
 

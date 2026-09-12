@@ -6,7 +6,7 @@ This is development history, not a published release. Dates identify repository 
 
 ### 2026-09-12
 
-- Made the development repository public at the owner's request, added matching GitHub funding, reviewed README and contributor guidance, and prepared 13 Wiki pages with sidebar and footer. Actual Wiki publication awaits browser sign-in; see the publication handoff. The partial v1 verdict is unchanged.
+- Made the development repository public at the owner's request, added matching GitHub funding, reviewed README and contributor guidance, and published 13 Wiki pages with sidebar and footer. All pages were verified publicly accessible; see the publication handoff. The partial v1 verdict is unchanged.
 
 ### 2026-09-09
 

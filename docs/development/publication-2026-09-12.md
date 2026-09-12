@@ -9,8 +9,8 @@ The owner explicitly requested matching FUNDING.yml, a complete GitHub Wiki, pub
 
 - FUNDING.yml contains exactly `github: jeremylongworth-source`, matching AgentSkills (rechecked today) and the previously inspected AgentLogistics, AgentCannabis and ChefSkills.
 - README now includes clone instructions, Wiki navigation, sponsorship and development scope; private-checkout wording was removed. CONTRIBUTING describes public pull requests without support or merge promises.
-- Thirteen Wiki pages plus sidebar and footer are complete in docs/wiki. The catalogue lists all 159 canonical skills; the role reference lists 18 roles and 38 workflows.
-- Commit `8b89e205a351a226e08ffca0bb73d23c7acb6ba3` was pushed to main.
+- Sixteen Wiki pages plus sidebar and footer are complete in docs/wiki. The public information architecture now separates start-here guidance, system understanding, reference, and maintenance. The catalogue lists all 159 canonical skills; the role reference lists 18 roles and 38 workflows.
+- The public documentation overhaul is in main commit `1c6ce5c13a828e162476281cd7b967e6a27bd522` and Wiki commit `4887f8e`.
 - GitHub CLI changed visibility to PUBLIC and enabled the Wiki. The signed-out browser displayed the public README and Sponsor button.
 - The first Wiki clone was unavailable before initialization. The owner then created Home; the clone succeeded and all prepared pages were published in Wiki commit `bc378eed27e8600dd32507a87fb09ce9824a53fb`.
 
@@ -21,8 +21,8 @@ The owner explicitly requested matching FUNDING.yml, a complete GitHub Wiki, pub
 | Funding matches existing projects | PASS |
 | README reviewed, public content rendered | PASS |
 | Repository public | PASS — gh repo view and signed-out browser |
-| Wiki source complete | PASS — 15 files including navigation |
-| Actual GitHub Wiki published | PASS — 13 public pages, sidebar and footer pushed |
+| Wiki source complete | PASS — 16 pages plus sidebar and footer |
+| Actual GitHub Wiki published | PASS — 16 public pages, sidebar and footer pushed |
 
 All 32 validators passed with `python scripts/validate-all.py`. Strict AM-32 readiness passed. The documented production-planner resolver and both automotive coverage commands produced the described states. A local link check verified 268 targets across Wiki, README and CONTRIBUTING with no missing paths. `git diff --check` and the staged whitespace check passed.
 
@@ -34,7 +34,7 @@ On 2026-09-12, reachable main and Wiki history was rewritten to remove the owner
 
 ## Handoff and maintenance
 
-The Wiki was cloned under .git/wiki-publish, synchronized from docs/wiki, committed and pushed to master. Unauthenticated HTTP checks verified all 13 pages returned 200 with Wiki content; Home redirects to the canonical /wiki URL and contains sidebar navigation. An initial check incorrectly required /Home to remain in the final URL; allowing GitHub's canonical redirect corrected the check. Wiki staged whitespace checks passed.
+The Wiki was cloned under .git/wiki-publish, synchronized from docs/wiki, committed and pushed to master. Unauthenticated HTTP checks verified the canonical Wiki landing page, the new Choose a Path page, and the sidebar returned 200 with Wiki content. Home redirects to the canonical /wiki URL and contains sidebar navigation. An initial check incorrectly required /Home to remain in the final URL; allowing GitHub's canonical redirect corrected the check. Wiki staged whitespace checks passed.
 
 Maintain docs/wiki and synchronize approved changes to the separate Wiki repository. Continue substantive development with AM-33 remediation F01–F04; public access does not resolve independent evaluation, qualified source review or support ownership gaps.
 

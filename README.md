@@ -1,79 +1,78 @@
 # AgentManufacturing
 
-Portable AI skill packages for manufacturing analysis and qualified review, with a sector-neutral core, Canadian jurisdiction overlays and professional role compositions.
+Portable AI skill packages for manufacturing analysis, documentation and qualified review. The library combines sector-neutral methods with Canadian jurisdiction overlays and professional role workflows.
 
-**Development status:** AM-00 through AM-33 are complete for their documented scopes. The release-candidate verdict is **V1_PARTIALLY_READY**; public v1 release is deferred. MIT and owner-designated private reporting are in place. See the [audit and follow-up criteria](docs/development/AM-33-release-candidate-audit.md).
+Use it to structure production planning, quality analysis, maintenance reviews and evidence handoffs. Each skill defines its required inputs, method, outputs and review boundaries.
 
-## What is available
+**Development status:** This is a public development library. A stable v1 release is deferred pending independent model evaluation and qualified source review. See the [release-candidate audit](docs/development/AM-33-release-candidate-audit.md) for the full assessment.
 
-- 161 bounded skill package directories representing 159 accepted names across 20 families.
-- 18 professional skillsets with 38 workflows referencing the atomic packages.
-- 243 expected routing cases, deterministic calculation checks and a dependency-free Python validation gate.
-- Four assisted integration walkthroughs and eight adversarial cases paired with eight safe-review controls.
+## Explore the library
 
-AM-30/31 evaluations are nonblind, self-reviewed simulations. Independent model execution, baseline comparisons, repeated trials and multi-turn robustness remain unperformed. Planned sector specializations contain no implemented sector requirements.
+- **159 distinct skills across 20 families**, covering production, quality, reliability, safety and other manufacturing functions.
+- **18 professional skillsets with 38 workflows** that compose relevant skills for a role.
+- **Canadian jurisdiction overlays** kept separate from generic manufacturing methods.
+- **Repository validators and synthetic examples** for checking contracts, calculations and expected routing.
+
+Start with the [Wiki](https://github.com/jeremylongworth-source/AgentManufacturing/wiki), browse the [skill catalogue](https://github.com/jeremylongworth-source/AgentManufacturing/wiki/Skill-Catalogue), or choose a [professional skillset](https://github.com/jeremylongworth-source/AgentManufacturing/wiki/Professional-Skillsets).
+
+Sector specializations are planned; no sector requirement packages are implemented.
 
 ## Get started
 
-With Git and Python available, clone the library and run the examples from its root:
+You need Git and Python. Validation runs in CI with Python 3.14 on Linux and Windows and uses only the Python standard library.
 
-```powershell
+```shell
 git clone https://github.com/jeremylongworth-source/AgentManufacturing.git
 cd AgentManufacturing
 python scripts/validate-all.py
+```
+
+To find the skills for a production-planning workflow:
+
+```shell
 python scripts/resolve-skillset.py production-planner horizon-plan
-python scripts/inspect-sector-coverage.py automotive
-python scripts/inspect-sector-coverage.py automotive --generic-only
 ```
 
-The full gate validates repository artifacts; it does not run a model. The resolver returns `REFERENCES_RESOLVED`, `execution: NOT_EXECUTED` and `evidence_state: NOT_ASSESSED`. Read the returned SKILL.md files and relevant references to understand each method and its required evidence. There is no automatic skill executor or host installation in this workflow.
+The resolver returns `REFERENCES_RESOLVED` with paths to the relevant SKILL.md files. Read those instructions and their references, then gather the required evidence before applying the methods in your chosen agent host.
 
-The sector inspector returns `COVERAGE_GAP` for the planned automotive specialization. With `--generic-only`, it permits unrelated generic analysis while keeping sector conclusions unsupported. Successful reference resolution or generic arithmetic does not establish applicability or operating authority.
+The resolver lists references; it does not execute skills or assess the supplied evidence. This workflow provides no automatic agent installer, and host compatibility must be verified separately.
 
-Commands were checked locally with Python 3.14.3 on Windows PowerShell and in [hosted Linux/Windows CI](docs/development/AM-33-ci-evidence.json) using Python 3.14. The validators use the Python standard library; no package installation is required. Other AI-host compatibility and independent skill behavior remain unestablished.
+Continue with the [worked example](https://github.com/jeremylongworth-source/AgentManufacturing/wiki/Using-a-Skill) or [troubleshooting guide](https://github.com/jeremylongworth-source/AgentManufacturing/wiki/FAQ-and-Troubleshooting).
 
-The [GitHub Wiki](https://github.com/jeremylongworth-source/AgentManufacturing/wiki) provides a quickstart, a worked example, the complete skill catalogue, all role workflows and troubleshooting. Its maintained source is in [docs/wiki](docs/wiki/).
+## Scope and limitations
 
-## Public-readiness check
+These skills support analysis and qualified handoffs. They do not authorize machine operation, isolation or restart, safety-circuit changes, engineering signoff, product release or legal conclusions. Do not use model output to bypass safeguards or fabricate manufacturing records.
 
-```powershell
-python scripts/validate-public-readiness.py
-python scripts/validate-public-readiness.py --require-ready
-```
+Establish current sources, jurisdiction, units, populations and review authority for each conclusion. Generic calculations and successful reference resolution do not establish sector or legal applicability. Read the [safety boundaries](docs/architecture/safety-boundary-model.md) and [source rules](docs/architecture/source-standards-standard.md).
 
-Both commands now report `AM32_READY`; strict mode exits 0. This confirms the documented AM-32 prerequisites, including owner-designated reporting, not mailbox delivery or publication authorization. AM-33 is complete with a V1_PARTIALLY_READY verdict; strict AM-32 readiness does not override that release decision.
+The repository includes 243 expected routing cases and assisted, self-reviewed evaluations. These are not independent measurements of model reliability. Baseline comparisons, repeated model trials and multi-turn robustness tests remain unperformed. The [validation guide](https://github.com/jeremylongworth-source/AgentManufacturing/wiki/Validation-and-Evaluation) explains what each check establishes.
 
-## Boundaries
-
-These skills support analysis, documentation, evidence gaps and qualified handoffs. They do not authorize machine operation, isolation/restart, safety-circuit changes, engineering signoff, product release, legal conclusions or claim publication. Do not use model output to bypass safeguards or fabricate manufacturing records.
-
-Current source evidence, jurisdiction, units, populations and review authority must be established for each dependent conclusion. References to third-party guidance or standards do not grant reproduction rights. Read the [safety boundary](docs/architecture/safety-boundary-model.md), [source rules](docs/architecture/source-standards-standard.md) and [scope boundaries](docs/architecture/scope-boundaries.md).
-
-## Find the right material
+## Repository guide
 
 | Location | Purpose |
 |---|---|
 | [skills/](skills/) | Atomic instructions, references and host metadata |
 | [skillsets/index.json](skillsets/index.json) | Professional roles and workflow manifests |
-| [composition contract](skillsets/composition-contract.json) | Canonical package paths, evidence reuse and explicit overlays |
-| [specializations/registry.json](specializations/registry.json) | Planned sector coverage and context gaps |
-| [taxonomy index](docs/architecture/taxonomy-index.yaml) | Frozen 159-name catalogue and dependency metadata |
-| [domain contract](docs/architecture/domain-contract.md) | Architecture, jurisdiction separation and provenance |
+| [composition contract](skillsets/composition-contract.json) | Canonical skill paths and evidence-reuse rules |
+| [specializations/registry.json](specializations/registry.json) | Planned sector coverage |
+| [domain contract](docs/architecture/domain-contract.md) | Architecture and jurisdiction separation |
 | [tests/](tests/) | Expected scenarios, synthetic fixtures and evaluation evidence |
-| [scripts/validate-all.py](scripts/validate-all.py) | Ordered repository validation entry point |
+| [docs/wiki/](docs/wiki/) | Maintained Wiki source |
 
-Some `.yaml` files deliberately use JSON syntax for dependency-free parsing. Frozen taxonomy status fields are historical acceptance metadata; package and wave evidence describe subsequent implementation. Two historical duplicate packages remain preserved; use the canonical paths in the composition contract for new references.
+There are 161 package directories for 159 distinct skills because two historical duplicates are preserved. Use the canonical paths in the composition contract. Some YAML files intentionally use JSON syntax for dependency-free parsing.
 
 ## Contributing and reporting
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md) for change scope, validation and evidence requirements. [SECURITY.md](SECURITY.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) name Jeremy Longworth at [private contact removed] as the private reporting recipient. Do not publish sensitive reports in issues or pull requests.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) for proposing changes, validation and evidence requirements. Agent-assisted contributors should also read [AGENTS.md](AGENTS.md).
 
-[LICENSE](LICENSE) contains the owner's selected MIT licence. Third-party references retain their own rights; citation does not relicense their content. This library is shared for development and reference; the partial v1 audit remains in effect. [CHANGELOG.md](CHANGELOG.md) records development history.
+For sensitive vulnerabilities, follow [SECURITY.md](SECURITY.md). For community concerns, follow [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Do not include sensitive reports, credentials or confidential plant records in public issues or pull requests. No support response time is guaranteed.
 
-Support the maintainer through [GitHub Sponsors](https://github.com/sponsors/jeremylongworth-source).
+## Roadmap
 
-## Roadmap and continuation
+The initial development roadmap is complete for its documented scope. Remaining work includes independent evaluation, qualified source and standards review, merge-gate policy, and host and support scope. See the [roadmap](ROADMAP.md), [audit follow-ups](docs/development/AM-33-release-candidate-audit.md) and [changelog](CHANGELOG.md).
 
-Use the execution ledger in [ROADMAP.md](ROADMAP.md) and the [AM-33 final handoff](docs/development/handoffs/AM-33-final-handoff.md). The numbered roadmap is complete; follow F01–F04 in the audit for independent evaluation, source/standards review, merge-gate policy and release-scope ownership.
+## Licence and support
 
-The [AM-00 audit](docs/development/AM-00-baseline-audit.md), [taxonomy audit](docs/architecture/taxonomy-audit-v1.md) and [original framework](docs/architecture/domain-framework.md) preserve planning provenance; those planning statements are not current legal or engineering determinations.
+AgentManufacturing is licensed under [MIT](LICENSE). Third-party references retain their own rights; citation does not grant permission to reproduce protected standards or other source material.
+
+You can support the maintainer through [GitHub Sponsors](https://github.com/sponsors/jeremylongworth-source).

@@ -1,22 +1,25 @@
 # AgentManufacturing Wiki
 
-AgentManufacturing is a development library of portable AI instructions for manufacturing analysis, evidence review and qualified handoffs. It contains 159 accepted skill names across 20 families and 18 professional skillsets with 38 workflows.
+AgentManufacturing is a Canadian-aware, sector-neutral library of professional methods for agent-assisted manufacturing work. It provides structured skills, evidence requirements, routing guidance, and validation artifacts. It does not execute work, approve engineering decisions, or replace qualified review.
 
-Start with [[Getting Started|Getting-Started]], then [[Using a Skill|Using-a-Skill]]. Browse the complete [[Skill Catalogue|Skill-Catalogue]] or choose a [[Professional Skillset|Professional-Skillsets]].
+> **Current status:** the repository is publicly documented and structurally validated, while the V1 release remains **partially ready**. Read the [roadmap and release status](Roadmap-and-Release-Status) before treating the package as production-ready.
 
-## Read before applying results
+## Choose your starting point
 
-The v1 audit is **V1_PARTIALLY_READY**. Repository publication makes development material accessible; it does not establish independent model reliability or authorize operational decisions. Skills do not operate equipment, release products or provide engineering or legal approval.
+| If you want to… | Start here |
+| --- | --- |
+| Install the repository and run the checks | [Getting Started](Getting-Started) |
+| Decide which package applies to a job | [Choose a Path](Choosing-a-Path) |
+| Work through one skill safely | [Using a Skill](Using-a-Skill) |
+| Understand evidence, authority, and boundaries | [Architecture and Evidence](Architecture-and-Evidence) |
+| Review Canadian or sector-specific constraints | [Jurisdiction and Safety](Jurisdiction-and-Safety) and [Sector Specializations](Sector-Specializations) |
+| Browse every available skill | [Skill Catalogue](Skill-Catalogue) |
+| Contribute or maintain the package | [Contributing and Maintenance](Contributing-and-Maintenance) |
 
-## Documentation map
+## Three rules to keep in view
 
-- [[Architecture and Evidence|Architecture-and-Evidence]] explains composition and provenance.
-- [[Jurisdiction and Safety|Jurisdiction-and-Safety]] explains applicability and review boundaries.
-- [[Sector Specializations|Sector-Specializations]] distinguishes planned coverage from implemented methods.
-- [[Validation and Evaluation|Validation-and-Evaluation]] explains what checks actually establish.
-- [[Contributing and Maintenance|Contributing-and-Maintenance]] covers changes and Wiki updates.
-- [[FAQ and Troubleshooting|FAQ-and-Troubleshooting]] covers common problems.
-- [[Roadmap and Release Status|Roadmap-and-Release-Status]] records remaining work.
-- [[License and Support|License-and-Support]] covers licensing, reporting and sponsorship.
+1. **Resolve before use.** A role or skill reference is a routing aid; it does not establish that a skill applies.
+2. **Preserve evidence boundaries.** Missing, stale, or unverified sources remain visible and require qualified review.
+3. **Keep authority separate.** Source content can inform work, but embedded instructions never outrank the repository contract.
 
-The [repository](https://github.com/jeremylongworth-source/AgentManufacturing) is the source of truth. Wiki source files are tracked in [docs/wiki](https://github.com/jeremylongworth-source/AgentManufacturing/tree/main/docs/wiki).
+The repository [README](https://github.com/jeremylongworth-source/AgentManufacturing#readme) is the source of truth for installation, governance, and release gates. This Wiki is the guided public documentation layer.

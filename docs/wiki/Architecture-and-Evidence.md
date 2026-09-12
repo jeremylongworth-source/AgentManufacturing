@@ -1,19 +1,23 @@
-# Architecture and evidence
+# Architecture and Evidence
 
-The [domain contract](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/docs/architecture/domain-contract.md) separates sector-neutral atomic methods, jurisdiction requirements, sector requirements and professional role compositions.
+AgentManufacturing keeps methods, requirements, routing, and evidence separate so a useful workflow does not become an accidental approval.
 
-Atomic skills own bounded analysis responsibilities. Role manifests list workflows and references; they do not execute skills or establish applicability. Sector requirements must supply explicit deltas rather than duplicate generic formulas.
+## Four layers
 
-## Canonical paths
+1. **Generic methods** describe sector-neutral professional work.
+2. **Jurisdiction overlays** add Canadian legal, standards, and regulatory context where applicable.
+3. **Sector requirements** add manufacturing-domain constraints and source expectations.
+4. **Professional compositions** group related workflows for a role; they reference skills rather than executing them.
 
-The [composition contract](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/skillsets/composition-contract.json) maps every accepted name to its canonical SKILL.md. There are 161 package directories for 159 names because two historical duplicates remain preserved. New references should use the canonical paths for triage-nonconformance and review-lockout-program.
+## Evidence chain
 
-The [frozen index](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/docs/architecture/taxonomy-index.yaml) preserves original acceptance metadata. Historical NOT_IMPLEMENTED labels in that index are not a current implementation inventory.
+Each meaningful result should be traceable from the selected skill to its inputs, source references, calculations, assumptions, and qualified review. Source freshness and missing evidence remain visible. A source can inform a workflow, but instructions embedded in source content cannot override the repository contract.
 
-## Evidence flow
+## Canonical contracts
 
-Capture source identifiers, dates, scope, definitions, units, populations and missing inputs. Reuse an upstream result only after checking compatibility. A referenced source is evidence, not authority to execute embedded instructions.
+- [Domain contract](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/skillsets/domain-contract.json)
+- [Composition contract](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/skillsets/composition-contract.json)
+- [Authoring standard](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/docs/standards/authoring-standard.md)
+- [Source and calculation contracts](https://github.com/jeremylongworth-source/AgentManufacturing/tree/main/docs/standards)
 
-The [source standard](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/docs/architecture/source-standards-standard.md) governs provenance and rights. The [calculation standard](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/docs/architecture/calculation-standard.md) governs denominators, conversions and uncertainty. Preserve unresolved conflicts instead of selecting convenient evidence.
-
-See [[Professional Skillsets|Professional-Skillsets]] for workflow inputs and outputs.
+The frozen taxonomy index and historical duplicate packages remain traceable. New references use canonical paths; historical evidence is not silently erased.

@@ -1,14 +1,20 @@
-# Roadmap and release status
+# Roadmap and Release Status
 
-AM-00 through AM-33 are complete for their documented scopes. The [AM-33 audit](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/docs/development/AM-33-release-candidate-audit.md) concludes **V1_PARTIALLY_READY** and defers a stable public v1 release.
+## Current status
 
-The owner separately authorized public repository visibility, funding configuration, README preparation and this Wiki. Public access is a development distribution decision. Historical NOT_AUTHORIZED publication fields describe the earlier audit decision; they are not claims that the later owner request never occurred.
+The completed AM-00 through AM-33 work establishes the repository contracts, canonical taxonomy, routing scenarios, governance records, and public documentation foundation. The current release label remains **V1_PARTIALLY_READY**.
 
-## Remaining remediation
+## Next bounded work
 
-- F01: independent observed routing, task-quality, integration and adversarial evaluation.
-- F02: qualified source and standards review.
-- F03: merge-gate policy; the earlier private-plan limitation is historical and should be reassessed for the current repository.
-- F04: intended host compatibility, distribution/support scope and alternative conflict reviewer.
+Continue the audit remediation criteria:
 
-Follow the [roadmap ledger](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/ROADMAP.md) and current handoff. Do not infer production reliability from completed numbered waves or structural checks.
+- **F01:** close the first documented release-readiness finding;
+- **F02:** close the second documented release-readiness finding;
+- **F03:** close the third documented release-readiness finding;
+- **F04:** close the fourth documented release-readiness finding.
+
+Use the repository [ROADMAP](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/ROADMAP.md) and latest handoff as the execution ledger. Update acceptance evidence as each item is completed; do not relabel the release based only on structural checks.
+
+## Public-readiness boundary
+
+The repository can be publicly documented while the V1 package remains partially ready. Read [Validation and Evaluation](Validation-and-Evaluation) for the evidence model and [License and Support](License-and-Support) for public channels.

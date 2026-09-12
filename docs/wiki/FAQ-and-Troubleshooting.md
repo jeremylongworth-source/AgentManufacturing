@@ -1,33 +1,29 @@
-# FAQ and troubleshooting
+# FAQ and Troubleshooting
 
-## Does this install or run an AI agent?
+## Is this an installer or executor?
 
-No automatic executor or host installer is provided by the documented workflow. The resolver supplies references. Read the packages and use your host's supported loading mechanism; compatibility must be verified separately.
+No. The repository provides methods, references, routing metadata, and validation artifacts. It does not execute manufacturing work or approve an engineering, safety, legal, or product decision.
 
-## Why does a YAML file look like JSON?
+## Why do the counts differ?
 
-Some YAML files intentionally use JSON syntax so standard-library Python can parse them without additional dependencies.
+The repository can contain 161 skill directories while the catalogue lists 159 canonical skills. The difference reflects traceable historical or duplicate packages. Use canonical paths for new references.
 
-## Why are there 161 directories but 159 skills?
+## Why do some YAML files look like JSON?
 
-Two historical duplicate packages remain traceable. Use the canonical map in composition-contract.json and the [[Skill Catalogue|Skill-Catalogue]].
+The package contract permits JSON-compatible YAML for machine-readable metadata. Validate it with the repository scripts rather than relying on filename appearance.
 
-## The resolver cannot find a role or workflow
+## What does the resolver prove?
 
-Copy an exact role name and workflow ID from [[Professional Skillsets|Professional-Skillsets]]. Run from the repository root. A successful lookup still does not execute the workflow.
+It proves that a declared reference maps to a canonical package. It does not prove applicability, source freshness, or qualified approval.
 
-## A sector inspection reports a gap
+## What if a sector or source is missing?
 
-Sector requirements have not been implemented. Use generic-only mode only for conclusions supported by sector-neutral evidence. See [[Sector Specializations|Sector-Specializations]].
+Keep the gap visible. Record the missing evidence, avoid an unsupported conclusion, and route the question to a qualified reviewer.
 
-## A validator fails after my change
+## Where do I report a vulnerability?
 
-Read the named validator's output, fix the underlying contract or evidence mismatch, then rerun the focused check and full gate. Do not erase a historical result or refresh a snapshot without reassessment.
+Use [GitHub private vulnerability reporting](https://github.com/jeremylongworth-source/AgentManufacturing/security/advisories/new). For conduct concerns, use the [private conduct form](https://conduct.pmgate.ai/).
 
-## Can these results approve manufacturing work?
+## Is V1 stable?
 
-No. Analysis and review support do not grant operating, engineering, product-release or legal authority. See [[Jurisdiction and Safety|Jurisdiction-and-Safety]].
-
-## Is a public repository a stable v1 release?
-
-The repository is shared for development and reference. The audit remains V1_PARTIALLY_READY; independent evaluation and other remediation are still outstanding.
+No. The current release status is `V1_PARTIALLY_READY`; see [Roadmap and Release Status](Roadmap-and-Release-Status).

@@ -1,34 +1,54 @@
-# Getting started
+# Getting Started
 
-For a developer or manufacturing analyst, this walkthrough ends with a validated checkout and a resolved planning workflow. You need Git and Python. The validation environment is Python 3.14 on Linux and Windows; no third-party Python packages are required.
+This page is for contributors and reviewers who want a local, repeatable check of the repository.
 
-## Get and check the library
+## Outcome
 
-```powershell
+By the end, you will have a checkout that resolves its canonical references and passes the public-readiness and structural validators.
+
+## Prerequisites
+
+- Git
+- Python 3.11 or newer
+- PowerShell, Bash, or an equivalent shell
+
+## Install and validate
+
+```bash
 git clone https://github.com/jeremylongworth-source/AgentManufacturing.git
 cd AgentManufacturing
+python scripts/validate-public-readiness.py --require-ready
 python scripts/validate-all.py
 ```
 
-Run commands from the checkout root. The gate must finish successfully; failures identify the affected validator. This checks repository artifacts, not model output.
+The expected full-gate result is:
 
-## Resolve a planning workflow
-
-```powershell
-python scripts/resolve-skillset.py production-planner horizon-plan
+```text
+PASS: all 32 repository validators completed.
 ```
 
-Expect `REFERENCES_RESOLVED`, `execution: NOT_EXECUTED` and `evidence_state: NOT_ASSESSED`. Open the returned SKILL.md files and their relevant references. Collect demand horizon, capacity, BOM, materials and labor evidence before applying the methods.
+## Resolve a skill reference
 
-The finished artifact is a reference list for preparing a production plan proposal and readiness gaps. It is not an executable production plan or permission to release orders.
-
-## Check sector coverage
-
-```powershell
-python scripts/inspect-sector-coverage.py automotive
-python scripts/inspect-sector-coverage.py automotive --generic-only
+```bash
+python scripts/resolve-skill.py --skill takt-time-calculation
 ```
 
-Expect `COVERAGE_GAP` for sector requirements. The second command permits generic methods while retaining unsupported sector conclusions. Continue with [[Using a Skill|Using-a-Skill]] for a synthetic worked example.
+The resolver should report `REFERENCES_RESOLVED`. A resolved reference is a routing result, not an authorization to perform the work.
 
-If Python is unavailable, install a suitable interpreter through your normal development setup and reopen the terminal. If a file cannot be found, check the working directory and clone completeness. See [[FAQ and Troubleshooting|FAQ-and-Troubleshooting]].
+## Inspect sector coverage
+
+```bash
+python scripts/inspect-sector-coverage.py
+python scripts/validate-sector-coverage.py
+```
+
+## You are finished when
+
+- both repository commands pass;
+- references resolve to canonical paths;
+- source freshness and missing evidence remain visible; and
+- you understand the qualified-review boundary for the work.
+
+## If a check fails
+
+Read the first failing validator output, inspect the referenced fixture or package metadata, and rerun the focused validator before rerunning the full gate. See [FAQ and Troubleshooting](FAQ-and-Troubleshooting) for common causes.

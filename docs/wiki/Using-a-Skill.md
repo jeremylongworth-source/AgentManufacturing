@@ -1,23 +1,37 @@
-# Using a skill
+# Using a Skill
 
-A skill is a bounded instruction package. Read its SKILL.md, required evidence and relevant reference files before using it in your chosen agent host. Host loading and independent behavior have not been established by this repository's resolver.
+Use this workflow when you have selected one bounded method and need to apply it with traceable evidence.
 
-## Worked example: takt time
+## Before you start
 
-Open [calculate-takt-time](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/skills/family-05-performance/calculate-takt-time/SKILL.md). Use this synthetic input:
+- Confirm the skill is canonical and its references resolve.
+- Identify the intended output and the decision it supports.
+- Record units, assumptions, source dates, and missing inputs.
+- Check whether Canadian jurisdiction or sector requirements add constraints.
+- Identify the qualified person who must review the result.
 
-- Period: one shift.
-- Net available production time: 450 minutes, after explicitly accounted exclusions.
-- Customer demand for the same shift: 300 units.
+## Work the method
 
-Takt time = net available production time / customer demand = 450 / 300 = **1.5 minutes per unit**, or **90 seconds per unit**.
+Follow the skill's inputs, sequence, calculations, and output contract. Keep source material separate from execution authority. For example, the takt-time method uses available production time divided by required output. With 450 available minutes and 300 required units:
 
-Record the period, exclusions, numerator, denominator, units and assumptions alongside the result. This is an illustrative calculation, not a recorded independent model evaluation. It does not prove achievable cycle time, capacity, staffing adequacy or a safe machine setting.
+```text
+450 / 300 = 1.5 minutes per unit
+```
 
-## Missing or conflicting evidence
+Record the inputs and units with the result so another reviewer can reproduce it.
 
-Do not replace gross time with net time silently. If exclusions or demand periods are unknown, request the missing evidence and keep the conclusion partial. Zero demand makes this ratio undefined; do not report zero takt time.
+## When evidence is incomplete
 
-## Handoff
+Do not silently fill gaps. Mark the missing or stale evidence, state what cannot be concluded, and route the open question to the appropriate qualified reviewer.
 
-Provide the calculation, evidence gaps and the decision that needs qualified review. Separate supplied facts, assumptions and interpretations. For multi-skill work, reuse evidence only when definitions, periods, units and populations match. Continue with [[Architecture and Evidence|Architecture-and-Evidence]].
+## Handoff checklist
+
+- [ ] Skill and version identified
+- [ ] Inputs, units, assumptions, and sources recorded
+- [ ] Calculations or decisions are reproducible
+- [ ] Missing evidence and uncertainty are explicit
+- [ ] Jurisdiction and sector overlays checked
+- [ ] Qualified review owner identified
+- [ ] Output stored with the project record
+
+For package selection, see [Choose a Path](Choosing-a-Path). For repository changes, see [Contributing and Maintenance](Contributing-and-Maintenance).

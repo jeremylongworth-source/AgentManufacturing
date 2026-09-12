@@ -1,21 +1,22 @@
-# Contributing and maintenance
+# Contributing and Maintenance
 
-Read [CONTRIBUTING.md](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/CONTRIBUTING.md) and [AGENTS.md](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/AGENTS.md). Propose one bounded problem, explicit acceptance criteria and synthetic examples. Describe the resulting behavior, validation and unresolved evidence.
+This page is for contributors changing skills, references, validators, or public documentation.
 
-## Before submitting
+## Before opening a change
 
-1. Read the applicable domain and authoring contracts.
-2. Preserve frozen taxonomy decisions and canonical references.
-3. Keep SKILL.md, metadata, references and routing expectations consistent.
-4. Run the focused validator, the full gate and git diff --check.
-5. Include actual results in the change description.
+1. Read the repository [README](https://github.com/jeremylongworth-source/AgentManufacturing#readme), `ROADMAP.md`, and latest handoff.
+2. Identify the canonical package and the contract it must satisfy.
+3. Keep generic methods separate from Canadian jurisdiction and sector requirements.
+4. Add or update synthetic fixtures and expected routing only when the declared expectation changes.
+5. Run the focused validator, then `python scripts/validate-all.py` and `git diff --check`.
+6. Record actual commands, outcomes, unresolved work, and the next bounded step in the roadmap and handoff.
 
-No response time or merge commitment is promised. Sensitive reports belong in the private reporting channel.
+Do not use production records or sensitive operational data in fixtures. Do not bypass qualified-review boundaries or fabricate evidence.
 
-## Maintaining this Wiki
+## Keeping the Wiki current
 
-[docs/wiki](https://github.com/jeremylongworth-source/AgentManufacturing/tree/main/docs/wiki) contains the maintained Markdown source. Review edits there, then synchronize the files to the separate AgentManufacturing.wiki.git repository. GitHub Wiki changes do not automatically update the main repository.
+The source pages live in `docs/wiki`. After changing them, copy the Markdown files to the GitHub Wiki repository, review the staged diff, and push the Wiki branch. Keep page names and sidebar links aligned with the source pages.
 
-After publishing, check Home, the sidebar, changed pages and repository links. Keep the catalogue aligned with composition-contract.json and role tables aligned with skillsets/index.json and each manifest. Preserve historical audits while updating current status pages.
+## Review standard
 
-For documentation corrections, a normal content diff and link check are sufficient; do not claim a new model evaluation.
+A wave is READY only when its acceptance criteria are met and evidence is recorded. Publication and documentation preparation are separate decisions.

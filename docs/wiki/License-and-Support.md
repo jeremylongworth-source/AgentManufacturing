@@ -1,13 +1,19 @@
-# License and support
+# License and Support
 
-AgentManufacturing uses the [MIT licence](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/LICENSE), selected by owner Jeremy Longworth. Package, role and template licence metadata follows that choice. Third-party references retain their own rights; citation does not relicense standards or source material.
+## License
 
-## Reporting
+AgentManufacturing is licensed under the [MIT License](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/LICENSE).
 
-Use [GitHub private vulnerability reporting](https://github.com/jeremylongworth-source/AgentManufacturing/security/advisories/new) for security reports. Follow [SECURITY.md](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/SECURITY.md) and [CODE_OF_CONDUCT.md](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/CODE_OF_CONDUCT.md) for their respective reporting instructions. Do not post sensitive reports in public issues or pull requests.
+## Security reports
 
-Private vulnerability reporting was enabled and confirmed through GitHub's repository API on 2026-09-12. No delivery test was performed. No support SLA or external contribution response time is promised.
+Use [GitHub private vulnerability reporting](https://github.com/jeremylongworth-source/AgentManufacturing/security/advisories/new) for security vulnerabilities. This keeps sensitive details private while the report is triaged.
 
-## Sponsorship
+## Conduct reports
 
-Support the maintainer through [GitHub Sponsors](https://github.com/sponsors/jeremylongworth-source). The repository's FUNDING.yml uses the same GitHub account as AgentSkills, AgentLogistics, AgentCannabis and ChefSkills. Sponsorship does not confer operational approval, guaranteed support or a product certification.
+Use the [private conduct form](https://conduct.pmgate.ai/). The form is intended for conduct concerns and supports private owner review.
+
+## Support expectations
+
+The project does not promise a response-time SLA. Open a GitHub issue for reproducible public documentation or tooling problems after checking the [FAQ](FAQ-and-Troubleshooting). Do not put sensitive vulnerability or conduct details in a public issue.
+
+The project may accept support through [GitHub Sponsors](https://github.com/sponsors/jeremylongworth-source).

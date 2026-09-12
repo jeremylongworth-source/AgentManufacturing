@@ -1,27 +1,29 @@
-# Validation and evaluation
+# Validation and Evaluation
 
-Run these commands from the repository root:
+Validation proves that repository structure and declared contracts are coherent. It does not prove that an AI model will perform every workflow reliably without review.
 
-```powershell
-python scripts/validate-all.py
+## Run the gates
+
+```bash
 python scripts/validate-public-readiness.py --require-ready
-git diff --check
+python scripts/validate-all.py
 ```
 
-The full gate runs 32 repository validators. It covers contracts, package metadata, synthetic calculations, expected routing and recorded acceptance evidence. The [CI workflow](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/.github/workflows/validate.yml) runs on Linux and Windows with Python 3.14. [AM-33 CI evidence](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/docs/development/AM-33-ci-evidence.json) records historical runs against exact commits.
+Use the focused validator for the behavior you changed, then run the full gate. Finish with `git diff --check` and inspect the staged diff.
 
-## Interpret the results
+## Current evidence
 
-| Evidence | What it establishes | Limit |
-|---|---|---|
-| Structural validators | Repository consistency | No independent model execution |
-| 243 routing scenarios | Authored expectations | Not observed routing accuracy |
-| AM-30 walkthroughs | Four assisted integration examples | Nonblind, self-reviewed |
-| AM-31 paired cases | Eight adversarial cases and eight safe controls | Not independent robustness testing |
-| AM-32 strict readiness | Documented governance prerequisites | Not report delivery or a stable-release verdict |
+| Evidence | What it establishes |
+| --- | --- |
+| Structural validators | Package metadata, references, schemas, and fixtures are internally consistent |
+| 243 routing scenarios | Declared routing expectations cover the current scenario set |
+| AM-30 | Baseline evaluation artifacts are recorded |
+| AM-31 | Self-review is bound to exact source and response hashes |
+| AM-32 | Governance and package metadata are aligned with MIT licensing and private reporting |
+| AM-33 | Audit findings are recorded; current status is `V1_PARTIALLY_READY` |
 
-Independent model runs, baseline comparisons, repeated trials and multi-turn robustness remain unperformed. The AM-33 verdict is V1_PARTIALLY_READY.
+## Remaining release work
 
-## Changing evidence
+The audit's F01–F04 remediation criteria remain the next bounded release work. Structural checks are not a release verdict, and no model-robustness claim should be inferred from metadata or routing counts.
 
-Run the focused validator first, then the full gate. Report actual commands and outcomes. AM-31 hashes bind judgments to exact artifacts: reassess affected judgments before updating a digest. Do not regenerate a hash just to silence a failure. Use synthetic fixtures and preserve historical results.
+When reporting a change, distinguish Python checks, assisted nonblind simulations, independent runs, and tests that were not performed.

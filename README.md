@@ -13,11 +13,13 @@ Portable AI skill packages for manufacturing analysis and qualified review, with
 
 AM-30/31 evaluations are nonblind, self-reviewed simulations. Independent model execution, baseline comparisons, repeated trials and multi-turn robustness remain unperformed. Planned sector specializations contain no implemented sector requirements.
 
-## First use from a checkout
+## Get started
 
-Repository access is required while the project is private. From the repository root, with Git and Python available:
+With Git and Python available, clone the library and run the examples from its root:
 
 ```powershell
+git clone https://github.com/jeremylongworth-source/AgentManufacturing.git
+cd AgentManufacturing
 python scripts/validate-all.py
 python scripts/resolve-skillset.py production-planner horizon-plan
 python scripts/inspect-sector-coverage.py automotive
@@ -29,6 +31,8 @@ The full gate validates repository artifacts; it does not run a model. The resol
 The sector inspector returns `COVERAGE_GAP` for the planned automotive specialization. With `--generic-only`, it permits unrelated generic analysis while keeping sector conclusions unsupported. Successful reference resolution or generic arithmetic does not establish applicability or operating authority.
 
 Commands were checked locally with Python 3.14.3 on Windows PowerShell and in [hosted Linux/Windows CI](docs/development/AM-33-ci-evidence.json) using Python 3.14. The validators use the Python standard library; no package installation is required. Other AI-host compatibility and independent skill behavior remain unestablished.
+
+The [Wiki](https://github.com/jeremylongworth-source/AgentManufacturing/wiki) provides a quickstart, a worked example, the complete skill catalogue, all role workflows and troubleshooting.
 
 ## Public-readiness check
 
@@ -64,10 +68,12 @@ Some `.yaml` files deliberately use JSON syntax for dependency-free parsing. Fro
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md) for change scope, validation and evidence requirements. [SECURITY.md](SECURITY.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) name Jeremy Longworth at [private contact removed] as the private reporting recipient. Do not publish sensitive reports in issues or pull requests.
 
-[LICENSE](LICENSE) contains the owner's selected MIT licence. Third-party references retain their own rights; citation does not relicense their content. The project has not launched publicly; release-review gates do not restrict MIT's grant. [CHANGELOG.md](CHANGELOG.md) records unreleased development history.
+[LICENSE](LICENSE) contains the owner's selected MIT licence. Third-party references retain their own rights; citation does not relicense their content. This library is shared for development and reference; the partial v1 audit remains in effect. [CHANGELOG.md](CHANGELOG.md) records development history.
+
+Support the maintainer through [GitHub Sponsors](https://github.com/sponsors/jeremylongworth-source).
 
 ## Roadmap and continuation
 
 Use the execution ledger in [ROADMAP.md](ROADMAP.md) and the [AM-33 final handoff](docs/development/handoffs/AM-33-final-handoff.md). The numbered roadmap is complete; follow F01–F04 in the audit for independent evaluation, source/standards review, merge-gate policy and release-scope ownership.
 
-The original workspace is `D:\AgentMfg`; commands work from a checkout root without that path. The historical AM-00 bootstrap prompt is not the current task. The [AM-00 audit](docs/development/AM-00-baseline-audit.md), [taxonomy audit](docs/architecture/taxonomy-audit-v1.md) and [original framework](docs/architecture/domain-framework.md) preserve planning provenance; those planning statements are not current legal or engineering determinations.
+The [AM-00 audit](docs/development/AM-00-baseline-audit.md), [taxonomy audit](docs/architecture/taxonomy-audit-v1.md) and [original framework](docs/architecture/domain-framework.md) preserve planning provenance; those planning statements are not current legal or engineering determinations.

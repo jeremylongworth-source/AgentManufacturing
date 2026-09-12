@@ -30,7 +30,7 @@ All 32 validators passed with `python scripts/validate-all.py`. Strict AM-32 rea
 
 ## History cleanup
 
-On 2026-09-12, reachable main and Wiki history was rewritten to remove the owner's personal email from historical content and author/committer metadata. Future commits use the GitHub noreply identity. The old histories are retained only in offline local bundles outside both repositories; existing clones and third-party copies may still contain them. The current public heads are main `b6f62bd` and Wiki `6f97336`.
+On 2026-09-12, reachable main and Wiki history was rewritten to remove the owner's personal email from historical content and author/committer metadata. Future commits use the GitHub noreply identity. The old histories are retained only in offline local bundles outside both repositories; existing clones and third-party copies may still contain them. The history-clean rewrite head was main `b6f62bd`; this record is maintained at `94082bf`. The Wiki head is `6f97336`.
 
 ## Handoff and maintenance
 

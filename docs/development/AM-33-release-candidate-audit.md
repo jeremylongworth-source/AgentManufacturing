@@ -21,7 +21,7 @@ The audit covers all 13 roadmap areas. Six pass their bounded repository criteri
 | Professional skillsets | PASS | 18 roles, 38 workflows and resolver tests pass. Resolution supplies references without execution or approval. |
 | Specialization boundaries | PASS | 18 labels/12 priorities preserve planned coverage and generic analysis; no sector requirements implemented. |
 | Integration | PARTIAL | Four assisted journeys retain calculations, provenance and unresolved gates. Independent integration behavior remains untested. |
-| Documentation | PASS | Eight AM-32 documents, MIT consistency and owner-designated private reporting pass strict readiness. No delivery test or support SLA. |
+| Documentation | PASS | Eight AM-32 documents, MIT consistency, GitHub private vulnerability reporting and the private conduct form pass strict readiness. No delivery test or support SLA. |
 | CI | PARTIAL | Read-only, pinned-action Windows/Linux workflow now executes successfully. Branch-protection enforcement is unavailable under the observed private-plan configuration. |
 
 ## Changes and observed verification
@@ -49,6 +49,6 @@ Read the [source review](AM-33-source-review.md) and [inventory snapshot](am33-s
 
 These findings support continued internal review and development, not a production or public-v1 readiness claim. No public launch is recommended until the intended release scope is supported by evidence and the owner makes the release decision. A narrower experimental distribution would require its own explicit scope and review; this audit does not authorize it.
 
-For a future authorized release, retain the reviewed revision and publish accurate limits. If a defect is discovered, document affected revisions, suspend affected recommendations and prepare a corrected change with regression evidence. Withdrawing a release or making a repository private cannot recall distributed copies. The owner-designated address in SECURITY.md receives reports; monitoring cadence, response guarantees and an alternate conduct reviewer are not established here. No recurring monitor or external communication is created.
+For a future authorized release, retain the reviewed revision and publish accurate limits. If a defect is discovered, document affected revisions, suspend affected recommendations and prepare a corrected change with regression evidence. Withdrawing a release or making a repository private cannot recall distributed copies. GitHub private vulnerability reporting handles security reports and the private conduct form handles conduct reports; monitoring cadence, response guarantees and an alternate conduct reviewer are not established here. No recurring monitor or external communication is created.
 
 AM-00 through AM-33 are now complete for their recorded scopes. Continue with F01–F04 as post-audit remediation; do not invent an AM-34 commitment or replace this partial verdict with V1_READY because all structural validators pass.

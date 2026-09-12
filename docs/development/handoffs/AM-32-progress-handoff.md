@@ -6,7 +6,7 @@ Status: `IN_PROGRESS`
 
 Date: 2026-09-09
 
-The owner selected MIT. All eight roadmap documents are prepared; MIT text and current package/role/template metadata are aligned. The remaining decision is the private security/conduct reporting contact and responsible recipient. No AM-32 completion marker is claimed; AM-31 remains the last closed wave.
+The owner selected MIT. All eight roadmap documents are prepared; MIT text and current package/role/template metadata are aligned. This progress handoff predates the completed reporting decision and is retained as historical evidence; the current route is GitHub private vulnerability reporting plus `https://conduct.pmgate.ai/`. No AM-32 completion marker is claimed in this historical record.
 
 ## Evidence
 
@@ -18,6 +18,6 @@ Validation: all 31 repository validators passed and all 161 atomic packages pass
 
 ## Resume here
 
-The owner answered the licence question with MIT; do not ask again or revert to the pending placeholder. The follow-up question asks what private contact the policies should name and who receives security/conduct reports. Once answered, implement that designation, update the policies and decision record, validate strict readiness, then finish AM-32 and advance to AM-33. Owner designation is not mailbox-delivery testing; do not send messages without explicit authorization.
+The owner answered the licence question with MIT; do not ask again or revert to the pending placeholder. The follow-up question in this historical handoff was resolved later. Current policies and decision records use GitHub private vulnerability reporting for security and the private conduct form for conduct. Configuration is not delivery testing; do not send reports without explicit authorization.
 
-GitHub was observed PRIVATE and the private-vulnerability-reporting API returned HTTP 404. Do not infer a functioning reporting route from that probe. Commits and pushes are authorized; public repository visibility, releases and announcements are separate actions that were not requested.
+GitHub was observed PRIVATE and the private-vulnerability-reporting API returned HTTP 404 at the time of this historical handoff. The current repository is public and private vulnerability reporting is enabled; do not use the old observation as current state. Commits and pushes are authorized; releases and announcements remain separate actions.

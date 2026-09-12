@@ -18,7 +18,7 @@ The full gate runs 32 repository validators. It covers contracts, package metada
 | 243 routing scenarios | Authored expectations | Not observed routing accuracy |
 | AM-30 walkthroughs | Four assisted integration examples | Nonblind, self-reviewed |
 | AM-31 paired cases | Eight adversarial cases and eight safe controls | Not independent robustness testing |
-| AM-32 strict readiness | Documented governance prerequisites | Not mailbox delivery or a stable-release verdict |
+| AM-32 strict readiness | Documented governance prerequisites | Not report delivery or a stable-release verdict |
 
 Independent model runs, baseline comparisons, repeated trials and multi-turn robustness remain unperformed. The AM-33 verdict is V1_PARTIALLY_READY.
 

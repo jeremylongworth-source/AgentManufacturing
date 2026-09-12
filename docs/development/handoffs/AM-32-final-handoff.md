@@ -6,7 +6,7 @@ Completion token: `AGENTMANUFACTURING_AM_32_PUBLIC_READINESS_READY`
 
 Date: 2026-09-09
 
-Completed all eight required repository documents. The owner selected MIT and supplied [personal contact redacted] for security and conduct reports, with Jeremy Longworth as recipient. Both policies and the decision record reflect owner designation; no delivery-test message was sent.
+Completed all eight required repository documents. The owner selected MIT and designated Jeremy Longworth for security and conduct reports. This historical handoff is superseded by the 2026-09-12 reporting update: GitHub private vulnerability reporting handles security reports and `https://conduct.pmgate.ai/` handles conduct reports. No delivery-test report was sent.
 
 ## Evidence
 

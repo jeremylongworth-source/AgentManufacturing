@@ -17,7 +17,7 @@ The README resolver and sector-inspector examples are read-only. They demonstrat
 
 ## Remaining acceptance and release risk
 
-The designated private address and recipient are recorded consistently in both policies and the decision record. Owner confirmation does not establish mailbox delivery; no message was sent. An alternate conduct reviewer for conflicts remains unassigned and is documented as a limitation, without inventing another recipient.
+The GitHub vulnerability channel, private conduct form and recipient are recorded consistently in both policies and the decision record. Configuration does not establish report delivery; no test report was sent. An alternate conduct reviewer for conflicts remains unassigned and is documented as a limitation, without inventing another recipient.
 
 AM-32's documentation and governance prerequisites are complete; AM-33's audit remains unperformed. No visibility change, release, announcement or automated monitoring was performed. Assisted evaluation, current-source review and third-party rights limitations remain visible for the release audit.
 

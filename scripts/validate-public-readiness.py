@@ -1,6 +1,6 @@
 """Check AM-32 documents and governance; --require-ready rejects open decisions.
 
-Neither mode publishes a release, validates a mailbox or performs AM-33's audit.
+Neither mode publishes a release, validates report delivery or performs AM-33's audit.
 """
 import argparse
 import copy

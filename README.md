@@ -32,7 +32,7 @@ The sector inspector returns `COVERAGE_GAP` for the planned automotive specializ
 
 Commands were checked locally with Python 3.14.3 on Windows PowerShell and in [hosted Linux/Windows CI](docs/development/AM-33-ci-evidence.json) using Python 3.14. The validators use the Python standard library; no package installation is required. Other AI-host compatibility and independent skill behavior remain unestablished.
 
-The [Wiki](https://github.com/jeremylongworth-source/AgentManufacturing/wiki) provides a quickstart, a worked example, the complete skill catalogue, all role workflows and troubleshooting.
+The [Wiki documentation source](docs/wiki/Home.md) provides a quickstart, a worked example, the complete skill catalogue, all role workflows and troubleshooting. The [GitHub Wiki](https://github.com/jeremylongworth-source/AgentManufacturing/wiki) is being initialized; the maintained source is available now.
 
 ## Public-readiness check
 

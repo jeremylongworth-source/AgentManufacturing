@@ -4,6 +4,10 @@
 
 This is development history, not a published release. Dates identify repository work; READY wave markers do not establish production safety or a public licence grant.
 
+### 2026-09-12
+
+- Made the development repository public at the owner's request, added matching GitHub funding, reviewed README and contributor guidance, and prepared 13 Wiki pages with sidebar and footer. Actual Wiki publication awaits browser sign-in; see the publication handoff. The partial v1 verdict is unchanged.
+
 ### 2026-09-09
 
 - AM-33: completed all 13 audit areas with V1_PARTIALLY_READY and deferred public v1 release. Added pinned read-only Linux/Windows CI, fixed a checkout-newline fingerprint failure without changing the frozen draft hash, and recorded source/standards and independent-evaluation gaps.

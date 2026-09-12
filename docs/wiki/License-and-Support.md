@@ -4,9 +4,9 @@ AgentManufacturing uses the [MIT licence](https://github.com/jeremylongworth-sou
 
 ## Reporting
 
-Jeremy Longworth receives private security and conduct reports at **[private contact removed]**. Follow [SECURITY.md](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/SECURITY.md) and [CODE_OF_CONDUCT.md](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/CODE_OF_CONDUCT.md). Do not post sensitive reports in public issues or pull requests.
+Use [GitHub private vulnerability reporting](https://github.com/jeremylongworth-source/AgentManufacturing/security/advisories/new) for security reports. Follow [SECURITY.md](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/SECURITY.md) and [CODE_OF_CONDUCT.md](https://github.com/jeremylongworth-source/AgentManufacturing/blob/main/CODE_OF_CONDUCT.md) for their respective reporting instructions. Do not post sensitive reports in public issues or pull requests.
 
-This is an owner-designated contact, not a documented mailbox-delivery test. No support SLA or external contribution response time is promised.
+Private vulnerability reporting was enabled and confirmed through GitHub's repository API on 2026-09-12. No delivery test was performed. No support SLA or external contribution response time is promised.
 
 ## Sponsorship
 

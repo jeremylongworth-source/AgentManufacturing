@@ -4,11 +4,11 @@ No supported public release or response-time commitment has been established. Re
 
 ## Reporting status
 
-Send private security reports to **[private contact removed]**. Recipient: **Jeremy Longworth**, project owner.
+Use [GitHub private vulnerability reporting](https://github.com/jeremylongworth-source/AgentManufacturing/security/advisories/new) to send a security report to this repository's maintainers. A GitHub account is required. Jeremy Longworth is the project owner responsible for triage.
 
-The owner designated this address for security and conduct reports on 2026-09-09. This is owner confirmation, not a mailbox-delivery test; no test message was sent. GitHub's private-vulnerability-reporting availability was not verified, so use the email route rather than assuming a GitHub reporting feature is enabled.
+GitHub private vulnerability reporting was enabled and confirmed through the repository API on 2026-09-12 at the owner's request. This verifies the setting, not report delivery or response time; no test report was submitted. This replaces the previously published personal email route for security reports.
 
-Do not disclose exploitable details, personal information, plant records or credentials through public issues, pull requests or comments. Use the private address above and minimize sensitive details to what is needed for review.
+Do not disclose exploitable details, personal information, plant records or credentials through public issues, pull requests or comments. Use the private reporting link above and minimize sensitive details to what is needed for review. Conduct concerns follow CODE_OF_CONDUCT.md; the vulnerability channel is for security reports.
 
 ## Report contents
 

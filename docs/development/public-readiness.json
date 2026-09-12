@@ -19,13 +19,15 @@
     "notice_only": false
   },
   "private_reporting": {
-    "status": "OWNER_DESIGNATED",
-    "contact": "[private contact removed]",
+    "status": "GITHUB_VULNERABILITY_AND_CONDUCT_FORM",
+    "contact": null,
     "recipient": "Jeremy Longworth",
     "verification": {
-      "basis": "OWNER_CONFIRMATION",
-      "date": "2026-09-09",
-      "delivery_test": "NOT_RUN"
+      "basis": "OWNER_CONFIRMATION_AND_GITHUB_SETTING",
+      "date": "2026-09-12",
+      "delivery_test": "NOT_RUN",
+      "security_channel": "GITHUB_PRIVATE_VULNERABILITY_REPORTING",
+      "conduct_channel": "https://conduct.pmgate.ai/"
     }
   },
   "repository_observation": {

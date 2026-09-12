@@ -6,8 +6,8 @@ Treat participants respectfully. Critique evidence and work without personal att
 
 ## Reporting and handling
 
-Send private conduct reports to **[private contact removed]**. Recipient: **Jeremy Longworth**, project owner. The owner designated this address for both security and conduct reports on 2026-09-09. No delivery-test message was sent. Do not post sensitive allegations or private information in public issues or reviews.
+Send private conduct reports through the [private conduct reporting form](https://conduct.pmgate.ai/). The form is reviewed by Jeremy Longworth, the project owner. You may omit your name and reply address. Do not post sensitive allegations or private information in public issues or reviews.
 
-The review process is to preserve relevant evidence, limit disclosure to those needed for review, consider the affected participants' accounts and communicate a reasoned decision. Possible project actions include a request to revise content, a warning, content removal or a participation restriction. A conflict involving the designated recipient requires an alternative reviewer selected by the owner; that alternate is not yet assigned. Reconsideration requests should use the private address above.
+The review process is to preserve relevant evidence, limit disclosure to those needed for review, consider the affected participants' accounts and communicate a reasoned decision. Possible project actions include a request to revise content, a warning, content removal or a participation restriction. A conflict involving the designated recipient requires an alternative reviewer selected by the owner; that alternate is not yet assigned. The form is not an emergency service and does not promise a response time.
 
 This document does not authorize automated moderation, contacting participants or removing their access. The recipient designation is recorded in the [readiness record](docs/development/AM-32-public-readiness.md); enforcement decisions remain with the project owner.

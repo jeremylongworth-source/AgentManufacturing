@@ -6,7 +6,7 @@ Completion token: `AGENTMANUFACTURING_AM_32_PUBLIC_READINESS_READY`
 
 Date: 2026-09-09
 
-Completed all eight required repository documents. The owner selected MIT and supplied [private contact removed] for security and conduct reports, with Jeremy Longworth as recipient. Both policies and the decision record reflect owner designation; no delivery-test message was sent.
+Completed all eight required repository documents. The owner selected MIT and supplied [personal contact redacted] for security and conduct reports, with Jeremy Longworth as recipient. Both policies and the decision record reflect owner designation; no delivery-test message was sent.
 
 ## Evidence
 
@@ -21,3 +21,5 @@ All 31 repository validators passed. Earlier in AM-32, all 161 atomic packages p
 AM-33 performs the v1 release-candidate audit against the roadmap's taxonomy, routing, calculation, source, standards, quality, safety and provincial-isolation requirements. Read the exact audit criteria and preserve observed versus unperformed evidence. Review source freshness, third-party rights and the limits of AM-30/31's assisted, nonblind simulations. The conduct policy documents that a conflict-of-interest alternate has not been assigned; do not invent one.
 
 MIT selection and the reporting designation are settled; do not ask for them again. Owner designation is not delivery testing. Commits and pushes remain authorized, but no repository-visibility change, public release, announcement or external message was requested or performed. AM-32 completion does not predetermine the AM-33 release decision.
+
+Privacy update (2026-09-12): the personal contact value was removed from this historical record. Current reporting instructions are maintained in SECURITY.md and CODE_OF_CONDUCT.md; historical readiness statements describe the earlier assessment.

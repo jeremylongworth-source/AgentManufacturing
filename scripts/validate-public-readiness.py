@@ -43,14 +43,19 @@ def assess(record, documents, licenses):
         need(all(reporting[key] is None for key in ("contact", "recipient", "verification")), "unverified reporting metadata")
         need(all("NOT_CONFIGURED" in documents[p] for p in ("SECURITY.md", "CODE_OF_CONDUCT.md")), "reporting documents hide open decision")
         blockers.append("PRIVATE_REPORTING_NOT_CONFIGURED")
-    elif reporting["status"] == "OWNER_DESIGNATED":
+    elif reporting["status"] in {"OWNER_DESIGNATED", "GITHUB_VULNERABILITY_AND_CONDUCT_FORM"}:
         contact, recipient = reporting["contact"], reporting["recipient"]
-        need(isinstance(contact, str) and bool(re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", contact)), "private contact must be an owner-supplied email address")
+        if reporting["status"] == "OWNER_DESIGNATED":
+            need(isinstance(contact, str) and bool(re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", contact)), "private contact must be an owner-supplied email address")
+        else:
+            need(contact is None, "GitHub/form reporting must not publish a personal email contact")
+            need(reporting.get("verification", {}).get("security_channel") == "GITHUB_PRIVATE_VULNERABILITY_REPORTING", "security channel")
+            need(reporting.get("verification", {}).get("conduct_channel") == "https://conduct.pmgate.ai/", "conduct channel")
         need(isinstance(recipient, str) and recipient.strip(), "report recipient")
         verification = reporting["verification"]
-        need(isinstance(verification, dict) and verification.get("basis") == "OWNER_CONFIRMATION" and bool(verification.get("date")), "owner designation evidence")
+        need(isinstance(verification, dict) and verification.get("basis") in {"OWNER_CONFIRMATION", "OWNER_CONFIRMATION_AND_GITHUB_SETTING"} and bool(verification.get("date")), "owner designation evidence")
         for path in ("SECURITY.md", "CODE_OF_CONDUCT.md"):
-            need(contact in documents[path] and recipient in documents[path] and "NOT_CONFIGURED" not in documents[path], "reporting document/decision mismatch")
+            need((contact is None or contact in documents[path]) and recipient in documents[path] and "NOT_CONFIGURED" not in documents[path], "reporting document/decision mismatch")
     else:
         raise ValueError("unsupported reporting state; do not infer availability from a URL")
     expected = "IN_PROGRESS" if blockers else "READY"

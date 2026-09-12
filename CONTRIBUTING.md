@@ -25,4 +25,4 @@ Report test evidence accurately. Static metadata, arithmetic checks and self-rev
 
 Submit bounded changes through pull requests. No external contribution response time, merge promise or support commitment is offered. The project owner must approve governance changes; routine commit access is not publication authority.
 
-Use [SECURITY.md](SECURITY.md) for sensitive vulnerabilities and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community conduct. Jeremy Longworth receives private security and conduct reports at [private contact removed]. Do not place sensitive reports in public issues or pull requests.
+Use [SECURITY.md](SECURITY.md) for GitHub private vulnerability reporting and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community conduct reporting instructions. Do not place sensitive reports in public issues or pull requests.

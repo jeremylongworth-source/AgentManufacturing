@@ -26,7 +26,11 @@ The owner explicitly requested matching FUNDING.yml, a complete GitHub Wiki, pub
 
 All 32 validators passed with `python scripts/validate-all.py`. Strict AM-32 readiness passed. The documented production-planner resolver and both automotive coverage commands produced the described states. A local link check verified 268 targets across Wiki, README and CONTRIBUTING with no missing paths. `git diff --check` and the staged whitespace check passed.
 
-[CI run 34694595831](https://github.com/jeremylongworth-source/AgentManufacturing/actions/runs/34694595831) passed on Linux and Windows for commit 8b89e20. This is repository validation, not independent model evaluation.
+[CI run 34694595831](https://github.com/jeremylongworth-source/AgentManufacturing/actions/runs/34694595831) passed on Linux and Windows for the pre-history-clean revision 8b89e20. This is repository validation, not independent model evaluation. The public main branch now points to the history-clean head b6f62bd.
+
+## History cleanup
+
+On 2026-09-12, reachable main and Wiki history was rewritten to remove the owner's personal email from historical content and author/committer metadata. Future commits use the GitHub noreply identity. The old histories are retained only in offline local bundles outside both repositories; existing clones and third-party copies may still contain them. The current public heads are main `b6f62bd` and Wiki `6f97336`.
 
 ## Handoff and maintenance
 
